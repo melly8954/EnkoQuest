@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491739973515",
+    "project_id": "enkoquest",
+    "storage_bucket": "enkoquest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491739973515:android:44ca91b729bb0a0d25518e",
+        "android_client_info": {
+          "package_name": "com.example.enkoquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKmFIXs_MEptoMruNVTenpZvQzpBno5ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491739973515:android:c18f45e4b488f75a25518e",
+        "android_client_info": {
+          "package_name": "com.melly.enko"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKmFIXs_MEptoMruNVTenpZvQzpBno5ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
