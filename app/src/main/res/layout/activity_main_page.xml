@@ -8,13 +8,47 @@
     tools:context=".MainPageActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="미완성"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/text_title"
+        android:layout_width="248dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:text="엔코퀘스트 아이콘"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_myPage"
+        android:layout_width="233dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="100dp"
+        android:text="마이페이지"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <Button
+        android:id="@+id/button_storyMode"
+        android:layout_width="233dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="100dp"
+        android:text="스토리모드"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_myPage" />
+
+    <Button
+        android:id="@+id/button_challengeMode"
+        android:layout_width="233dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="100dp"
+        android:text="챌린지모드"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_storyMode" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
