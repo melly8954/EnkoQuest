@@ -25,10 +25,10 @@
             android:name=".StoryActivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".user.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".user.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".IndexActivity"

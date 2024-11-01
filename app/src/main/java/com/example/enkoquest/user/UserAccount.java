@@ -1,12 +1,4 @@
-package com.example.enkoquest;
-
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+package com.example.enkoquest.user;
 
 public class UserAccount{
     private String idToken; // Firebase UID
