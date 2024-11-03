@@ -62,4 +62,14 @@
         app:layout_constraintEnd_toStartOf="@+id/Password"
         app:layout_constraintTop_toTopOf="@+id/Password" />
 
+    <Button
+        android:id="@+id/buttonMoveFindView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="아이디 찾기"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.enkoquest.user;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,11 +19,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class SignInActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity implements View
+
+        .OnClickListener {
 
     private FirebaseAuth auth;
     private EditText email, password;
-    private Button loginButton;
+    private Button loginButton, buttonMoveFindView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +43,10 @@ public class SignInActivity extends AppCompatActivity {
         email = findViewById(R.id.EmailAddress);
         password = findViewById(R.id.Password);
         loginButton = findViewById(R.id.buttonLogin);
+        buttonMoveFindView = findViewById(R.id.buttonMoveFindView);
 
         loginButton.setOnClickListener(view -> loginUser());
+        buttonMoveFindView.setOnClickListener(this);
     }
 
     private void loginUser() { // XML에서 ID를 가져온다
@@ -66,6 +71,13 @@ public class SignInActivity extends AppCompatActivity {
         }catch (Exception ex){
             ex.printStackTrace();
         }
+    }
 
+    @Override
+    public void onClick(View view) {
+        if(view.getId() == R.id.buttonMoveFindView){
+            Intent intent = new Intent(this,FindIdActivity.class);
+            startActivity(intent);
+        }
     }
 }

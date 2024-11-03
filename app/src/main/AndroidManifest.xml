@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".user.FindIdActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity234234234"
             android:exported="false" />
         <activity
@@ -31,7 +34,7 @@
             android:name=".user.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".IndexActivity"
+            android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

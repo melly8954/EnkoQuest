@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IndexActivity">
+    tools:context=".IntroActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -34,9 +34,10 @@
         android:id="@+id/signInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="로그인"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/signUpButton"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="@+id/signUpButton"
         app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
 
