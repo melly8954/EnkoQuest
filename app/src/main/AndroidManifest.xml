@@ -19,13 +19,13 @@
             android:name=".MainActivity234234234"
             android:exported="false" />
         <activity
-            android:name=".ChallengeActivity"
+            android:name=".challenge.ChallengeActivity"
             android:exported="false" />
         <activity
             android:name=".MyPageActivity"
             android:exported="false" />
         <activity
-            android:name=".StoryActivity"
+            android:name=".story.StoryActivity"
             android:exported="false" />
         <activity
             android:name=".user.SignInActivity"

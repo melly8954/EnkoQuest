@@ -11,6 +11,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.challenge.ChallengeActivity;
+import com.example.enkoquest.story.StoryActivity;
+
 public class MainPageActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn01, btn02, btn03;
