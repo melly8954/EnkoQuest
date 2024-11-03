@@ -6,17 +6,19 @@ public class UserAccount{
     private String email;   // 사용자 이메일
     private String password; // 사용자 비밀번호
     private String tel;
+    private String selfProduce;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
     public UserAccount() {}
 
     // 매개변수를 받는 생성자
-    public UserAccount(String idToken,String nickName, String email, String password,String tel) {
+    public UserAccount(String idToken,String nickName, String email, String password,String tel,String selfProduce) {
         this.idToken = idToken;
         this.nickname = nickname;
         this.email = email;
         this.password = password;
         this.tel = tel;
+        this.selfProduce = selfProduce;
     }
 
     // Getter와 Setter
@@ -58,5 +60,13 @@ public class UserAccount{
 
     public void setTel(String tel) {
         this.tel = tel;
+    }
+
+    public String getSelfProduce(){
+        return selfProduce;
+    }
+
+    public void setSelfProduce(String selfProduce){
+        this.selfProduce = selfProduce;
     }
 }

@@ -22,11 +22,11 @@
         android:id="@+id/buttonChangePW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
         android:text="패스워드 변경하기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textProduce" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce" />
 
     <Button
         android:id="@+id/buttonMy"
@@ -103,15 +103,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textId" />
 
-    <TextView
-        android:id="@+id/textProduce"
+    <EditText
+        android:id="@+id/editTextSelfProduce"
         android:layout_width="192dp"
         android:layout_height="61dp"
         android:layout_marginTop="10dp"
+        android:hint="자기 소개"
         android:text=""
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textChal" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="저장"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSelfProduce"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
