@@ -81,7 +81,7 @@ public class MyPageActivity extends AppCompatActivity implements View
                     UserAccount userAccount = snapshot.getValue(UserAccount.class);
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
-                        text02.setText("닉네임 : " +userAccount.getUserName());
+                        text02.setText("닉네임 : " +userAccount.getNickname());
                         text03.setText("챌린지 정보");
                         text04.setText("한줄 소개");
                     } else {

@@ -78,7 +78,7 @@ public class FindIdActivity extends AppCompatActivity implements View.OnClickLis
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
 
         // 닉네임을 기준으로 먼저 필터링하고, 이후 전화번호가 일치하는지 확인
-        databaseReference.orderByChild("userName").equalTo(nickname).addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference.orderByChild("nickname").equalTo(nickname).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 boolean userFound = false;
