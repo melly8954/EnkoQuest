@@ -54,7 +54,7 @@ public class SignInActivity extends AppCompatActivity implements View
         String strEmail = email.getText().toString();
         String strPassword = password.getText().toString();
 
-        try{
+        try {
             auth.signInWithEmailAndPassword(strEmail, strPassword)
                     .addOnCompleteListener(this, task -> {
                         if (task.isSuccessful()) {
@@ -68,15 +68,15 @@ public class SignInActivity extends AppCompatActivity implements View
                             Toast.makeText(this, "로그인 실패: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.buttonMoveFindView){
-            Intent intent = new Intent(this,FindIdActivity.class);
+        if (view.getId() == R.id.buttonMoveFindView) {
+            Intent intent = new Intent(this, FindIdActivity.class);
             startActivity(intent);
         }
     }

@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.enkoquest.user.SignInActivity;
 import com.example.enkoquest.user.SignUpActivity;
 
-public class IntroActivity extends AppCompatActivity implements View.OnClickListener{
+public class IntroActivity extends AppCompatActivity implements View.OnClickListener {
     Button registerButton;
     Button loginButton;
 
@@ -38,11 +38,10 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.signUpButton){
+        if (view.getId() == R.id.signUpButton) {
             Intent intent = new Intent(IntroActivity.this, SignUpActivity.class);
             startActivity(intent);
-        }
-        else if(view.getId() == R.id.signInButton){
+        } else if (view.getId() == R.id.signInButton) {
             Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
             startActivity(intent);
         }

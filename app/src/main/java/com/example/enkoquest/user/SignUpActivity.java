@@ -24,7 +24,7 @@ import com.google.firebase.database.annotations.Nullable;
 public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private DatabaseReference databaseReference; // Firebase Realtime Database 참조
-    private EditText nickname,email,password,checkPw,tel;
+    private EditText nickname, email, password, checkPw, tel;
     private Button registerButton;
 
     @Override

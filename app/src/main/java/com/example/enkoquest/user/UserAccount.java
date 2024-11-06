@@ -1,6 +1,6 @@
 package com.example.enkoquest.user;
 
-public class UserAccount{
+public class UserAccount {
     private String idToken; // Firebase UID
     private String nickname;
     private String email;   // 사용자 이메일
@@ -9,10 +9,11 @@ public class UserAccount{
     private String selfProduce;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
-    public UserAccount() {}
+    public UserAccount() {
+    }
 
     // 매개변수를 받는 생성자
-    public UserAccount(String idToken,String nickName, String email, String password,String tel,String selfProduce) {
+    public UserAccount(String idToken, String nickName, String email, String password, String tel, String selfProduce) {
         this.idToken = idToken;
         this.nickname = nickname;
         this.email = email;
@@ -34,7 +35,7 @@ public class UserAccount{
         return nickname;
     }
 
-    public void setNickname(String nickName){
+    public void setNickname(String nickName) {
         this.nickname = nickName;
     }
 
@@ -62,11 +63,11 @@ public class UserAccount{
         this.tel = tel;
     }
 
-    public String getSelfProduce(){
+    public String getSelfProduce() {
         return selfProduce;
     }
 
-    public void setSelfProduce(String selfProduce){
+    public void setSelfProduce(String selfProduce) {
         this.selfProduce = selfProduce;
     }
 }
