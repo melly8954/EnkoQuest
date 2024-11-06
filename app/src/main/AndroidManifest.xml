@@ -13,25 +13,28 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".user.FindIdActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity234234234"
             android:exported="false" />
         <activity
-            android:name=".ChallengeActivity"
+            android:name=".challenge.ChallengeActivity"
             android:exported="false" />
         <activity
             android:name=".MyPageActivity"
             android:exported="false" />
         <activity
-            android:name=".StoryActivity"
+            android:name=".story.StoryActivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".user.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".user.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".IndexActivity"
+            android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

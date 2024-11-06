@@ -1,30 +1,24 @@
-package com.example.enkoquest;
-
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+package com.example.enkoquest.user;
 
 public class UserAccount{
     private String idToken; // Firebase UID
-    private String userName;
+    private String nickname;
     private String email;   // 사용자 이메일
     private String password; // 사용자 비밀번호
     private String tel;
+    private String selfProduce;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
     public UserAccount() {}
 
     // 매개변수를 받는 생성자
-    public UserAccount(String idToken, String email, String password) {
+    public UserAccount(String idToken,String nickName, String email, String password,String tel,String selfProduce) {
         this.idToken = idToken;
-        this.userName = userName;
+        this.nickname = nickname;
         this.email = email;
         this.password = password;
         this.tel = tel;
+        this.selfProduce = selfProduce;
     }
 
     // Getter와 Setter
@@ -36,12 +30,12 @@ public class UserAccount{
         this.idToken = idToken;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setUserName(String userName){
-        this.userName = userName;
+    public void setNickname(String nickName){
+        this.nickname = nickName;
     }
 
     public String getEmail() {
@@ -66,5 +60,13 @@ public class UserAccount{
 
     public void setTel(String tel) {
         this.tel = tel;
+    }
+
+    public String getSelfProduce(){
+        return selfProduce;
+    }
+
+    public void setSelfProduce(String selfProduce){
+        this.selfProduce = selfProduce;
     }
 }

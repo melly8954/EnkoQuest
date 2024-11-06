@@ -20,6 +20,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.user.UserAccount;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -32,8 +35,9 @@ public class MyPageActivity extends AppCompatActivity implements View
 
         .OnClickListener {
 
-    Button btn01, btn02, btn03, btn04;
-    TextView text01, text02, text03, text04;
+    Button btn01, btn02, btn03, btn04, buttonSave;
+    TextView text01, text02, text03;
+    EditText selfProduce;
     ImageView imageView;
     private Uri selectedImageUri;
     private FirebaseAuth mAuth;
@@ -62,17 +66,19 @@ public class MyPageActivity extends AppCompatActivity implements View
         btn02 = findViewById(R.id.buttonMy);
         btn03 = findViewById(R.id.buttonNote);
         btn04 = findViewById(R.id.buttonComunitty);
+        buttonSave = findViewById(R.id.buttonSave);
         imageView = findViewById(R.id.imageViewProfilImg);
 
         text01 = findViewById(R.id.textId);
         text02 = findViewById(R.id.textNick);
         text03 = findViewById(R.id.textChal);
-        text04 = findViewById(R.id.textProduce);
+        selfProduce = findViewById(R.id.editTextSelfProduce);
 
         btn01.setOnClickListener(this);
         btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
         btn04.setOnClickListener(this);
+        buttonSave.setOnClickListener(this);
         imageView.setOnClickListener(view -> openImagePicker());
         setDefaultImage();
 
@@ -109,9 +115,9 @@ public class MyPageActivity extends AppCompatActivity implements View
                     UserAccount userAccount = snapshot.getValue(UserAccount.class);
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
-                        text02.setText("닉네임 : " + userAccount.getUserName());
+                        text02.setText("닉네임 : " +userAccount.getNickname());
                         text03.setText("챌린지 정보");
-                        text04.setText("한줄 소개");
+                        selfProduce.setText(userAccount.getSelfProduce());
                     } else {
                         Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();
                     }
@@ -132,6 +138,40 @@ public class MyPageActivity extends AppCompatActivity implements View
 
     @Override
     public void onClick(View view) {
+        if(view.getId() == R.id.buttonSave){
+            saveIntroduction();
+        }
 
+    }
+
+    private void saveIntroduction() {
+        // EditText에서 자기소개 텍스트 가져오기
+        String introduction = selfProduce.getText().toString().trim();
+
+        // 입력값 검증: 자기소개가 비어 있는 경우
+        if (introduction.isEmpty()) {
+            Toast.makeText(this, "자기 소개를 입력하세요.", Toast.LENGTH_SHORT).show();
+        } else {
+            // Firebase Authentication을 통해 현재 로그인한 사용자의 UID 가져오기
+            String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+            // Firebase Realtime Database의 사용자 계정 노드에 접근
+            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
+
+            // 자기소개 저장
+            databaseReference.child(userId).child("selfProduce").setValue(introduction)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                // 저장 성공 시 사용자에게 알림
+                                Toast.makeText(MyPageActivity.this, "자기소개가 저장되었습니다.", Toast.LENGTH_SHORT).show();
+                            } else {
+                                // 저장 실패 시 에러 메시지 출력
+                                Toast.makeText(MyPageActivity.this, "저장 실패: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
     }
 }

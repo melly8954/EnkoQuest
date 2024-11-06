@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInActivity">
+    tools:context=".user.SignInActivity">
 
     <EditText
         android:id="@+id/EmailAddress"
@@ -14,6 +14,7 @@
         android:layout_marginTop="220dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:hint="Email 입력"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +27,7 @@
         android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="textPassword"
-
+        android:hint="Password 입력"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,5 +62,15 @@
         app:layout_constraintBottom_toBottomOf="@+id/Password"
         app:layout_constraintEnd_toStartOf="@+id/Password"
         app:layout_constraintTop_toTopOf="@+id/Password" />
+
+    <Button
+        android:id="@+id/buttonMoveFindView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="아이디 찾기"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

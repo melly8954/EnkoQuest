@@ -22,21 +22,22 @@
         android:id="@+id/buttonChangePW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
         android:text="패스워드 변경하기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textProduce" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce" />
 
     <Button
         android:id="@+id/buttonMy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="내정보"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.253" />
 
     <Button
         android:id="@+id/buttonNote"
@@ -53,7 +54,7 @@
         android:id="@+id/imageViewProfilImg"
         android:layout_width="170dp"
         android:layout_height="75dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewMyPageIcon"
@@ -75,43 +76,54 @@
         android:layout_width="136dp"
         android:layout_height="22dp"
         android:layout_marginTop="30dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ID"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProfilImg"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewProfilImg"
         app:layout_constraintTop_toBottomOf="@+id/imageViewProfilImg" />
 
     <TextView
         android:id="@+id/textChal"
         android:layout_width="136dp"
         android:layout_height="20dp"
-        android:layout_marginTop="10dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Challenge Score"
+        app:layout_constraintEnd_toEndOf="@+id/textNick"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textNick"
         app:layout_constraintTop_toBottomOf="@+id/textNick" />
 
     <TextView
         android:id="@+id/textNick"
         android:layout_width="136dp"
         android:layout_height="20dp"
-        android:layout_marginTop="10dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Nickname"
+        app:layout_constraintEnd_toEndOf="@+id/textId"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textId"
         app:layout_constraintTop_toBottomOf="@+id/textId" />
 
-    <TextView
-        android:id="@+id/textProduce"
-        android:layout_width="192dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="10dp"
+    <EditText
+        android:id="@+id/editTextSelfProduce"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="자기 소개"
         android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textChal"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textChal"
         app:layout_constraintTop_toBottomOf="@+id/textChal" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="저장"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
