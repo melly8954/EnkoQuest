@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.enkoquest.user.SignInActivity;
 import com.example.enkoquest.user.SignUpActivity;
 
-public class IntroActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button registerButton;
     Button loginButton;
 
@@ -22,7 +22,7 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -39,11 +39,11 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.signUpButton){
-            Intent intent = new Intent(IntroActivity.this, SignUpActivity.class);
+            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
             startActivity(intent);
         }
         else if(view.getId() == R.id.signInButton){
-            Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
+            Intent intent = new Intent(MainActivity.this, SignInActivity.class);
             startActivity(intent);
         }
 

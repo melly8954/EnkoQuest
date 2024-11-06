@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.enkoquest.challenge.ChallengeActivity;
 import com.example.enkoquest.story.StoryActivity;
 
-public class MainPageActivity extends AppCompatActivity implements View.OnClickListener {
+public class LobbyActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn01, btn02, btn03;
 
@@ -22,7 +22,7 @@ public class MainPageActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main_page);
+        setContentView(R.layout.activity_lobby);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -41,15 +41,15 @@ public class MainPageActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.buttonMyPage) {
-            Intent intent = new Intent(MainPageActivity.this, MyPageActivity.class);
+            Intent intent = new Intent(LobbyActivity.this, MyPageActivity.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.buttonChallengeMode) {
-            Intent intent = new Intent(MainPageActivity.this, ChallengeActivity.class);
+            Intent intent = new Intent(LobbyActivity.this, ChallengeActivity.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.buttonStoryMode) {
-            Intent intent = new Intent(MainPageActivity.this, StoryActivity.class);
+            Intent intent = new Intent(LobbyActivity.this, StoryActivity.class);
             startActivity(intent);
         }
     }

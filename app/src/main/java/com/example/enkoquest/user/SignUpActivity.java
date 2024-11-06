@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.IntroActivity;
+import com.example.enkoquest.MainActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -24,7 +24,7 @@ import com.google.firebase.database.annotations.Nullable;
 public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private DatabaseReference databaseReference; // Firebase Realtime Database 참조
-    private EditText nickname,email,password,checkPw,tel;
+    private EditText nickname, email, password, checkPw, tel;
     private Button registerButton;
 
     @Override
@@ -94,7 +94,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(this, IntroActivity.class); // 메인 액티비티로 이동
+        Intent intent = new Intent(this, MainActivity.class); // 메인 액티비티로 이동
         startActivity(intent);
         finish(); // 현재 액티비티 종료
     }

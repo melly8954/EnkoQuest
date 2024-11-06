@@ -13,7 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.MainPageActivity;
+import com.example.enkoquest.LobbyActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -54,13 +54,13 @@ public class SignInActivity extends AppCompatActivity implements View
         String strEmail = email.getText().toString();
         String strPassword = password.getText().toString();
 
-        try{
+        try {
             auth.signInWithEmailAndPassword(strEmail, strPassword)
                     .addOnCompleteListener(this, task -> {
                         if (task.isSuccessful()) {
                             // 로그인 성공 시
                             Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show(); // 로그인 성공 메시지
-                            Intent intent = new Intent(this, MainPageActivity.class); // 메인 페이지 액티비티로 이동
+                            Intent intent = new Intent(this, LobbyActivity.class); // 메인 페이지 액티비티로 이동
                             startActivity(intent);
                             finish();
                         } else {
@@ -68,15 +68,15 @@ public class SignInActivity extends AppCompatActivity implements View
                             Toast.makeText(this, "로그인 실패: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.buttonMoveFindView){
-            Intent intent = new Intent(this,FindIdActivity.class);
+        if (view.getId() == R.id.buttonMoveFindView) {
+            Intent intent = new Intent(this, FindIdActivity.class);
             startActivity(intent);
         }
     }

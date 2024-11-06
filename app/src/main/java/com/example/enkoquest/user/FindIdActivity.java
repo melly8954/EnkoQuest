@@ -25,10 +25,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class FindIdActivity extends AppCompatActivity implements View.OnClickListener{
+public class FindIdActivity extends AppCompatActivity implements View.OnClickListener {
     TextView idView;
-    EditText findNickname,findTel;
-    Button buttonFindId,moveLogin;
+    EditText findNickname, findTel;
+    Button buttonFindId, moveLogin;
 
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
@@ -58,14 +58,14 @@ public class FindIdActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.buttonMoveLogin){
-            Intent intent = new Intent(this,SignInActivity.class);
+        if (view.getId() == R.id.buttonMoveLogin) {
+            Intent intent = new Intent(this, SignInActivity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    private void findId(){
+    private void findId() {
         String nickname = findNickname.getText().toString();
         String tel = findTel.getText().toString();
         if (nickname.isEmpty() && tel.isEmpty()) {

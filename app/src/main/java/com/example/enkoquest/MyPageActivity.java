@@ -118,7 +118,7 @@ public class MyPageActivity extends AppCompatActivity implements View
                     UserAccount userAccount = snapshot.getValue(UserAccount.class);
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
-                        text02.setText("닉네임 : " +userAccount.getNickname());
+                        text02.setText("닉네임 : " + userAccount.getNickname());
                         text03.setText("챌린지 정보");
                         selfProduce.setText(userAccount.getSelfProduce());
                     } else {
@@ -141,7 +141,7 @@ public class MyPageActivity extends AppCompatActivity implements View
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.buttonSave){
+        if (view.getId() == R.id.buttonSave) {
             saveIntroduction();
         }
 
