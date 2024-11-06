@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <Button
-        android:id="@+id/buttonChangePW"
+        android:id="@+id/buttonMoveChangePW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="패스워드 변경하기"

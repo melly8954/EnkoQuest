@@ -20,6 +20,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.user.ChangePwActivity;
 import com.example.enkoquest.user.UserAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -35,7 +36,7 @@ public class MyPageActivity extends AppCompatActivity implements View
 
         .OnClickListener {
 
-    Button btn01, btn02, btn03, btn04, buttonSave;
+    Button buttonMoveChangePW, btn02, btn03, btn04, buttonSave;
     TextView text01, text02, text03;
     EditText selfProduce;
     ImageView imageView;
@@ -62,7 +63,7 @@ public class MyPageActivity extends AppCompatActivity implements View
             return insets;
         });
 
-        btn01 = findViewById(R.id.buttonChangePW);
+        buttonMoveChangePW = findViewById(R.id.buttonMoveChangePW);
         btn02 = findViewById(R.id.buttonMy);
         btn03 = findViewById(R.id.buttonNote);
         btn04 = findViewById(R.id.buttonComunitty);
@@ -74,7 +75,7 @@ public class MyPageActivity extends AppCompatActivity implements View
         text03 = findViewById(R.id.textChal);
         selfProduce = findViewById(R.id.editTextSelfProduce);
 
-        btn01.setOnClickListener(this);
+        buttonMoveChangePW.setOnClickListener(this);
         btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
         btn04.setOnClickListener(this);
@@ -142,6 +143,11 @@ public class MyPageActivity extends AppCompatActivity implements View
             saveIntroduction();
         }
 
+        if (view.getId() == R.id.buttonMoveChangePW) {
+            Intent intent = new Intent(this, ChangePwActivity.class);
+            startActivity(intent);
+
+        }
     }
 
     private void saveIntroduction() {
