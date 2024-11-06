@@ -70,8 +70,11 @@ public class MyPageActivity extends AppCompatActivity implements View
         imageView = findViewById(R.id.imageViewProfilImg);
 
         text01 = findViewById(R.id.textId);
+        text01.setEnabled(false);
         text02 = findViewById(R.id.textNick);
+        text02.setEnabled(false);
         text03 = findViewById(R.id.textChal);
+        text03.setEnabled(false);
         selfProduce = findViewById(R.id.editTextSelfProduce);
 
         btn01.setOnClickListener(this);
