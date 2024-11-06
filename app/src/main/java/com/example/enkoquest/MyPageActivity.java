@@ -1,5 +1,7 @@
 package com.example.enkoquest;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -31,8 +35,17 @@ public class MyPageActivity extends AppCompatActivity implements View
     Button btn01, btn02, btn03, btn04;
     TextView text01, text02, text03, text04;
     ImageView imageView;
+    private Uri selectedImageUri;
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
+
+    private final ActivityResultLauncher<Intent> imagePickerLauncher =
+            registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+                if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                    selectedImageUri = result.getData().getData();
+                    imageView.setImageURI(selectedImageUri); // 선택한 이미지 표시
+                }
+            });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +62,7 @@ public class MyPageActivity extends AppCompatActivity implements View
         btn02 = findViewById(R.id.buttonMy);
         btn03 = findViewById(R.id.buttonNote);
         btn04 = findViewById(R.id.buttonComunitty);
+        imageView = findViewById(R.id.imageViewProfilImg);
 
         text01 = findViewById(R.id.textId);
         text02 = findViewById(R.id.textNick);
@@ -59,6 +73,8 @@ public class MyPageActivity extends AppCompatActivity implements View
         btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
         btn04.setOnClickListener(this);
+        imageView.setOnClickListener(view -> openImagePicker());
+        setDefaultImage();
 
         mAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
@@ -70,6 +86,19 @@ public class MyPageActivity extends AppCompatActivity implements View
         } else {
             Toast.makeText(this, "로그인 필요", Toast.LENGTH_SHORT).show();
         }
+
+    }
+
+    private void openImagePicker() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.setType("image/*");
+        imagePickerLauncher.launch(intent);
+    }
+
+    private void setDefaultImage() {
+        if (selectedImageUri == null) {
+            imageView.setImageResource(R.drawable.image1);
+        }
     }
 
     private void loadUserData(String userId) {
@@ -80,13 +109,13 @@ public class MyPageActivity extends AppCompatActivity implements View
                     UserAccount userAccount = snapshot.getValue(UserAccount.class);
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
-                        text02.setText("닉네임 : " +userAccount.getUserName());
+                        text02.setText("닉네임 : " + userAccount.getUserName());
                         text03.setText("챌린지 정보");
                         text04.setText("한줄 소개");
                     } else {
                         Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();
                     }
-                }else{
+                } else {
 
                     Toast.makeText(MyPageActivity.this, "데이터를 찾을 수 없습니다.", Toast.LENGTH_SHORT).show();
                 }
