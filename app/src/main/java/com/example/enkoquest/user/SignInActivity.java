@@ -25,7 +25,7 @@ public class SignInActivity extends AppCompatActivity implements View
 
     private FirebaseAuth auth;
     private EditText email, password;
-    private Button loginButton, buttonMoveFindView;
+    private Button loginButton, buttonMoveFindView, buttonMoveResetPw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +44,11 @@ public class SignInActivity extends AppCompatActivity implements View
         password = findViewById(R.id.Password);
         loginButton = findViewById(R.id.buttonLogin);
         buttonMoveFindView = findViewById(R.id.buttonMoveFindView);
+        buttonMoveResetPw = findViewById(R.id.buttonMoveResetPw);
 
         loginButton.setOnClickListener(view -> loginUser());
         buttonMoveFindView.setOnClickListener(this);
+        buttonMoveResetPw.setOnClickListener(this);
     }
 
     private void loginUser() { // XML에서 ID를 가져온다
@@ -77,6 +79,10 @@ public class SignInActivity extends AppCompatActivity implements View
     public void onClick(View view) {
         if (view.getId() == R.id.buttonMoveFindView) {
             Intent intent = new Intent(this, FindIdActivity.class);
+            startActivity(intent);
+        }
+        if (view.getId() == R.id.buttonMoveResetPw) {
+            Intent intent = new Intent(this, ResetPwActivity.class);
             startActivity(intent);
         }
     }
