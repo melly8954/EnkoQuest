@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,6 +26,7 @@ public class ResetPwActivity extends AppCompatActivity implements View.OnClickLi
 
     EditText editTextEmail;
     Button buttonResetPw;
+    ImageButton imageButtonBack;
     FirebaseAuth mAuth;
     DatabaseReference databaseReference;
     String strEmail;
@@ -41,8 +43,10 @@ public class ResetPwActivity extends AppCompatActivity implements View.OnClickLi
 
         editTextEmail = findViewById(R.id.editTextEmail);
         buttonResetPw = findViewById(R.id.buttonResetPw);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         buttonResetPw.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -54,7 +58,11 @@ public class ResetPwActivity extends AppCompatActivity implements View.OnClickLi
         strEmail = editTextEmail.getText().toString().trim();
         if (!TextUtils.isEmpty(strEmail)) {
             ResetPassword();
-        } else {
+        }else if(imageButtonBack.getId() == view.getId()){
+            Intent intent = new Intent(this, SignInActivity.class);
+            finish();
+            startActivity(intent);
+        }else {
             editTextEmail.setError("Email field can't be empty");
         }
     }

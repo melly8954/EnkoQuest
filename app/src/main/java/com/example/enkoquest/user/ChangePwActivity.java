@@ -1,10 +1,12 @@
 package com.example.enkoquest.user;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.MyPageActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,6 +25,7 @@ public class ChangePwActivity extends AppCompatActivity implements View.OnClickL
     private EditText editTextNewPw, editTextCheckNewPw;
     private Button buttonChangePw;
     private FirebaseAuth mAuth;
+    private ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +45,22 @@ public class ChangePwActivity extends AppCompatActivity implements View.OnClickL
         editTextNewPw = findViewById(R.id.editTextNewPw);
         editTextCheckNewPw = findViewById(R.id.editTextCheckNewPw);
         buttonChangePw = findViewById(R.id.buttonChangePw);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         // 버튼 클릭 리스너 설정
         buttonChangePw.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.buttonChangePw) {
             changePassword();
+        }
+        if (view.getId() == R.id.imageButtonBack) {
+            Intent intent = new Intent(this, MyPageActivity.class);
+            finish();
+            startActivity(intent);
         }
     }
     private void changePassword() {
