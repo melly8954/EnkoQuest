@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             buttonMoveLogin.setOnClickListener(v -> {
                 mAuth.signOut();  // 로그아웃 처리
                 user = null;  // user 상태 업데이트
+                Toast.makeText(MainActivity.this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show();  // 로그아웃 메시지
                 updateLoginButton();  // 버튼 상태를 '로그인'으로 변경
             });
         } else {
