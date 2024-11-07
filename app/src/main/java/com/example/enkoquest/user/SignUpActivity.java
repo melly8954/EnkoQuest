@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.IndexActivity;
+import com.example.enkoquest.LoginIndexActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -24,8 +25,9 @@ import com.google.firebase.database.annotations.Nullable;
 public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private DatabaseReference databaseReference; // Firebase Realtime Database 참조
-    private EditText username,email,password,checkPw,tel;
+    private EditText nickname, email, password, checkPw, tel;
     private Button registerButton;
+    ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,24 +43,26 @@ public class SignUpActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance(); // Firebase 인스턴스 초기화
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
-        username = findViewById(R.id.editTextUsername);
+        nickname = findViewById(R.id.editTextUsername);
         email = findViewById(R.id.editTextEmail);
         password = findViewById(R.id.editTextPassword);
         checkPw = findViewById(R.id.editTextCheckPw);
         tel = findViewById(R.id.editTextPhone);
         registerButton = findViewById(R.id.buttonRegister);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         registerButton.setOnClickListener(view -> registerUser());
+        imageButtonBack.setOnClickListener(view -> navigateToMainActivity());
     }
 
     private void registerUser() {
-        String strUsername = username.getText().toString();
+        String strNickname = nickname.getText().toString();
         String strEmail = email.getText().toString();
         String strPassword = password.getText().toString();
         String strCheckPw = checkPw.getText().toString();
         String strTel = tel.getText().toString();
 
-        if (strUsername.isEmpty() || strEmail.isEmpty() || strPassword.isEmpty() || strCheckPw.isEmpty() || strTel.isEmpty()) {
+        if (strNickname.isEmpty() || strEmail.isEmpty() || strPassword.isEmpty() || strCheckPw.isEmpty() || strTel.isEmpty()) {
             Toast.makeText(SignUpActivity.this, "모든 필드를 입력하세요.", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -76,9 +80,8 @@ public class SignUpActivity extends AppCompatActivity {
                         FirebaseUser firebaseUser = auth.getCurrentUser();
                         UserAccount account = new UserAccount();
                         account.setIdToken(firebaseUser.getUid());
-                        account.setUserName(strUsername);
+                        account.setNickname(strNickname);
                         account.setEmail(firebaseUser.getEmail());
-                        account.setPassword(strPassword);
                         account.setTel(strTel);
 
                         databaseReference.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
@@ -94,7 +97,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(this, IndexActivity.class); // 메인 액티비티로 이동
+        Intent intent = new Intent(this, LoginIndexActivity.class); // 메인 액티비티로 이동
         startActivity(intent);
         finish(); // 현재 액티비티 종료
     }
