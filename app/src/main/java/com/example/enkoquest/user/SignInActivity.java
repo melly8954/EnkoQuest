@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.LoginIndexActivity;
 import com.example.enkoquest.MainActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +28,7 @@ public class SignInActivity extends AppCompatActivity implements View
     private FirebaseAuth auth;
     private EditText email, password;
     private Button loginButton, buttonMoveFindView, buttonMoveResetPw;
+    private ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +48,12 @@ public class SignInActivity extends AppCompatActivity implements View
         loginButton = findViewById(R.id.buttonLogin);
         buttonMoveFindView = findViewById(R.id.buttonMoveFindView);
         buttonMoveResetPw = findViewById(R.id.buttonMoveResetPw);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         loginButton.setOnClickListener(view -> loginUser());
         buttonMoveFindView.setOnClickListener(this);
         buttonMoveResetPw.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(this);
     }
 
     private void loginUser() { // XML에서 ID를 가져온다
@@ -85,5 +90,10 @@ public class SignInActivity extends AppCompatActivity implements View
             Intent intent = new Intent(this, ResetPwActivity.class);
             startActivity(intent);
         }
+        if (view.getId() == R.id.imageButtonBack) {
+            Intent intent = new Intent(this, LoginIndexActivity.class);
+            startActivity(intent);
+        }
+
     }
 }

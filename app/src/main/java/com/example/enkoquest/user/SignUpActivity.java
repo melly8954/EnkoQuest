@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -26,6 +27,7 @@ public class SignUpActivity extends AppCompatActivity {
     private DatabaseReference databaseReference; // Firebase Realtime Database 참조
     private EditText nickname, email, password, checkPw, tel;
     private Button registerButton;
+    ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,8 +49,10 @@ public class SignUpActivity extends AppCompatActivity {
         checkPw = findViewById(R.id.editTextCheckPw);
         tel = findViewById(R.id.editTextPhone);
         registerButton = findViewById(R.id.buttonRegister);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         registerButton.setOnClickListener(view -> registerUser());
+        imageButtonBack.setOnClickListener(view -> navigateToMainActivity());
     }
 
     private void registerUser() {

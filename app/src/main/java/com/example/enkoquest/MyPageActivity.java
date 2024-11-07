@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ public class MyPageActivity extends AppCompatActivity implements View
         .OnClickListener {
 
     Button buttonMoveChangePW, btn02, btn03, btn04, buttonSave;
+    ImageButton imageButtonBack;
     TextView text01, text02, text03;
     EditText selfProduce;
     ImageView imageView;
@@ -69,6 +71,7 @@ public class MyPageActivity extends AppCompatActivity implements View
         btn04 = findViewById(R.id.buttonComunitty);
         buttonSave = findViewById(R.id.buttonSave);
         imageView = findViewById(R.id.imageViewProfilImg);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         text01 = findViewById(R.id.textId);
         text02 = findViewById(R.id.textNick);
@@ -80,6 +83,8 @@ public class MyPageActivity extends AppCompatActivity implements View
         btn03.setOnClickListener(this);
         btn04.setOnClickListener(this);
         buttonSave.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(this);
+
         imageView.setOnClickListener(view -> openImagePicker());
         setDefaultImage();
 
@@ -146,7 +151,11 @@ public class MyPageActivity extends AppCompatActivity implements View
         if (view.getId() == R.id.buttonMoveChangePW) {
             Intent intent = new Intent(this, ChangePwActivity.class);
             startActivity(intent);
-
+        }
+        if (view.getId() == R.id.imageButtonBack) {
+            Intent intent = new Intent(this, MainActivity.class);
+            finish();
+            startActivity(intent);
         }
     }
 

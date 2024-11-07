@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import com.example.enkoquest.user.SignUpActivity;
 public class LoginIndexActivity extends AppCompatActivity implements View.OnClickListener{
     Button registerButton;
     Button loginButton;
+    ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +33,11 @@ public class LoginIndexActivity extends AppCompatActivity implements View.OnClic
 
         registerButton = findViewById(R.id.signUpButton);
         loginButton = findViewById(R.id.signInButton);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         registerButton.setOnClickListener(this);
         loginButton.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +50,11 @@ public class LoginIndexActivity extends AppCompatActivity implements View.OnClic
             Intent intent = new Intent(LoginIndexActivity.this, SignInActivity.class);
             startActivity(intent);
         }
+        else if(view.getId() == R.id.imageButtonBack){
+            Intent intent = new Intent(LoginIndexActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
+
 
 
     }
