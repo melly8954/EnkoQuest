@@ -33,8 +33,8 @@ public class StoryActivitySelect extends AppCompatActivity implements View
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btn1 = findViewById(R.id.buttonChalKor);
-        btn2 = findViewById(R.id.buttonChalEng);
+        btn1 = findViewById(R.id.buttonStoryKor);
+        btn2 = findViewById(R.id.buttonStoryEng);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         btn1.setOnClickListener(this);
@@ -44,11 +44,11 @@ public class StoryActivitySelect extends AppCompatActivity implements View
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.buttonChalKor) {
+        if (view.getId() == R.id.buttonStoryKor) {
             Intent intent = new Intent(this, StoryActivityKor.class);
             startActivity(intent);
         }
-        if (view.getId() == R.id.buttonChalEng) {
+        if (view.getId() == R.id.buttonStoryEng) {
             Intent intent = new Intent(this, StoryActivityEng.class);
             startActivity(intent);
         }
