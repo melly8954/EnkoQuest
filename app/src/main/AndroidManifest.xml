@@ -44,7 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginIndexActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
