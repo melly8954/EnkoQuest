@@ -8,37 +8,56 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="EnkoQuest"
-        android:textFontWeight="700"
-        android:textSize="60sp"
+        android:id="@+id/text_title"
+        android:layout_width="248dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:text="엔코퀘스트 아이콘"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/signUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="회원가입"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:id="@+id/buttonMyPage"
+        android:layout_width="233dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="100dp"
+        android:text="마이페이지"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
     <Button
-        android:id="@+id/signInButton"
+        android:id="@+id/buttonStoryMode"
+        android:layout_width="233dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="100dp"
+        android:text="스토리모드"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMyPage" />
+
+    <Button
+        android:id="@+id/buttonChallengeMode"
+        android:layout_width="233dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="100dp"
+        android:text="챌린지모드"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStoryMode" />
+
+    <Button
+        android:id="@+id/buttonMoveLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="로그인"
-        app:layout_constraintEnd_toEndOf="@+id/signUpButton"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="@+id/signUpButton"
-        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".user.ChangePwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ResetPwActivity"
+            android:exported="false" />
+        <activity
             android:name=".user.FindIdActivity"
             android:exported="false" />
         <activity
@@ -31,17 +37,17 @@
             android:name=".user.SignUpActivity"
             android:exported="false" />
         <activity
+            android:name=".LoginIndexActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LobbyActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

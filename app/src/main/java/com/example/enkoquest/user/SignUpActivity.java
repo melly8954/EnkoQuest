@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.MainActivity;
+import com.example.enkoquest.LoginIndexActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -26,6 +27,7 @@ public class SignUpActivity extends AppCompatActivity {
     private DatabaseReference databaseReference; // Firebase Realtime Database 참조
     private EditText nickname, email, password, checkPw, tel;
     private Button registerButton;
+    ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,8 +49,10 @@ public class SignUpActivity extends AppCompatActivity {
         checkPw = findViewById(R.id.editTextCheckPw);
         tel = findViewById(R.id.editTextPhone);
         registerButton = findViewById(R.id.buttonRegister);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         registerButton.setOnClickListener(view -> registerUser());
+        imageButtonBack.setOnClickListener(view -> navigateToMainActivity());
     }
 
     private void registerUser() {
@@ -78,7 +82,6 @@ public class SignUpActivity extends AppCompatActivity {
                         account.setIdToken(firebaseUser.getUid());
                         account.setNickname(strNickname);
                         account.setEmail(firebaseUser.getEmail());
-                        account.setPassword(strPassword);
                         account.setTel(strTel);
 
                         databaseReference.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
@@ -94,7 +97,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class); // 메인 액티비티로 이동
+        Intent intent = new Intent(this, LoginIndexActivity.class); // 메인 액티비티로 이동
         startActivity(intent);
         finish(); // 현재 액티비티 종료
     }

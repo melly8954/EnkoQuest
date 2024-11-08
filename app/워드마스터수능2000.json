@@ -1,0 +1,10204 @@
+{
+"word_2000":[
+    {
+        "번호": 1,
+        "단어": "provide",
+        "의미": "[동] 제공하다, 공급하다, 준비하다",
+        "예제": "The school will provide all necessary materials for the class."
+      },
+      {
+        "번호": 2,
+        "단어": "develop",
+        "의미": "[동] 개발하다, 발달하다, 발전시키다",
+        "예제": "She plans to develop a new app that helps people manage their time."
+      },
+      {
+        "번호": 3,
+        "단어": "service",
+        "의미": "[명] 서비스, 근무, 봉사, 공공 업무",
+        "예제": "Customer service is available 24/7 for any assistance you need."
+      },
+      {
+        "번호": 4,
+        "단어": "inform",
+        "의미": "[동] 알리다, 통지하다",
+        "예제": "Please inform the manager of any changes to the schedule."
+      },
+      {
+        "번호": 5,
+        "단어": "relationship",
+        "의미": "[명] 관계",
+        "예제": "A strong relationship is built on trust and respect."
+      },
+ {
+  "번호": 6,
+  "단어": "improve",
+  "의미": "[동] 향상시키다, 나아지다, 향상하다",
+  "예제": "The new strategy helped the company improve its overall performance."
+ },
+ {
+  "번호": 7,
+  "단어": "individual",
+  "의미": "[형] 개인의, 개인적인[명] 개인",
+  "예제": "Each individual in the team has unique responsibilities."
+ },
+ {
+  "번호": 8,
+  "단어": "require",
+  "의미": "[동] 요구하다, 필요로 하다",
+  "예제": "The project requires a significant amount of time and effort."
+ },
+ {
+  "번호": 9,
+  "단어": "advise",
+  "의미": "[동] 충고하다, 조언하다",
+  "예제": "The doctor advised me to take some rest after the treatment."
+ },
+ {
+  "번호": 10,
+  "단어": "social",
+  "의미": "[형] 사회의, 사교적인",
+  "예제": "Social media has a huge impact on the way we communicate."
+ },
+ {
+  "번호": 11,
+  "단어": "amount",
+  "의미": "[명] 총액, 총계, 양[동] 총계가 ~이 되다",
+  "예제": "The total amount of money spent on the trip was higher than expected."
+ },
+ {
+  "번호": 12,
+  "단어": "behave",
+  "의미": "[동] 행동하다",
+  "예제": "Children are taught how to behave politely in public."
+ },
+ {
+  "번호": 13,
+  "단어": "employ",
+  "의미": "[동] 고용하다, 쓰다",
+  "예제": "The company employs over 500 people in its main office."
+ },
+ {
+  "번호": 14,
+  "단어": "attitude",
+  "의미": "[명] 태도, 입장",
+  "예제": "His attitude towards work has always been positive."
+ },
+ {
+  "번호": 15,
+  "단어": "research",
+  "의미": "[명] 연구하다, 조사하다[명] 연구, 조사",
+  "예제": "The scientist conducted extensive research on climate change."
+ },
+ {
+  "번호": 16,
+  "단어": "audience",
+  "의미": "[명] 청중, 관객",
+  "예제": "The audience applauded after the performance."
+ },
+ {
+  "번호": 17,
+  "단어": "volunteer",
+  "의미": "[명] 지원자, 자원봉사, 자원봉사자[동] 지원하다, 자원봉사하다",
+  "예제": "She volunteered to bring snacks for the movie night."
+ },
+ {
+  "번호": 18,
+  "단어": "influence",
+  "의미": "[명] 영향, 영향을 미치는 것[사람][동] 영향을 미치다",
+  "예제": "Her speech had a strong influence on the young crowd."
+ },
+ {
+  "번호": 19,
+  "단어": "terrible",
+  "의미": "[형] 끔직한, 형편없는, 무서운",
+  "예제": "The weather was terrible, so we decided to stay indoors."
+ },
+ {
+  "번호": 20,
+  "단어": "opportunity",
+  "의미": "[명] 기회",
+  "예제": "This is a great opportunity to learn new skills."
+ },
+ {
+  "번호": 21,
+  "단어": "ability",
+  "의미": "[명] 능력, 재능",
+  "예제": "She has the ability to solve complex problems quickly."
+ },
+ {
+  "번호": 22,
+  "단어": "expense",
+  "의미": "[명] 비용, 지출",
+  "예제": "The expense of living in the city is increasing every year."
+ },
+ {
+  "번호": 23,
+  "단어": "local",
+  "의미": "[형] 지역의, 장소의, 지방의",
+  "예제": "We decided to try a local restaurant for dinner tonight."
+ },
+ {
+  "번호": 24,
+  "단어": "involve",
+  "의미": "[동] 관련시키다, 포함하다, 관련되다",
+  "예제": "The project involves multiple departments working together."
+ },
+ {
+  "번호": 25,
+  "단어": "stress",
+  "의미": "[명] 스트레스, 긴장, 강조[동] 강조하다, 압력을 주다",
+  "예제": "She listens to music to relieve stress after a long day."
+ },
+ {
+  "번호": 26,
+  "단어": "therefore",
+  "의미": "[부] 그러므로, 그 결과",
+  "예제": "He was late, therefore he missed the meeting."
+ },
+ {
+  "번호": 27,
+  "단어": "positive",
+  "의미": "[형] 긍정적인, 낙관적인, 확신하는",
+  "예제": "He has a positive outlook on life despite the challenges."
+ },
+ {
+  "번호": 28,
+  "단어": "average",
+  "의미": "[형] 평균의, 보통의[명] 평균, 보통 수준[동] 평균 ~이다",
+  "예제": "The average score of the class was higher than expected."
+ },
+ {
+  "번호": 29,
+  "단어": "ride",
+  "의미": "[동] 타다[명] 타기, 태우기, 타고가기",
+  "예제": "We decided to take a ride along the coast."
+ },
+ {
+  "번호": 30,
+  "단어": "encourage",
+  "의미": "[동] 격려하다, 권장하다, 부추기다, 촉구하다",
+  "예제": "Her friends encouraged her to apply for the job she wanted."
+ },
+ {
+  "번호": 31,
+  "단어": "determine",
+  "의미": "[동] 결정하다, 결심하다",
+  "예제": "It's hard to determine the exact cause of the problem."
+ },
+ {
+  "번호": 32,
+  "단어": "international",
+  "의미": "[형] 국제의, 국제적인",
+  "예제": "She is attending an international conference next month."
+ },
+ {
+  "번호": 33,
+  "단어": "consume",
+  "의미": "[동] 소비하다, 먹다[마시다]",
+  "예제": "They consume a large amount of energy each day."
+ },
+ {
+  "번호": 34,
+  "단어": "impress",
+  "의미": "[동] 감동시키다, 깊은 인상을 주다",
+  "예제": "Her performance at the meeting really impressed her boss."
+ },
+ {
+  "번호": 35,
+  "단어": "object",
+  "의미": "[명] 물건, 물체, 목표[동] 반대하다",
+  "예제": "The artist sculpted a beautiful object from marble."
+ },
+ {
+  "번호": 36,
+  "단어": "available",
+  "의미": "[형] 이용할 수 있는, 쓸모있는, 시간이 있는",
+  "예제": "This book is available at most bookstores."
+ },
+ {
+  "번호": 37,
+  "단어": "contain",
+  "의미": "[동] 들어있다, 포함하다, 함유하다, 억제하다",
+  "예제": "This bottle contains two liters of water."
+ },
+ {
+  "번호": 38,
+  "단어": "recognize",
+  "의미": "[동] 인지하다 , 인정하다, 알아보다",
+  "예제": "I didn't recognize him after so many years."
+ },
+ {
+  "번호": 39,
+  "단어": "material",
+  "의미": "[명] 재료, 소재, 물질[형] 물질의",
+  "예제": "The material used in this dress is very high quality."
+ },
+ {
+  "번호": 40,
+  "단어": "comfort",
+  "의미": "[명] 편안, 평안함, 위안, 위로[동] 편안하게 하다, 위로하다",
+  "예제": "He brought her favorite snacks to comfort her after a tough day."
+ },
+ {
+  "번호": 41,
+  "단어": "emotion",
+  "의미": "[명] 감정",
+  "예제": "She couldn't hide her emotion during the speech."
+ },
+ {
+  "번호": 42,
+  "단어": "amaze",
+  "의미": "[동] 놀라게 하다",
+  "예제": "The fireworks display was amazing!"
+ },
+ {
+  "번호": 43,
+  "단어": "reduce",
+  "의미": "[동] 줄이다, 낮추다",
+  "예제": "We need to reduce our plastic waste to protect the environment."
+ },
+ {
+  "번호": 44,
+  "단어": "discover",
+  "의미": "[동] 발견하다, 알아내다",
+  "예제": "While hiking, they discovered a beautiful hidden waterfall."
+ },
+ {
+  "번호": 45,
+  "단어": "decide",
+  "의미": "[동] 결정하다, 결심하다",
+  "예제": "She decided to study abroad next year."
+ },
+ {
+  "번호": 46,
+  "단어": "benefit",
+  "의미": "[명] 이익, 혜택[동] 도움이 되다",
+  "예제": "Regular exercise has many benefits for your health."
+ },
+ {
+  "번호": 47,
+  "단어": "affect",
+  "의미": "[동] 영향을 미치다",
+  "예제": "The weather can affect your mood."
+ },
+ {
+  "번호": 48,
+  "단어": "level",
+  "의미": "[명] 수준, 정도, 수평[형] 수평의",
+  "예제": "The water level in the river is rising due to the rain."
+ },
+ {
+  "번호": 49,
+  "단어": "chemistry",
+  "의미": "[명] 화학",
+  "예제": "She loves studying chemistry in school."
+ },
+ {
+  "번호": 50,
+  "단어": "immediate",
+  "의미": "[형] 즉각적인, 시급한, 직접적인",
+  "예제": "She felt an immediate sense of relief after hearing the good news."
+ },
+ {
+  "번호": 51,
+  "단어": "thus",
+  "의미": "[부] 그러므로, 따라서",
+  "예제": "The situation is complicated, thus requiring more time."
+ },
+ {
+  "번호": 52,
+  "단어": "proper",
+  "의미": "[형] 적절한, 알맞은",
+  "예제": "Please make sure to wear proper clothing for the hike."
+ },
+ {
+  "번호": 53,
+  "단어": "performance",
+  "의미": "[명] 공연, 성과",
+  "예제": "Her performance in the play was outstanding."
+ },
+ {
+  "번호": 54,
+  "단어": "essence",
+  "의미": "[명] 본질, 정수",
+  "예제": "The essence of the problem lies in the lack of communication."
+ },
+ {
+  "번호": 55,
+  "단어": "economic",
+  "의미": "[형] 경제의, 경제학의",
+  "예제": "The country is facing serious economic challenges."
+ },
+ {
+  "번호": 56,
+  "단어": "cell",
+  "의미": "[명] 세포",
+  "예제": "The human body consists of billions of cells."
+ },
+ {
+  "번호": 57,
+  "단어": "focus",
+  "의미": "[동] 집중하다[명] 초점",
+  "예제": "She needs to focus on her studies to pass the exam."
+ },
+ {
+  "번호": 58,
+  "단어": "issue",
+  "의미": "[명] 논란거리, 쟁점, 문제",
+  "예제": "We need to address the issue before it gets worse."
+ },
+ {
+  "번호": 59,
+  "단어": "participate",
+  "의미": "[동] 참여하다, 참가하다(in)",
+  "예제": "He likes to participate in outdoor activities."
+ },
+ {
+  "번호": 60,
+  "단어": "demand",
+  "의미": "[명] 요구, 수요[동] 요구하다",
+  "예제": "The demand for electric cars is increasing rapidly."
+ },
+ {
+  "번호": 61,
+  "단어": "occur",
+  "의미": "[동] 발생하다, 일어나다, (생각이) 떠오르다",
+  "예제": "The event will occur next Saturday."
+ },
+ {
+  "번호": 62,
+  "단어": "complex",
+  "의미": "[형] 복잡한[명] 복잡체, 복합 건물",
+  "예제": "This is a complex issue that requires careful consideration."
+ },
+ {
+  "번호": 63,
+  "단어": "define",
+  "의미": "[동] 정의하다, 한계 짓다, 한정하다, 규정하다",
+  "예제": "Can you define what success means to you?"
+ },
+ {
+  "번호": 64,
+  "단어": "proud",
+  "의미": "[형] 자랑스러워하는",
+  "예제": "He was proud of his team's achievements."
+ },
+ {
+  "번호": 65,
+  "단어": "aware",
+  "의미": "[형] 인지하는, 인식하고 있는, 알고 있는",
+  "예제": "She was fully aware of the risks involved."
+ },
+ {
+  "번호": 66,
+  "단어": "contact",
+  "의미": "[동] 연락하다[명] 접촉, 연락",
+  "예제": "You can contact me via email if you have any questions."
+ },
+ {
+  "번호": 67,
+  "단어": "profession",
+  "의미": "[명] 직업, 직종, 전문직",
+  "예제": "She chose a profession in the medical field."
+ },
+ {
+  "번호": 68,
+  "단어": "detail",
+  "의미": "[명] 세부, 세부사항[동] 상술하다",
+  "예제": "She explained every detail of the plan."
+ },
+ {
+  "번호": 69,
+  "단어": "approach",
+  "의미": "[동] 접근하다[명] 접근",
+  "예제": "They decided to approach the problem from a different angle."
+ },
+ {
+  "번호": 70,
+  "단어": "career",
+  "의미": "[명] 직업, 경력",
+  "예제": "He is considering a career in law."
+ },
+ {
+  "번호": 71,
+  "단어": "package",
+  "의미": "[명] 꾸러미, 포장, 포장된 짐[동] 포장하다",
+  "예제": "The package arrived earlier than expected."
+ },
+ {
+  "번호": 72,
+  "단어": "disappear",
+  "의미": "[동] 사라지다",
+  "예제": "The cat disappeared into the bushes."
+ },
+ {
+  "번호": 73,
+  "단어": "novel",
+  "의미": "[명] 소설",
+  "예제": "This novel is considered a classic in literature."
+ },
+ {
+  "번호": 74,
+  "단어": "secure",
+  "의미": "[형] 안전한, 안정된[동] 안전하게 하다",
+  "예제": "She feels more secure with her finances now."
+ },
+ {
+  "번호": 75,
+  "단어": "fashion",
+  "의미": "[명] 유행, 패션, 방식[동] 만들어 내다",
+  "예제": "The fashion industry is constantly evolving."
+ },
+ {
+  "번호": 76,
+  "단어": "despite",
+  "의미": "[전] ~에도 불구하고",
+  "예제": "Despite the rain, they continued their hike."
+ },
+ {
+  "번호": 77,
+  "단어": "background",
+  "의미": "[명] (그림, 사람, 사건)배경, 배경 지식",
+  "예제": "Her background in science helped her in her career."
+ },
+ {
+  "번호": 78,
+  "단어": "solution",
+  "의미": "[명] 해결, 해결책",
+  "예제": "They found a solution to the problem just in time."
+ },
+ {
+  "번호": 79,
+  "단어": "generate",
+  "의미": "[동] 일으키다, 발생시키다",
+  "예제": "The power plant generates enough electricity for the entire city."
+ },
+ {
+  "번호": 80,
+  "단어": "eventually",
+  "의미": "[부] 결국",
+  "예제": "After a long search, they eventually found the missing keys."
+ },
+ {
+  "번호": 81,
+  "단어": "decrease",
+  "의미": "[동] 줄다[감소하다], 줄이다[명] 감소",
+  "예제": "They decided to decrease the price to attract more customers."
+ },
+ {
+  "번호": 82,
+  "단어": "recycle",
+  "의미": "[동] 재활용하다",
+  "예제": "Recycling is essential for reducing waste."
+ },
+ {
+  "번호": 83,
+  "단어": "desire",
+  "의미": "[명] 욕구, 욕망[동] 바라다",
+  "예제": "He expressed a strong desire to travel the world."
+ },
+ {
+  "번호": 84,
+  "단어": "balance",
+  "의미": "[명] 균형, 은행 잔고[동] 균형을 이루다",
+  "예제": "It's important to maintain a good balance between work and rest."
+ },
+ {
+  "번호": 85,
+  "단어": "negative",
+  "의미": "[형] 부정적인",
+  "예제": "She has a negative attitude towards change."
+ },
+ {
+  "번호": 86,
+  "단어": "follow",
+  "의미": "[동] 따라가다,  (규칙을) 따르다",
+  "예제": "Please follow the instructions carefully."
+ },
+ {
+  "번호": 87,
+  "단어": "account",
+  "의미": "[명] 은행 계좌, 이야기, 설명[동] 설명하다",
+  "예제": "She opened a new bank account to save for her trip."
+ },
+ {
+  "번호": 88,
+  "단어": "publish",
+  "의미": "[동] 발표하다, 출판하다",
+  "예제": "The company will publish its annual report next week."
+ },
+ {
+  "번호": 89,
+  "단어": "occasion",
+  "의미": "[명] 경우, 특별한 일",
+  "예제": "They celebrated the occasion with a big party."
+ },
+ {
+  "번호": 90,
+  "단어": "replace",
+  "의미": "[동] 대체하다",
+  "예제": "She decided to replace her old phone with a new one."
+ },
+ {
+  "번호": 91,
+  "단어": "constant",
+  "의미": "[형] 일정한, 불변의[명] (수학에서의) 상수",
+  "예제": "The children need constant supervision while playing near the water."
+ },
+ {
+  "번호": 92,
+  "단어": "expert",
+  "의미": "[명] 전문가",
+  "예제": "She is an expert in ancient history."
+ },
+ {
+  "번호": 93,
+  "단어": "term",
+  "의미": "[명] 용어, 기간, 학기",
+  "예제": "The term 'artificial intelligence' is widely used in technology."
+ },
+ {
+  "번호": 94,
+  "단어": "relieve",
+  "의미": "[동] 경감하다, 안도시키다",
+  "예제": "The medicine helped relieve his headache."
+ },
+ {
+  "번호": 95,
+  "단어": "describe",
+  "의미": "[동] 묘사하다, 표현하다",
+  "예제": "Can you describe what the suspect looked like?"
+ },
+ {
+  "번호": 96,
+  "단어": "biology",
+  "의미": "[명] 생물학",
+  "예제": "Biology is the study of living organisms."
+ },
+ {
+  "번호": 97,
+  "단어": "due",
+  "의미": "[형] 만기의, ~하기로 되어 있는",
+  "예제": "The payment is due at the end of the month."
+ },
+ {
+  "번호": 98,
+  "단어": "equipment",
+  "의미": "[명] 장치, 장비",
+  "예제": "The equipment needed for the trip was expensive."
+ },
+ {
+  "번호": 99,
+  "단어": "congratulate",
+  "의미": "[동] 축하하다",
+  "예제": "Let me congratulate you on your promotion!"
+ },
+ {
+  "번호": 100,
+  "단어": "birth",
+  "의미": "[명] 탄생",
+  "예제": "She gave birth to a healthy baby boy."
+ },
+ {
+  "번호": 101,
+  "단어": "compose",
+  "의미": "[동] 구성하다, 작곡하다, 작문하다",
+  "예제": "He will compose a new piece of music for the concert."
+ },
+ {
+  "번호": 102,
+  "단어": "genius",
+  "의미": "[명] 천재, 천재성",
+  "예제": "People often refer to him as a genius."
+ },
+ {
+  "번호": 103,
+  "단어": "reflect",
+  "의미": "[동] 반영하다, 반사하다, 숙고하다",
+  "예제": "Her art reflects her emotions and experiences."
+ },
+ {
+  "번호": 104,
+  "단어": "cause",
+  "의미": "[동] ~의 원인이 되다, 야기하다[명] 원인",
+  "예제": "What was the cause of the accident?"
+ },
+ {
+  "번호": 105,
+  "단어": "frequent",
+  "의미": "[형] 빈번한[동] (장소,모임에) 자주 가다",
+  "예제": "He is a frequent visitor to the library."
+ },
+ {
+  "번호": 106,
+  "단어": "factor",
+  "의미": "[명] 요인, 요소",
+  "예제": "Weather can be a major factor in flight delays."
+ },
+ {
+  "번호": 107,
+  "단어": "extreme",
+  "의미": "[형] 극단의[명] 극단",
+  "예제": "The temperatures here can be extremely high in summer."
+ },
+ {
+  "번호": 108,
+  "단어": "tend",
+  "의미": "[동] ~하는 경향이 있다, 돌보다",
+  "예제": "He tends to procrastinate on his assignments."
+ },
+ {
+  "번호": 109,
+  "단어": "politics",
+  "의미": "[명] 정치, 정치학",
+  "예제": "She has always been interested in politics and current events."
+ },
+ {
+  "번호": 110,
+  "단어": "insist",
+  "의미": "[동] 주장하다",
+  "예제": "She insisted that we finish the project on time."
+ },
+ {
+  "번호": 111,
+  "단어": "extend",
+  "의미": "[동] 연장하다, 넓히다",
+  "예제": "They decided to extend their vacation by a week."
+ },
+ {
+  "번호": 112,
+  "단어": "lonely",
+  "의미": "[형] 외로운",
+  "예제": "He felt lonely after moving to a new city where he knew no one."
+ },
+ {
+  "번호": 113,
+  "단어": "habitat",
+  "의미": "[명] 서식지, 주거지",
+  "예제": "The forest is the natural habitat of many rare animals."
+ },
+ {
+  "번호": 114,
+  "단어": "mental",
+  "의미": "[형] 정신의",
+  "예제": "Mental health is just as important as physical health."
+ },
+ {
+  "번호": 115,
+  "단어": "steady",
+  "의미": "[형] 안정된, 한결같은, 꾸준한",
+  "예제": "The company's growth has been steady over the past year."
+ },
+ {
+  "번호": 116,
+  "단어": "exchange",
+  "의미": "[동] 교환하다",
+  "예제": "They decided to exchange gifts during the holiday season."
+ },
+ {
+  "번호": 117,
+  "단어": "active",
+  "의미": "[형]  활동적인, 적극적인",
+  "예제": "She tries to stay active by going for a run every morning."
+ },
+ {
+  "번호": 118,
+  "단어": "species",
+  "의미": "[명] (생물분류상의) 종",
+  "예제": "There are many different species of birds in this area."
+ },
+ {
+  "번호": 119,
+  "단어": "athletic",
+  "의미": "[형] 운동의, 운동경기의",
+  "예제": "She is very athletic and enjoys playing sports."
+ },
+ {
+  "번호": 120,
+  "단어": "dental",
+  "의미": "[형] 치아의",
+  "예제": "He has a dental appointment to get his teeth cleaned."
+ },
+ {
+  "번호": 121,
+  "단어": "delight",
+  "의미": "[명] 기쁨[동] 기쁘게 하다",
+  "예제": "The children were filled with delight when they saw the balloons."
+ },
+ {
+  "번호": 122,
+  "단어": "confident",
+  "의미": "[형] 자신 있는",
+  "예제": "He feels confident about passing the exam."
+ },
+ {
+  "번호": 123,
+  "단어": "gradually",
+  "의미": "[부] 점차, 서서히",
+  "예제": "The sky gradually turned pink as the sun set."
+ },
+ {
+  "번호": 124,
+  "단어": "shadow",
+  "의미": "[명] 그림자[동] 그늘지게 하다",
+  "예제": "He saw a shadow move in the distance."
+ },
+ {
+  "번호": 125,
+  "단어": "access",
+  "의미": "[명] 접근, 이용[동] 접근하다",
+  "예제": "All students have access to the school's library resources."
+ },
+ {
+  "번호": 126,
+  "단어": "announce",
+  "의미": "[동] 발표하다, 알리다",
+  "예제": "The company will announce its new product line next week."
+ },
+ {
+  "번호": 127,
+  "단어": "allow",
+  "의미": "[동] 허락하다, 인정하다",
+  "예제": "Her parents allow her to stay out late on weekends."
+ },
+ {
+  "번호": 128,
+  "단어": "firm",
+  "의미": "[형] 확고한, 단단한[명] 회사",
+  "예제": "He has a firm belief in the power of education."
+ },
+ {
+  "번호": 129,
+  "단어": "vary",
+  "의미": "[동] 바꾸다, 변하다, 다르다",
+  "예제": "The weather can vary greatly from day to day."
+ },
+ {
+  "번호": 130,
+  "단어": "injure",
+  "의미": "[동] 상처를 입히다, 손상시키다",
+  "예제": "He injured his ankle while playing soccer."
+ },
+ {
+  "번호": 131,
+  "단어": "permit",
+  "의미": "[동] 허용[허락]하다",
+  "예제": "The school permits students to leave early on Fridays."
+ },
+ {
+  "번호": 132,
+  "단어": "response",
+  "의미": "[명] 응답, 반응",
+  "예제": "He hasn't received a response to his email yet."
+ },
+ {
+  "번호": 133,
+  "단어": "threat",
+  "의미": "[동] 위협, 협박",
+  "예제": "The growing threat of climate change concerns many scientists."
+ },
+ {
+  "번호": 134,
+  "단어": "electricity",
+  "의미": "[명] 전기",
+  "예제": "Electricity powers nearly all modern devices."
+ },
+ {
+  "번호": 135,
+  "단어": "disabled",
+  "의미": "[형] 장애를 가진, 무능력하게 된",
+  "예제": "The building has been adapted to accommodate disabled people."
+ },
+ {
+  "번호": 136,
+  "단어": "lack",
+  "의미": "[명] 부족[동] ~이 부족하다",
+  "예제": "The project was delayed due to a lack of resources."
+ },
+ {
+  "번호": 137,
+  "단어": "signify",
+  "의미": "[동] 의미하다, 중요하다",
+  "예제": "A red light signifies that you must stop."
+ },
+ {
+  "번호": 138,
+  "단어": "concentrate",
+  "의미": "[동] 집중하다",
+  "예제": "She likes to concentrate in complete silence while studying."
+ },
+ {
+  "번호": 139,
+  "단어": "emphasize",
+  "의미": "[동] 강조하다",
+  "예제": "He emphasized the importance of teamwork in the project."
+ },
+ {
+  "번호": 140,
+  "단어": "astronomy",
+  "의미": "[명] 천문학",
+  "예제": "Astronomy is the scientific study of celestial objects."
+ },
+ {
+  "번호": 141,
+  "단어": "flood",
+  "의미": "[명] 홍수[동] 범람시키다",
+  "예제": "The flood caused widespread damage across the region."
+ },
+ {
+  "번호": 142,
+  "단어": "fuel",
+  "의미": "[명] 연료[동] 연료를 가하다",
+  "예제": "The car runs on fuel-efficient technology."
+ },
+ {
+  "번호": 143,
+  "단어": "manufacture",
+  "의미": "[동] 제조하다[명] 제조(업), 제품",
+  "예제": "They manufacture high-quality electronic goods."
+ },
+ {
+  "번호": 144,
+  "단어": "movement",
+  "의미": "[명] 움직임, 운동",
+  "예제": "The movement for equal rights has gained global attention."
+ },
+ {
+  "번호": 145,
+  "단어": "capable",
+  "의미": "[형] ~을 할 수 있는, 유능한",
+  "예제": "She is capable of solving difficult problems under pressure."
+ },
+ {
+  "번호": 146,
+  "단어": "combine",
+  "의미": "[동] 결합하다, 겸비하다",
+  "예제": "You can combine these ingredients to make a delicious sauce."
+ },
+ {
+  "번호": 147,
+  "단어": "gene",
+  "의미": "[명] 유전자",
+  "예제": "Each gene carries specific traits inherited from parents."
+ },
+ {
+  "번호": 148,
+  "단어": "increase",
+  "의미": "[동] (수량이) 증가하다[명] 증가, 이자",
+  "예제": "There has been a significant increase in online sales."
+ },
+ {
+  "번호": 149,
+  "단어": "victim",
+  "의미": "[명] 희생, 피해자",
+  "예제": "The flood victims received immediate assistance."
+ },
+ {
+  "번호": 150,
+  "단어": "pressure",
+  "의미": "[명] 압력, 압박[동] 압력을 가하다",
+  "예제": "She felt a lot of pressure to meet the deadline."
+ },
+ {
+  "번호": 151,
+  "단어": "accompany",
+  "의미": "[동] 동반[동행]하다, 수반하다",
+  "예제": "He will accompany her to the doctor tomorrow."
+ },
+ {
+  "번호": 152,
+  "단어": "frustrate",
+  "의미": "[동] 좌절시키다",
+  "예제": "The delay frustrated everyone waiting for the bus."
+ },
+ {
+  "번호": 153,
+  "단어": "construct",
+  "의미": "[동] 건설하다",
+  "예제": "They plan to construct a new building next year."
+ },
+ {
+  "번호": 154,
+  "단어": "dwindle",
+  "의미": "[동] 점점 줄어들다, 저하되다",
+  "예제": "The population of the town is dwindling."
+ },
+ {
+  "번호": 155,
+  "단어": "commerce",
+  "의미": "[명] 상업, 교역",
+  "예제": "The city is known as a center of commerce and trade."
+ },
+ {
+  "번호": 156,
+  "단어": "entertain",
+  "의미": "[동] 즐겁게 하다",
+  "예제": "The actor loves to entertain large audiences."
+ },
+ {
+  "번호": 157,
+  "단어": "predict",
+  "의미": "[동] 예언하다, 예측하다",
+  "예제": "Experts predict that the economy will recover soon."
+ },
+ {
+  "번호": 158,
+  "단어": "apologize",
+  "의미": "[동] 사과하다",
+  "예제": "She apologized for the inconvenience caused by the delay."
+ },
+ {
+  "번호": 159,
+  "단어": "sight",
+  "의미": "[명] 시야, 광경, 시력",
+  "예제": "The sight of the mountains took my breath away."
+ },
+ {
+  "번호": 160,
+  "단어": "quantity",
+  "의미": "[명] 양",
+  "예제": "He bought a large quantity of groceries for the week."
+ },
+ {
+  "번호": 161,
+  "단어": "conclude",
+  "의미": "[동] 결론짓다, 끝내다",
+  "예제": "The data allows us to conclude that the experiment was successful."
+ },
+ {
+  "번호": 162,
+  "단어": "donate",
+  "의미": "[동] 기부하다",
+  "예제": "Many people donate clothes to charity during the winter."
+ },
+ {
+  "번호": 163,
+  "단어": "personality",
+  "의미": "[명] 개성, 성격, 특색",
+  "예제": "Her friendly personality makes her easy to talk to."
+ },
+ {
+  "번호": 164,
+  "단어": "struggle",
+  "의미": "[동] 싸우다, 노력하다[명] 투쟁, 노력",
+  "예제": "The company is struggling to stay profitable."
+ },
+ {
+  "번호": 165,
+  "단어": "advantage",
+  "의미": "[명] 유리한 점, 이점",
+  "예제": "One advantage of living in the city is easy access to public transport."
+ },
+ {
+  "번호": 166,
+  "단어": "variety",
+  "의미": "[명] 다양, 다양성",
+  "예제": "There is a variety of options available for dinner."
+ },
+ {
+  "번호": 167,
+  "단어": "enable",
+  "의미": "[동] 가능하게 하다",
+  "예제": "This new software will enable users to edit videos easily."
+ },
+ {
+  "번호": 168,
+  "단어": "instruction",
+  "의미": "[명] 지시, 제품 사용 설명서, 가르침",
+  "예제": "Please read the instructions carefully before assembling the furniture."
+ },
+ {
+  "번호": 169,
+  "단어": "assume",
+  "의미": "[동] 추정하다, (태도 등을) 취하다",
+  "예제": "People often assume things without knowing the full story."
+ },
+ {
+  "번호": 170,
+  "단어": "attempt",
+  "의미": "[동] 시도하다[명] 시도",
+  "예제": "He made an attempt to climb the mountain last year."
+ },
+ {
+  "번호": 171,
+  "단어": "incredible",
+  "의미": "[형] 믿을 수 없는, (믿기 어려울 만큼) 굉장한",
+  "예제": "The view from the top of the mountain was incredible."
+ },
+ {
+  "번호": 172,
+  "단어": "feature",
+  "의미": "[명] 특징, 특집 기사, 얼굴 생김새[동] ~을 특징으로 하다, 주연하다",
+  "예제": "This smartphone has many new features."
+ },
+ {
+  "번호": 173,
+  "단어": "confuse",
+  "의미": "[동] 혼동하다, 혼란시키다",
+  "예제": "She was confused by the complex instructions."
+ },
+ {
+  "번호": 174,
+  "단어": "electronic",
+  "의미": "[형] 전자의",
+  "예제": "She bought a new electronic device to help with her studies."
+ },
+ {
+  "번호": 175,
+  "단어": "absorb",
+  "의미": "[동] 흡수하다, (사람, 마음을) 열중시키다",
+  "예제": "Dark colors absorb more heat from the sun."
+ },
+ {
+  "번호": 176,
+  "단어": "indicate",
+  "의미": "[동] 가리키다, 나타내다",
+  "예제": "The results indicate that more research is needed."
+ },
+ {
+  "번호": 177,
+  "단어": "analyze",
+  "의미": "[동] 분석하다",
+  "예제": "They will analyze the data to understand the trends."
+ },
+ {
+  "번호": 178,
+  "단어": "stock",
+  "의미": "[명] 재고품, 저장, 가축[동] 저장하다, (물품을) 들여놓다",
+  "예제": "He invested in the stock market to grow his savings."
+ },
+ {
+  "번호": 179,
+  "단어": "resident",
+  "의미": "[명] 거주자",
+  "예제": "The residents of the building were asked to evacuate."
+ },
+ {
+  "번호": 180,
+  "단어": "labor",
+  "의미": "[명] 노동, 산고[동] 노동하다",
+  "예제": "The workers are demanding better labor conditions."
+ },
+ {
+  "번호": 181,
+  "단어": "remark",
+  "의미": "[명] 의견, 주목[동] 의견을 말하다, ~에 주목하다",
+  "예제": "Her remark about the project was insightful."
+ },
+ {
+  "번호": 182,
+  "단어": "moral",
+  "의미": "[형] 도덕적인",
+  "예제": "The moral of the story is to always be honest."
+ },
+ {
+  "번호": 183,
+  "단어": "embarrassed",
+  "의미": "[형] 당황한",
+  "예제": "He felt embarrassed after making a mistake in front of everyone."
+ },
+ {
+  "번호": 184,
+  "단어": "claim",
+  "의미": "[동] 주장하다[명] 요구, 주장",
+  "예제": "The company claims that its product is the best on the market."
+ },
+ {
+  "번호": 185,
+  "단어": "reasonable",
+  "의미": "[형] 논리적인, 분별력 있는",
+  "예제": "It's important to be reasonable in your expectations."
+ },
+ {
+  "번호": 186,
+  "단어": "interrupt",
+  "의미": "[동] 방해하다, 중단하다",
+  "예제": "She tried to interrupt the conversation politely."
+ },
+ {
+  "번호": 187,
+  "단어": "discount",
+  "의미": "[명] 할인[동] 할인하다",
+  "예제": "The store is offering a discount on all items this weekend."
+ },
+ {
+  "번호": 188,
+  "단어": "creature",
+  "의미": "[명] 생물, 피조물",
+  "예제": "Scientists have discovered a new creature in the deep sea."
+ },
+ {
+  "번호": 189,
+  "단어": "heal",
+  "의미": "[동] 치료하다, 낫게 하다",
+  "예제": "Time can help heal emotional wounds."
+ },
+ {
+  "번호": 190,
+  "단어": "establish",
+  "의미": "[동] 설립하다, 확립하다, 제정하다",
+  "예제": "They plan to establish a new branch in another city."
+ },
+ {
+  "번호": 191,
+  "단어": "revolution",
+  "의미": "[명] 혁명, 갑작스러운 변화, 회전",
+  "예제": "The industrial revolution transformed the economy."
+ },
+ {
+  "번호": 192,
+  "단어": "criticize",
+  "의미": "[동] 비난하다",
+  "예제": "The critics were quick to criticize the new movie."
+ },
+ {
+  "번호": 193,
+  "단어": "convince",
+  "의미": "[동] 확신시키다, 납득시키다",
+  "예제": "Her argument convinced everyone in the room."
+ },
+ {
+  "번호": 194,
+  "단어": "efficient",
+  "의미": "[형] 효율적인, 유능한",
+  "예제": "Solar panels are an efficient way to produce energy."
+ },
+ {
+  "번호": 195,
+  "단어": "stranger",
+  "의미": "[명] 낯선 사람, 문외한",
+  "예제": "He felt uneasy around strangers."
+ },
+ {
+  "번호": 196,
+  "단어": "tide",
+  "의미": "[명] 조수, 흐름",
+  "예제": "They planned their fishing trip according to the tide."
+ },
+ {
+  "번호": 197,
+  "단어": "obtain",
+  "의미": "[동] 획득하다, 통용되다, 행해지다",
+  "예제": "She managed to obtain the necessary documents for her application."
+ },
+ {
+  "번호": 198,
+  "단어": "assist",
+  "의미": "[동] 도움을 주다",
+  "예제": "The nurse will assist the doctor during the procedure."
+ },
+ {
+  "번호": 199,
+  "단어": "disaster",
+  "의미": "[명] 재앙, 재난, 재해",
+  "예제": "The earthquake was a natural disaster that affected many lives."
+ },
+ {
+  "번호": 200,
+  "단어": "terrific",
+  "의미": "[형] 굉장한, 훌륭한",
+  "예제": "The weather today is absolutely terrific!"
+ },
+ {
+  "번호": 201,
+  "단어": "specific",
+  "의미": "구체적인, 특정한"
+ },
+ {
+  "번호": 202,
+  "단어": "react",
+  "의미": "반응하다, 반작용하다"
+ },
+ {
+  "번호": 203,
+  "단어": "independent",
+  "의미": "독립적인"
+ },
+ {
+  "번호": 204,
+  "단어": "theory",
+  "의미": "이론"
+ },
+ {
+  "번호": 205,
+  "단어": "qualify",
+  "의미": "자격을 얻다"
+ },
+ {
+  "번호": 206,
+  "단어": "consider",
+  "의미": "숙고하다, 고려하다"
+ },
+ {
+  "번호": 207,
+  "단어": "recall",
+  "의미": "상기하다, 철회하다, 회수하다; 상기, 철회"
+ },
+ {
+  "번호": 208,
+  "단어": "risk",
+  "의미": "위험; 위험을 감수하다"
+ },
+ {
+  "번호": 209,
+  "단어": "treatment",
+  "의미": "취급, 대우, 치료(법)"
+ },
+ {
+  "번호": 210,
+  "단어": "engage",
+  "의미": "관여하다, 약속하다, 약혼하다"
+ },
+ {
+  "번호": 211,
+  "단어": "motivate",
+  "의미": "동기를 부여하다"
+ },
+ {
+  "번호": 212,
+  "단어": "clue",
+  "의미": "실마리, 단서"
+ },
+ {
+  "번호": 213,
+  "단어": "cancer",
+  "의미": "암, 악성 종양"
+ },
+ {
+  "번호": 214,
+  "단어": "elder",
+  "의미": "나이가 위인; 연장자"
+ },
+ {
+  "번호": 215,
+  "단어": "depress",
+  "의미": "우울하게 하다, 의기소침(낙담)하게 하다"
+ },
+ {
+  "번호": 216,
+  "단어": "fascinate",
+  "의미": "매료시키다, 마음을 빼앗다"
+ },
+ {
+  "번호": 217,
+  "단어": "violent",
+  "의미": "난폭한, 폭력적인"
+ },
+ {
+  "번호": 218,
+  "단어": "alarm",
+  "의미": "놀람, 경보"
+ },
+ {
+  "번호": 219,
+  "단어": "edge",
+  "의미": "가장자리, 날카로움, 우위"
+ },
+ {
+  "번호": 220,
+  "단어": "deserve",
+  "의미": "~을 받을 만하다(가치가 있다)"
+ },
+ {
+  "번호": 221,
+  "단어": "route",
+  "의미": "길, 통로, 항로"
+ },
+ {
+  "번호": 222,
+  "단어": "psychology",
+  "의미": "심리, 심리학"
+ },
+ {
+  "번호": 223,
+  "단어": "passion",
+  "의미": "열정"
+ },
+ {
+  "번호": 224,
+  "단어": "import",
+  "의미": "수입하다, 의미하다; 수입"
+ },
+ {
+  "번호": 225,
+  "단어": "purchase",
+  "의미": "구매하다; 구매"
+ },
+ {
+  "번호": 226,
+  "단어": "conscience",
+  "의미": "양심"
+ },
+ {
+  "번호": 227,
+  "단어": "pose",
+  "의미": "자세를 취하다, (문제를) 제기하다; 자세"
+ },
+ {
+  "번호": 228,
+  "단어": "length",
+  "의미": "길이"
+ },
+ {
+  "번호": 229,
+  "단어": "severe",
+  "의미": "심한, 엄격한"
+ },
+ {
+  "번호": 230,
+  "단어": "decade",
+  "의미": "10년, 10년간"
+ },
+ {
+  "번호": 231,
+  "단어": "occupy",
+  "의미": "(시간, 장소를) 차지하다, 전념하다"
+ },
+ {
+  "번호": 232,
+  "단어": "acquire",
+  "의미": "습득하다"
+ },
+ {
+  "번호": 233,
+  "단어": "interact",
+  "의미": "상호 작용하다"
+ },
+ {
+  "번호": 234,
+  "단어": "brief",
+  "의미": "간단한; 간단한 보고; 간단히 알리다"
+ },
+ {
+  "번호": 235,
+  "단어": "observe",
+  "의미": "관찰하다, ~을 보다, 준수하다"
+ },
+ {
+  "번호": 236,
+  "단어": "poetry",
+  "의미": "시, 운문"
+ },
+ {
+  "번호": 237,
+  "단어": "salary",
+  "의미": "급료, 봉급"
+ },
+ {
+  "번호": 238,
+  "단어": "grain",
+  "의미": "곡물, 낟알"
+ },
+ {
+  "번호": 239,
+  "단어": "meaningful",
+  "의미": "의미 있는, 의미심장한"
+ },
+ {
+  "번호": 240,
+  "단어": "weed",
+  "의미": "잡초; 잡초를 제거하다"
+ },
+ {
+  "번호": 241,
+  "단어": "survival",
+  "의미": "[명] 생존"
+ },
+ {
+  "번호": 242,
+  "단어": "comment",
+  "의미": "[명] 논평, 주석\n[동] 논평하다"
+ },
+ {
+  "번호": 243,
+  "단어": "leap",
+  "의미": "[동] 뛰다, 도약하다\n[명] 도약"
+ },
+ {
+  "번호": 244,
+  "단어": "survey",
+  "의미": "[동] 둘러보다, 조사하다\n[명] 설문 조사"
+ },
+ {
+  "번호": 245,
+  "단어": "typical",
+  "의미": "[형] 전형적인, 대표적인"
+ },
+ {
+  "번호": 246,
+  "단어": "mere",
+  "의미": "[형] 단지 ~에 불과한"
+ },
+ {
+  "번호": 247,
+  "단어": "mechanic",
+  "의미": "[명] 기계공"
+ },
+ {
+  "번호": 248,
+  "단어": "mood",
+  "의미": "[명] 분위기, 기분"
+ },
+ {
+  "번호": 249,
+  "단어": "approve",
+  "의미": "[동] 승인하다, 찬성하다"
+ },
+ {
+  "번호": 250,
+  "단어": "rural",
+  "의미": "[형] 시골의"
+ },
+ {
+  "번호": 251,
+  "단어": "finance",
+  "의미": "[명] 재정, 자금\n[동] 자금을 조달하다"
+ },
+ {
+  "번호": 252,
+  "단어": "seek",
+  "의미": "[동] 찾다, 추구하다"
+ },
+ {
+  "번호": 253,
+  "단어": "operation",
+  "의미": "[명] 작업, 운영, 수술"
+ },
+ {
+  "번호": 254,
+  "단어": "crime",
+  "의미": "[명] 범죄"
+ },
+ {
+  "번호": 255,
+  "단어": "awful",
+  "의미": "[형] 끔찍한, 지독한"
+ },
+ {
+  "번호": 256,
+  "단어": "series",
+  "의미": "[명] 연속, 시리즈물"
+ },
+ {
+  "번호": 257,
+  "단어": "exhausted",
+  "의미": "[형] 고갈된, 기진맥진한"
+ },
+ {
+  "번호": 258,
+  "단어": "absolute",
+  "의미": "[형] 완전한, 절대적인"
+ },
+ {
+  "번호": 259,
+  "단어": "surround",
+  "의미": "[동] 둘러싸다"
+ },
+ {
+  "번호": 260,
+  "단어": "display",
+  "의미": "[동] 전시하다, 나타내다\n[명] 전시"
+ },
+ {
+  "번호": 261,
+  "단어": "policy",
+  "의미": "[명] 정책, 수단"
+ },
+ {
+  "번호": 262,
+  "단어": "mass",
+  "의미": "[명] 덩어리, 집단"
+ },
+ {
+  "번호": 263,
+  "단어": "committee",
+  "의미": "[명] 위원회"
+ },
+ {
+  "번호": 264,
+  "단어": "accurate",
+  "의미": "[형] 정확한"
+ },
+ {
+  "번호": 265,
+  "단어": "arrange",
+  "의미": "[동] 정리하다, 준비하다"
+ },
+ {
+  "번호": 266,
+  "단어": "facility",
+  "의미": "[명] 시설, 편의"
+ },
+ {
+  "번호": 267,
+  "단어": "consult",
+  "의미": "[동] 상담하다, 참고하다"
+ },
+ {
+  "번호": 268,
+  "단어": "refer",
+  "의미": "[동] 언급하다, 위탁하다"
+ },
+ {
+  "번호": 269,
+  "단어": "attach",
+  "의미": "[동] 붙이다, 첨부하다"
+ },
+ {
+  "번호": 270,
+  "단어": "recover",
+  "의미": "[동] 회복하다, 되찾다"
+ },
+ {
+  "번호": 271,
+  "단어": "reward",
+  "의미": "[명] 보상\n[동] 보답하다"
+ },
+ {
+  "번호": 272,
+  "단어": "enormous",
+  "의미": "[형] 엄청난, 거대한"
+ },
+ {
+  "번호": 273,
+  "단어": "domestic",
+  "의미": "[형] 국내의, 가정의"
+ },
+ {
+  "번호": 274,
+  "단어": "wealth",
+  "의미": "[명] 부, 재산"
+ },
+ {
+  "번호": 275,
+  "단어": "elementary",
+  "의미": "[형] 초보의, 기초적인"
+ },
+ {
+  "번호": 276,
+  "단어": "gap",
+  "의미": "[명] 격차, 틈"
+ },
+ {
+  "번호": 277,
+  "단어": "except",
+  "의미": "[전] ~을 제외하고\n[동] 제외하다"
+ },
+ {
+  "번호": 278,
+  "단어": "journey",
+  "의미": "[명] 여행"
+ },
+ {
+  "번호": 279,
+  "단어": "plain",
+  "의미": "[형] 평범한, 명백한"
+ },
+ {
+  "번호": 280,
+  "단어": "downtown",
+  "의미": "[명] 도심\n[형]도심의\n[부] 도심지에서"
+ },
+ {
+  "번호": 281,
+  "단어": "previous",
+  "의미": "[형] 이전의, 앞의"
+ },
+ {
+  "번호": 282,
+  "단어": "produce",
+  "의미": "[동] 생산하다, 제조하다"
+ },
+ {
+  "번호": 283,
+  "단어": "remain",
+  "의미": "[동] 여전히 ~이다, 남다"
+ },
+ {
+  "번호": 284,
+  "단어": "break",
+  "의미": "[동] 깨다, 고장내다"
+ },
+ {
+  "번호": 285,
+  "단어": "slight",
+  "의미": "[형] 약간의, 경미한"
+ },
+ {
+  "번호": 286,
+  "단어": "include",
+  "의미": "[동] 포함하다"
+ },
+ {
+  "번호": 287,
+  "단어": "delay",
+  "의미": "[동] 연기하다, 미루다[명] 지연"
+ },
+ {
+  "번호": 288,
+  "단어": "file",
+  "의미": "[명] 서류철[동] 파일에 철하다, 제기하다"
+ },
+ {
+  "번호": 289,
+  "단어": "ethic",
+  "의미": "[명] 윤리"
+ },
+ {
+  "번호": 290,
+  "단어": "instant",
+  "의미": "[형] 즉각의, 즉석의[명] 순간"
+ },
+ {
+  "번호": 291,
+  "단어": "reveal",
+  "의미": "[동] 폭로하다, 드러내다"
+ },
+ {
+  "번호": 292,
+  "단어": "breed",
+  "의미": "[동] 낳다, 양육하다"
+ },
+ {
+  "번호": 293,
+  "단어": "leisure",
+  "의미": "[명] 여가[형] 한가한"
+ },
+ {
+  "번호": 294,
+  "단어": "urban",
+  "의미": "[형] 도시의"
+ },
+ {
+  "번호": 295,
+  "단어": "witness",
+  "의미": "[명] 목격자[동] 목격하다"
+ },
+ {
+  "번호": 296,
+  "단어": "admit",
+  "의미": "[동] 인정하다, 입학을 허가하다"
+ },
+ {
+  "번호": 297,
+  "단어": "muscle",
+  "의미": "[명] 근육, 힘"
+ },
+ {
+  "번호": 298,
+  "단어": "device",
+  "의미": "[명] 장치, 고안, 방책"
+ },
+ {
+  "번호": 299,
+  "단어": "suppose",
+  "의미": "[동] 추측하다, 가정하다"
+ },
+ {
+  "번호": 300,
+  "단어": "owe",
+  "의미": "[동] 빚지고 있다"
+ },
+ {
+  "번호": 301,
+  "단어": "intend",
+  "의미": "[동] ~할 작정이다, 의도하다"
+ },
+ {
+  "번호": 302,
+  "단어": "aspect",
+  "의미": "[명] 면, 관점"
+ },
+ {
+  "번호": 303,
+  "단어": "potential",
+  "의미": "[형] 잠재적인[명] 잠재력"
+ },
+ {
+  "번호": 304,
+  "단어": "award",
+  "의미": "[명] 상[동] (상 등을) 수여하다"
+ },
+ {
+  "번호": 305,
+  "단어": "preserve",
+  "의미": "[동] 보존하다, 보호하다"
+ },
+ {
+  "번호": 306,
+  "단어": "spot",
+  "의미": "[명] 장소, 점[동] 발견하다"
+ },
+ {
+  "번호": 307,
+  "단어": "underground",
+  "의미": "[형] 지하의, 비밀의[명] 지하"
+ },
+ {
+  "번호": 308,
+  "단어": "consequence",
+  "의미": "[명] 결과, 중요성"
+ },
+ {
+  "번호": 309,
+  "단어": "target",
+  "의미": "[명] 목표[동] 목표로 삼다"
+ },
+ {
+  "번호": 310,
+  "단어": "unless",
+  "의미": "[접] 만약 ~이 아니면"
+ },
+ {
+  "번호": 311,
+  "단어": "accomplish",
+  "의미": "[동] 이루다, 성취하다"
+ },
+ {
+  "번호": 312,
+  "단어": "adopt",
+  "의미": "[동] 입양하다, 채택하다"
+ },
+ {
+  "번호": 313,
+  "단어": "unique",
+  "의미": "[형] 독특한, 유일한"
+ },
+ {
+  "번호": 314,
+  "단어": "slip",
+  "의미": "[동] 미끄러지다, 실수하다[명] 종이 조각"
+ },
+ {
+  "번호": 315,
+  "단어": "civilization",
+  "의미": "[명] 문명"
+ },
+ {
+  "번호": 316,
+  "단어": "row",
+  "의미": "[명] 열, 줄[동] 배를 젓다"
+ },
+ {
+  "번호": 317,
+  "단어": "horizon",
+  "의미": "[명] 지평선"
+ },
+ {
+  "번호": 318,
+  "단어": "atmosphere",
+  "의미": "[명] 대기, 분위기"
+ },
+ {
+  "번호": 319,
+  "단어": "label",
+  "의미": "[명] 꼬리표, 상표[동] 라벨을 붙이다"
+ },
+ {
+  "번호": 320,
+  "단어": "decorate",
+  "의미": "[동] 장식하다, ~에게 훈장을 주다"
+ },
+ {
+  "번호": 321,
+  "단어": "identify",
+  "의미": "[동] ~임을 확인하다, 식별하다, 동일시하다"
+ },
+ {
+  "번호": 322,
+  "단어": "standard",
+  "의미": "[명] 표준, 기준\n[형] 기준의, 표준의"
+ },
+ {
+  "번호": 323,
+  "단어": "scale",
+  "의미": "[명] 규모, 저울, 비늘"
+ },
+ {
+  "번호": 324,
+  "단어": "evident",
+  "의미": "[형] 명백한"
+ },
+ {
+  "번호": 325,
+  "단어": "seldom",
+  "의미": "[부] 거의 ~않는"
+ },
+ {
+  "번호": 326,
+  "단어": "secretary",
+  "의미": "[명] 비서, 장관"
+ },
+ {
+  "번호": 327,
+  "단어": "basis",
+  "의미": "[명] 원리, 기초"
+ },
+ {
+  "번호": 328,
+  "단어": "automatic",
+  "의미": "[형] 자동적인, 기계적인"
+ },
+ {
+  "번호": 329,
+  "단어": "region",
+  "의미": "[명] 지역"
+ },
+ {
+  "번호": 330,
+  "단어": "rise",
+  "의미": "[동] 일어나다, 오르다\n[명] 상승"
+ },
+ {
+  "번호": 331,
+  "단어": "addict",
+  "의미": "[동] 중독시키다\n[명] 중독자"
+ },
+ {
+  "번호": 332,
+  "단어": "disappoint",
+  "의미": "[동] 실망시키다"
+ },
+ {
+  "번호": 333,
+  "단어": "artificial",
+  "의미": "[형] 인공적인, 인조의"
+ },
+ {
+  "번호": 334,
+  "단어": "possess",
+  "의미": "[동] 소유하다, ~의 마음을 사로잡다"
+ },
+ {
+  "번호": 335,
+  "단어": "substance",
+  "의미": "[명] 물질, 본질, 실체"
+ },
+ {
+  "번호": 336,
+  "단어": "realistic",
+  "의미": "[형] 현실적인, 현실주의의"
+ },
+ {
+  "번호": 337,
+  "단어": "encounter",
+  "의미": "[동] (우연히) 만나다\n[명] 마주침"
+ },
+ {
+  "번호": 338,
+  "단어": "differ",
+  "의미": "[동] 다르다, 의견을 달리하다"
+ },
+ {
+  "번호": 339,
+  "단어": "principle",
+  "의미": "[명] 원칙, 원리"
+ },
+ {
+  "번호": 340,
+  "단어": "memorize",
+  "의미": "[동] 기억하다"
+ },
+ {
+  "번호": 341,
+  "단어": "physics",
+  "의미": "[명] 물리학"
+ },
+ {
+  "번호": 342,
+  "단어": "evaluate",
+  "의미": "[동] 평가하다"
+ },
+ {
+  "번호": 343,
+  "단어": "tremendous",
+  "의미": "[형] 굉장한, 무시무시한"
+ },
+ {
+  "번호": 344,
+  "단어": "application",
+  "의미": "[명] 적용, 신청"
+ },
+ {
+  "번호": 345,
+  "단어": "vote",
+  "의미": "[명] 투표\n[동] 투표하다"
+ },
+ {
+  "번호": 346,
+  "단어": "spread",
+  "의미": "[명] 퍼짐, 확산\n[동] 펼치다, 퍼지다"
+ },
+ {
+  "번호": 347,
+  "단어": "impact",
+  "의미": "[명] 충격, 영향\n[동] 충격을 주다"
+ },
+ {
+  "번호": 348,
+  "단어": "cooperate",
+  "의미": "[동] 협력하다"
+ },
+ {
+  "번호": 349,
+  "단어": "emit",
+  "의미": "[동] (빛, 열, 소리 등을)방출하다"
+ },
+ {
+  "번호": 350,
+  "단어": "request",
+  "의미": "[명] 요청\n[동] 요청하다"
+ },
+ {
+  "번호": 351,
+  "단어": "guarantee",
+  "의미": "[동] 보장하다\n[명] 보증"
+ },
+ {
+  "번호": 352,
+  "단어": "resist",
+  "의미": "[동] 저항하다"
+ },
+ {
+  "번호": 353,
+  "단어": "fulfill",
+  "의미": "[동] 달성하다, 이행하다"
+ },
+ {
+  "번호": 354,
+  "단어": "stink",
+  "의미": "[동] 역겹다, 악취를 풍기다"
+ },
+ {
+  "번호": 355,
+  "단어": "grant",
+  "의미": "[동] 수여하다, 승인하다"
+ },
+ {
+  "번호": 356,
+  "단어": "rely",
+  "의미": "[동] 의지하다, 믿다"
+ },
+ {
+  "번호": 357,
+  "단어": "permanent",
+  "의미": "[형] 영원한, 영구적인"
+ },
+ {
+  "번호": 358,
+  "단어": "emergency",
+  "의미": "[명] 비상 사태"
+ },
+ {
+  "번호": 359,
+  "단어": "rid",
+  "의미": "[동] 제거하다"
+ },
+ {
+  "번호": 360,
+  "단어": "theme",
+  "의미": "[명] 주제, 화제"
+ },
+ {
+  "번호": 361,
+  "단어": "hesitate",
+  "의미": "[동] 주저하다, 망설이다"
+ },
+ {
+  "번호": 362,
+  "단어": "location",
+  "의미": "[명] 위치, 장소"
+ },
+ {
+  "번호": 363,
+  "단어": "restrict",
+  "의미": "[동] 제한하다, 한정하다"
+ },
+ {
+  "번호": 364,
+  "단어": "organism",
+  "의미": "[명] 유기체, 생물"
+ },
+ {
+  "번호": 365,
+  "단어": "resolve",
+  "의미": "[동] 해결하다, 결심하다"
+ },
+ {
+  "번호": 366,
+  "단어": "offer",
+  "의미": "[동] 제공하다, 제안하다"
+ },
+ {
+  "번호": 367,
+  "단어": "distribute",
+  "의미": "[동] 분배하다, 분포시키다"
+ },
+ {
+  "번호": 368,
+  "단어": "rainforest",
+  "의미": "[명] 열대우림"
+ },
+ {
+  "번호": 369,
+  "단어": "circumstance",
+  "의미": "[명] 상황, 환경"
+ },
+ {
+  "번호": 370,
+  "단어": "interpret",
+  "의미": "[동] 해석하다, 통역하다"
+ },
+ {
+  "번호": 371,
+  "단어": "suitable",
+  "의미": "[형] 적절한, 적합한"
+ },
+ {
+  "번호": 372,
+  "단어": "curve",
+  "의미": "[명] 곡선, 속임수"
+ },
+ {
+  "번호": 373,
+  "단어": "annoy",
+  "의미": "[동] 괴롭히다, 귀찮게 하다"
+ },
+ {
+  "번호": 374,
+  "단어": "frighten",
+  "의미": "[동] 겁먹게 하다"
+ },
+ {
+  "번호": 375,
+  "단어": "estimate",
+  "의미": "[동] 평가하다[명] 견적, 평가"
+ },
+ {
+  "번호": 376,
+  "단어": "refuse",
+  "의미": "[동] 거절하다"
+ },
+ {
+  "번호": 377,
+  "단어": "adventure",
+  "의미": "[명] 모험[동] 위험에 빠뜨리다"
+ },
+ {
+  "번호": 378,
+  "단어": "entrance",
+  "의미": "[명] 입구, 입장"
+ },
+ {
+  "번호": 379,
+  "단어": "persuade",
+  "의미": "[동] 설득하다"
+ },
+ {
+  "번호": 380,
+  "단어": "perceive",
+  "의미": "[동] 인지하다, 인식하다"
+ },
+ {
+  "번호": 381,
+  "단어": "recite",
+  "의미": "[동] 암송하다"
+ },
+ {
+  "번호": 382,
+  "단어": "gather",
+  "의미": "[동] 모으다"
+ },
+ {
+  "번호": 383,
+  "단어": "cabin",
+  "의미": "[명] 객실, 선실, 오두막집"
+ },
+ {
+  "번호": 384,
+  "단어": "gear",
+  "의미": "[명] 장비,  기어[동] 맞게 조정하다"
+ },
+ {
+  "번호": 385,
+  "단어": "ray",
+  "의미": "[명] 광선"
+ },
+ {
+  "번호": 386,
+  "단어": "release",
+  "의미": "[동] 놓아주다, 방출하다[명] 석방, 발표"
+ },
+ {
+  "번호": 387,
+  "단어": "rank",
+  "의미": "[명] 지위, 계급[동] 매기다, (등급을)차지하다"
+ },
+ {
+  "번호": 388,
+  "단어": "symphony",
+  "의미": "[명] 교향곡"
+ },
+ {
+  "번호": 389,
+  "단어": "envy",
+  "의미": "[동] 부러워하다[명] 부러움"
+ },
+ {
+  "번호": 390,
+  "단어": "corporate",
+  "의미": "[형] 회사의, 법인의"
+ },
+ {
+  "번호": 391,
+  "단어": "alternative",
+  "의미": "[명] 대안[형] 대안의"
+ },
+ {
+  "번호": 392,
+  "단어": "retire",
+  "의미": "[동] 은퇴하다"
+ },
+ {
+  "번호": 393,
+  "단어": "appeal",
+  "의미": "[동] 호소하다, 관심을 끌다[명] 호소, 항의"
+ },
+ {
+  "번호": 394,
+  "단어": "identical",
+  "의미": "[형] 동일한, 일란성의"
+ },
+ {
+  "번호": 395,
+  "단어": "investment",
+  "의미": "[명] 투자"
+ },
+ {
+  "번호": 396,
+  "단어": "autograph",
+  "의미": "[명] 서명[동] 서명하다"
+ },
+ {
+  "번호": 397,
+  "단어": "slave",
+  "의미": "[명] 노예"
+ },
+ {
+  "번호": 398,
+  "단어": "harm",
+  "의미": "[명] 손해, 손상[동] 해치다"
+ },
+ {
+  "번호": 399,
+  "단어": "authority",
+  "의미": "[명] 권위, 당국"
+ },
+ {
+  "번호": 400,
+  "단어": "innocence",
+  "의미": "[명] 결백, 무죄, 순진"
+ },
+ {
+  "번호": 401,
+  "단어": "infant",
+  "의미": "[명] 유아, 유치원생"
+ },
+ {
+  "번호": 402,
+  "단어": "calculate",
+  "의미": "[동] 계산하다"
+ },
+ {
+  "번호": 403,
+  "단어": "charity",
+  "의미": "[명] 자선 단체"
+ },
+ {
+  "번호": 404,
+  "단어": "receive",
+  "의미": "[동] 받다"
+ },
+ {
+  "번호": 405,
+  "단어": "whereas",
+  "의미": "[접] 그런데, ~에 반해서"
+ },
+ {
+  "번호": 406,
+  "단어": "board",
+  "의미": "[명] 판자, 게시판[동] 타다"
+ },
+ {
+  "번호": 407,
+  "단어": "ignorant",
+  "의미": "[형] 무지한, 무식한"
+ },
+ {
+  "번호": 408,
+  "단어": "depend",
+  "의미": "[동] 의존하다, ~에 달려 있다"
+ },
+ {
+  "번호": 409,
+  "단어": "pure",
+  "의미": "[형] 순수한, 깨끗한"
+ },
+ {
+  "번호": 410,
+  "단어": "extinct",
+  "의미": "[형] 멸종된, 사라진"
+ },
+ {
+  "번호": 411,
+  "단어": "household",
+  "의미": "[명] 가정[형] 가정의"
+ },
+ {
+  "번호": 412,
+  "단어": "chapter",
+  "의미": "[명] (책의) 장, 시기, 사제단"
+ },
+ {
+  "번호": 413,
+  "단어": "refund",
+  "의미": "[동] 환불하다[명] 환불금"
+ },
+ {
+  "번호": 414,
+  "단어": "institute",
+  "의미": "[명] 기관, 협회"
+ },
+ {
+  "번호": 415,
+  "단어": "lately",
+  "의미": "[부] 최근에"
+ },
+ {
+  "번호": 416,
+  "단어": "accept",
+  "의미": "[동] 받아들이다"
+ },
+ {
+  "번호": 417,
+  "단어": "ashamed",
+  "의미": "[형] 부끄러워하는"
+ },
+ {
+  "번호": 418,
+  "단어": "dense",
+  "의미": "[형] 밀집한, (앞이 안 보이게) 짙은"
+ },
+ {
+  "번호": 419,
+  "단어": "rescue",
+  "의미": "[동] 구출하다[명] 구출"
+ },
+ {
+  "번호": 420,
+  "단어": "continue",
+  "의미": "[동] 계속하다"
+ },
+ {
+  "번호": 421,
+  "단어": "destination",
+  "의미": "[명] 목적지"
+ },
+ {
+  "번호": 422,
+  "단어": "expand",
+  "의미": "[동] 확장되다, 확장시키다"
+ },
+ {
+  "번호": 423,
+  "단어": "evolution",
+  "의미": "[명] 진화, 발전"
+ },
+ {
+  "번호": 424,
+  "단어": "hire",
+  "의미": "[동] 고용하다"
+ },
+ {
+  "번호": 425,
+  "단어": "isolate",
+  "의미": "[동] 고립시키다, 격리시키다"
+ },
+ {
+  "번호": 426,
+  "단어": "gravity",
+  "의미": "[명] 중력"
+ },
+ {
+  "번호": 427,
+  "단어": "genuine",
+  "의미": "[형] 진짜의, 진실된"
+ },
+ {
+  "번호": 428,
+  "단어": "statue",
+  "의미": "[명] 조각상"
+ },
+ {
+  "번호": 429,
+  "단어": "compete",
+  "의미": "[동] 경쟁하다"
+ },
+ {
+  "번호": 430,
+  "단어": "military",
+  "의미": "[형] 군의, 군사의[명] 군, 군대"
+ },
+ {
+  "번호": 431,
+  "단어": "logic",
+  "의미": "[명] 논리, 논리학"
+ },
+ {
+  "번호": 432,
+  "단어": "commit",
+  "의미": "[동] (죄 등을) 저지르다, 약속하다, 헌신하다"
+ },
+ {
+  "번호": 433,
+  "단어": "sensible",
+  "의미": "[형] 합리적인, 현명한"
+ },
+ {
+  "번호": 434,
+  "단어": "sum",
+  "의미": "[명] 금액, 합계"
+ },
+ {
+  "번호": 435,
+  "단어": "conserve",
+  "의미": "[동] 보존하다, 보호하다"
+ },
+ {
+  "번호": 436,
+  "단어": "swing",
+  "의미": "[동] 흔들다, 휘두르다"
+ },
+ {
+  "번호": 437,
+  "단어": "marriage",
+  "의미": "[명] 결혼, 결혼 생활"
+ },
+ {
+  "번호": 438,
+  "단어": "reproduce",
+  "의미": "[동] 번식하다, 재생하다, 복제하다"
+ },
+ {
+  "번호": 439,
+  "단어": "tone",
+  "의미": "[명] 음조, 어조, 억양 [동] 조화하다, 탄력있게 만들다"
+ },
+ {
+  "번호": 440,
+  "단어": "concept",
+  "의미": "[명] 개념"
+ },
+ {
+  "번호": 441,
+  "단어": "invitation",
+  "의미": "[명] 초대"
+ },
+ {
+  "번호": 442,
+  "단어": "precise",
+  "의미": "[형] 정확한, 정밀한"
+ },
+ {
+  "번호": 443,
+  "단어": "formal",
+  "의미": "[형] 공식적인, 격식을 차린"
+ },
+ {
+  "번호": 444,
+  "단어": "particle",
+  "의미": "[명] 작은 조각, 입자"
+ },
+ {
+  "번호": 445,
+  "단어": "cancel",
+  "의미": "[동] 취소하다"
+ },
+ {
+  "번호": 446,
+  "단어": "return",
+  "의미": "[동] 돌아가다, 돌려주다[명] 돌아감, 귀향"
+ },
+ {
+  "번호": 447,
+  "단어": "departure",
+  "의미": "[명] 출발, 떠남, 일탈"
+ },
+ {
+  "번호": 448,
+  "단어": "apparent",
+  "의미": "[형] 명백한"
+ },
+ {
+  "번호": 449,
+  "단어": "visual",
+  "의미": "[형] 눈에 보이는, 시각의"
+ },
+ {
+  "번호": 450,
+  "단어": "agriculture",
+  "의미": "[명] 농업"
+ },
+ {
+  "번호": 451,
+  "단어": "rite",
+  "의미": "[명] 의식, 의례"
+ },
+ {
+  "번호": 452,
+  "단어": "poverty",
+  "의미": "[명] 가난"
+ },
+ {
+  "번호": 453,
+  "단어": "sculpture",
+  "의미": "[명] 조각상"
+ },
+ {
+  "번호": 454,
+  "단어": "descend",
+  "의미": "[동] 내려가다, 내려오다"
+ },
+ {
+  "번호": 455,
+  "단어": "leak",
+  "의미": "[동] 새다[명] 새는 구멍"
+ },
+ {
+  "번호": 456,
+  "단어": "portion",
+  "의미": "[명] 부분, 1인분"
+ },
+ {
+  "번호": 457,
+  "단어": "companion",
+  "의미": "[명] 친구, 동료"
+ },
+ {
+  "번호": 458,
+  "단어": "diligent",
+  "의미": "[형]근면한"
+ },
+ {
+  "번호": 459,
+  "단어": "distinct",
+  "의미": "[형] 뚜렷한, 다른"
+ },
+ {
+  "번호": 460,
+  "단어": "component",
+  "의미": "[명] 구성 요소[형] 구성하는"
+ },
+ {
+  "번호": 461,
+  "단어": "current",
+  "의미": "[형] 현재의, 지금의"
+ },
+ {
+  "번호": 462,
+  "단어": "universal",
+  "의미": "[형] 보편적인, 전 세계의"
+ },
+ {
+  "번호": 463,
+  "단어": "trap",
+  "의미": "[명] 덫[동] 가두다"
+ },
+ {
+  "번호": 464,
+  "단어": "eager",
+  "의미": "[형] 갈망하는"
+ },
+ {
+  "번호": 465,
+  "단어": "legal",
+  "의미": "[형] 법률의, 합법적인"
+ },
+ {
+  "번호": 466,
+  "단어": "demonstrate",
+  "의미": "[동] 입증하다, 시위하다, 설명하다"
+ },
+ {
+  "번호": 467,
+  "단어": "democracy",
+  "의미": "[명] 민주주의"
+ },
+ {
+  "번호": 468,
+  "단어": "mature",
+  "의미": "[형] 성숙한[동] 성숙하다"
+ },
+ {
+  "번호": 469,
+  "단어": "brilliant",
+  "의미": "[형] 빛나는, 훌륭한"
+ },
+ {
+  "번호": 470,
+  "단어": "annual",
+  "의미": "[형] 연간의, 해마다의"
+ },
+ {
+  "번호": 471,
+  "단어": "faith",
+  "의미": "[명] 믿음, 신념"
+ },
+ {
+  "번호": 472,
+  "단어": "spare",
+  "의미": "[동] (시간, 돈을) 할애하다, (고생을) 면하게 하다[형] 여분의"
+ },
+ {
+  "번호": 473,
+  "단어": "transfer",
+  "의미": "[동] 이동하다, 옮기다, 환승하다[명] 이[동] 환승"
+ },
+ {
+  "번호": 474,
+  "단어": "refrigerator",
+  "의미": "[명] 냉장고"
+ },
+ {
+  "번호": 475,
+  "단어": "oppose",
+  "의미": "[동] 반대하다"
+ },
+ {
+  "번호": 476,
+  "단어": "desperate",
+  "의미": "[형] 절망적인, 필사적인"
+ },
+ {
+  "번호": 477,
+  "단어": "remote",
+  "의미": "[형] 멀리 떨어진, 원격 조정의"
+ },
+ {
+  "번호": 478,
+  "단어": "offend",
+  "의미": "[동] 불쾌하게 하다"
+ },
+ {
+  "번호": 479,
+  "단어": "awake",
+  "의미": "[형] 깨어있는"
+ },
+ {
+  "번호": 480,
+  "단어": "aim",
+  "의미": "[동] 목표로 하다, 겨누다[명] 목표"
+ },
+ {
+  "번호": 481,
+  "단어": "option",
+  "의미": "[명] 선택, 선택권"
+ },
+ {
+  "번호": 482,
+  "단어": "insight",
+  "의미": "[명] 통찰력"
+ },
+ {
+  "번호": 483,
+  "단어": "achieve",
+  "의미": "[동] 이루다, 성취하다"
+ },
+ {
+  "번호": 484,
+  "단어": "civil",
+  "의미": "[형] 시민의, 민간의"
+ },
+ {
+  "번호": 485,
+  "단어": "pause",
+  "의미": "[동] 잠시 멈추다[명] 중단"
+ },
+ {
+  "번호": 486,
+  "단어": "prove",
+  "의미": "[동] 입증하다"
+ },
+ {
+  "번호": 487,
+  "단어": "lecture",
+  "의미": "[명] 강의[동] 강의를 하다"
+ },
+ {
+  "번호": 488,
+  "단어": "minor",
+  "의미": "[형] 사소한, [명] 미성년자[동] 부전공하다"
+ },
+ {
+  "번호": 489,
+  "단어": "duty",
+  "의미": "[명] 의무, 관세"
+ },
+ {
+  "번호": 490,
+  "단어": "vigor",
+  "의미": "[명] 활력"
+ },
+ {
+  "번호": 491,
+  "단어": "organize",
+  "의미": "[동] 조직하다, 구성하다"
+ },
+ {
+  "번호": 492,
+  "단어": "chief",
+  "의미": "[명] 우두머리[형] 우두머리의, 주요한"
+ },
+ {
+  "번호": 493,
+  "단어": "complicated",
+  "의미": "[형] 복잡한"
+ },
+ {
+  "번호": 494,
+  "단어": "digest",
+  "의미": "[동] 소화하다[명] 요약"
+ },
+ {
+  "번호": 495,
+  "단어": "shortage",
+  "의미": "[명] 부족, 결함"
+ },
+ {
+  "번호": 496,
+  "단어": "laboratory",
+  "의미": "[명] 실험실[형] 실험의"
+ },
+ {
+  "번호": 497,
+  "단어": "arrive",
+  "의미": "[동] 도착하다"
+ },
+ {
+  "번호": 498,
+  "단어": "generous",
+  "의미": "[형] 관대한, 넉넉한"
+ },
+ {
+  "번호": 499,
+  "단어": "laundry",
+  "의미": "[명] 세탁물"
+ },
+ {
+  "번호": 500,
+  "단어": "transform",
+  "의미": "[동] 변형시키다, 변환하다"
+ },
+ {
+  "번호": 501,
+  "단어": "discipline",
+  "의미": "[명] 규율, 훈련[동] 훈육하다, 징계하다"
+ },
+ {
+  "번호": 502,
+  "단어": "forbid",
+  "의미": "[동] 금지하다"
+ },
+ {
+  "번호": 503,
+  "단어": "ultimate",
+  "의미": "[형] 궁극적인, 최후의"
+ },
+ {
+  "번호": 504,
+  "단어": "thrive",
+  "의미": "[동] 번영하다, 발전하다"
+ },
+ {
+  "번호": 505,
+  "단어": "conversation",
+  "의미": "[명] 대화, 회담"
+ },
+ {
+  "번호": 506,
+  "단어": "bet",
+  "의미": "[동] 돈을 걸다, 내기를 하다[명] 내기"
+ },
+ {
+  "번호": 507,
+  "단어": "royal",
+  "의미": "[형] 왕족의, 왕의"
+ },
+ {
+  "번호": 508,
+  "단어": "ruin",
+  "의미": "[동] 망치다, 파멸시키다[명] 파멸, 파산"
+ },
+ {
+  "번호": 509,
+  "단어": "worship",
+  "의미": "[동] 숭배하다, 예배하다[명] 숭배, 예배"
+ },
+ {
+  "번호": 510,
+  "단어": "evil",
+  "의미": "[형] 사악한[명] 악"
+ },
+ {
+  "번호": 511,
+  "단어": "scarce",
+  "의미": "[형] 부족한, 드문"
+ },
+ {
+  "번호": 512,
+  "단어": "afterward",
+  "의미": "[부] 나중에, 그 후에"
+ },
+ {
+  "번호": 513,
+  "단어": "client",
+  "의미": "[명] 고객, 의뢰인"
+ },
+ {
+  "번호": 514,
+  "단어": "insure",
+  "의미": "[동] 보험을 계약하다, 안전하게 하다"
+ },
+ {
+  "번호": 515,
+  "단어": "fancy",
+  "의미": "[명] 공상[형] 화려한[동] 공상하다"
+ },
+ {
+  "번호": 516,
+  "단어": "surgery",
+  "의미": "[명] 외과 수술"
+ },
+ {
+  "번호": 517,
+  "단어": "assign",
+  "의미": "[동] 할당하다, 지정하다"
+ },
+ {
+  "번호": 518,
+  "단어": "regulate",
+  "의미": "[동] 규제하다, 조절하다"
+ },
+ {
+  "번호": 519,
+  "단어": "shelf",
+  "의미": "[명] 선반"
+ },
+ {
+  "번호": 520,
+  "단어": "utility",
+  "의미": "[명] 공익사업, 유용성"
+ },
+ {
+  "번호": 521,
+  "단어": "necessity",
+  "의미": "[명] 필요, 필수, 필수품"
+ },
+ {
+  "번호": 522,
+  "단어": "yield",
+  "의미": "[동] 생산하다, 굴복하다, 양도하다[명] 수확(물)"
+ },
+ {
+  "번호": 523,
+  "단어": "decline",
+  "의미": "[명] 감소, 쇠퇴[동] 감소하다, 쇠퇴하다, 거절하다"
+ },
+ {
+  "번호": 524,
+  "단어": "coincidence",
+  "의미": "[명] 우연의 일치, 동시에 일어난 사건"
+ },
+ {
+  "번호": 525,
+  "단어": "aside",
+  "의미": "[부] 한쪽으로, 제쳐 두고"
+ },
+ {
+  "번호": 526,
+  "단어": "contemporary",
+  "의미": "[형] 현대의, 동시대의"
+ },
+ {
+  "번호": 527,
+  "단어": "bless",
+  "의미": "[동] 축복하다, 감사하다"
+ },
+ {
+  "번호": 528,
+  "단어": "explain",
+  "의미": "[동] 설명하다"
+ },
+ {
+  "번호": 529,
+  "단어": "prior",
+  "의미": "[형] 이전의, 우선하는"
+ },
+ {
+  "번호": 530,
+  "단어": "tolerate",
+  "의미": "[동] 참다, 용인하다"
+ },
+ {
+  "번호": 531,
+  "단어": "measure",
+  "의미": "[동] 측정하다[명] 측정, 수단"
+ },
+ {
+  "번호": 532,
+  "단어": "abstract",
+  "의미": "[형] 추상적인[명] 추상, 개요"
+ },
+ {
+  "번호": 533,
+  "단어": "cottage",
+  "의미": "[명] 오두막집"
+ },
+ {
+  "번호": 534,
+  "단어": "correct",
+  "의미": "[형] 올바른, 정확한[동] 바로잡다, 정정하다"
+ },
+ {
+  "번호": 535,
+  "단어": "confirm",
+  "의미": "[동] 확인하다, 입증하다, (결심을) 굳게 하다"
+ },
+ {
+  "번호": 536,
+  "단어": "imitate",
+  "의미": "[동] 모방하다"
+ },
+ {
+  "번호": 537,
+  "단어": "prey",
+  "의미": "[명] 먹이, 희생자"
+ },
+ {
+  "번호": 538,
+  "단어": "defeat",
+  "의미": "[동] 패배시키다[명] 패배"
+ },
+ {
+  "번호": 539,
+  "단어": "illustrate",
+  "의미": "[동] 설명하다, (분명히) 보여주다, 삽화를 넣다"
+ },
+ {
+  "번호": 540,
+  "단어": "fuse",
+  "의미": "[명] 퓨즈, 도화선[동] 융합하다"
+ },
+ {
+  "번호": 541,
+  "단어": "pupil",
+  "의미": "[명] 학생, 눈동자"
+ },
+ {
+  "번호": 542,
+  "단어": "intellect",
+  "의미": "[명] 지성"
+ },
+ {
+  "번호": 543,
+  "단어": "spice",
+  "의미": "[명] 향신료, 양념"
+ },
+ {
+  "번호": 544,
+  "단어": "tempt",
+  "의미": "[동] 유혹하다 (관심을) 끌다"
+ },
+ {
+  "번호": 545,
+  "단어": "inspire",
+  "의미": "[동] 영감을 주다, 고무시키다, 격려하다"
+ },
+ {
+  "번호": 546,
+  "단어": "dine",
+  "의미": "[동] 식사하다, 만찬을 대접하다"
+ },
+ {
+  "번호": 547,
+  "단어": "literally",
+  "의미": "[부] 문자 그대로"
+ },
+ {
+  "번호": 548,
+  "단어": "appropriate",
+  "의미": "[형] 적절한"
+ },
+ {
+  "번호": 549,
+  "단어": "resort",
+  "의미": "[명] 휴양지, 의지[동] 의지하다, 자주 가다"
+ },
+ {
+  "번호": 550,
+  "단어": "grab",
+  "의미": "[동] 움켜쥐다[명] 움켜쥠"
+ },
+ {
+  "번호": 551,
+  "단어": "propose",
+  "의미": "[동] 제안하다, 청혼하다"
+ },
+ {
+  "번호": 552,
+  "단어": "wreck",
+  "의미": "[명] 난파선, 사고[동] 난파시키다"
+ },
+ {
+  "번호": 553,
+  "단어": "document",
+  "의미": "[명] 문서, 서류[동] 기록하다"
+ },
+ {
+  "번호": 554,
+  "단어": "suspect",
+  "의미": "[동] 의심하다[명] 용의자"
+ },
+ {
+  "번호": 555,
+  "단어": "alien",
+  "의미": "[형] 외국의, 이질적인[명] 외국인, 외계인"
+ },
+ {
+  "번호": 556,
+  "단어": "prohibit",
+  "의미": "[동] 금지하다"
+ },
+ {
+  "번호": 557,
+  "단어": "install",
+  "의미": "[동] 설치하다"
+ },
+ {
+  "번호": 558,
+  "단어": "triumph",
+  "의미": "[명] 승리[동] 승리하다"
+ },
+ {
+  "번호": 559,
+  "단어": "scholarship",
+  "의미": "[명] 장학금, 학문"
+ },
+ {
+  "번호": 560,
+  "단어": "execute",
+  "의미": "[동] 실행하다, 처형하다"
+ },
+ {
+  "번호": 561,
+  "단어": "ensure",
+  "의미": "[동] 반드시 ~하게 하다, 보장하다, 확실하게 하다"
+ },
+ {
+  "번호": 562,
+  "단어": "receipt",
+  "의미": "[명] 영수증"
+ },
+ {
+  "번호": 563,
+  "단어": "defect",
+  "의미": "[명] 결점, 결함[동] (국가•당 등을) 버리다"
+ },
+ {
+  "번호": 564,
+  "단어": "trait",
+  "의미": "[명] 특징, 특성"
+ },
+ {
+  "번호": 565,
+  "단어": "modest",
+  "의미": "[형] 겸손한, 미천한, 알맞은"
+ },
+ {
+  "번호": 566,
+  "단어": "virtual",
+  "의미": "[형] 실제의, 가상의, 사실상의"
+ },
+ {
+  "번호": 567,
+  "단어": "compare",
+  "의미": "[동] 비교하다, 비유하다"
+ },
+ {
+  "번호": 568,
+  "단어": "address",
+  "의미": "[명] 주소, 연설, 인사말[동] 연설하다, 접근하다"
+ },
+ {
+  "번호": 569,
+  "단어": "inner",
+  "의미": "[형] 안쪽의, 내적인, 내부의"
+ },
+ {
+  "번호": 570,
+  "단어": "contrary",
+  "의미": "[형] 반대의, 불리한[명] 정반대, 반대의 것"
+ },
+ {
+  "번호": 571,
+  "단어": "split",
+  "의미": "[동] 나뉘다, 분열되다, 찢다, 쪼개다[명] 틈, 분열"
+ },
+ {
+  "번호": 572,
+  "단어": "supervise",
+  "의미": "[동] 감독하다, 관리하다, 통제하다"
+ },
+ {
+  "번호": 573,
+  "단어": "inhabit",
+  "의미": "[동] ~에 살다, 거주하다"
+ },
+ {
+  "번호": 574,
+  "단어": "appear",
+  "의미": "[동] 나타나다, ~인 것 같다"
+ },
+ {
+  "번호": 575,
+  "단어": "commute",
+  "의미": "[동] 통근하다[명] 통근(거리)"
+ },
+ {
+  "번호": 576,
+  "단어": "earthquake",
+  "의미": "[명] 지진, (사회•정치적) 대변동"
+ },
+ {
+  "번호": 577,
+  "단어": "enroll",
+  "의미": "[동] 등록하다, 입학하다"
+ },
+ {
+  "번호": 578,
+  "단어": "debate",
+  "의미": "[동] 논쟁하다, 토론하다[명] 논쟁, 토론"
+ },
+ {
+  "번호": 579,
+  "단어": "abandon",
+  "의미": "[동] 버리다, 포기하다"
+ },
+ {
+  "번호": 580,
+  "단어": "conquer",
+  "의미": "[동] 정복하다, 이기다, 극복하다"
+ },
+ {
+  "번호": 581,
+  "단어": "nevertheless",
+  "의미": "[부] 그럼에도 불구하고"
+ },
+ {
+  "번호": 582,
+  "단어": "seal",
+  "의미": "[동] 봉인하다[명] 봉인, 도장, 바다표범"
+ },
+ {
+  "번호": 583,
+  "단어": "greed",
+  "의미": "[명] 탐욕, 식탐"
+ },
+ {
+  "번호": 584,
+  "단어": "contract",
+  "의미": "[명] 계약, 계약서[동] 계약하다, 수축하다"
+ },
+ {
+  "번호": 585,
+  "단어": "nutrition",
+  "의미": "[명] 영양"
+ },
+ {
+  "번호": 586,
+  "단어": "retail",
+  "의미": "[명] 소매[동] 소매하다[부] 소매로"
+ },
+ {
+  "번호": 587,
+  "단어": "prejudice",
+  "의미": "[명] 편견, 선입관[동] 편견을 갖게 하다"
+ },
+ {
+  "번호": 588,
+  "단어": "register",
+  "의미": "[동] 등록하다, 기재하다[명] 등록부"
+ },
+ {
+  "번호": 589,
+  "단어": "agency",
+  "의미": "[명] 기관, 대행사, 대리점"
+ },
+ {
+  "번호": 590,
+  "단어": "nurture",
+  "의미": "[동] 양육하다, 양성하다, 교육하다[명] 교육, 양육"
+ },
+ {
+  "번호": 591,
+  "단어": "priest",
+  "의미": "[명] 성직자"
+ },
+ {
+  "번호": 592,
+  "단어": "elegant",
+  "의미": "[형] 우아한, 고상한"
+ },
+ {
+  "번호": 593,
+  "단어": "impose",
+  "의미": "[동] 부과하다, 강요하다"
+ },
+ {
+  "번호": 594,
+  "단어": "arise",
+  "의미": "[동] 발생하다, 일어나다, 생겨나다"
+ },
+ {
+  "번호": 595,
+  "단어": "modify",
+  "의미": "[동] 수정하다, 변형하다"
+ },
+ {
+  "번호": 596,
+  "단어": "masterpiece",
+  "의미": "[명] 대표작, 대작, 명작"
+ },
+ {
+  "번호": 597,
+  "단어": "harsh",
+  "의미": "[형] 가혹한, 거친"
+ },
+ {
+  "번호": 598,
+  "단어": "drought",
+  "의미": "[명] 가뭄"
+ },
+ {
+  "번호": 599,
+  "단어": "criteria",
+  "의미": "[형] 기준, 표준 (criterion의 복수형)"
+ },
+ {
+  "번호": 600,
+  "단어": "extraordinary",
+  "의미": "[형] 비범한, 기이한, 놀라운"
+ },
+ {
+  "번호": 601,
+  "단어": "dim",
+  "의미": "[형] 희미한, 어둑한\n[동] 어둑하게 하다"
+ },
+ {
+  "번호": 602,
+  "단어": "general",
+  "의미": "[형] 일반적인, 전반적인\n[명] 장군"
+ },
+ {
+  "번호": 603,
+  "단어": "scream",
+  "의미": "[동] 비명을 지르다\n[명] 비명"
+ },
+ {
+  "번호": 604,
+  "단어": "spill",
+  "의미": "[동] 흘리다, 쏟다"
+ },
+ {
+  "번호": 605,
+  "단어": "glare",
+  "의미": "[동] 노려보다, 반짝 반짝 빛나다\n[명] 노려봄, 눈부신 빛"
+ },
+ {
+  "번호": 606,
+  "단어": "swallow",
+  "의미": "[명] 삼킴, 제비\n[동] 삼키다"
+ },
+ {
+  "번호": 607,
+  "단어": "usual",
+  "의미": "[형] 늘 하는, 흔히 있는"
+ },
+ {
+  "번호": 608,
+  "단어": "routine",
+  "의미": "[명] 틀에 박힌 일\n[형] 일상적인, 지루한"
+ },
+ {
+  "번호": 609,
+  "단어": "eliminate",
+  "의미": "[동] 제거하다, 삭제하다"
+ },
+ {
+  "번호": 610,
+  "단어": "deny",
+  "의미": "[동] 부인하다, 거절하다"
+ },
+ {
+  "번호": 611,
+  "단어": "sensitive",
+  "의미": "[형] 민감한, 예민한"
+ },
+ {
+  "번호": 612,
+  "단어": "tragic",
+  "의미": "[형] 비극적인"
+ },
+ {
+  "번호": 613,
+  "단어": "deprive",
+  "의미": "[동] 빼앗다, 강탈하다"
+ },
+ {
+  "번호": 614,
+  "단어": "conscious",
+  "의미": "[형] 의식하는, 의식이 있는"
+ },
+ {
+  "번호": 615,
+  "단어": "interfere",
+  "의미": "[동] 간섭하다"
+ },
+ {
+  "번호": 616,
+  "단어": "temporary",
+  "의미": "[형] 임시의"
+ },
+ {
+  "번호": 617,
+  "단어": "council",
+  "의미": "[명] 의회"
+ },
+ {
+  "번호": 618,
+  "단어": "adolescent",
+  "의미": "[명] 청소년\n[형] 청소년의"
+ },
+ {
+  "번호": 619,
+  "단어": "arctic",
+  "의미": "[형] 북극의"
+ },
+ {
+  "번호": 620,
+  "단어": "capture",
+  "의미": "[동] 붇잡다, 점유하다"
+ },
+ {
+  "번호": 621,
+  "단어": "dilute",
+  "의미": "[형] 묽은\n[동] 묽게 하다, 약화시키다"
+ },
+ {
+  "번호": 622,
+  "단어": "associate",
+  "의미": "[동] 연상하다, 어울리다\n[명] 동료"
+ },
+ {
+  "번호": 623,
+  "단어": "figure",
+  "의미": "[명] 숫자, 인물\n[동] 이해하다, 계산하다"
+ },
+ {
+  "번호": 624,
+  "단어": "warehouse",
+  "의미": "[명] 창고"
+ },
+ {
+  "번호": 625,
+  "단어": "crew",
+  "의미": "[명] 승무원, (특별한 기술의)팀\n[동] 승무원으로 일하다"
+ },
+ {
+  "번호": 626,
+  "단어": "barrier",
+  "의미": "[명] 장벽, 장애물"
+ },
+ {
+  "번호": 627,
+  "단어": "pedestrian",
+  "의미": "[명] 보행자\n[형] 보행자의"
+ },
+ {
+  "번호": 628,
+  "단어": "glance",
+  "의미": "[동] 흘꿋 보다\n[명] 흘끗 봄"
+ },
+ {
+  "번호": 629,
+  "단어": "errand",
+  "의미": "[명] 심부름"
+ },
+ {
+  "번호": 630,
+  "단어": "irritate",
+  "의미": "[동] 짜증나게 하다, 자극하다"
+ },
+ {
+  "번호": 631,
+  "단어": "welfare",
+  "의미": "[명] 복지, 행복"
+ },
+ {
+  "번호": 632,
+  "단어": "cruel",
+  "의미": "[형] 잔인한, 비참한"
+ },
+ {
+  "번호": 633,
+  "단어": "fold",
+  "의미": "[동] 주름\n[동] 접다"
+ },
+ {
+  "번호": 634,
+  "단어": "trial",
+  "의미": "[명] 재판, 시험"
+ },
+ {
+  "번호": 635,
+  "단어": "tribe",
+  "의미": "[명] 부족"
+ },
+ {
+  "번호": 636,
+  "단어": "profound",
+  "의미": "[형] 깊은, 심오한"
+ },
+ {
+  "번호": 637,
+  "단어": "tradition",
+  "의미": "[명] 전통"
+ },
+ {
+  "번호": 638,
+  "단어": "distinguish",
+  "의미": "[동] 구별하다"
+ },
+ {
+  "번호": 639,
+  "단어": "statement",
+  "의미": "[명] 진술, 성명, 진술서"
+ },
+ {
+  "번호": 640,
+  "단어": "prevail",
+  "의미": "[동] 만연하다, 우세하다"
+ },
+ {
+  "번호": 641,
+  "단어": "widespread",
+  "의미": "[형] 널리 퍼진"
+ },
+ {
+  "번호": 642,
+  "단어": "result",
+  "의미": "[명] 결과"
+ },
+ {
+  "번호": 643,
+  "단어": "fade",
+  "의미": "[동] 사라지다, (색깔이) 바래다"
+ },
+ {
+  "번호": 644,
+  "단어": "progress",
+  "의미": "[명] 진전, 진보[동] 진보하다"
+ },
+ {
+  "번호": 645,
+  "단어": "weapon",
+  "의미": "[명] 무기"
+ },
+ {
+  "번호": 646,
+  "단어": "drastic",
+  "의미": "[형] 과감한, 격렬한"
+ },
+ {
+  "번호": 647,
+  "단어": "reinforcement",
+  "의미": "[명] 병력 증강, 강화"
+ },
+ {
+  "번호": 648,
+  "단어": "wonder",
+  "의미": "[동] 궁금해하다, 놀라다[명] 놀라움"
+ },
+ {
+  "번호": 649,
+  "단어": "pile",
+  "의미": "[명] 더미[동] 쌓다"
+ },
+ {
+  "번호": 650,
+  "단어": "protect",
+  "의미": "[동] 보호하다"
+ },
+ {
+  "번호": 651,
+  "단어": "infection",
+  "의미": "[명] 감염"
+ },
+ {
+  "번호": 652,
+  "단어": "stiffen",
+  "의미": "[동] 굳어지다"
+ },
+ {
+  "번호": 653,
+  "단어": "endanger",
+  "의미": "[동] 위험에 빠뜨리다"
+ },
+ {
+  "번호": 654,
+  "단어": "adjust",
+  "의미": "[동] 조절하다, 적응하다"
+ },
+ {
+  "번호": 655,
+  "단어": "peer",
+  "의미": "[명] 동료, 또래[동] 자세히 들여다보다"
+ },
+ {
+  "번호": 656,
+  "단어": "renew",
+  "의미": "[동] 새롭게 하다, 연장하다"
+ },
+ {
+  "번호": 657,
+  "단어": "germ",
+  "의미": "[명] 세균, 싹, 근원"
+ },
+ {
+  "번호": 658,
+  "단어": "atom",
+  "의미": "[명] 원자"
+ },
+ {
+  "번호": 659,
+  "단어": "realize",
+  "의미": "[동] 깨닫다, 실현하다"
+ },
+ {
+  "번호": 660,
+  "단어": "enrich",
+  "의미": "[동] 부유하게 하다"
+ },
+ {
+  "번호": 661,
+  "단어": "noble",
+  "의미": "[형] 고결한, 귀족의"
+ },
+ {
+  "번호": 662,
+  "단어": "repair",
+  "의미": "[동] 수리하다[명] 수리"
+ },
+ {
+  "번호": 663,
+  "단어": "candidate",
+  "의미": "[명] 후보자"
+ },
+ {
+  "번호": 664,
+  "단어": "ideal",
+  "의미": "[형] 이상적인[명] 이상"
+ },
+ {
+  "번호": 665,
+  "단어": "crop",
+  "의미": "[명] 농작물"
+ },
+ {
+  "번호": 666,
+  "단어": "ethnic",
+  "의미": "[형] 민족의"
+ },
+ {
+  "번호": 667,
+  "단어": "foretell",
+  "의미": "[동] 예언하다"
+ },
+ {
+  "번호": 668,
+  "단어": "wholesale",
+  "의미": "[형] 도매의, 대량의"
+ },
+ {
+  "번호": 669,
+  "단어": "debt",
+  "의미": "[명] 부채"
+ },
+ {
+  "번호": 670,
+  "단어": "representative",
+  "의미": "[명] 대표자"
+ },
+ {
+  "번호": 671,
+  "단어": "shift",
+  "의미": "[동] 바꾸다[명] 변화"
+ },
+ {
+  "번호": 672,
+  "단어": "strict",
+  "의미": "[형] 엄격한, 엄밀한"
+ },
+ {
+  "번호": 673,
+  "단어": "appliance",
+  "의미": "[명] 가전제품"
+ },
+ {
+  "번호": 674,
+  "단어": "furthermore",
+  "의미": "[부] 더욱이, 게다가"
+ },
+ {
+  "번호": 675,
+  "단어": "excess",
+  "의미": "[명] 초과, 과다"
+ },
+ {
+  "번호": 676,
+  "단어": "command",
+  "의미": "[동] 명령하다, 지휘하다[동] 명령, 지휘"
+ },
+ {
+  "번호": 677,
+  "단어": "ecosystem",
+  "의미": "[명] 생태계"
+ },
+ {
+  "번호": 678,
+  "단어": "fame",
+  "의미": "[명] 명성"
+ },
+ {
+  "번호": 679,
+  "단어": "oral",
+  "의미": "[형] 입의[명] 구술시험"
+ },
+ {
+  "번호": 680,
+  "단어": "drift",
+  "의미": "[명] 표류, 일반적인 경향[동] 떠돌다, 방황하다"
+ },
+ {
+  "번호": 681,
+  "단어": "outstanding",
+  "의미": "[형] 뛰어난, 눈에 띄는"
+ },
+ {
+  "번호": 682,
+  "단어": "mislead",
+  "의미": "[동] 잘못 판단하게 하다"
+ },
+ {
+  "번호": 683,
+  "단어": "dedicate",
+  "의미": "[동] (시간, 노력을) 바치다"
+ },
+ {
+  "번호": 684,
+  "단어": "avoid",
+  "의미": "[동] 피하다, 방지하다"
+ },
+ {
+  "번호": 685,
+  "단어": "initial",
+  "의미": "[형] 초기의, 처음의\n[명] 머리글자 (이니셜)"
+ },
+ {
+  "번호": 686,
+  "단어": "sink",
+  "의미": "[동] 가라앉다"
+ },
+ {
+  "번호": 687,
+  "단어": "beard",
+  "의미": "[명] 턱수염"
+ },
+ {
+  "번호": 688,
+  "단어": "haste",
+  "의미": "[명] 서두름"
+ },
+ {
+  "번호": 689,
+  "단어": "crush",
+  "의미": "[동] 으스러뜨리다, 빻다"
+ },
+ {
+  "번호": 690,
+  "단어": "confront",
+  "의미": "[동] 맞서다, 직면하다"
+ },
+ {
+  "번호": 691,
+  "단어": "destiny",
+  "의미": "[명] 운명"
+ },
+ {
+  "번호": 692,
+  "단어": "hardship",
+  "의미": "[명] 고난, 고통"
+ },
+ {
+  "번호": 693,
+  "단어": "escape",
+  "의미": "[동] 탈출하다, 벗어나다\n[명] 탈출, 도피"
+ },
+ {
+  "번호": 694,
+  "단어": "valid",
+  "의미": "[형] 타당한, 유효한"
+ },
+ {
+  "번호": 695,
+  "단어": "entire",
+  "의미": "[형] 전체의, 완전한\n[명] 전부, 전체"
+ },
+ {
+  "번호": 696,
+  "단어": "dispose",
+  "의미": "[동] 배치하다, 처리하다"
+ },
+ {
+  "번호": 697,
+  "단어": "optimal",
+  "의미": "[형] 최적의"
+ },
+ {
+  "번호": 698,
+  "단어": "hydrogen",
+  "의미": "[명] 수소"
+ },
+ {
+  "번호": 699,
+  "단어": "thread",
+  "의미": "[명] 실\n[동] 실을 꿰다"
+ },
+ {
+  "번호": 700,
+  "단어": "dynasty",
+  "의미": "[명] 왕조"
+ },
+ {
+  "번호": 701,
+  "단어": "scatter",
+  "의미": "[동] 뿌리다, 흩어지다"
+ },
+ {
+  "번호": 702,
+  "단어": "gamble",
+  "의미": "[동] 돈을 걸다, 도박을 하다\n[명] 도박"
+ },
+ {
+  "번호": 703,
+  "단어": "temper",
+  "의미": "[명] 성질, 기분"
+ },
+ {
+  "번호": 704,
+  "단어": "exist",
+  "의미": "[동] 존재하다, 살아가다"
+ },
+ {
+  "번호": 705,
+  "단어": "undoubtedly",
+  "의미": "[부] 의심할 여지없이, 확실히"
+ },
+ {
+  "번호": 706,
+  "단어": "raft",
+  "의미": "[명] 뗏목, 비닐보트"
+ },
+ {
+  "번호": 707,
+  "단어": "minimal",
+  "의미": "[형] 최소의, 아주 적은"
+ },
+ {
+  "번호": 708,
+  "단어": "soak",
+  "의미": "[동] 흠뻑 적시다"
+ },
+ {
+  "번호": 709,
+  "단어": "craft",
+  "의미": "[명] 공예, 기술\n[동] 공들여 만들다"
+ },
+ {
+  "번호": 710,
+  "단어": "combat",
+  "의미": "[명] 전투\n[동] 싸우다"
+ },
+ {
+  "번호": 711,
+  "단어": "cease",
+  "의미": "[동] 중단하다"
+ },
+ {
+  "번호": 712,
+  "단어": "ceiling",
+  "의미": "[명] 천장, 최고 한도"
+ },
+ {
+  "번호": 713,
+  "단어": "unify",
+  "의미": "[동] 통합하다, 통일하다"
+ },
+ {
+  "번호": 714,
+  "단어": "perspective",
+  "의미": "[명] 견해, 관점"
+ },
+ {
+  "번호": 715,
+  "단어": "doom",
+  "의미": "[명] 나쁜 운명\n[동] 운명 짓다"
+ },
+ {
+  "번호": 716,
+  "단어": "bump",
+  "의미": "[동] 부딫치다"
+ },
+ {
+  "번호": 717,
+  "단어": "primary",
+  "의미": "[형] 주된, 초기의"
+ },
+ {
+  "번호": 718,
+  "단어": "genre",
+  "의미": "[명] 형식, 장르"
+ },
+ {
+  "번호": 719,
+  "단어": "erase",
+  "의미": "[동] 지우다"
+ },
+ {
+  "번호": 720,
+  "단어": "review",
+  "의미": "[동] 복습하다, 재검토하다\n[명] 복습, 검토, 비평"
+ },
+ {
+  "번호": 721,
+  "단어": "vital",
+  "의미": "[형] 필수적인, 중요한, 생명 유지와 관련된"
+ },
+ {
+  "번호": 722,
+  "단어": "incident",
+  "의미": "[명] 사건, 일어난 일[형] 일어나기 쉬운"
+ },
+ {
+  "번호": 723,
+  "단어": "session",
+  "의미": "[명] 시간, 회의, 기간, 학기"
+ },
+ {
+  "번호": 724,
+  "단어": "obvious",
+  "의미": "[형] 분명한, 명백한"
+ },
+ {
+  "번호": 725,
+  "단어": "moderate",
+  "의미": "[형] 온건한, 적당한"
+ },
+ {
+  "번호": 726,
+  "단어": "budget",
+  "의미": "[명] 예산, 예산안"
+ },
+ {
+  "번호": 727,
+  "단어": "graze",
+  "의미": "[동] 풀을 뜯다, 방목하다"
+ },
+ {
+  "번호": 728,
+  "단어": "fragile",
+  "의미": "[형] 부서지기 쉬운"
+ },
+ {
+  "번호": 729,
+  "단어": "myth",
+  "의미": "[명] 신화, 사회적 통념"
+ },
+ {
+  "번호": 730,
+  "단어": "fur",
+  "의미": "[명] 부드러운 털, 모피"
+ },
+ {
+  "번호": 731,
+  "단어": "indifferent",
+  "의미": "[형] 무관심한"
+ },
+ {
+  "번호": 732,
+  "단어": "strain",
+  "의미": "[명] 긴장, 압박[동] 잡아당기다, 긴장시키다, 혹사하다"
+ },
+ {
+  "번호": 733,
+  "단어": "ingredient",
+  "의미": "[명] 재료, 성분"
+ },
+ {
+  "번호": 734,
+  "단어": "dismiss",
+  "의미": "[동] 묵살하다, 해고하다, 해산시키다"
+ },
+ {
+  "번호": 735,
+  "단어": "geometry",
+  "의미": "[명] 기하학"
+ },
+ {
+  "번호": 736,
+  "단어": "glacier",
+  "의미": "[명] 빙하"
+ },
+ {
+  "번호": 737,
+  "단어": "urge",
+  "의미": "[동] 촉구하다, 강요하다"
+ },
+ {
+  "번호": 738,
+  "단어": "celebrity",
+  "의미": "[명] 유명 인사, 명성"
+ },
+ {
+  "번호": 739,
+  "단어": "antique",
+  "의미": "[형] 고대의, 옛날의, 고풍의[명] 골동품"
+ },
+ {
+  "번호": 740,
+  "단어": "profit",
+  "의미": "[명] 이익, 이윤[동] 이익을 얻다"
+ },
+ {
+  "번호": 741,
+  "단어": "sphere",
+  "의미": "[명] 구, 구체"
+ },
+ {
+  "번호": 742,
+  "단어": "inherit",
+  "의미": "[동] 상속받다, 물려받다"
+ },
+ {
+  "번호": 743,
+  "단어": "disgrace",
+  "의미": "[명] 불명예, 수치"
+ },
+ {
+  "번호": 744,
+  "단어": "crawl",
+  "의미": "[동] 기어가다, 서행하다[명] 기어가기, 서행"
+ },
+ {
+  "번호": 745,
+  "단어": "scratch",
+  "의미": "[동] 긁다, 할퀴다[명] 긁힌 자국, 찰과상"
+ },
+ {
+  "번호": 746,
+  "단어": "diabetes",
+  "의미": "[명] 당뇨병"
+ },
+ {
+  "번호": 747,
+  "단어": "congestion",
+  "의미": "[명] 혼잡, 밀집"
+ },
+ {
+  "번호": 748,
+  "단어": "constitute",
+  "의미": "[동] 구성하다, 설립하다, 제정하다"
+ },
+ {
+  "번호": 749,
+  "단어": "flow",
+  "의미": "[명] 흐름[동] 흐르다"
+ },
+ {
+  "번호": 750,
+  "단어": "investigate",
+  "의미": "[동] 조사하다, 수사하다"
+ },
+ {
+  "번호": 751,
+  "단어": "barter",
+  "의미": "[명] 물물 교환, 교역품[동] 물물 교환하다"
+ },
+ {
+  "번호": 752,
+  "단어": "circular",
+  "의미": "[형] 원의, 순환의"
+ },
+ {
+  "번호": 753,
+  "단어": "chilly",
+  "의미": "[형] 쌀쌀한, 냉담한"
+ },
+ {
+  "번호": 754,
+  "단어": "ancestor",
+  "의미": "[명] 조상, 선조"
+ },
+ {
+  "번호": 755,
+  "단어": "fierce",
+  "의미": "[형] 사나운, 맹렬한"
+ },
+ {
+  "번호": 756,
+  "단어": "vague",
+  "의미": "[형] 희미한, 막연한, 모호한"
+ },
+ {
+  "번호": 757,
+  "단어": "rough",
+  "의미": "[형] 거친, 난폭한, 대강의"
+ },
+ {
+  "번호": 758,
+  "단어": "content",
+  "의미": "[명] 내용, 목차[형] 만족하는"
+ },
+ {
+  "번호": 759,
+  "단어": "obstacle",
+  "의미": "[명] 장애물, 방해가 되는 것"
+ },
+ {
+  "번호": 760,
+  "단어": "editorial",
+  "의미": "[형] 편집자의[명] 사설, 논설"
+ },
+ {
+  "번호": 761,
+  "단어": "abolish",
+  "의미": "[동] 폐지하다"
+ },
+ {
+  "번호": 762,
+  "단어": "assure",
+  "의미": "[동] 확실하게 하다, 보증하다"
+ },
+ {
+  "번호": 763,
+  "단어": "form",
+  "의미": "[명] 형태, 종류[동] 형성하다"
+ },
+ {
+  "번호": 764,
+  "단어": "gender",
+  "의미": "[명] 성, 성별"
+ },
+ {
+  "번호": 765,
+  "단어": "innovation",
+  "의미": "[명] 혁신"
+ },
+ {
+  "번호": 766,
+  "단어": "opponent",
+  "의미": "[명] 상대, 반대자[형] 반대하는"
+ },
+ {
+  "번호": 767,
+  "단어": "present",
+  "의미": "[형] 현재의[명] 현재, 선물[동] 제출하다 나타내다"
+ },
+ {
+  "번호": 768,
+  "단어": "fertile",
+  "의미": "[형] 비옥한, 기름진"
+ },
+ {
+  "번호": 769,
+  "단어": "emperor",
+  "의미": "[명] 황제"
+ },
+ {
+  "번호": 770,
+  "단어": "dwell",
+  "의미": "[동] 거주하다, 살다"
+ },
+ {
+  "번호": 771,
+  "단어": "chore",
+  "의미": "[명] 허드렛일, 집안일"
+ },
+ {
+  "번호": 772,
+  "단어": "rehearsal",
+  "의미": "[명] 리허설, 예행연습"
+ },
+ {
+  "번호": 773,
+  "단어": "fossil",
+  "의미": "[명] 화석"
+ },
+ {
+  "번호": 774,
+  "단어": "glitter",
+  "의미": "동사 반짝이다명사 반짝임"
+ },
+ {
+  "번호": 775,
+  "단어": "carve",
+  "의미": "[동] 새기다, 조각하다"
+ },
+ {
+  "번호": 776,
+  "단어": "decay",
+  "의미": "[동] 부패하다, 쇠퇴하다[명] 부패, 쇠퇴"
+ },
+ {
+  "번호": 777,
+  "단어": "protein",
+  "의미": "[명] 단백질"
+ },
+ {
+  "번호": 778,
+  "단어": "backward",
+  "의미": "[부] 뒤쪽으로 후방에 거꾸로"
+ },
+ {
+  "번호": 779,
+  "단어": "translate",
+  "의미": "[동] 번역하다, 옮기다"
+ },
+ {
+  "번호": 780,
+  "단어": "refresh",
+  "의미": "[동] 상쾌하게 하다, 새롭게 하다"
+ },
+ {
+  "번호": 781,
+  "단어": "tissue",
+  "의미": "[명] (생물) 조직"
+ },
+ {
+  "번호": 782,
+  "단어": "lord",
+  "의미": "[명] 군주"
+ },
+ {
+  "번호": 783,
+  "단어": "substitute",
+  "의미": "[동] 대체하다[명] 대리자, 대체물"
+ },
+ {
+  "번호": 784,
+  "단어": "scan",
+  "의미": "[동] 정밀 검사하다, 유심히 쳐다보다"
+ },
+ {
+  "번호": 785,
+  "단어": "pottery",
+  "의미": "[명] 도자기, 도예"
+ },
+ {
+  "번호": 786,
+  "단어": "layer",
+  "의미": "[명] 층, 겹"
+ },
+ {
+  "번호": 787,
+  "단어": "property",
+  "의미": "[명] 재산, 소유물 , 부동산"
+ },
+ {
+  "번호": 788,
+  "단어": "justify",
+  "의미": "[동] 정당화하다"
+ },
+ {
+  "번호": 789,
+  "단어": "polish",
+  "의미": "[동] 닦다, 윤을 내다, (문장 등을)다듬다"
+ },
+ {
+  "번호": 790,
+  "단어": "flavor",
+  "의미": "[명] 맛동사 맛을 내다"
+ },
+ {
+  "번호": 791,
+  "단어": "imprint",
+  "의미": "[동] 찍다 감명시키다명사 찍은 자국, 인상"
+ },
+ {
+  "번호": 792,
+  "단어": "heritage",
+  "의미": "[명] 유산, 세습 재산"
+ },
+ {
+  "번호": 793,
+  "단어": "strive",
+  "의미": "[동] 노력하다, 애쓰다 , 투쟁하다"
+ },
+ {
+  "번호": 794,
+  "단어": "radiant",
+  "의미": "[형] 빛나는, 아주 밝은"
+ },
+ {
+  "번호": 795,
+  "단어": "exclaim",
+  "의미": "[동] (감탄하며)외치다"
+ },
+ {
+  "번호": 796,
+  "단어": "asset",
+  "의미": "[명] 자산, 재산"
+ },
+ {
+  "번호": 797,
+  "단어": "portray",
+  "의미": "[동] 묘사하다, 설명하다, 초상을 그리다"
+ },
+ {
+  "번호": 798,
+  "단어": "administer",
+  "의미": "[동] 관리•운영하다, 집행하다, 주다"
+ },
+ {
+  "번호": 799,
+  "단어": "wage",
+  "의미": "[명] 급료"
+ },
+ {
+  "번호": 800,
+  "단어": "subscribe",
+  "의미": "[동] 정기 구독하다"
+ },
+ {
+  "번호": 801,
+  "단어": "architecture",
+  "의미": "[명] 건축학, 건축 양식"
+ },
+ {
+  "번호": 802,
+  "단어": "territory",
+  "의미": "[명] 영토, 영역"
+ },
+ {
+  "번호": 803,
+  "단어": "strategy",
+  "의미": "[명] 전략, 계획"
+ },
+ {
+  "번호": 804,
+  "단어": "hence",
+  "의미": "[부] 그러므로, 향후"
+ },
+ {
+  "번호": 805,
+  "단어": "panic",
+  "의미": "[형] 당황한\n[명] 공황"
+ },
+ {
+  "번호": 806,
+  "단어": "wilderness",
+  "의미": "[명] 황무지"
+ },
+ {
+  "번호": 807,
+  "단어": "attract",
+  "의미": "[동] 끌다, 매혹하다"
+ },
+ {
+  "번호": 808,
+  "단어": "category",
+  "의미": "[명] 부류, 종류"
+ },
+ {
+  "번호": 809,
+  "단어": "murder",
+  "의미": "[동] 죽이다\n[명] 살인"
+ },
+ {
+  "번호": 810,
+  "단어": "funeral",
+  "의미": "[명] 장례식\n[형] 장례의"
+ },
+ {
+  "번호": 811,
+  "단어": "humiliation",
+  "의미": "[명] 창피 줌, 굴욕"
+ },
+ {
+  "번호": 812,
+  "단어": "ban",
+  "의미": "[동] 금지하다\n[명] 금지"
+ },
+ {
+  "번호": 813,
+  "단어": "flush",
+  "의미": "[동] 물로 씻어내리다, (얼굴이) 붉어지다\n[명] 물로 씻어냄, 홍조"
+ },
+ {
+  "번호": 814,
+  "단어": "omit",
+  "의미": "[동] ~을 생략하다"
+ },
+ {
+  "번호": 815,
+  "단어": "outcome",
+  "의미": "[명] 결과"
+ },
+ {
+  "번호": 816,
+  "단어": "despair",
+  "의미": "[명] 절망\n[동] 절망하다"
+ },
+ {
+  "번호": 817,
+  "단어": "alert",
+  "의미": "[형] 조심하는\n[동] 경고하다\n[명] 경계"
+ },
+ {
+  "번호": 818,
+  "단어": "compact",
+  "의미": "[형] 아담한, 빽빽한\n[명] 계약, 협정"
+ },
+ {
+  "번호": 819,
+  "단어": "likewise",
+  "의미": "[부] 마찬가지로"
+ },
+ {
+  "번호": 820,
+  "단어": "astonish",
+  "의미": "[동] 깜짝 놀라게 하다"
+ },
+ {
+  "번호": 821,
+  "단어": "optimistic",
+  "의미": "[형] 낙천적인"
+ },
+ {
+  "번호": 822,
+  "단어": "loyal",
+  "의미": "[형] 충성스러운"
+ },
+ {
+  "번호": 823,
+  "단어": "humid",
+  "의미": "[형] 습한"
+ },
+ {
+  "번호": 824,
+  "단어": "pretend",
+  "의미": "[동] ~인 척하다"
+ },
+ {
+  "번호": 825,
+  "단어": "graduate",
+  "의미": "[동] 졸업하다\n[명] 졸업생"
+ },
+ {
+  "번호": 826,
+  "단어": "delicate",
+  "의미": "[형] 연약한, 섬세한, 미묘한"
+ },
+ {
+  "번호": 827,
+  "단어": "inflate",
+  "의미": "[동] 부풀리다, 과장하다, (가격을) 올리다"
+ },
+ {
+  "번호": 828,
+  "단어": "adequate",
+  "의미": "[형] 적절한"
+ },
+ {
+  "번호": 829,
+  "단어": "physician",
+  "의미": "[명] 의사"
+ },
+ {
+  "번호": 830,
+  "단어": "joint",
+  "의미": "[명] 관절\n[형] 공동의"
+ },
+ {
+  "번호": 831,
+  "단어": "via",
+  "의미": "[전] ~을 경유해서, ~을 매개로 하여"
+ },
+ {
+  "번호": 832,
+  "단어": "passage",
+  "의미": "[명] 통로, (책의) 구절"
+ },
+ {
+  "번호": 833,
+  "단어": "prefer",
+  "의미": "[동] ~을 좋아하다"
+ },
+ {
+  "번호": 834,
+  "단어": "vessel",
+  "의미": "[명] 선박, 용기"
+ },
+ {
+  "번호": 835,
+  "단어": "restore",
+  "의미": "[동] 이전상태로 회복시키다"
+ },
+ {
+  "번호": 836,
+  "단어": "passive",
+  "의미": "[형] 소극적인,수동적인"
+ },
+ {
+  "번호": 837,
+  "단어": "experience",
+  "의미": "[명] 경험\n[동] 경험하다"
+ },
+ {
+  "번호": 838,
+  "단어": "marble",
+  "의미": "[명] 대리석"
+ },
+ {
+  "번호": 839,
+  "단어": "classify",
+  "의미": "[동] 분류하다"
+ },
+ {
+  "번호": 840,
+  "단어": "fundamental",
+  "의미": "[형] 근본적인, 필수의"
+ },
+ {
+  "번호": 841,
+  "단어": "majesty",
+  "의미": "[명] 위엄, 장엄, 왕(M-)"
+ },
+ {
+  "번호": 842,
+  "단어": "intimate",
+  "의미": "[형] 친밀한, 친숙한"
+ },
+ {
+  "번호": 843,
+  "단어": "merit",
+  "의미": "[명] 장점, 가치"
+ },
+ {
+  "번호": 844,
+  "단어": "launch",
+  "의미": "[동] 시작하다, 출시하다\n[명] 발사, 출시"
+ },
+ {
+  "번호": 845,
+  "단어": "conference",
+  "의미": "[명] 회의"
+ },
+ {
+  "번호": 846,
+  "단어": "reception",
+  "의미": "[명] 접수처, 환영연회"
+ },
+ {
+  "번호": 847,
+  "단어": "shrug",
+  "의미": "[동] 어깨를 으쓱하다\n[명] 어깨를 으쓱하기"
+ },
+ {
+  "번호": 848,
+  "단어": "vicious",
+  "의미": "[형] 악랄한, 타락한"
+ },
+ {
+  "번호": 849,
+  "단어": "cherish",
+  "의미": "[동] 소중히 하다"
+ },
+ {
+  "번호": 850,
+  "단어": "accuse",
+  "의미": "[동] 고발하다, 비난하다"
+ },
+ {
+  "번호": 851,
+  "단어": "eternal",
+  "의미": "[형] 영원한"
+ },
+ {
+  "번호": 852,
+  "단어": "shrink",
+  "의미": "[동] 줄어들다, 피하다"
+ },
+ {
+  "번호": 853,
+  "단어": "colleague",
+  "의미": "[명] 동료"
+ },
+ {
+  "번호": 854,
+  "단어": "transmit",
+  "의미": "[동] 보내다, 전염시키다, 전도하다"
+ },
+ {
+  "번호": 855,
+  "단어": "copper",
+  "의미": "[명] 구리\n[형] 구리의, 구릿빛의"
+ },
+ {
+  "번호": 856,
+  "단어": "orbit",
+  "의미": "[명] 궤도\n[동] 궤도를 그리며 돌다"
+ },
+ {
+  "번호": 857,
+  "단어": "overwhelm",
+  "의미": "[동] 압도하다, 당황하게 하다"
+ },
+ {
+  "번호": 858,
+  "단어": "discard",
+  "의미": "[동] 폐기하다, 버리다, 처분하다"
+ },
+ {
+  "번호": 859,
+  "단어": "famine",
+  "의미": "[명] 기근, 굶주림, 기아"
+ },
+ {
+  "번호": 860,
+  "단어": "pill",
+  "의미": "[명] 알약"
+ },
+ {
+  "번호": 861,
+  "단어": "enhance",
+  "의미": "[동] 강화하다"
+ },
+ {
+  "번호": 862,
+  "단어": "immune",
+  "의미": "[형] 면역의, 면역성이 있는"
+ },
+ {
+  "번호": 863,
+  "단어": "superior",
+  "의미": "[형] 뛰어난, 눈에 띄는"
+ },
+ {
+  "번호": 864,
+  "단어": "string",
+  "의미": "[명] 끈\n[동] 끈을 달다"
+ },
+ {
+  "번호": 865,
+  "단어": "cope",
+  "의미": "[동] 대처하다"
+ },
+ {
+  "번호": 866,
+  "단어": "raw",
+  "의미": "[형] 날것의, 가공하지 않은"
+ },
+ {
+  "번호": 867,
+  "단어": "apply",
+  "의미": "[동] 지원하다, 적용되다"
+ },
+ {
+  "번호": 868,
+  "단어": "cattle",
+  "의미": "[명] 소"
+ },
+ {
+  "번호": 869,
+  "단어": "loan",
+  "의미": "[동] 빌려주다\n[명] 대여, 융자금"
+ },
+ {
+  "번호": 870,
+  "단어": "obedient",
+  "의미": "[형] 유순한, 순종하는"
+ },
+ {
+  "번호": 871,
+  "단어": "procedure",
+  "의미": "[명] 절차, 수술"
+ },
+ {
+  "번호": 872,
+  "단어": "bond",
+  "의미": "[명] 유대, 속박\n[동] 유대를 맺다"
+ },
+ {
+  "번호": 873,
+  "단어": "angle",
+  "의미": "[명] 각도, 각\n[동] 비스듬히 움직이다"
+ },
+ {
+  "번호": 874,
+  "단어": "subtle",
+  "의미": "[형] 미묘한, 교묘한, 예민한"
+ },
+ {
+  "번호": 875,
+  "단어": "depict",
+  "의미": "[동] 묘사하다, 그리다"
+ },
+ {
+  "번호": 876,
+  "단어": "radical",
+  "의미": "[형] 근본적인, 급진적인"
+ },
+ {
+  "번호": 877,
+  "단어": "therapy",
+  "의미": "[명] 치료법"
+ },
+ {
+  "번호": 878,
+  "단어": "caution",
+  "의미": "[명] 조심, 경고\n[동] 경고하다"
+ },
+ {
+  "번호": 879,
+  "단어": "persist",
+  "의미": "[동] 고집하다, 지속하다"
+ },
+ {
+  "번호": 880,
+  "단어": "reverse",
+  "의미": "[동] 뒤집다, 후진하다\n[형] 반대의\n[명] 반대, 후진"
+ },
+ {
+  "번호": 881,
+  "단어": "support",
+  "의미": "[명] 떠받치, 지지\n[동] 지지하다, 후원하다"
+ },
+ {
+  "번호": 882,
+  "단어": "mammal",
+  "의미": "[명] 포유동물"
+ },
+ {
+  "번호": 883,
+  "단어": "iceberg",
+  "의미": "[명] 빙산"
+ },
+ {
+  "번호": 884,
+  "단어": "monetary",
+  "의미": "[형] 화폐의"
+ },
+ {
+  "번호": 885,
+  "단어": "revise",
+  "의미": "[동] 개정하다, 수정하다"
+ },
+ {
+  "번호": 886,
+  "단어": "resent",
+  "의미": "[동] 분개하다, 화를 내다"
+ },
+ {
+  "번호": 887,
+  "단어": "superb",
+  "의미": "[형] 매우 뛰어난"
+ },
+ {
+  "번호": 888,
+  "단어": "abrupt",
+  "의미": "[형] 갑작스런, 퉁명스러운"
+ },
+ {
+  "번호": 889,
+  "단어": "diverse",
+  "의미": "[형] 다양한"
+ },
+ {
+  "번호": 890,
+  "단어": "internal",
+  "의미": "[형] 내부의, 체내의"
+ },
+ {
+  "번호": 891,
+  "단어": "gloom",
+  "의미": "[명] 우울, 어둠"
+ },
+ {
+  "번호": 892,
+  "단어": "refine",
+  "의미": "[동] 개선하다, 정제하다"
+ },
+ {
+  "번호": 893,
+  "단어": "dynamic",
+  "의미": "[형] 역동적인, 활발한"
+ },
+ {
+  "번호": 894,
+  "단어": "nerve",
+  "의미": "[명] 신경"
+ },
+ {
+  "번호": 895,
+  "단어": "prompt",
+  "의미": "[형] 신속한, 즉각적인\n[동] 촉발하다, 자극하다"
+ },
+ {
+  "번호": 896,
+  "단어": "suspend",
+  "의미": "[동] 일시 중지하다, 보류하다, 정직(정학)시키다"
+ },
+ {
+  "번호": 897,
+  "단어": "control",
+  "의미": "[동] 통제하다, 지배하다\n[명] 통제, 지배"
+ },
+ {
+  "번호": 898,
+  "단어": "distraction",
+  "의미": "[명] 집중을 방해하는 것"
+ },
+ {
+  "번호": 899,
+  "단어": "collapse",
+  "의미": "[동] 무너지다, (가격이) 폭락하다"
+ },
+ {
+  "번호": 900,
+  "단어": "monologue",
+  "의미": "[명] 독백"
+ },
+ {
+  "번호": 901,
+  "단어": "martial",
+  "의미": "[형] 군대의, 전쟁의"
+ },
+ {
+  "번호": 902,
+  "단어": "deliberate",
+  "의미": "[형] 고의의, 신중한"
+ },
+ {
+  "번호": 903,
+  "단어": "trigger",
+  "의미": "[동] 작동시키다, 촉발시키다\n[명] 방아쇠, 계기"
+ },
+ {
+  "번호": 904,
+  "단어": "plot",
+  "의미": "[명] 줄거리, 음모\n[동] 음모를 꾸미다"
+ },
+ {
+  "번호": 905,
+  "단어": "rod",
+  "의미": "[명] 막대, 낚싯대"
+ },
+ {
+  "번호": 906,
+  "단어": "Atlantic",
+  "의미": "[명] 대서양\n[형] 대서양의"
+ },
+ {
+  "번호": 907,
+  "단어": "industry",
+  "의미": "[명] 산업"
+ },
+ {
+  "번호": 908,
+  "단어": "weird",
+  "의미": "[형] 이상한, 괴상한"
+ },
+ {
+  "번호": 909,
+  "단어": "suggest",
+  "의미": "[동] 제안하다, 암시하다"
+ },
+ {
+  "번호": 910,
+  "단어": "partial",
+  "의미": "[형] 부분적인, 편파적인"
+ },
+ {
+  "번호": 911,
+  "단어": "priceless",
+  "의미": "[형] 대단히 소중한"
+ },
+ {
+  "번호": 912,
+  "단어": "mutual",
+  "의미": "[형] 상호 간의, 공동의"
+ },
+ {
+  "번호": 913,
+  "단어": "fate",
+  "의미": "[명] 운명"
+ },
+ {
+  "번호": 914,
+  "단어": "booth",
+  "의미": "[명] 작은 공간"
+ },
+ {
+  "번호": 915,
+  "단어": "pursue",
+  "의미": "[동] 추구하다"
+ },
+ {
+  "번호": 916,
+  "단어": "prescribe",
+  "의미": "[동] 처방하다, 규정하다"
+ },
+ {
+  "번호": 917,
+  "단어": "erupt",
+  "의미": "[동] (화산이) 폭발하다"
+ },
+ {
+  "번호": 918,
+  "단어": "insult",
+  "의미": "[동] 모욕하다\n[명] 모욕, 모욕적인 말"
+ },
+ {
+  "번호": 919,
+  "단어": "gaze",
+  "의미": "[동] 응시하다\n[명] 응시"
+ },
+ {
+  "번호": 920,
+  "단어": "supreme",
+  "의미": "[명] 최고\n[형] 최고의"
+ },
+ {
+  "번호": 921,
+  "단어": "transaction",
+  "의미": "[명] 거래, 매매"
+ },
+ {
+  "번호": 922,
+  "단어": "sufficient",
+  "의미": "[형] 충분한"
+ },
+ {
+  "번호": 923,
+  "단어": "stable",
+  "의미": "[형] 안정된\n[명] 마구간"
+ },
+ {
+  "번호": 924,
+  "단어": "sympathy",
+  "의미": "[명] 연민, 동의"
+ },
+ {
+  "번호": 925,
+  "단어": "by-product",
+  "의미": "[명] 부산물"
+ },
+ {
+  "번호": 926,
+  "단어": "edible",
+  "의미": "[형] 먹을 수 있는"
+ },
+ {
+  "번호": 927,
+  "단어": "federal",
+  "의미": "[형] 연방의, 연방 정부의"
+ },
+ {
+  "번호": 928,
+  "단어": "bud",
+  "의미": "[명] 싹, 봉오리, 친구"
+ },
+ {
+  "번호": 929,
+  "단어": "trivial",
+  "의미": "[형] 사소한"
+ },
+ {
+  "번호": 930,
+  "단어": "anxiety",
+  "의미": "[명] 걱정, 불안, 열망"
+ },
+ {
+  "번호": 931,
+  "단어": "tablet",
+  "의미": "[명] 알약"
+ },
+ {
+  "번호": 932,
+  "단어": "prepare",
+  "의미": "[동] 준비하다"
+ },
+ {
+  "번호": 933,
+  "단어": "trade",
+  "의미": "[명] 무역하다, 교환하다"
+ },
+ {
+  "번호": 934,
+  "단어": "liquid",
+  "의미": "[명] 액체\n[형] 액체의, 유동적의"
+ },
+ {
+  "번호": 935,
+  "단어": "contend",
+  "의미": "[동] 싸우다, 주장하다"
+ },
+ {
+  "번호": 936,
+  "단어": "outlook",
+  "의미": "[명] 전망, 경치, 견해"
+ },
+ {
+  "번호": 937,
+  "단어": "roam",
+  "의미": "[동] 배회하다, 돌아다니다"
+ },
+ {
+  "번호": 938,
+  "단어": "decent",
+  "의미": "[형] 괜찮은, 예의 바른, 적절한"
+ },
+ {
+  "번호": 939,
+  "단어": "concern",
+  "의미": "[명] 걱정, 관심\n[동] 걱정하다, 관심을 갖다"
+ },
+ {
+  "번호": 940,
+  "단어": "behalf",
+  "의미": "[명] 측, 편, 이익"
+ },
+ {
+  "번호": 941,
+  "단어": "suffer",
+  "의미": "[동] 고통 받다, 겪다"
+ },
+ {
+  "번호": 942,
+  "단어": "distortion",
+  "의미": "[명] 왜곡, 찌그러뜨림"
+ },
+ {
+  "번호": 943,
+  "단어": "infinite",
+  "의미": "[형] 무한한"
+ },
+ {
+  "번호": 944,
+  "단어": "anticipate",
+  "의미": "[동] 예상하다, 기대하다"
+ },
+ {
+  "번호": 945,
+  "단어": "symbolic",
+  "의미": "[형] 상징적인"
+ },
+ {
+  "번호": 946,
+  "단어": "municipal",
+  "의미": "[형] 지방 자치제의"
+ },
+ {
+  "번호": 947,
+  "단어": "phenomenon",
+  "의미": "[명] 현상"
+ },
+ {
+  "번호": 948,
+  "단어": "devote",
+  "의미": "[동] (시간, 노력)쏟다"
+ },
+ {
+  "번호": 949,
+  "단어": "peasant",
+  "의미": "[명] 소작농"
+ },
+ {
+  "번호": 950,
+  "단어": "tenant",
+  "의미": "[명] 세입자"
+ },
+ {
+  "번호": 951,
+  "단어": "worthwhile",
+  "의미": "[형] 가치있는"
+ },
+ {
+  "번호": 952,
+  "단어": "pavement",
+  "의미": "[명] 포장도로"
+ },
+ {
+  "번호": 953,
+  "단어": "dioxide",
+  "의미": "[명] (화학)이산화물"
+ },
+ {
+  "번호": 954,
+  "단어": "diminish",
+  "의미": "[동] 줄이다, 약화시키다"
+ },
+ {
+  "번호": 955,
+  "단어": "jealous",
+  "의미": "[형] 질투하는, 시기하는"
+ },
+ {
+  "번호": 956,
+  "단어": "limp",
+  "의미": "[형] 기운이 없는, 축 처진"
+ },
+ {
+  "번호": 957,
+  "단어": "exclude",
+  "의미": "[동] 제외하다, 차단하다"
+ },
+ {
+  "번호": 958,
+  "단어": "flexible",
+  "의미": "[형] 융통성 있는, 잘 구부러지는"
+ },
+ {
+  "번호": 959,
+  "단어": "nominate",
+  "의미": "[동] 지명하다"
+ },
+ {
+  "번호": 960,
+  "단어": "sacred",
+  "의미": "[형] 성스러운, 종교적인"
+ },
+ {
+  "번호": 961,
+  "단어": "context",
+  "의미": "[명] 맥락"
+ },
+ {
+  "번호": 962,
+  "단어": "complete",
+  "의미": "[형] 완벽한[동] 완료하다"
+ },
+ {
+  "번호": 963,
+  "단어": "race",
+  "의미": "[명] 경주, 인종[동] 경주하다"
+ },
+ {
+  "번호": 964,
+  "단어": "dominate",
+  "의미": "[동] 지배하다"
+ },
+ {
+  "번호": 965,
+  "단어": "vehicle",
+  "의미": "[명] 탈것"
+ },
+ {
+  "번호": 966,
+  "단어": "complain",
+  "의미": "[동] 불평하다"
+ },
+ {
+  "번호": 967,
+  "단어": "brochure",
+  "의미": "[명] 브로셔"
+ },
+ {
+  "번호": 968,
+  "단어": "force",
+  "의미": "[명] 힘[동] 강요하다"
+ },
+ {
+  "번호": 969,
+  "단어": "nest",
+  "의미": "[명] 둥지"
+ },
+ {
+  "번호": 970,
+  "단어": "gain",
+  "의미": "[동] 얻다"
+ },
+ {
+  "번호": 971,
+  "단어": "curriculum",
+  "의미": "[명] 교육 과정"
+ },
+ {
+  "번호": 972,
+  "단어": "sew",
+  "의미": "[동] 바느질하다"
+ },
+ {
+  "번호": 973,
+  "단어": "masculine",
+  "의미": "[형] 남자의"
+ },
+ {
+  "번호": 974,
+  "단어": "frown",
+  "의미": "[동] 눈살을 찌푸리다[명] 찡그린 얼굴"
+ },
+ {
+  "번호": 975,
+  "단어": "astound",
+  "의미": "놀라게 하다"
+ },
+ {
+  "번호": 976,
+  "단어": "dictator",
+  "의미": "[명] 독재자"
+ },
+ {
+  "번호": 977,
+  "단어": "assessment",
+  "의미": "[명] 평가"
+ },
+ {
+  "번호": 978,
+  "단어": "crucial",
+  "의미": "[형] 중대한, 결정적인"
+ },
+ {
+  "번호": 979,
+  "단어": "paralysis",
+  "의미": "[명] 마비"
+ },
+ {
+  "번호": 980,
+  "단어": "deck",
+  "의미": "[명] (배의) 갑판"
+ },
+ {
+  "번호": 981,
+  "단어": "cheer",
+  "의미": "[명] 환호[동] 환호하다"
+ },
+ {
+  "번호": 982,
+  "단어": "miserable",
+  "의미": "[형] 비참한"
+ },
+ {
+  "번호": 983,
+  "단어": "tease",
+  "의미": "[동] 괴롭히다"
+ },
+ {
+  "번호": 984,
+  "단어": "aggressive",
+  "의미": "[형] 공격적인"
+ },
+ {
+  "번호": 985,
+  "단어": "cure",
+  "의미": "[동] 치료하다[명] 치료"
+ },
+ {
+  "번호": 986,
+  "단어": "attribute",
+  "의미": "[동] ~의 결과로 여기다[명] 속성"
+ },
+ {
+  "번호": 987,
+  "단어": "foster",
+  "의미": "[동] 육성하다"
+ },
+ {
+  "번호": 988,
+  "단어": "phychologist",
+  "의미": "심리학자"
+ },
+ {
+  "번호": 989,
+  "단어": "postpone",
+  "의미": "[동] 연기하다"
+ },
+ {
+  "번호": 990,
+  "단어": "rob",
+  "의미": "[동] 강탈하다, 훔치다"
+ },
+ {
+  "번호": 991,
+  "단어": "abuse",
+  "의미": "[동] 남용하다, 학대하다[명] 남용, 학대"
+ },
+ {
+  "번호": 992,
+  "단어": "unemployed",
+  "의미": "[형] 실업의"
+ },
+ {
+  "번호": 993,
+  "단어": "breakdown",
+  "의미": "[명] 고장, 쇠약"
+ },
+ {
+  "번호": 994,
+  "단어": "disguise",
+  "의미": "[동] 숨기다, 변장"
+ },
+ {
+  "번호": 995,
+  "단어": "blueprint",
+  "의미": "[명] 청사진"
+ },
+ {
+  "번호": 996,
+  "단어": "rear",
+  "의미": "[형] 뒤의[명] 뒤[동] 기르다"
+ },
+ {
+  "번호": 997,
+  "단어": "output",
+  "의미": "[명] 생산량"
+ },
+ {
+  "번호": 998,
+  "단어": "sermon",
+  "의미": "[명] 설교"
+ },
+ {
+  "번호": 999,
+  "단어": "sprout",
+  "의미": "[동] 싹이 트다. 싹"
+ },
+ {
+  "번호": 1000,
+  "단어": "tin",
+  "의미": "[명] 주석, 양철"
+ },
+ {
+  "번호": 1001,
+  "단어": "reform",
+  "의미": "[동] 개혁하다[명] 개혁,"
+ },
+ {
+  "번호": 1002,
+  "단어": "deal",
+  "의미": "[동] 다루다[명] 거래"
+ },
+ {
+  "번호": 1003,
+  "단어": "recruit",
+  "의미": "[동] 모집하다[명] 신병"
+ },
+ {
+  "번호": 1004,
+  "단어": "maintain",
+  "의미": "[동] 유지하다"
+ },
+ {
+  "번호": 1005,
+  "단어": "workshop",
+  "의미": "[명] 작업장, 워크숍"
+ },
+ {
+  "번호": 1006,
+  "단어": "patient",
+  "의미": "[명] 환자"
+ },
+ {
+  "번호": 1007,
+  "단어": "convention",
+  "의미": "[명] 총회, 관습"
+ },
+ {
+  "번호": 1008,
+  "단어": "devastate",
+  "의미": "[동] 황폐시키다"
+ },
+ {
+  "번호": 1009,
+  "단어": "reap",
+  "의미": "[동] 수확하다"
+ },
+ {
+  "번호": 1010,
+  "단어": "overlook",
+  "의미": "[동] 간과하다, 내려다보다"
+ },
+ {
+  "번호": 1011,
+  "단어": "deliver",
+  "의미": "[동] 배달하다, (연설을)하다"
+ },
+ {
+  "번호": 1012,
+  "단어": "reject",
+  "의미": "[동] 거부하다, 거절하다"
+ },
+ {
+  "번호": 1013,
+  "단어": "nourish",
+  "의미": "[동] 영양분을 주다, 기르다"
+ },
+ {
+  "번호": 1014,
+  "단어": "bay",
+  "의미": "[명] 만"
+ },
+ {
+  "번호": 1015,
+  "단어": "stun",
+  "의미": "[동] 놀라게 하다"
+ },
+ {
+  "번호": 1016,
+  "단어": "particular",
+  "의미": "[형] 특정한"
+ },
+ {
+  "번호": 1017,
+  "단어": "bulletin",
+  "의미": "[명] 게시(물)"
+ },
+ {
+  "번호": 1018,
+  "단어": "fluid",
+  "의미": "[형] 유동성의[명] 유동체"
+ },
+ {
+  "번호": 1019,
+  "단어": "affair",
+  "의미": "[명] 일, 사건"
+ },
+ {
+  "번호": 1020,
+  "단어": "dawn",
+  "의미": "[명] 새벽, 시작[동] 날이 새다"
+ },
+ {
+  "번호": 1021,
+  "단어": "hostile",
+  "의미": "[형] 적대적인"
+ },
+ {
+  "번호": 1022,
+  "단어": "characteristic",
+  "의미": "[명] 특징"
+ },
+ {
+  "번호": 1023,
+  "단어": "respect",
+  "의미": "[동] 존경하다, (법 등을) 준수하다[명] 존경, 측면"
+ },
+ {
+  "번호": 1024,
+  "단어": "await",
+  "의미": "[동] 기다리다"
+ },
+ {
+  "번호": 1025,
+  "단어": "concrete",
+  "의미": "[형] 구체적인"
+ },
+ {
+  "번호": 1026,
+  "단어": "lease",
+  "의미": "[동] 임대하다[명] 임대차 계약"
+ },
+ {
+  "번호": 1027,
+  "단어": "racial",
+  "의미": "[형] 인종의"
+ },
+ {
+  "번호": 1028,
+  "단어": "variable",
+  "의미": "[형] 변수. 변하기 쉬운, 변덕스러운"
+ },
+ {
+  "번호": 1029,
+  "단어": "satisfy",
+  "의미": "[동] 만족시키다"
+ },
+ {
+  "번호": 1030,
+  "단어": "rule",
+  "의미": "[명] 규칙, 지배[동] 지배하다"
+ },
+ {
+  "번호": 1031,
+  "단어": "perseverance",
+  "의미": "인내심"
+ },
+ {
+  "번호": 1032,
+  "단어": "fatal",
+  "의미": "[형] 치명적인"
+ },
+ {
+  "번호": 1033,
+  "단어": "remove",
+  "의미": "[동] 제거하다, 치우다"
+ },
+ {
+  "번호": 1034,
+  "단어": "invert",
+  "의미": "거꾸로 하다"
+ },
+ {
+  "번호": 1035,
+  "단어": "tension",
+  "의미": "[명] 긴장"
+ },
+ {
+  "번호": 1036,
+  "단어": "reign",
+  "의미": "[명] 통치, 지배"
+ },
+ {
+  "번호": 1037,
+  "단어": "crack",
+  "의미": "[명] 금이 가다[명] (갈라진 틈"
+ },
+ {
+  "번호": 1038,
+  "단어": "startle",
+  "의미": "[동] 깜짝 놀라게 하다"
+ },
+ {
+  "번호": 1039,
+  "단어": "discourage",
+  "의미": "[동] 낙담시키다, 말리다"
+ },
+ {
+  "번호": 1040,
+  "단어": "compensate",
+  "의미": "[동] 보상하다"
+ },
+ {
+  "번호": 1041,
+  "단어": "convert",
+  "의미": "[동] 전환시키다, 바꾸다"
+ },
+ {
+  "번호": 1042,
+  "단어": "strike",
+  "의미": "[동] 치다"
+ },
+ {
+  "번호": 1043,
+  "단어": "suppress",
+  "의미": "[동] 억압하다, 참다"
+ },
+ {
+  "번호": 1044,
+  "단어": "core",
+  "의미": "[명] 핵심(의)"
+ },
+ {
+  "번호": 1045,
+  "단어": "contribute",
+  "의미": "[동] 공헌하다"
+ },
+ {
+  "번호": 1046,
+  "단어": "spear",
+  "의미": "[명] 창"
+ },
+ {
+  "번호": 1047,
+  "단어": "renowned",
+  "의미": "[형] 명성 있는"
+ },
+ {
+  "번호": 1048,
+  "단어": "era",
+  "의미": "[명] 시대"
+ },
+ {
+  "번호": 1049,
+  "단어": "withdraw",
+  "의미": "[동] 인출하다"
+ },
+ {
+  "번호": 1050,
+  "단어": "immigrate",
+  "의미": "[동] 이주하다"
+ },
+ {
+  "번호": 1051,
+  "단어": "dignity",
+  "의미": "[명] 존엄"
+ },
+ {
+  "번호": 1052,
+  "단어": "notify",
+  "의미": "[동] 통보하다, 알리다"
+ },
+ {
+  "번호": 1053,
+  "단어": "animate",
+  "의미": "살아 있는"
+ },
+ {
+  "번호": 1054,
+  "단어": "prevent",
+  "의미": "[동] 예방하다, 막다"
+ },
+ {
+  "번호": 1055,
+  "단어": "bilingual",
+  "의미": "[형] 2개 국어의"
+ },
+ {
+  "번호": 1056,
+  "단어": "mischief",
+  "의미": "장난, 해악"
+ },
+ {
+  "번호": 1057,
+  "단어": "discriminate",
+  "의미": "[동] 차별하다, 구별하다"
+ },
+ {
+  "번호": 1058,
+  "단어": "exemplify",
+  "의미": "[동] 예시하다"
+ },
+ {
+  "번호": 1059,
+  "단어": "adhere",
+  "의미": "[동] 고수하다"
+ },
+ {
+  "번호": 1060,
+  "단어": "judge",
+  "의미": "[동] 판단하다"
+ },
+ {
+  "번호": 1061,
+  "단어": "peculiar",
+  "의미": "[형] 독특한"
+ },
+ {
+  "번호": 1062,
+  "단어": "sake",
+  "의미": "[명] 위함, 목적"
+ },
+ {
+  "번호": 1063,
+  "단어": "choke",
+  "의미": "[동] 질식시키다"
+ },
+ {
+  "번호": 1064,
+  "단어": "folktale",
+  "의미": "민간 설화, 전설"
+ },
+ {
+  "번호": 1065,
+  "단어": "simultaneously",
+  "의미": "[부] 동시에"
+ },
+ {
+  "번호": 1066,
+  "단어": "range",
+  "의미": "[명] 범위"
+ },
+ {
+  "번호": 1067,
+  "단어": "groom",
+  "의미": "신랑"
+ },
+ {
+  "번호": 1068,
+  "단어": "supernatural",
+  "의미": "[형] 초자연적인"
+ },
+ {
+  "번호": 1069,
+  "단어": "tender",
+  "의미": "[형] 부드러운"
+ },
+ {
+  "번호": 1070,
+  "단어": "instinct",
+  "의미": "[명] 본능"
+ },
+ {
+  "번호": 1071,
+  "단어": "gigantic",
+  "의미": "[형] 거대한"
+ },
+ {
+  "번호": 1072,
+  "단어": "meditate",
+  "의미": "명상하다"
+ },
+ {
+  "번호": 1073,
+  "단어": "mow",
+  "의미": "[동] (풀을) 베다"
+ },
+ {
+  "번호": 1074,
+  "단어": "evolve",
+  "의미": "[동] 진화하다, 발전하다"
+ },
+ {
+  "번호": 1075,
+  "단어": "chase",
+  "의미": "[동] 추격하다, 쫓다"
+ },
+ {
+  "번호": 1076,
+  "단어": "afflict",
+  "의미": "[동] 괴롭히다"
+ },
+ {
+  "번호": 1077,
+  "단어": "literate",
+  "의미": "읽고 쓸 수 있는"
+ },
+ {
+  "번호": 1078,
+  "단어": "coherent",
+  "의미": "[형] 통일성 있는, 조리 있는"
+ },
+ {
+  "번호": 1079,
+  "단어": "intolerable",
+  "의미": "참을 수 없는"
+ },
+ {
+  "번호": 1080,
+  "단어": "fountain",
+  "의미": "[명] 분수"
+ },
+ {
+  "번호": 1081,
+  "단어": "bold",
+  "의미": "[형] 대담한, 선이 굵은"
+ },
+ {
+  "번호": 1082,
+  "단어": "compliment",
+  "의미": "[동] 칭찬하다[명] 칭찬"
+ },
+ {
+  "번호": 1083,
+  "단어": "summit",
+  "의미": "[명] 정상"
+ },
+ {
+  "번호": 1084,
+  "단어": "troop",
+  "의미": "[명] 무리, 군대"
+ },
+ {
+  "번호": 1085,
+  "단어": "alter",
+  "의미": "[동] 바꾸다, 변경하다"
+ },
+ {
+  "번호": 1086,
+  "단어": "conceive",
+  "의미": "[동] 생각해 내다"
+ },
+ {
+  "번호": 1087,
+  "단어": "durability",
+  "의미": "내구성"
+ },
+ {
+  "번호": 1088,
+  "단어": "destroy",
+  "의미": "[동] 파괴하다"
+ },
+ {
+  "번호": 1089,
+  "단어": "shallow",
+  "의미": "[형] 얕은, 피상적인"
+ },
+ {
+  "번호": 1090,
+  "단어": "face",
+  "의미": "[명] 얼굴, 표면[동] 직면하다"
+ },
+ {
+  "번호": 1091,
+  "단어": "promote",
+  "의미": "[동] 승진시키다"
+ },
+ {
+  "번호": 1092,
+  "단어": "weep",
+  "의미": "[동] 울다"
+ },
+ {
+  "번호": 1093,
+  "단어": "grasp",
+  "의미": "[동] 붙잡다"
+ },
+ {
+  "번호": 1094,
+  "단어": "overall",
+  "의미": "[형] 전반적인, 전체의"
+ },
+ {
+  "번호": 1095,
+  "단어": "superstition",
+  "의미": "[명] 미신"
+ },
+ {
+  "번호": 1096,
+  "단어": "colony",
+  "의미": "[명] 식민지"
+ },
+ {
+  "번호": 1097,
+  "단어": "absurd",
+  "의미": "[형] 불합리한, 우스꽝스러운"
+ },
+ {
+  "번호": 1098,
+  "단어": "dormitory",
+  "의미": "[명] 기숙사"
+ },
+ {
+  "번호": 1099,
+  "단어": "conduct",
+  "의미": "[동] 수행하다[명] 행위"
+ },
+ {
+  "번호": 1100,
+  "단어": "prone",
+  "의미": "[형] ~하는 경향이 있는"
+ },
+ {
+  "번호": 1101,
+  "단어": "conceal",
+  "의미": "[동] 숨기다"
+ },
+ {
+  "번호": 1102,
+  "단어": "retreat",
+  "의미": "[동] 후퇴하다[명] 후퇴"
+ },
+ {
+  "번호": 1103,
+  "단어": "compulsive",
+  "의미": "강제적인, 강박의"
+ },
+ {
+  "번호": 1104,
+  "단어": "clinic",
+  "의미": "[명] 전문 병원, 개인 병원"
+ },
+ {
+  "번호": 1105,
+  "단어": "banner",
+  "의미": "[명] 현수막"
+ },
+ {
+  "번호": 1106,
+  "단어": "formulate",
+  "의미": "[동] 만들어내다, 공식화하다"
+ },
+ {
+  "번호": 1107,
+  "단어": "vow",
+  "의미": "[명] 맹세(하다)"
+ },
+ {
+  "번호": 1108,
+  "단어": "malnutrition",
+  "의미": "영양실조"
+ },
+ {
+  "번호": 1109,
+  "단어": "relate",
+  "의미": "[동] 관련시키다"
+ },
+ {
+  "번호": 1110,
+  "단어": "undergo",
+  "의미": "[동] 겪다"
+ },
+ {
+  "번호": 1111,
+  "단어": "boast",
+  "의미": "[동] 자랑하다"
+ },
+ {
+  "번호": 1112,
+  "단어": "neutral",
+  "의미": "[형] 중립의"
+ },
+ {
+  "번호": 1113,
+  "단어": "stain",
+  "의미": "[명] 얼룩"
+ },
+ {
+  "번호": 1114,
+  "단어": "incentive",
+  "의미": "[명] 장려책, 자극"
+ },
+ {
+  "번호": 1115,
+  "단어": "float",
+  "의미": "[동] 뜨다, 떠다니다"
+ },
+ {
+  "번호": 1116,
+  "단어": "tendency",
+  "의미": "[명] 경향"
+ },
+ {
+  "번호": 1117,
+  "단어": "applause",
+  "의미": "[명] 박수갈채"
+ },
+ {
+  "번호": 1118,
+  "단어": "wrestle",
+  "의미": "[동] 싸우다, 씨름하다"
+ },
+ {
+  "번호": 1119,
+  "단어": "sensation",
+  "의미": "[명] 감각, 느낌"
+ },
+ {
+  "번호": 1120,
+  "단어": "Confucian",
+  "의미": "공자의, 유교의"
+ },
+ {
+  "번호": 1121,
+  "단어": "diameter",
+  "의미": "[명] 지름"
+ },
+ {
+  "번호": 1122,
+  "단어": "ultrasound",
+  "의미": "[명] 초음파"
+ },
+ {
+  "번호": 1123,
+  "단어": "propriety",
+  "의미": "[명] 적절성, 예의바름"
+ },
+ {
+  "번호": 1124,
+  "단어": "anecdote",
+  "의미": "[명] 일화"
+ },
+ {
+  "번호": 1125,
+  "단어": "shrub",
+  "의미": "[명] 관목"
+ },
+ {
+  "번호": 1126,
+  "단어": "pledge",
+  "의미": "[명] 서약, 담보\n[동] 서약하다"
+ },
+ {
+  "번호": 1127,
+  "단어": "cost",
+  "의미": "[명] 가격, 비용\n[동] (가격, 비용이) 들다"
+ },
+ {
+  "번호": 1128,
+  "단어": "geology",
+  "의미": "[명] 지질학"
+ },
+ {
+  "번호": 1129,
+  "단어": "detect",
+  "의미": "[동] 찾아내다, 감지하다"
+ },
+ {
+  "번호": 1130,
+  "단어": "temperate",
+  "의미": "[형] 절제하는, (기후가) 온화한"
+ },
+ {
+  "번호": 1131,
+  "단어": "soar",
+  "의미": "[동] 급등하다, 날아오르다"
+ },
+ {
+  "번호": 1132,
+  "단어": "mock",
+  "의미": "[동] 놀리다, 조롱하다\n[형] 가짜의, 모조의"
+ },
+ {
+  "번호": 1133,
+  "단어": "disclose",
+  "의미": "[동] 폭로하다, 드러내다"
+ },
+ {
+  "번호": 1134,
+  "단어": "exhibit",
+  "의미": "[동] 전시하다\n[명] 전시품"
+ },
+ {
+  "번호": 1135,
+  "단어": "symptom",
+  "의미": "[명] 증상, 증후"
+ },
+ {
+  "번호": 1136,
+  "단어": "manage",
+  "의미": "[동] 경영하다, 관리하다, 간신히 해내다"
+ },
+ {
+  "번호": 1137,
+  "단어": "awkward",
+  "의미": "[형] 어색한, 서투른, 다루기 힘든"
+ },
+ {
+  "번호": 1138,
+  "단어": "grind",
+  "의미": "[동] 갈다"
+ },
+ {
+  "번호": 1139,
+  "단어": "expose",
+  "의미": "[동] 노출시키다, 폭로하다"
+ },
+ {
+  "번호": 1140,
+  "단어": "closet",
+  "의미": "[명] 벽장"
+ },
+ {
+  "번호": 1141,
+  "단어": "damp",
+  "의미": "[형] 축축한"
+ },
+ {
+  "번호": 1142,
+  "단어": "script",
+  "의미": "[명] 대본"
+ },
+ {
+  "번호": 1143,
+  "단어": "possibility",
+  "의미": "[명] 가능성, 기회"
+ },
+ {
+  "번호": 1144,
+  "단어": "fad",
+  "의미": "[명] (일시적인) 유행"
+ },
+ {
+  "번호": 1145,
+  "단어": "sibling",
+  "의미": "[명] 형제, 자매"
+ },
+ {
+  "번호": 1146,
+  "단어": "linger",
+  "의미": "[동] 남아 있다, 어슬렁거리다"
+ },
+ {
+  "번호": 1147,
+  "단어": "flourish",
+  "의미": "[동] 번성하다, 건강하다"
+ },
+ {
+  "번호": 1148,
+  "단어": "discharge",
+  "의미": "[동] 해고하다, 방출하다, 방면하다\n[명] 해고, 방출, 면제"
+ },
+ {
+  "번호": 1149,
+  "단어": "thorough",
+  "의미": "[형] 철저한"
+ },
+ {
+  "번호": 1150,
+  "단어": "undertake",
+  "의미": "[동] 착수하다, 약속하다"
+ },
+ {
+  "번호": 1151,
+  "단어": "cord",
+  "의미": "[명] 끈, 전기코드, (직물)코르덴 천\n[형] 코르덴 천으로 만들어진"
+ },
+ {
+  "번호": 1152,
+  "단어": "linguistic",
+  "의미": "[형] 언어의, 언어학의"
+ },
+ {
+  "번호": 1153,
+  "단어": "remedy",
+  "의미": "[명] 치료"
+ },
+ {
+  "번호": 1154,
+  "단어": "sole",
+  "의미": "[형] 유일한, 단독의"
+ },
+ {
+  "번호": 1155,
+  "단어": "sophomore",
+  "의미": "[명] (고교, 대학의) 2학년생"
+ },
+ {
+  "번호": 1156,
+  "단어": "panel",
+  "의미": "[명] 판"
+ },
+ {
+  "번호": 1157,
+  "단어": "suitor",
+  "의미": "[명] 소송인, 구혼자"
+ },
+ {
+  "번호": 1158,
+  "단어": "pillar",
+  "의미": "[명] 기둥"
+ },
+ {
+  "번호": 1159,
+  "단어": "explode",
+  "의미": "[동] 폭발하다"
+ },
+ {
+  "번호": 1160,
+  "단어": "illusion",
+  "의미": "[명] 착각, 환각"
+ },
+ {
+  "번호": 1161,
+  "단어": "draft",
+  "의미": "[명] 초고, 초안\n[동] 초안을 그리다"
+ },
+ {
+  "번호": 1162,
+  "단어": "crude",
+  "의미": "[형] 조잡한, 있는 그대로의"
+ },
+ {
+  "번호": 1163,
+  "단어": "supplement",
+  "의미": "[동] 보완하다\n[명] 보완, 보충"
+ },
+ {
+  "번호": 1164,
+  "단어": "velocity",
+  "의미": "[명] 속도"
+ },
+ {
+  "번호": 1165,
+  "단어": "tame",
+  "의미": "[동] 길들이다\n[형] 길들여진"
+ },
+ {
+  "번호": 1166,
+  "단어": "molecule",
+  "의미": "[명] 분자"
+ },
+ {
+  "번호": 1167,
+  "단어": "reed",
+  "의미": "[명] 갈대\n[형] 갈대의"
+ },
+ {
+  "번호": 1168,
+  "단어": "dismay",
+  "의미": "[명] 실망\n[동] 크게 실망시키다"
+ },
+ {
+  "번호": 1169,
+  "단어": "diagnose",
+  "의미": "[동] 진단하다"
+ },
+ {
+  "번호": 1170,
+  "단어": "versus",
+  "의미": "[전] ~와 대비하여"
+ },
+ {
+  "번호": 1171,
+  "단어": "reservoir",
+  "의미": "[명] 저수지"
+ },
+ {
+  "번호": 1172,
+  "단어": "conform",
+  "의미": "[동] 따르다, 순응하다"
+ },
+ {
+  "번호": 1173,
+  "단어": "spacious",
+  "의미": "[형] 넓은, 훤히 트인"
+ },
+ {
+  "번호": 1174,
+  "단어": "weave",
+  "의미": "[동] (천을) 짜다\n[명] 짜기"
+ },
+ {
+  "번호": 1175,
+  "단어": "ceremony",
+  "의미": "[명] 의식, 식"
+ },
+ {
+  "번호": 1176,
+  "단어": "motive",
+  "의미": "[명] 동기, 이유"
+ },
+ {
+  "번호": 1177,
+  "단어": "prominent",
+  "의미": "[형] 두드러진"
+ },
+ {
+  "번호": 1178,
+  "단어": "archaeology",
+  "의미": "[명] 고고학"
+ },
+ {
+  "번호": 1179,
+  "단어": "rigid",
+  "의미": "[형] 엄격한, 굳은"
+ },
+ {
+  "번호": 1180,
+  "단어": "inferior",
+  "의미": "[형] 열등한, 질 낮은"
+ },
+ {
+  "번호": 1181,
+  "단어": "subtract",
+  "의미": "[동] 빼다"
+ },
+ {
+  "번호": 1182,
+  "단어": "impulse",
+  "의미": "[명] 충동, 욕구, 추진력"
+ },
+ {
+  "번호": 1183,
+  "단어": "utmost",
+  "의미": "[형] 최대한의 \n[명] 최대한도"
+ },
+ {
+  "번호": 1184,
+  "단어": "proficient",
+  "의미": "[형] 숙달된"
+ },
+ {
+  "번호": 1185,
+  "단어": "accumulate",
+  "의미": "[동] 모으다, 축적하다"
+ },
+ {
+  "번호": 1186,
+  "단어": "navigate",
+  "의미": "[동] 길을 찾다, 항해하다"
+ },
+ {
+  "번호": 1187,
+  "단어": "equity",
+  "의미": "[명] 자기자본, 공평"
+ },
+ {
+  "번호": 1188,
+  "단어": "violate",
+  "의미": "[동] 위반하다, 침해하다"
+ },
+ {
+  "번호": 1189,
+  "단어": "ambitious",
+  "의미": "[형] 야망을 가진"
+ },
+ {
+  "번호": 1190,
+  "단어": "intact",
+  "의미": "[형] 온전한, 손상되지 않은"
+ },
+ {
+  "번호": 1191,
+  "단어": "plea",
+  "의미": "[명] 애원, 탄원"
+ },
+ {
+  "번호": 1192,
+  "단어": "attend",
+  "의미": "[동] 참석하다, 유의하다, 돌보다"
+ },
+ {
+  "번호": 1193,
+  "단어": "trim",
+  "의미": "[동] 다듬다\n[형] 잘 정돈된\n[명] 정돈"
+ },
+ {
+  "번호": 1194,
+  "단어": "embody",
+  "의미": "[동] 구체화하다, 포함하다"
+ },
+ {
+  "번호": 1195,
+  "단어": "characteristic",
+  "의미": "[명] 특징, 특성\n[형] 특유의"
+ },
+ {
+  "번호": 1196,
+  "단어": "consist",
+  "의미": "[동] ~로 구성되다"
+ },
+ {
+  "번호": 1197,
+  "단어": "boundary",
+  "의미": "[명] 경계, 한계"
+ },
+ {
+  "번호": 1198,
+  "단어": "attack",
+  "의미": "[동] 공격하다\n[명] 공격"
+ },
+ {
+  "번호": 1199,
+  "단어": "confine",
+  "의미": "[동] 제한하다, 가두다"
+ },
+ {
+  "번호": 1200,
+  "단어": "dispatch",
+  "의미": "[명] 급파, 발송\n[동] 파견하다, 발송하다"
+ },
+ {
+  "번호": 1201,
+  "단어": "regret",
+  "의미": "[동] 후회하다[명] 후회"
+ },
+ {
+  "번호": 1202,
+  "단어": "coffin",
+  "의미": "[명] 관"
+ },
+ {
+  "번호": 1203,
+  "단어": "divine",
+  "의미": "[형] 신성한"
+ },
+ {
+  "번호": 1204,
+  "단어": "revenue",
+  "의미": "[명] 수익"
+ },
+ {
+  "번호": 1205,
+  "단어": "corrupt",
+  "의미": "[형] 부패한, 타락한[동] 부패하다, 타락하다"
+ },
+ {
+  "번호": 1206,
+  "단어": "probe",
+  "의미": "[동] 조사하다, 연구하다[명] 조사"
+ },
+ {
+  "번호": 1207,
+  "단어": "factual",
+  "의미": "[형] 실제의"
+ },
+ {
+  "번호": 1208,
+  "단어": "swamp",
+  "의미": "[명] 늪, 습지"
+ },
+ {
+  "번호": 1209,
+  "단어": "expedition",
+  "의미": "[명] 탐험"
+ },
+ {
+  "번호": 1210,
+  "단어": "abnormal",
+  "의미": "[형] 이상한, 비정상의"
+ },
+ {
+  "번호": 1211,
+  "단어": "storage",
+  "의미": "[명] 저장소, 저장"
+ },
+ {
+  "번호": 1212,
+  "단어": "revive",
+  "의미": "[동] 되살아나다"
+ },
+ {
+  "번호": 1213,
+  "단어": "stool",
+  "의미": "[명] (등받이 없는) 의자"
+ },
+ {
+  "번호": 1214,
+  "단어": "hinder",
+  "의미": "[동] 방해하다"
+ },
+ {
+  "번호": 1215,
+  "단어": "flattery",
+  "의미": "[명] 아첨"
+ },
+ {
+  "번호": 1216,
+  "단어": "virtue",
+  "의미": "[명] 미덕"
+ },
+ {
+  "번호": 1217,
+  "단어": "deadline",
+  "의미": "[명] 기한, 마감시간"
+ },
+ {
+  "번호": 1218,
+  "단어": "equator",
+  "의미": "n.적도"
+ },
+ {
+  "번호": 1219,
+  "단어": "cognitive",
+  "의미": "[형] 인식의"
+ },
+ {
+  "번호": 1220,
+  "단어": "motion",
+  "의미": "[명] 운동, 동작[동] 동작을 해 보이다"
+ },
+ {
+  "번호": 1221,
+  "단어": "humble",
+  "의미": "[형] 겸손한, 비천한"
+ },
+ {
+  "번호": 1222,
+  "단어": "bounce",
+  "의미": "[동] 튀어 오르다, 깡충깡충 뛰다, (공이) 튀다"
+ },
+ {
+  "번호": 1223,
+  "단어": "imprison",
+  "의미": "[동] 투옥하다"
+ },
+ {
+  "번호": 1224,
+  "단어": "enlist",
+  "의미": "[동]모집하다"
+ },
+ {
+  "번호": 1225,
+  "단어": "hygiene",
+  "의미": "[명] 위생, 위생학"
+ },
+ {
+  "번호": 1226,
+  "단어": "upcoming",
+  "의미": "[형] 다가오는"
+ },
+ {
+  "번호": 1227,
+  "단어": "trace",
+  "의미": "[명] 자취, 흔적[동] 추적하다, 밝혀내다"
+ },
+ {
+  "번호": 1228,
+  "단어": "pulse",
+  "의미": "[명] 맥박"
+ },
+ {
+  "번호": 1229,
+  "단어": "controversy",
+  "의미": "[명] 논쟁, 언쟁, 논란"
+ },
+ {
+  "번호": 1230,
+  "단어": "locate",
+  "의미": "[동] (장소를) 찾아내다, -에 위치하다"
+ },
+ {
+  "번호": 1231,
+  "단어": "patent",
+  "의미": "[명] 특허[형] 특허를 받은[동] 특허권을 얻다"
+ },
+ {
+  "번호": 1232,
+  "단어": "lyric",
+  "의미": "n.가사"
+ },
+ {
+  "번호": 1233,
+  "단어": "convenience",
+  "의미": "[명] 편의, 편리, 편의시설"
+ },
+ {
+  "번호": 1234,
+  "단어": "rush",
+  "의미": "[동] 돌진하다, 급하게 가다[명] 돌진, 혼잡"
+ },
+ {
+  "번호": 1235,
+  "단어": "carbon",
+  "의미": "[명] 탄소"
+ },
+ {
+  "번호": 1236,
+  "단어": "contaminate",
+  "의미": "[동] 오염시키다, 더럽히다"
+ },
+ {
+  "번호": 1237,
+  "단어": "external",
+  "의미": "[형] 외부의"
+ },
+ {
+  "번호": 1238,
+  "단어": "herd",
+  "의미": "[명] 떼, 무리[동] 떼를 짓다"
+ },
+ {
+  "번호": 1239,
+  "단어": "allocate",
+  "의미": "[동] 할당하다, 배분하다"
+ },
+ {
+  "번호": 1240,
+  "단어": "gorgeous",
+  "의미": "[형] 아주 멋진, 화려한"
+ },
+ {
+  "번호": 1241,
+  "단어": "confess",
+  "의미": "[동] 고백하다"
+ },
+ {
+  "번호": 1242,
+  "단어": "subjective",
+  "의미": "[형] 주관적인"
+ },
+ {
+  "번호": 1243,
+  "단어": "hell",
+  "의미": "[명] 지옥"
+ },
+ {
+  "번호": 1244,
+  "단어": "acknowledge",
+  "의미": "[동] 인정하다"
+ },
+ {
+  "번호": 1245,
+  "단어": "accord",
+  "의미": "[동] 일치하다, 조화하다[명] 일치, 합의"
+ },
+ {
+  "번호": 1246,
+  "단어": "immense",
+  "의미": "[형] 엄청난"
+ },
+ {
+  "번호": 1247,
+  "단어": "extract",
+  "의미": "[동] 추출하다, [명] 추출물"
+ },
+ {
+  "번호": 1248,
+  "단어": "sewage",
+  "의미": "[명] 하수, 오물"
+ },
+ {
+  "번호": 1249,
+  "단어": "reconciliation",
+  "의미": "[명] 화해"
+ },
+ {
+  "번호": 1250,
+  "단어": "amid",
+  "의미": "[전] ~의 한가운데"
+ },
+ {
+  "번호": 1251,
+  "단어": "warrant",
+  "의미": "[명] 보증서, 영장, 정당한 이유"
+ },
+ {
+  "번호": 1252,
+  "단어": "complement",
+  "의미": "[동] 보완하다"
+ },
+ {
+  "번호": 1253,
+  "단어": "ceramic",
+  "의미": "[명] 도자기, 요업"
+ },
+ {
+  "번호": 1254,
+  "단어": "license",
+  "의미": "[명] 면허, 인가[동] 면허를 주다, 허가하다"
+ },
+ {
+  "번호": 1255,
+  "단어": "emerge",
+  "의미": "[동] 나타나다"
+ },
+ {
+  "번호": 1256,
+  "단어": "halt",
+  "의미": "[동] 정지시키다[명] 정지, 멈춤"
+ },
+ {
+  "번호": 1257,
+  "단어": "ivory",
+  "의미": "[명] 상아, 상아색"
+ },
+ {
+  "번호": 1258,
+  "단어": "ponder",
+  "의미": "[동] 곰곰이 생각하다, 심사숙고하다"
+ },
+ {
+  "번호": 1259,
+  "단어": "lottery",
+  "의미": "[명] 복권, 추첨"
+ },
+ {
+  "번호": 1260,
+  "단어": "stroke",
+  "의미": "[명] 타격, 뇌졸증"
+ },
+ {
+  "번호": 1261,
+  "단어": "burglar",
+  "의미": "[명] 강도"
+ },
+ {
+  "번호": 1262,
+  "단어": "blame",
+  "의미": "[동] 비난하다, ~을 탓하다[명] 비난"
+ },
+ {
+  "번호": 1263,
+  "단어": "transplant",
+  "의미": "[동]  이식하다"
+ },
+ {
+  "번호": 1264,
+  "단어": "cluster",
+  "의미": "[명] 무리"
+ },
+ {
+  "번호": 1265,
+  "단어": "borrow",
+  "의미": "[동] 빌리다"
+ },
+ {
+  "번호": 1266,
+  "단어": "derive",
+  "의미": "[동] 끌어내다, ~에서 비롯되다"
+ },
+ {
+  "번호": 1267,
+  "단어": "plague",
+  "의미": "[명] 전염병[동] 괴롭히다"
+ },
+ {
+  "번호": 1268,
+  "단어": "certificate",
+  "의미": "[명] 증명서"
+ },
+ {
+  "번호": 1269,
+  "단어": "deluxe",
+  "의미": "호화로운"
+ },
+ {
+  "번호": 1270,
+  "단어": "convey",
+  "의미": "[동] 나르다,전달하다, (생각, 감정을) 전하다"
+ },
+ {
+  "번호": 1271,
+  "단어": "depth",
+  "의미": "[명] 깊이"
+ },
+ {
+  "번호": 1272,
+  "단어": "evaporate",
+  "의미": "[동] 증발하다"
+ },
+ {
+  "번호": 1273,
+  "단어": "lame",
+  "의미": "[형] 절름발이의, 설득력이 없는"
+ },
+ {
+  "번호": 1274,
+  "단어": "conduct",
+  "의미": "[동] 실시하다, 수행하다, 행동하다[명] 행위"
+ },
+ {
+  "번호": 1275,
+  "단어": "sour",
+  "의미": "[형] (맛이)신"
+ },
+ {
+  "번호": 1276,
+  "단어": "repetitive",
+  "의미": "[형] 반복성의"
+ },
+ {
+  "번호": 1277,
+  "단어": "oppress",
+  "의미": "n.억압하다"
+ },
+ {
+  "번호": 1278,
+  "단어": "leftover",
+  "의미": "[명] 남은 음식, 잔재"
+ },
+ {
+  "번호": 1279,
+  "단어": "embrace",
+  "의미": "[동] 포옹하다, 껴안다, 수용하다"
+ },
+ {
+  "번호": 1280,
+  "단어": "blade",
+  "의미": "[명] 칼날"
+ },
+ {
+  "번호": 1281,
+  "단어": "abundant",
+  "의미": "[형] 풍부한"
+ },
+ {
+  "번호": 1282,
+  "단어": "duplicate",
+  "의미": "[형] 똑같은[동] 복사하다[명] 사본"
+ },
+ {
+  "번호": 1283,
+  "단어": "remind",
+  "의미": "[동] 상기시키다, 생각나게 하다"
+ },
+ {
+  "번호": 1284,
+  "단어": "altitude",
+  "의미": "[명] 고도"
+ },
+ {
+  "번호": 1285,
+  "단어": "glimpse",
+  "의미": "[동] 흘끗 보다[명] 흘끗 봄"
+ },
+ {
+  "번호": 1286,
+  "단어": "blend",
+  "의미": "[동] 섞다"
+ },
+ {
+  "번호": 1287,
+  "단어": "swell",
+  "의미": "[동] 부풀다,[명] 팽창"
+ },
+ {
+  "번호": 1288,
+  "단어": "grief",
+  "의미": "[명] 비탄, 큰 슬픔"
+ },
+ {
+  "번호": 1289,
+  "단어": "beverage",
+  "의미": "[명] 음료수"
+ },
+ {
+  "번호": 1290,
+  "단어": "warrior",
+  "의미": "[명] 전사, 용사"
+ },
+ {
+  "번호": 1291,
+  "단어": "earn",
+  "의미": "[동] (평판을) 얻다, 벌다"
+ },
+ {
+  "번호": 1292,
+  "단어": "slice",
+  "의미": "[명] (얇게 썬)조각[동] 얇게 썰다"
+ },
+ {
+  "번호": 1293,
+  "단어": "exotic",
+  "의미": "[형] 이국적인"
+ },
+ {
+  "번호": 1294,
+  "단어": "arrogant",
+  "의미": "[형] 거만한, 건방진"
+ },
+ {
+  "번호": 1295,
+  "단어": "vanish",
+  "의미": "[동] 사라지다"
+ },
+ {
+  "번호": 1296,
+  "단어": "rational",
+  "의미": "[형] 이성적인, 합리적인"
+ },
+ {
+  "번호": 1297,
+  "단어": "predominant",
+  "의미": "[형] 우세한, 두드러진"
+ },
+ {
+  "번호": 1298,
+  "단어": "cozy",
+  "의미": "[형] 안락한, 아늑한"
+ },
+ {
+  "번호": 1299,
+  "단어": "broker",
+  "의미": "[명] 중개인, 브로커[동] 중개하다"
+ },
+ {
+  "번호": 1300,
+  "단어": "auction",
+  "의미": "[명] 경매[동] 경매로 팔다"
+ },
+ {
+  "번호": 1301,
+  "단어": "obsess",
+  "의미": "v.사로잡다, 강박 관념을 갖다"
+ },
+ {
+  "번호": 1302,
+  "단어": "feed",
+  "의미": "[동] ~에 밥을 주다, ~에 먹이를 주다"
+ },
+ {
+  "번호": 1303,
+  "단어": "outbreak",
+  "의미": "[명] (전쟁, 사고등의) 발발"
+ },
+ {
+  "번호": 1304,
+  "단어": "invent",
+  "의미": "[동] 발명하다"
+ },
+ {
+  "번호": 1305,
+  "단어": "pioneer",
+  "의미": "[명] 개척자[동] 개척하다"
+ },
+ {
+  "번호": 1306,
+  "단어": "assert",
+  "의미": "[동] 주장하다"
+ },
+ {
+  "번호": 1307,
+  "단어": "undo",
+  "의미": "[동] (잠긴 것을) 풀다, 원상태로 돌리다"
+ },
+ {
+  "번호": 1308,
+  "단어": "bouquet",
+  "의미": "[명] 꽃다발"
+ },
+ {
+  "번호": 1309,
+  "단어": "elaborate",
+  "의미": "[형] 정교한"
+ },
+ {
+  "번호": 1310,
+  "단어": "toss",
+  "의미": "[동] 던지다[명] 던지기"
+ },
+ {
+  "번호": 1311,
+  "단어": "retain",
+  "의미": "[동] 보유하다"
+ },
+ {
+  "번호": 1312,
+  "단어": "radioactive",
+  "의미": "[형] 방사능의"
+ },
+ {
+  "번호": 1313,
+  "단어": "buildup",
+  "의미": "[명] 축적"
+ },
+ {
+  "번호": 1314,
+  "단어": "machinery",
+  "의미": "[명] 기계"
+ },
+ {
+  "번호": 1315,
+  "단어": "passerby",
+  "의미": "통행인"
+ },
+ {
+  "번호": 1316,
+  "단어": "auditorium",
+  "의미": "[명] 강당"
+ },
+ {
+  "번호": 1317,
+  "단어": "lay",
+  "의미": "[동] 놓다, (알을) 낳다"
+ },
+ {
+  "번호": 1318,
+  "단어": "neglect",
+  "의미": "[동] 무시하다[명] 소홀"
+ },
+ {
+  "번호": 1319,
+  "단어": "feedback",
+  "의미": "[명] 피드백"
+ },
+ {
+  "번호": 1320,
+  "단어": "promote",
+  "의미": "[동] 증진하다, 승진시키다"
+ },
+ {
+  "번호": 1321,
+  "단어": "impair",
+  "의미": "[동] 손상시키다"
+ },
+ {
+  "번호": 1322,
+  "단어": "metaphor",
+  "의미": "[명] 은유"
+ },
+ {
+  "번호": 1323,
+  "단어": "dispense",
+  "의미": "[동] 분배하다, 나누어 주다"
+ },
+ {
+  "번호": 1324,
+  "단어": "bruise",
+  "의미": "[명] 멍, 타박상"
+ },
+ {
+  "번호": 1325,
+  "단어": "attorney",
+  "의미": "[명] 변호사, 대리인"
+ },
+ {
+  "번호": 1326,
+  "단어": "framework",
+  "의미": "[명] 뼈대, 틀, 체제"
+ },
+ {
+  "번호": 1327,
+  "단어": "heredity",
+  "의미": "n.유전"
+ },
+ {
+  "번호": 1328,
+  "단어": "naive",
+  "의미": "[형] 순진한"
+ },
+ {
+  "번호": 1329,
+  "단어": "shed",
+  "의미": "v.떨구다, 흘리다"
+ },
+ {
+  "번호": 1330,
+  "단어": "metropolitan",
+  "의미": "[형] 대도시의"
+ },
+ {
+  "번호": 1331,
+  "단어": "shield",
+  "의미": "[명] 방패[동] 보호하다"
+ },
+ {
+  "번호": 1332,
+  "단어": "induce",
+  "의미": "[동] 유도하다, 설득하여 ~시키다"
+ },
+ {
+  "번호": 1333,
+  "단어": "bazaar",
+  "의미": "시장, 바자"
+ },
+ {
+  "번호": 1334,
+  "단어": "expel",
+  "의미": "[동] 추방하다"
+ },
+ {
+  "번호": 1335,
+  "단어": "plow",
+  "의미": "[명] 쟁기[동] 갈다"
+ },
+ {
+  "번호": 1336,
+  "단어": "prolong",
+  "의미": "[동] 연장하다"
+ },
+ {
+  "번호": 1337,
+  "단어": "fluent",
+  "의미": "유창한"
+ },
+ {
+  "번호": 1338,
+  "단어": "margin",
+  "의미": "[명] 가장자리"
+ },
+ {
+  "번호": 1339,
+  "단어": "ecology",
+  "의미": "[명] 생태학, 생태"
+ },
+ {
+  "번호": 1340,
+  "단어": "interior",
+  "의미": "[명] 내부[형] 내부의"
+ },
+ {
+  "번호": 1341,
+  "단어": "ornament",
+  "의미": "[명] 장식[동] 장식하다"
+ },
+ {
+  "번호": 1342,
+  "단어": "separate",
+  "의미": "[동] 분리하다"
+ },
+ {
+  "번호": 1343,
+  "단어": "ripe",
+  "의미": "[형] 익은"
+ },
+ {
+  "번호": 1344,
+  "단어": "vibrate",
+  "의미": "[동] 진동하다, 흔들다"
+ },
+ {
+  "번호": 1345,
+  "단어": "urgent",
+  "의미": "[형] 긴급한"
+ },
+ {
+  "번호": 1346,
+  "단어": "speculate",
+  "의미": "[동] 사색하다 ,투기하다"
+ },
+ {
+  "번호": 1347,
+  "단어": "epidemic",
+  "의미": "[명] 전염병"
+ },
+ {
+  "번호": 1348,
+  "단어": "precede",
+  "의미": "[동] ~에 앞서다"
+ },
+ {
+  "번호": 1349,
+  "단어": "breathtaking",
+  "의미": "숨막히는"
+ },
+ {
+  "번호": 1350,
+  "단어": "portfolio",
+  "의미": "[명] 포트폴리오"
+ },
+ {
+  "번호": 1351,
+  "단어": "beware",
+  "의미": "[동] 주의하다"
+ },
+ {
+  "번호": 1352,
+  "단어": "handcuff",
+  "의미": "[n] 수갑"
+ },
+ {
+  "번호": 1353,
+  "단어": "overturn",
+  "의미": "[동] 전복시키다[명] 전복"
+ },
+ {
+  "번호": 1354,
+  "단어": "pregnant",
+  "의미": "[형] 임신한"
+ },
+ {
+  "번호": 1355,
+  "단어": "intelligence",
+  "의미": "[명] 지능"
+ },
+ {
+  "번호": 1356,
+  "단어": "adapt",
+  "의미": "[동] 적응시키다"
+ },
+ {
+  "번호": 1357,
+  "단어": "settle",
+  "의미": "[동] 정착하다"
+ },
+ {
+  "번호": 1358,
+  "단어": "assassinate",
+  "의미": "[동] 암살하다"
+ },
+ {
+  "번호": 1359,
+  "단어": "vapor",
+  "의미": "[명] 증기"
+ },
+ {
+  "번호": 1360,
+  "단어": "tuition",
+  "의미": "[명] 수업료"
+ },
+ {
+  "번호": 1361,
+  "단어": "literature",
+  "의미": "[명] 문학"
+ },
+ {
+  "번호": 1362,
+  "단어": "loop",
+  "의미": "[명] 고리[동] 고리로 만들다"
+ },
+ {
+  "번호": 1363,
+  "단어": "quote",
+  "의미": "[동] 인용하다[명] 인용구"
+ },
+ {
+  "번호": 1364,
+  "단어": "inhale",
+  "의미": "[동] 들이쉬다, 흡입하다"
+ },
+ {
+  "번호": 1365,
+  "단어": "prospect",
+  "의미": "[명] 전망, 가능성"
+ },
+ {
+  "번호": 1366,
+  "단어": "anchor",
+  "의미": "[명] 닻,앵커"
+ },
+ {
+  "번호": 1367,
+  "단어": "reference",
+  "의미": "[명] 참고, 언급"
+ },
+ {
+  "번호": 1368,
+  "단어": "compound",
+  "의미": "[동] 혼합하다[명] 혼합물[형] 합성의"
+ },
+ {
+  "번호": 1369,
+  "단어": "withstand",
+  "의미": "[동] 견디다, 버티다"
+ },
+ {
+  "번호": 1370,
+  "단어": "implement",
+  "의미": "[동] 실행하다[명] 도구"
+ },
+ {
+  "번호": 1371,
+  "단어": "anonymous",
+  "의미": "[형] 익명의"
+ },
+ {
+  "번호": 1372,
+  "단어": "collide",
+  "의미": "[동] 충돌하다, 일치하지 않다"
+ },
+ {
+  "번호": 1373,
+  "단어": "memorial",
+  "의미": "[명] 기념물"
+ },
+ {
+  "번호": 1374,
+  "단어": "vacant",
+  "의미": "[형] 비어 있는, 빈자리의"
+ },
+ {
+  "번호": 1375,
+  "단어": "technical",
+  "의미": "[형] 기술의"
+ },
+ {
+  "번호": 1376,
+  "단어": "summon",
+  "의미": "[동] 소환하다"
+ },
+ {
+  "번호": 1377,
+  "단어": "orchard",
+  "의미": "[명] 과수원"
+ },
+ {
+  "번호": 1378,
+  "단어": "proportion",
+  "의미": "[명] 비율, 부분"
+ },
+ {
+  "번호": 1379,
+  "단어": "antibiotic",
+  "의미": "[명] 항생 물질"
+ },
+ {
+  "번호": 1380,
+  "단어": "overtake",
+  "의미": "[동] 따라잡다"
+ },
+ {
+  "번호": 1381,
+  "단어": "resemble",
+  "의미": "[동] ~와 닮다"
+ },
+ {
+  "번호": 1382,
+  "단어": "wander",
+  "의미": "[동] (정처없이) 돌아다니다, 헤매다"
+ },
+ {
+  "번호": 1383,
+  "단어": "compassion",
+  "의미": "[명] 동정"
+ },
+ {
+  "번호": 1384,
+  "단어": "preoccupation",
+  "의미": "[명] 몰두, 집착"
+ },
+ {
+  "번호": 1385,
+  "단어": "paste",
+  "의미": "[동] 풀로 붙이다[명] 풀"
+ },
+ {
+  "번호": 1386,
+  "단어": "provoke",
+  "의미": "[동] 선동하다, 자극하다"
+ },
+ {
+  "번호": 1387,
+  "단어": "wicked",
+  "의미": "[형] 사악한, 심술궂은"
+ },
+ {
+  "번호": 1388,
+  "단어": "sprain",
+  "의미": "발목을 삐다"
+ },
+ {
+  "번호": 1389,
+  "단어": "propaganda",
+  "의미": "[명] 선전"
+ },
+ {
+  "번호": 1390,
+  "단어": "consistent",
+  "의미": "[형] 일관된"
+ },
+ {
+  "번호": 1391,
+  "단어": "disrupt",
+  "의미": "[동] 붕과시키다"
+ },
+ {
+  "번호": 1392,
+  "단어": "solitary",
+  "의미": "[형] 혼자의, 고립된"
+ },
+ {
+  "번호": 1393,
+  "단어": "bury",
+  "의미": "[동] (땅에)묻다"
+ },
+ {
+  "번호": 1394,
+  "단어": "rust",
+  "의미": "[명] 녹[동] 녹이 슬다, 부식하다"
+ },
+ {
+  "번호": 1395,
+  "단어": "discuss",
+  "의미": "[동] 토론하다"
+ },
+ {
+  "번호": 1396,
+  "단어": "referee",
+  "의미": "[명] 심판"
+ },
+ {
+  "번호": 1397,
+  "단어": "sector",
+  "의미": "[명] 분야, 지역"
+ },
+ {
+  "번호": 1398,
+  "단어": "boost",
+  "의미": "[동] 밀어올리다[명] 상승"
+ },
+ {
+  "번호": 1399,
+  "단어": "gymnastics",
+  "의미": "[명] 체조"
+ },
+ {
+  "번호": 1400,
+  "단어": "gross",
+  "의미": "[형] 총합의[명] 총합"
+ },
+ {
+  "번호": 1401,
+  "단어": "last",
+  "의미": "[형] 마지막, 지난"
+ },
+ {
+  "번호": 1402,
+  "단어": "tariff",
+  "의미": "[명] 관세, 운임표"
+ },
+ {
+  "번호": 1403,
+  "단어": "beloved",
+  "의미": "[형] 총애받는, 사랑하는"
+ },
+ {
+  "번호": 1404,
+  "단어": "lyric",
+  "의미": "[명] 가사"
+ },
+ {
+  "번호": 1405,
+  "단어": "yeast",
+  "의미": "[명] 이스트, 효모"
+ },
+ {
+  "번호": 1406,
+  "단어": "skyscraper",
+  "의미": "[명] 고층건물"
+ },
+ {
+  "번호": 1407,
+  "단어": "inquire",
+  "의미": "[동] 묻다"
+ },
+ {
+  "번호": 1408,
+  "단어": "spade",
+  "의미": "[명] 삽, 스페이드"
+ },
+ {
+  "번호": 1409,
+  "단어": "vacuum",
+  "의미": "[명] 진공, 공백"
+ },
+ {
+  "번호": 1410,
+  "단어": "migrate",
+  "의미": "[동] 이주하다, 이동하다"
+ },
+ {
+  "번호": 1411,
+  "단어": "spectacle",
+  "의미": "[명] 구경거리, 장관"
+ },
+ {
+  "번호": 1412,
+  "단어": "surplus",
+  "의미": "[명] 여분, 나머지\n[형] 나머지의"
+ },
+ {
+  "번호": 1413,
+  "단어": "simulate",
+  "의미": "[동] 흉내내다, ~의 모의 실험을 하다"
+ },
+ {
+  "번호": 1414,
+  "단어": "integration",
+  "의미": "[명] 통합"
+ },
+ {
+  "번호": 1415,
+  "단어": "hypothesis",
+  "의미": "[명] 가설, 가정"
+ },
+ {
+  "번호": 1416,
+  "단어": "affirm",
+  "의미": "[동] 단언하다"
+ },
+ {
+  "번호": 1417,
+  "단어": "fortress",
+  "의미": "[명] 요새"
+ },
+ {
+  "번호": 1418,
+  "단어": "reed",
+  "의미": "[명] 갈대"
+ },
+ {
+  "번호": 1419,
+  "단어": "cue",
+  "의미": "[명] 신호, 단서\n[동] 신호를 주다"
+ },
+ {
+  "번호": 1420,
+  "단어": "mole",
+  "의미": "[명] 반점, 두더지"
+ },
+ {
+  "번호": 1421,
+  "단어": "divide",
+  "의미": "[동] 나누다"
+ },
+ {
+  "번호": 1422,
+  "단어": "inborn",
+  "의미": "타고난"
+ },
+ {
+  "번호": 1423,
+  "단어": "overlap",
+  "의미": "[동] 겹치다, 중복되다"
+ },
+ {
+  "번호": 1424,
+  "단어": "fatique",
+  "의미": "[명] 피곤"
+ },
+ {
+  "번호": 1425,
+  "단어": "clone",
+  "의미": "[명] 복제, 복제품\n[동] 복제하다"
+ },
+ {
+  "번호": 1426,
+  "단어": "peel",
+  "의미": "[동] 껍질을 벗기다"
+ },
+ {
+  "번호": 1427,
+  "단어": "ease",
+  "의미": "[명] 쉬움, 편안함\n[동] 편하게 하다, 완화하다"
+ },
+ {
+  "번호": 1428,
+  "단어": "overcome",
+  "의미": "[동] 극복하다"
+ },
+ {
+  "번호": 1429,
+  "단어": "fund",
+  "의미": "[명] 자금"
+ },
+ {
+  "번호": 1430,
+  "단어": "bias",
+  "의미": "[명] 편견, 선입견"
+ },
+ {
+  "번호": 1431,
+  "단어": "vaccine",
+  "의미": "[명] 백신"
+ },
+ {
+  "번호": 1432,
+  "단어": "tread",
+  "의미": "[동] 밟다\n[명] 밟기"
+ },
+ {
+  "번호": 1433,
+  "단어": "vomit",
+  "의미": "[동] 구토하다\n[명] 구토"
+ },
+ {
+  "번호": 1434,
+  "단어": "prophecy",
+  "의미": "[명] 예언"
+ },
+ {
+  "번호": 1435,
+  "단어": "correspond",
+  "의미": "[동] 일치하다, 해당하다, 편지를 주고받다"
+ },
+ {
+  "번호": 1436,
+  "단어": "cling",
+  "의미": "[동] 꼭 붙잡다, 달라붙다"
+ },
+ {
+  "번호": 1437,
+  "단어": "mutation",
+  "의미": "[명] 돌연변이, 변형"
+ },
+ {
+  "번호": 1438,
+  "단어": "obscure",
+  "의미": "[형] 모호한, 잘 알려지지 않은\n[동] 모호하게 하다"
+ },
+ {
+  "번호": 1439,
+  "단어": "tyrant",
+  "의미": "[명] 폭군"
+ },
+ {
+  "번호": 1440,
+  "단어": "odd",
+  "의미": "[형] 이상한, 홀수의"
+ },
+ {
+  "번호": 1441,
+  "단어": "intriguing",
+  "의미": "[형] 아주 흥미로운"
+ },
+ {
+  "번호": 1442,
+  "단어": "restrain",
+  "의미": "[동] 억제하다, 제지하다"
+ },
+ {
+  "번호": 1443,
+  "단어": "bundle",
+  "의미": "[명] 묶음"
+ },
+ {
+  "번호": 1444,
+  "단어": "enclose",
+  "의미": "[동] 동봉하다, 둘러싸다"
+ },
+ {
+  "번호": 1445,
+  "단어": "insert",
+  "의미": "[동] 삽입하다, 덧붙이다"
+ },
+ {
+  "번호": 1446,
+  "단어": "keen",
+  "의미": "[형] 예민한, ~을열망하는"
+ },
+ {
+  "번호": 1447,
+  "단어": "constrict",
+  "의미": "[동] 수축시키다"
+ },
+ {
+  "번호": 1448,
+  "단어": "aid",
+  "의미": "[명] 도움, 지원"
+ },
+ {
+  "번호": 1449,
+  "단어": "reputation",
+  "의미": "[명] 명성"
+ },
+ {
+  "번호": 1450,
+  "단어": "measurement",
+  "의미": "[명] 측정"
+ },
+ {
+  "번호": 1451,
+  "단어": "originate",
+  "의미": "[동] 유래하다"
+ },
+ {
+  "번호": 1452,
+  "단어": "flour",
+  "의미": "[명] 밀가루"
+ },
+ {
+  "번호": 1453,
+  "단어": "manipulate",
+  "의미": "[동] 조작하다, 잘 다루다"
+ },
+ {
+  "번호": 1454,
+  "단어": "experiment",
+  "의미": "[명] 실험\n[동] 실험하다"
+ },
+ {
+  "번호": 1455,
+  "단어": "patriot",
+  "의미": "[명] 애국자"
+ },
+ {
+  "번호": 1456,
+  "단어": "interchange",
+  "의미": "[동] 교환하다"
+ },
+ {
+  "번호": 1457,
+  "단어": "intuitive",
+  "의미": "[형] 직감에 의한, 직관력 있는"
+ },
+ {
+  "번호": 1458,
+  "단어": "garment",
+  "의미": "[명] 의류"
+ },
+ {
+  "번호": 1459,
+  "단어": "spontaneous",
+  "의미": "[형] 자발적인, 즉흥적인"
+ },
+ {
+  "번호": 1460,
+  "단어": "vertical",
+  "의미": "[형] 수직의, 세로의\n[명] 수직선"
+ },
+ {
+  "번호": 1461,
+  "단어": "testify",
+  "의미": "[동] 증언하다, 증명하다"
+ },
+ {
+  "번호": 1462,
+  "단어": "mentor",
+  "의미": "[명] 조언자"
+ },
+ {
+  "번호": 1463,
+  "단어": "vivid",
+  "의미": "[형] 생생한, 선명한"
+ },
+ {
+  "번호": 1464,
+  "단어": "pasture",
+  "의미": "[명] 초원"
+ },
+ {
+  "번호": 1465,
+  "단어": "crust",
+  "의미": "[명] (빵, 파이의)껍질, 딱딱한 표면"
+ },
+ {
+  "번호": 1466,
+  "단어": "comprehend",
+  "의미": "[동] 이해하다, 파악하다"
+ },
+ {
+  "번호": 1467,
+  "단어": "plunge",
+  "의미": "[동] 뛰어들다, 급락하다"
+ },
+ {
+  "번호": 1468,
+  "단어": "nasty",
+  "의미": "[형] 더러운, 비열한"
+ },
+ {
+  "번호": 1469,
+  "단어": "appreciate",
+  "의미": "[동] 진가를 알아보다, 고맙게 여기다, 감상하다"
+ },
+ {
+  "번호": 1470,
+  "단어": "emigrate",
+  "의미": "[동] 이민을 가다"
+ },
+ {
+  "번호": 1471,
+  "단어": "deed",
+  "의미": "[명] 행동, 공적"
+ },
+ {
+  "번호": 1472,
+  "단어": "skinny",
+  "의미": "[형] 깡마른, 옷이 몸에 딱 붙는"
+ },
+ {
+  "번호": 1473,
+  "단어": "grill",
+  "의미": "[명] 그릴, 석쇠\n[동] 그릴에 굽다"
+ },
+ {
+  "번호": 1474,
+  "단어": "canal",
+  "의미": "[명] 운하, 수로"
+ },
+ {
+  "번호": 1475,
+  "단어": "curse",
+  "의미": "[명] 저주"
+ },
+ {
+  "번호": 1476,
+  "단어": "adverse",
+  "의미": "[형] 불리한, 반대의"
+ },
+ {
+  "번호": 1477,
+  "단어": "censorship",
+  "의미": "[명] 검열관"
+ },
+ {
+  "번호": 1478,
+  "단어": "forehead",
+  "의미": "[명] 이마"
+ },
+ {
+  "번호": 1479,
+  "단어": "appetite",
+  "의미": "[명] 식욕, 욕망"
+ },
+ {
+  "번호": 1480,
+  "단어": "flaw",
+  "의미": "[명] 결함, 결점"
+ },
+ {
+  "번호": 1481,
+  "단어": "outgoing",
+  "의미": "[형] 외향적인, 사교적인"
+ },
+ {
+  "번호": 1482,
+  "단어": "verbal",
+  "의미": "[형] 말의, 구두의"
+ },
+ {
+  "번호": 1483,
+  "단어": "liberate",
+  "의미": "[동] 해방시키다"
+ },
+ {
+  "번호": 1484,
+  "단어": "segregation",
+  "의미": "[명] 인종 차별, 차별정책, 분리"
+ },
+ {
+  "번호": 1485,
+  "단어": "advance",
+  "의미": "[명] 전진하다, 진보하다[명] 발전, 전진, 진보"
+ },
+ {
+  "번호": 1486,
+  "단어": "contemplate",
+  "의미": "[동] ~을 숙고하다, 심사숙고하다, 고려하다, 응시하다"
+ },
+ {
+  "번호": 1487,
+  "단어": "underlying",
+  "의미": "[형] 기초를 이루는, 근본적인, 밑에 있는"
+ },
+ {
+  "번호": 1488,
+  "단어": "academic",
+  "의미": "[형] 학문적인, 학구적인"
+ },
+ {
+  "번호": 1489,
+  "단어": "stem",
+  "의미": "[명] 줄기[동] 생기다, 일어나다"
+ },
+ {
+  "번호": 1490,
+  "단어": " irrigation",
+  "의미": "[명] 관개"
+ },
+ {
+  "번호": 1491,
+  "단어": "consecutive",
+  "의미": "[형] 연이은, 연속적인"
+ },
+ {
+  "번호": 1492,
+  "단어": "superficial",
+  "의미": "[형] 표면상의, 피상적인"
+ },
+ {
+  "번호": 1493,
+  "단어": "refuge",
+  "의미": "[명] 피난처, 도피처, 보호구역"
+ },
+ {
+  "번호": 1494,
+  "단어": "swear",
+  "의미": "[동] 맹세하다, 욕을 하다"
+ },
+ {
+  "번호": 1495,
+  "단어": "allergy",
+  "의미": "[명] 알레르기"
+ },
+ {
+  "번호": 1496,
+  "단어": "norm",
+  "의미": "[명] 표준, 규범"
+ },
+ {
+  "번호": 1497,
+  "단어": "endeavor",
+  "의미": "[동] 노력하다, 시도하다[명] 노력, 시도"
+ },
+ {
+  "번호": 1498,
+  "단어": "erect",
+  "의미": "[형] 똑바로 선[동] 세우다"
+ },
+ {
+  "번호": 1499,
+  "단어": "feminine",
+  "의미": "[형] 여성의, 여성스러운"
+ },
+ {
+  "번호": 1500,
+  "단어": "drowsy",
+  "의미": "[형] 졸리는"
+ },
+ {
+  "번호": 1501,
+  "단어": "inspect",
+  "의미": "[동] 점검하다, 시찰하다"
+ },
+ {
+  "번호": 1502,
+  "단어": "carriage",
+  "의미": "[명] 객차, 마차, 운반"
+ },
+ {
+  "번호": 1503,
+  "단어": "primitive",
+  "의미": "[형] 원시의"
+ },
+ {
+  "번호": 1504,
+  "단어": "compress",
+  "의미": "[동] 압축하다, 압박하다"
+ },
+ {
+  "번호": 1505,
+  "단어": "govern",
+  "의미": "[동] 통치하다, 좌우하다"
+ },
+ {
+  "번호": 1506,
+  "단어": "cemetery",
+  "의미": "[명] 공동묘지"
+ },
+ {
+  "번호": 1507,
+  "단어": "shatter",
+  "의미": "[동] 산산이 부서지다"
+ },
+ {
+  "번호": 1508,
+  "단어": "exaggerate",
+  "의미": "[동] 과장하다"
+ },
+ {
+  "번호": 1509,
+  "단어": "random",
+  "의미": "[형] 무작위의"
+ },
+ {
+  "번호": 1510,
+  "단어": "feast",
+  "의미": "[명] 잔치, 축제[동] 즐겁게 하다"
+ },
+ {
+  "번호": 1511,
+  "단어": "commemorate",
+  "의미": "[동] 기념하다"
+ },
+ {
+  "번호": 1512,
+  "단어": "steep",
+  "의미": "[형] 가파른, 비탈진[동] 몰두시키다, (액체에) 담그다"
+ },
+ {
+  "번호": 1513,
+  "단어": "multitask",
+  "의미": "[동] 다중작업을 하다"
+ },
+ {
+  "번호": 1514,
+  "단어": "toxic",
+  "의미": "[형] 유독한, 유독성의"
+ },
+ {
+  "번호": 1515,
+  "단어": "stare",
+  "의미": "[동] 응시하다"
+ },
+ {
+  "번호": 1516,
+  "단어": "chronic",
+  "의미": "[형] 만성적인"
+ },
+ {
+  "번호": 1517,
+  "단어": "designate",
+  "의미": "[동] 지명하다, 지정하다"
+ },
+ {
+  "번호": 1518,
+  "단어": "dramatic",
+  "의미": "[형] 극적인, 급격한, 감격적인"
+ },
+ {
+  "번호": 1519,
+  "단어": "intense",
+  "의미": "[형] 강렬한, 극심한, 치열한"
+ },
+ {
+  "번호": 1520,
+  "단어": "propaganda",
+  "의미": "[명] 선전 활동, 과장된 선전"
+ },
+ {
+  "번호": 1521,
+  "단어": "numerous",
+  "의미": "[형] 다수의, 많은"
+ },
+ {
+  "번호": 1522,
+  "단어": "shiver",
+  "의미": "[동] 몸을 떨다떨림"
+ },
+ {
+  "번호": 1523,
+  "단어": "retarded",
+  "의미": "(정서•지능•학력) 발달이 뒤진"
+ },
+ {
+  "번호": 1524,
+  "단어": "ongoing",
+  "의미": "[형] 진행 중인진행"
+ },
+ {
+  "번호": 1525,
+  "단어": "mention",
+  "의미": "[동] 언급하다[명] 언급"
+ },
+ {
+  "번호": 1526,
+  "단어": "executive",
+  "의미": "[명] 임원[형] 행정의, 관리의"
+ },
+ {
+  "번호": 1527,
+  "단어": "chaos",
+  "의미": "[명] 혼돈, 혼란"
+ },
+ {
+  "번호": 1528,
+  "단어": "microscope",
+  "의미": "[명] 현미경"
+ },
+ {
+  "번호": 1529,
+  "단어": "belonging",
+  "의미": "[명] 소유물, 부속물"
+ },
+ {
+  "번호": 1530,
+  "단어": "vulnerable",
+  "의미": "[형] 상처받기 쉬운, 취약한"
+ },
+ {
+  "번호": 1531,
+  "단어": "implication",
+  "의미": "[명] 암시, 영향"
+ },
+ {
+  "번호": 1532,
+  "단어": "appetite",
+  "의미": "[명] 식욕, 욕망"
+ },
+ {
+  "번호": 1533,
+  "단어": "authentic",
+  "의미": "[형] 진정한, 진짜의"
+ },
+ {
+  "번호": 1534,
+  "단어": "compel",
+  "의미": "[동] 강요하다, ~ 하게 만들다"
+ },
+ {
+  "번호": 1535,
+  "단어": "transition",
+  "의미": "[명] 변화, 전환"
+ },
+ {
+  "번호": 1536,
+  "단어": "index",
+  "의미": "[명] (책 등의) 색인, 지표"
+ },
+ {
+  "번호": 1537,
+  "단어": "incline",
+  "의미": "[동] ~쪽으로 기울다, 경사지다, 내키게 하다"
+ },
+ {
+  "번호": 1538,
+  "단어": "attain",
+  "의미": "[동] 이루다, 달성하다"
+ },
+ {
+  "번호": 1539,
+  "단어": "innate",
+  "의미": "[형] 타고난"
+ },
+ {
+  "번호": 1540,
+  "단어": "ingenuity",
+  "의미": "[명] 기발한 재주, 독창성"
+ },
+ {
+  "번호": 1541,
+  "단어": "record",
+  "의미": "[명] 기록, 증언[동] 기록하다, 녹음하다"
+ },
+ {
+  "번호": 1542,
+  "단어": "bias",
+  "의미": "[명] 편견, 선입견"
+ },
+ {
+  "번호": 1543,
+  "단어": "seize",
+  "의미": "[동] 붙잡다, 파악하다"
+ },
+ {
+  "번호": 1544,
+  "단어": "screw",
+  "의미": "[명] 나사나사로 고정하다"
+ },
+ {
+  "번호": 1545,
+  "단어": "savage",
+  "의미": "[형] 야만적인, 잔인한[동] 무참히 공격하다야만인"
+ },
+ {
+  "번호": 1546,
+  "단어": "province",
+  "의미": "[명] 지역, 지방"
+ },
+ {
+  "번호": 1547,
+  "단어": "coordinate",
+  "의미": "[동] 조직하다, 조정하다[형] 동등한"
+ },
+ {
+  "번호": 1548,
+  "단어": "deficient",
+  "의미": "부족한, 불완전한"
+ },
+ {
+  "번호": 1549,
+  "단어": "privilege",
+  "의미": "[명] 특권[동] 특권을 주다"
+ },
+ {
+  "번호": 1550,
+  "단어": "preview",
+  "의미": "[명] 시사회, 시연, 미리보기"
+ },
+ {
+  "번호": 1551,
+  "단어": "equivalent",
+  "의미": "[형] 동등한, ~에 상당하는[명] 동등한 것"
+ },
+ {
+  "번호": 1552,
+  "단어": "loom",
+  "의미": "[동] 어렴풋이 나타나다 베틀"
+ },
+ {
+  "번호": 1553,
+  "단어": "purple",
+  "의미": "[명] 자주색의"
+ },
+ {
+  "번호": 1554,
+  "단어": "outlaw",
+  "의미": "[명] 범법자, 도망자금지하다, 법적으로 무효화하다"
+ },
+ {
+  "번호": 1555,
+  "단어": "squeeze",
+  "의미": "[동] (즙 등을) 짜내다"
+ },
+ {
+  "번호": 1556,
+  "단어": "breakthrough",
+  "의미": "[명] 돌파구, 비약적 발전"
+ },
+ {
+  "번호": 1557,
+  "단어": "consent",
+  "의미": "[동] 동의하다, 허락하다[명] 동의, 허락"
+ },
+ {
+  "번호": 1558,
+  "단어": "orphan",
+  "의미": "[명] 고아"
+ },
+ {
+  "번호": 1559,
+  "단어": "negotiate",
+  "의미": "[동] 협상하다"
+ },
+ {
+  "번호": 1560,
+  "단어": "nuisance",
+  "의미": "[명] 골칫거리, 방해, 귀찮은 사람"
+ },
+ {
+  "번호": 1561,
+  "단어": "recipe",
+  "의미": "[명] 요리법"
+ },
+ {
+  "번호": 1562,
+  "단어": "deceive",
+  "의미": "[동] 속이다, 기만하다"
+ },
+ {
+  "번호": 1563,
+  "단어": "sweep",
+  "의미": "[동] 쓸다, 휩쓸다"
+ },
+ {
+  "번호": 1564,
+  "단어": "profile",
+  "의미": "[명] 옆모습, 윤곽, 인물 소개"
+ },
+ {
+  "번호": 1565,
+  "단어": "enterprise",
+  "의미": "[명] 기업, 사업"
+ },
+ {
+  "번호": 1566,
+  "단어": "successive",
+  "의미": "[형] 연속적인"
+ },
+ {
+  "번호": 1567,
+  "단어": "paradox",
+  "의미": "[명] 역설, 모순되는 말"
+ },
+ {
+  "번호": 1568,
+  "단어": "surpass",
+  "의미": "[동] 능가하다"
+ },
+ {
+  "번호": 1569,
+  "단어": "correlation",
+  "의미": "[명] 상관 관계, 연관성"
+ },
+ {
+  "번호": 1570,
+  "단어": "magnitude",
+  "의미": "[명] 중대성, 거대함"
+ },
+ {
+  "번호": 1571,
+  "단어": "aesthetic",
+  "의미": "[형] 미의, 미학의"
+ },
+ {
+  "번호": 1572,
+  "단어": "earnest",
+  "의미": "[형] 성실한, 진심어린"
+ },
+ {
+  "번호": 1573,
+  "단어": "tremble",
+  "의미": "[동] 떨다, 흔들리다"
+ },
+ {
+  "번호": 1574,
+  "단어": "slaughter",
+  "의미": "[동] 도살하다, 학살하다"
+ },
+ {
+  "번호": 1575,
+  "단어": "surrender",
+  "의미": "[동] 항복하다, 양도하다[명] 항복, 양도"
+ },
+ {
+  "번호": 1576,
+  "단어": "philosophy",
+  "의미": "[명] 철학, 인생관"
+ },
+ {
+  "번호": 1577,
+  "단어": "deplete",
+  "의미": "[동] 고갈시키다"
+ },
+ {
+  "번호": 1578,
+  "단어": "admire",
+  "의미": "[동] 존경하다"
+ },
+ {
+  "번호": 1579,
+  "단어": "deform",
+  "의미": "불구로 만들다, <물리> 변형시키다"
+ },
+ {
+  "번호": 1580,
+  "단어": "thrill",
+  "의미": "[동] 오싹하다 [명] 오싹함, 떨림"
+ },
+ {
+  "번호": 1581,
+  "단어": "afford",
+  "의미": "[동] ~할 여유가 있다"
+ },
+ {
+  "번호": 1582,
+  "단어": "blunt",
+  "의미": "[형] 무뚝뚝한, 직설적인"
+ },
+ {
+  "번호": 1583,
+  "단어": "sprint",
+  "의미": "[동] 전력 질주하다"
+ },
+ {
+  "번호": 1584,
+  "단어": "aid",
+  "의미": "[명] 도움, 지원"
+ },
+ {
+  "번호": 1585,
+  "단어": "tense",
+  "의미": "[형] 긴장한[명] (문법) 시제긴장시키다"
+ },
+ {
+  "번호": 1586,
+  "단어": "amplify",
+  "의미": "[동] 증폭시키다, 확대하다"
+ },
+ {
+  "번호": 1587,
+  "단어": "timber",
+  "의미": "[명] 목재"
+ },
+ {
+  "번호": 1588,
+  "단어": "collaborate",
+  "의미": "[동] 협력하다"
+ },
+ {
+  "번호": 1589,
+  "단어": "stance",
+  "의미": "[명] 태도, 자세"
+ },
+ {
+  "번호": 1590,
+  "단어": "blow",
+  "의미": "[동] (입으로) 불다, (바람이) 불다"
+ },
+ {
+  "번호": 1591,
+  "단어": "ballot",
+  "의미": "[명] 투표투표하다"
+ },
+ {
+  "번호": 1592,
+  "단어": "division",
+  "의미": "[명] 분할, 분열, 나눗셈"
+ },
+ {
+  "번호": 1593,
+  "단어": "acquaintance",
+  "의미": "[명] 아는 사람"
+ },
+ {
+  "번호": 1594,
+  "단어": "boil",
+  "의미": "[동] 끓다, 삶다"
+ },
+ {
+  "번호": 1595,
+  "단어": "contradict",
+  "의미": "[동] 모순되다, 반박하다, 부정하다"
+ },
+ {
+  "번호": 1596,
+  "단어": "burst",
+  "의미": "[동] 터지다, 갑자기 나타나다[명] 파열, 폭발"
+ },
+ {
+  "번호": 1597,
+  "단어": "cast",
+  "의미": "[동] 던지다, 배역을 정하다, (빛을) 발하다[명] 출연자, 깁스"
+ },
+ {
+  "번호": 1598,
+  "단어": "falsify",
+  "의미": "잘못을 입증하다"
+ },
+ {
+  "번호": 1599,
+  "단어": "psychic",
+  "의미": "[형] 초자연적인, 마음의"
+ },
+ {
+  "번호": 1600,
+  "단어": "paddle",
+  "의미": "[명] 노[동] 노를 저어 나아가다"
+ },
+ {
+  "번호": 1601,
+  "단어": "steer",
+  "의미": "[동] 조종하다"
+ },
+ {
+  "번호": 1602,
+  "단어": "affection",
+  "의미": "[명] 애착, 애정"
+ },
+ {
+  "번호": 1603,
+  "단어": "bid",
+  "의미": "말하다"
+ },
+ {
+  "번호": 1604,
+  "단어": "compost",
+  "의미": "[명] 퇴비, 두엄\n[동] 퇴비를 만들다, 두엄을 끼얹다"
+ },
+ {
+  "번호": 1605,
+  "단어": "temperament",
+  "의미": "[명] 기질"
+ },
+ {
+  "번호": 1606,
+  "단어": "rent",
+  "의미": "[명] 임대료\n[동] 임대하다"
+ },
+ {
+  "번호": 1607,
+  "단어": "shred",
+  "의미": "[동] 조각조각으로 찢다"
+ },
+ {
+  "번호": 1608,
+  "단어": "unpredictable",
+  "의미": "[형] 예측할 수 없는"
+ },
+ {
+  "번호": 1609,
+  "단어": "tribute",
+  "의미": "경의의 표시"
+ },
+ {
+  "번호": 1610,
+  "단어": "artery",
+  "의미": "[명] 동맥"
+ },
+ {
+  "번호": 1611,
+  "단어": "inherent",
+  "의미": "[형] 내재하는"
+ },
+ {
+  "번호": 1612,
+  "단어": "harass",
+  "의미": "[동] 희롱하다"
+ },
+ {
+  "번호": 1613,
+  "단어": "narrative",
+  "의미": "[형] 서술의, 이야기로 이루어진\n[명] 이야기"
+ },
+ {
+  "번호": 1614,
+  "단어": "assemble",
+  "의미": "[동] 모으다, 조립하다"
+ },
+ {
+  "번호": 1615,
+  "단어": "spike",
+  "의미": "[명] 못, 뾰족한것"
+ },
+ {
+  "번호": 1616,
+  "단어": "sneak",
+  "의미": "[동] 몰래 들어가다"
+ },
+ {
+  "번호": 1617,
+  "단어": "sophisticated",
+  "의미": "[형] 세련된, 정교한"
+ },
+ {
+  "번호": 1618,
+  "단어": "handle",
+  "의미": "[동] 처리하다, 다루다"
+ },
+ {
+  "번호": 1619,
+  "단어": "enlightenment",
+  "의미": "깨달음"
+ },
+ {
+  "번호": 1620,
+  "단어": "cosmetic",
+  "의미": "[명] 화장품\n[형] 허울뿐인, 표면적인"
+ },
+ {
+  "번호": 1621,
+  "단어": "gracious",
+  "의미": "[형] 상냥한"
+ },
+ {
+  "번호": 1622,
+  "단어": "aspire",
+  "의미": "[동] 열망하다"
+ },
+ {
+  "번호": 1623,
+  "단어": "obstruct",
+  "의미": "[동] 방해하다, 가로막다"
+ },
+ {
+  "번호": 1624,
+  "단어": "patrol",
+  "의미": "순찰, 순찰병"
+ },
+ {
+  "번호": 1625,
+  "단어": "accelerate",
+  "의미": "[동] 가속하다, 촉진하다"
+ },
+ {
+  "번호": 1626,
+  "단어": "heatstroke",
+  "의미": "일사병"
+ },
+ {
+  "번호": 1627,
+  "단어": "oval",
+  "의미": "[형] 타원형의\n[명] 타원형"
+ },
+ {
+  "번호": 1628,
+  "단어": "veteran",
+  "의미": "[명] 베테랑, 참전용사"
+ },
+ {
+  "번호": 1629,
+  "단어": "trail",
+  "의미": "[명] 흔적, 오솔길\n[동] 끌다, 추적하다"
+ },
+ {
+  "번호": 1630,
+  "단어": "vocation",
+  "의미": "[명] 천직, 직업"
+ },
+ {
+  "번호": 1631,
+  "단어": "vegetarian",
+  "의미": "[명] 채식주의자"
+ },
+ {
+  "번호": 1632,
+  "단어": "decode",
+  "의미": "해독하다"
+ },
+ {
+  "번호": 1633,
+  "단어": "fellow",
+  "의미": "[명] 친구, 동료\n[형] 동료의"
+ },
+ {
+  "번호": 1634,
+  "단어": "mandate",
+  "의미": "[명] 권한, 명령\n[동] 권한을 부여하다, 명령하다"
+ },
+ {
+  "번호": 1635,
+  "단어": "perish",
+  "의미": "[동] 소멸하다, 죽다"
+ },
+ {
+  "번호": 1636,
+  "단어": "inseparable",
+  "의미": "떼어낼 수 없는"
+ },
+ {
+  "번호": 1637,
+  "단어": "domain",
+  "의미": "[명] 영역, 도메인"
+ },
+ {
+  "번호": 1638,
+  "단어": "statesman",
+  "의미": "[명] 정치인"
+ },
+ {
+  "번호": 1639,
+  "단어": "connotation",
+  "의미": "[명] 함축, 내포"
+ },
+ {
+  "번호": 1640,
+  "단어": "stereotype",
+  "의미": "[명] 인습, 고정관념"
+ },
+ {
+  "번호": 1641,
+  "단어": "hollow",
+  "의미": "[형] 속이 빈"
+ },
+ {
+  "번호": 1642,
+  "단어": "structural",
+  "의미": "[형] 구조상의, 구조적인"
+ },
+ {
+  "번호": 1643,
+  "단어": "mortgage",
+  "의미": "[명] 담보[동] 저당잡히다"
+ },
+ {
+  "번호": 1644,
+  "단어": "inject",
+  "의미": "[동] 주사하다, 주입하다"
+ },
+ {
+  "번호": 1645,
+  "단어": "crisis",
+  "의미": "[명] 위기"
+ },
+ {
+  "번호": 1646,
+  "단어": "latter",
+  "의미": "[형] 나중의, 후자의[명] (둘 중에서) 후자"
+ },
+ {
+  "번호": 1647,
+  "단어": "illuminate",
+  "의미": "[동] 계몽하다"
+ },
+ {
+  "번호": 1648,
+  "단어": "mimic",
+  "의미": "[동] 흉내내다"
+ },
+ {
+  "번호": 1649,
+  "단어": "unearth",
+  "의미": "[동] 발굴하다"
+ },
+ {
+  "번호": 1650,
+  "단어": "wail",
+  "의미": "[동] 울부짖다, 한탄하다"
+ },
+ {
+  "번호": 1651,
+  "단어": "shudder",
+  "의미": "[동] (공포, 추위로) 떨다[명] 떨림"
+ },
+ {
+  "번호": 1652,
+  "단어": "stride",
+  "의미": "[동] 성큼성큼 걷다"
+ },
+ {
+  "번호": 1653,
+  "단어": "applicant",
+  "의미": "[명] 지원자"
+ },
+ {
+  "번호": 1654,
+  "단어": "disprove",
+  "의미": "반증하다"
+ },
+ {
+  "번호": 1655,
+  "단어": "distrub",
+  "의미": "방해하다"
+ },
+ {
+  "번호": 1656,
+  "단어": "hemisphere",
+  "의미": "[명] (지구, 뇌의) 반구"
+ },
+ {
+  "번호": 1657,
+  "단어": "recur",
+  "의미": "재발하다"
+ },
+ {
+  "번호": 1658,
+  "단어": "elastic",
+  "의미": "[형] 탄력있는[명] 고무줄"
+ },
+ {
+  "번호": 1659,
+  "단어": "counterpart",
+  "의미": "[명] 대응 하는 것"
+ },
+ {
+  "번호": 1660,
+  "단어": "stubborn",
+  "의미": "[형] 완고한, 고집 센"
+ },
+ {
+  "번호": 1661,
+  "단어": "suicide",
+  "의미": "[명] 자살"
+ },
+ {
+  "번호": 1662,
+  "단어": "lure",
+  "의미": "[동] 유혹하다[명] 매력"
+ },
+ {
+  "번호": 1663,
+  "단어": "underprivileged",
+  "의미": "혜택받지 못한"
+ },
+ {
+  "번호": 1664,
+  "단어": "morale",
+  "의미": "[명] 사기, 의욕"
+ },
+ {
+  "번호": 1665,
+  "단어": "examine",
+  "의미": "[동] 조사하다, 검사하다"
+ },
+ {
+  "번호": 1666,
+  "단어": "compromise",
+  "의미": "[동] 타협하다[명] 타협"
+ },
+ {
+  "번호": 1667,
+  "단어": "foremost",
+  "의미": "[형] 주요한"
+ },
+ {
+  "번호": 1668,
+  "단어": "precaution",
+  "의미": "[명] 예방조치, 조심"
+ },
+ {
+  "번호": 1669,
+  "단어": "torture",
+  "의미": "[명] 고문[동] 고문하다"
+ },
+ {
+  "번호": 1670,
+  "단어": "entrust",
+  "의미": "[동] 위임하다"
+ },
+ {
+  "번호": 1671,
+  "단어": "sway",
+  "의미": "[동] 흔들다, 동요시키다"
+ },
+ {
+  "번호": 1672,
+  "단어": "religious",
+  "의미": "[형] 종교의, 신앙심이 깊은"
+ },
+ {
+  "번호": 1673,
+  "단어": "obligation",
+  "의미": "[명] 의무, 책임"
+ },
+ {
+  "번호": 1674,
+  "단어": "pest",
+  "의미": "[명] 해충, 유해동물"
+ },
+ {
+  "번호": 1675,
+  "단어": "subdue",
+  "의미": "완화하다"
+ },
+ {
+  "번호": 1676,
+  "단어": "incorporate",
+  "의미": "[동] 통합하다"
+ },
+ {
+  "번호": 1677,
+  "단어": "regime",
+  "의미": "[명] 정권, 제도"
+ },
+ {
+  "번호": 1678,
+  "단어": "terminate",
+  "의미": "[동] 끝내다"
+ },
+ {
+  "번호": 1679,
+  "단어": "rebel",
+  "의미": "반역을 일으키다"
+ },
+ {
+  "번호": 1680,
+  "단어": "meanwhile",
+  "의미": "[부] 한편"
+ },
+ {
+  "번호": 1681,
+  "단어": "folklore",
+  "의미": "[명] 민속"
+ },
+ {
+  "번호": 1682,
+  "단어": "vast",
+  "의미": "[형] 방대한"
+ },
+ {
+  "번호": 1683,
+  "단어": "preliminary",
+  "의미": "[형] 예비의, 준비의[명] 예비 단계, 예선"
+ },
+ {
+  "번호": 1684,
+  "단어": "theft",
+  "의미": "[명] 절도"
+ },
+ {
+  "번호": 1685,
+  "단어": "painkiller",
+  "의미": "진통제"
+ },
+ {
+  "번호": 1686,
+  "단어": "amend",
+  "의미": "[동] 수정하다"
+ },
+ {
+  "번호": 1687,
+  "단어": "recess",
+  "의미": "[명] 휴식, 휴업"
+ },
+ {
+  "번호": 1688,
+  "단어": "exploit",
+  "의미": "[동] 이용하다"
+ },
+ {
+  "번호": 1689,
+  "단어": "autonomy",
+  "의미": "[명] 자율, 자치"
+ },
+ {
+  "번호": 1690,
+  "단어": "outfit",
+  "의미": "[명] 복장과 장비"
+ },
+ {
+  "번호": 1691,
+  "단어": "mourn",
+  "의미": "[동] 애도하다"
+ },
+ {
+  "번호": 1692,
+  "단어": "evoke",
+  "의미": "[동] 이끌어내다"
+ },
+ {
+  "번호": 1693,
+  "단어": "burden",
+  "의미": "[명] 부담[동] ~에게 부담을 지우다"
+ },
+ {
+  "번호": 1694,
+  "단어": "latitude",
+  "의미": "[명] 위도"
+ },
+ {
+  "번호": 1695,
+  "단어": "patch",
+  "의미": "[명] 조각, 작은 땅[동] 덧대다, 때우다"
+ },
+ {
+  "번호": 1696,
+  "단어": "maternal",
+  "의미": "[형] 모성의"
+ },
+ {
+  "번호": 1697,
+  "단어": "pharmacy",
+  "의미": "[명] 약국, 약학"
+ },
+ {
+  "번호": 1698,
+  "단어": "marine",
+  "의미": "[형] 바다의, 해양의"
+ },
+ {
+  "번호": 1699,
+  "단어": "prestigious",
+  "의미": "[형] 명성이 있는"
+ },
+ {
+  "번호": 1700,
+  "단어": "friction",
+  "의미": "[명] 마찰, 충돌"
+ },
+ {
+  "번호": 1701,
+  "단어": "defend",
+  "의미": "[동] 방어하다"
+ },
+ {
+  "번호": 1702,
+  "단어": "fraud",
+  "의미": "[명] 사기, 사기꾼"
+ },
+ {
+  "번호": 1703,
+  "단어": "easygoing",
+  "의미": "태평스러운"
+ },
+ {
+  "번호": 1704,
+  "단어": "insomnia",
+  "의미": "불면증"
+ },
+ {
+  "번호": 1705,
+  "단어": "intermediate",
+  "의미": "[형] 중급의, 중간의[명] 중급자"
+ },
+ {
+  "번호": 1706,
+  "단어": "transport",
+  "의미": "[동] 수송하다[명] 수송"
+ },
+ {
+  "번호": 1707,
+  "단어": "paradigm",
+  "의미": "[명] 패러다임, 사고체계"
+ },
+ {
+  "번호": 1708,
+  "단어": "charge",
+  "의미": "[명] 요금, 책임[동] (요금을) 청구하다"
+ },
+ {
+  "번호": 1709,
+  "단어": "rapid",
+  "의미": "[형] 빠른"
+ },
+ {
+  "번호": 1710,
+  "단어": "premature",
+  "의미": "[형] 조산한"
+ },
+ {
+  "번호": 1711,
+  "단어": "pollute",
+  "의미": "[동] 오염시키다"
+ },
+ {
+  "번호": 1712,
+  "단어": "altruism",
+  "의미": "이타주의"
+ },
+ {
+  "번호": 1713,
+  "단어": "fiber",
+  "의미": "[명] 섬유질"
+ },
+ {
+  "번호": 1714,
+  "단어": "irony",
+  "의미": "[명] 아이러니, 비꼼, 반어법"
+ },
+ {
+  "번호": 1715,
+  "단어": "spectator",
+  "의미": "[명] 관중, 구경꾼"
+ },
+ {
+  "번호": 1716,
+  "단어": "medieval",
+  "의미": "[형] 중세의"
+ },
+ {
+  "번호": 1717,
+  "단어": "analogy",
+  "의미": "[명] 유사성"
+ },
+ {
+  "번호": 1718,
+  "단어": "snatch",
+  "의미": "[동] 잡아채다"
+ },
+ {
+  "번호": 1719,
+  "단어": "anthropology",
+  "의미": "[명] 인류학"
+ },
+ {
+  "번호": 1720,
+  "단어": "outline",
+  "의미": "[명] 간략히 기술하다"
+ },
+ {
+  "번호": 1721,
+  "단어": "slogan",
+  "의미": "[명] 슬로건, 선전 문구"
+ },
+ {
+  "번호": 1722,
+  "단어": "composure",
+  "의미": "[명] 침착, 평정"
+ },
+ {
+  "번호": 1723,
+  "단어": "incurable",
+  "의미": "[형] 불치의, 구제 불능의\n[명] 불치 환자"
+ },
+ {
+  "번호": 1724,
+  "단어": "parallel",
+  "의미": "[형] 평행의, 유사한\n[명] 평행선\n[동] 유사하다"
+ },
+ {
+  "번호": 1725,
+  "단어": "indulge",
+  "의미": "[동] 탐닉하다.충족시키다"
+ },
+ {
+  "번호": 1726,
+  "단어": "meadow",
+  "의미": "[명] 목초지, 초원"
+ },
+ {
+  "번호": 1727,
+  "단어": "venture",
+  "의미": "[동] 모험하다\n[명] 모험"
+ },
+ {
+  "번호": 1728,
+  "단어": "deflect",
+  "의미": "[동] 빗나가다, 빗나가게 하다, 막다"
+ },
+ {
+  "번호": 1729,
+  "단어": "adorable",
+  "의미": "[형] 귀여운, 사랑스러운"
+ },
+ {
+  "번호": 1730,
+  "단어": "complacent",
+  "의미": "[형] (스스로) 만족해하는, 현실에 안주하는"
+ },
+ {
+  "번호": 1731,
+  "단어": "explicit",
+  "의미": "[형] 명백한, 분명한"
+ },
+ {
+  "번호": 1732,
+  "단어": "sturdy",
+  "의미": "[형] 견고한, 튼튼한"
+ },
+ {
+  "번호": 1733,
+  "단어": "primate",
+  "의미": "[명] 영장류"
+ },
+ {
+  "번호": 1734,
+  "단어": "patron",
+  "의미": "[명] 후원자, 단골 손님"
+ },
+ {
+  "번호": 1735,
+  "단어": "endure",
+  "의미": "[동] 참다, 인내하다, 견디다"
+ },
+ {
+  "번호": 1736,
+  "단어": "manifest",
+  "의미": "[동] 명백하게 하다, 증명하다\n[형] 명백한"
+ },
+ {
+  "번호": 1737,
+  "단어": "imperial",
+  "의미": "[형] 제국의, 황제의"
+ },
+ {
+  "번호": 1738,
+  "단어": "duration",
+  "의미": "[명] 지속, 지속 기간"
+ },
+ {
+  "번호": 1739,
+  "단어": "populate",
+  "의미": "[동] 거주시키다"
+ },
+ {
+  "번호": 1740,
+  "단어": "frugal",
+  "의미": "[형] 검소한, 절약하는"
+ },
+ {
+  "번호": 1741,
+  "단어": "registration",
+  "의미": "[명] 기재, 등록"
+ },
+ {
+  "번호": 1742,
+  "단어": "rejoice",
+  "의미": "[동] 크게 기뻐하다"
+ },
+ {
+  "번호": 1743,
+  "단어": "comprise",
+  "의미": "[동] 포함하다, 구성하다"
+ },
+ {
+  "번호": 1744,
+  "단어": "textile",
+  "의미": "[형] 직물의, 방직의\n[명] 직물"
+ },
+ {
+  "번호": 1745,
+  "단어": "lurk",
+  "의미": "[동] 숨다, 잠복하다"
+ },
+ {
+  "번호": 1746,
+  "단어": "humanity",
+  "의미": "[명] 인류, 인간성, 인간애"
+ },
+ {
+  "번호": 1747,
+  "단어": "approximate",
+  "의미": "[동] (수량 등이) ~에 가까워지다\n[형] 대략의"
+ },
+ {
+  "번호": 1748,
+  "단어": "revenge",
+  "의미": "[명] 복수\n[동] 복수하다"
+ },
+ {
+  "번호": 1749,
+  "단어": "sarcastic",
+  "의미": "[형] 비꼬는, 풍자적인"
+ },
+ {
+  "번호": 1750,
+  "단어": "terrain",
+  "의미": "[명] 지형, 지역, 분야, 범위"
+ },
+ {
+  "번호": 1751,
+  "단어": "toll",
+  "의미": "[명] 사용세, 통행료, 종소리\n[동] 요금으로 징수하다"
+ },
+ {
+  "번호": 1752,
+  "단어": "warfare",
+  "의미": "[명] 전쟁, 전투, 교전 상태"
+ },
+ {
+  "번호": 1753,
+  "단어": "mortal",
+  "의미": "[형] 죽을 운명의, 치명적인\n[명] 인간"
+ },
+ {
+  "번호": 1754,
+  "단어": "spouse",
+  "의미": "[명] 배우자"
+ },
+ {
+  "번호": 1755,
+  "단어": "crispy",
+  "의미": "[형] 바삭바삭한, 부서지기 쉬운"
+ },
+ {
+  "번호": 1756,
+  "단어": "statistical",
+  "의미": "[형] 통계적인, 통계상의"
+ },
+ {
+  "번호": 1757,
+  "단어": "rubbish",
+  "의미": "[명] 쓰레기, 폐기물\n[동] 혹평하다"
+ },
+ {
+  "번호": 1758,
+  "단어": "stimulus",
+  "의미": "[명] 자극, 격려"
+ },
+ {
+  "번호": 1759,
+  "단어": "clumsy",
+  "의미": "[형] 서투른, 어색한"
+ },
+ {
+  "번호": 1760,
+  "단어": "subsequent",
+  "의미": "[형] 다음의, 그 이후의"
+ },
+ {
+  "번호": 1761,
+  "단어": "relevant",
+  "의미": "[형] 관련된, 적절한"
+ },
+ {
+  "번호": 1762,
+  "단어": "predator",
+  "의미": "[명] 포식자, 약탈자, 육식 동물"
+ },
+ {
+  "번호": 1763,
+  "단어": "drain",
+  "의미": "[동] 물을 빼내다, 소모시키다\n[명] 배수관"
+ },
+ {
+  "번호": 1764,
+  "단어": "countless",
+  "의미": "[형] 셀 수 없는, 무수한"
+ },
+ {
+  "번호": 1765,
+  "단어": "condense",
+  "의미": "[동] 농축하다, 요약하다"
+ },
+ {
+  "번호": 1766,
+  "단어": "post",
+  "의미": "[동] (벽 따위에) 붙이다, 우편"
+ },
+ {
+  "번호": 1767,
+  "단어": "poise",
+  "의미": "[동] 균형을 잡다\n[명] 균형, 평정"
+ },
+ {
+  "번호": 1768,
+  "단어": "disciple",
+  "의미": "[명] 제자, 문하생"
+ },
+ {
+  "번호": 1769,
+  "단어": "gust",
+  "의미": "[명] 돌풍, 질풍"
+ },
+ {
+  "번호": 1770,
+  "단어": "collective",
+  "의미": "[형] 집합적인, 집단적인\n[명] 집단"
+ },
+ {
+  "번호": 1771,
+  "단어": "scope",
+  "의미": "[명] (관찰, 활동의) 범위, 시야\n[동] 조사하다"
+ },
+ {
+  "번호": 1772,
+  "단어": "compatible",
+  "의미": "[형] 양립할 수 있는, 모순이 없는"
+ },
+ {
+  "번호": 1773,
+  "단어": "border",
+  "의미": "[명] 경계, 가장자리, 국경\n[동] 인접하다"
+ },
+ {
+  "번호": 1774,
+  "단어": "frontier",
+  "의미": "[명] 국경\n[형] 국경의, 최첨단의"
+ },
+ {
+  "번호": 1775,
+  "단어": "withhold",
+  "의미": "[동] 억누르다, 억제하다, 보류하다"
+ },
+ {
+  "번호": 1776,
+  "단어": "verdict",
+  "의미": "[명] 판결, 결정"
+ },
+ {
+  "번호": 1777,
+  "단어": "stall",
+  "의미": "[명] 마구간, 우리\n[동] 핑계를 대다"
+ },
+ {
+  "번호": 1778,
+  "단어": "apparatus",
+  "의미": "[명] 장치, 기구, 조직"
+ },
+ {
+  "번호": 1779,
+  "단어": "hail",
+  "의미": "[명] 우박, 싸락눈\n[동] 우박이 내리다"
+ },
+ {
+  "번호": 1780,
+  "단어": "outburst",
+  "의미": "[명] 폭발, 분출"
+ },
+ {
+  "번호": 1781,
+  "단어": "vanity",
+  "의미": "[명] 허영심, 허무함"
+ },
+ {
+  "번호": 1782,
+  "단어": "firsthand",
+  "의미": "[형] 직접의\n[부] 직접, 바로"
+ },
+ {
+  "번호": 1783,
+  "단어": "obesity",
+  "의미": "[명] 비만, 비대"
+ },
+ {
+  "번호": 1784,
+  "단어": "dilemma",
+  "의미": "[명] 진퇴양난, 딜레마, 궁지"
+ },
+ {
+  "번호": 1785,
+  "단어": "render",
+  "의미": "[동] ~이 되게 하다, 주다, 제공하다"
+ },
+ {
+  "번호": 1786,
+  "단어": "indispensable",
+  "의미": "[형] 필수 불가결한\n[명] 없어서는 안 될 것"
+ },
+ {
+  "번호": 1787,
+  "단어": "outdated",
+  "의미": "[형] 구식의, 시대에 뒤진"
+ },
+ {
+  "번호": 1788,
+  "단어": "bother",
+  "의미": "[동] 일부러~ 하다, 괴롭히다"
+ },
+ {
+  "번호": 1789,
+  "단어": "counteract",
+  "의미": "[동] (효력을) 중화시키다, 약화시키다"
+ },
+ {
+  "번호": 1790,
+  "단어": "static",
+  "의미": "[형] 정적인, 고정된"
+ },
+ {
+  "번호": 1791,
+  "단어": "sustain",
+  "의미": "[동] 유지하다, 지탱하다"
+ },
+ {
+  "번호": 1792,
+  "단어": "posture",
+  "의미": "[명] 자세, 태도"
+ },
+ {
+  "번호": 1793,
+  "단어": "discourse",
+  "의미": "[명] 담화, 강연"
+ },
+ {
+  "번호": 1794,
+  "단어": "bribe",
+  "의미": "[명] 뇌물\n[동] 뇌물을 주다"
+ },
+ {
+  "번호": 1795,
+  "단어": "retention",
+  "의미": "[명] 보유, 기억력"
+ },
+ {
+  "번호": 1796,
+  "단어": "valiant",
+  "의미": "[형] 용감한, 용맹스런"
+ },
+ {
+  "번호": 1797,
+  "단어": "distress",
+  "의미": "[명] 고민, 고통\n[동] ~을 괴롭히다"
+ },
+ {
+  "번호": 1798,
+  "단어": "nursery",
+  "의미": "[명] 육아실, 탁아소"
+ },
+ {
+  "번호": 1799,
+  "단어": "juggle",
+  "의미": "[동] 잘 처리하다, 저글링하다"
+ },
+ {
+  "번호": 1800,
+  "단어": "perspiration",
+  "의미": "[명] 땀, 노력"
+ },
+ {
+  "번호": 1801,
+  "단어": "encircle",
+  "의미": "[동] 에워싸다, 둘러싸다"
+ },
+ {
+  "번호": 1802,
+  "단어": "notion",
+  "의미": "[명] 개념, 의견"
+ },
+ {
+  "번호": 1803,
+  "단어": "disgust",
+  "의미": "[명] 혐오감\n[동] 역겹게 하다"
+ },
+ {
+  "번호": 1804,
+  "단어": "fragment",
+  "의미": "[명] 일부분, 부서진 조각\n[동] 산산이 부서지다"
+ },
+ {
+  "번호": 1805,
+  "단어": "oversee",
+  "의미": "[동] 감독하다, 감시하다"
+ },
+ {
+  "번호": 1806,
+  "단어": "creep",
+  "의미": "[동] 기다, (덩굴 등이) 얽히다\n[명] 포복, 서행"
+ },
+ {
+  "번호": 1807,
+  "단어": "clarify",
+  "의미": "[동] 명백히 하다"
+ },
+ {
+  "번호": 1808,
+  "단어": "contagious",
+  "의미": "[형] 전염성의, 감염성의"
+ },
+ {
+  "번호": 1809,
+  "단어": "deterioration",
+  "의미": "[명] 악화, (가치의) 하락, 저하"
+ },
+ {
+  "번호": 1810,
+  "단어": "currency",
+  "의미": "[명] 통화, 통용"
+ },
+ {
+  "번호": 1811,
+  "단어": "janitor",
+  "의미": "[명] 문지기, 관리인, (건물) 경비원"
+ },
+ {
+  "번호": 1812,
+  "단어": "blush",
+  "의미": "[동] 얼굴을 붉히다, 부끄러워 하다"
+ },
+ {
+  "번호": 1813,
+  "단어": "intervene",
+  "의미": "[동] 끼어들다, 개입하다, 방해하다"
+ },
+ {
+  "번호": 1814,
+  "단어": "nomad",
+  "의미": "[명] 유목민, 방랑자"
+ },
+ {
+  "번호": 1815,
+  "단어": "cuisine",
+  "의미": "[명] 요리, 요리법"
+ },
+ {
+  "번호": 1816,
+  "단어": "dare",
+  "의미": "[동] 감히 ~하다"
+ },
+ {
+  "번호": 1817,
+  "단어": "solvent",
+  "의미": "[형] 용해력이 있는, 지불 능력이 있는\n[명] 용제, 용액"
+ },
+ {
+  "번호": 1818,
+  "단어": "cultivate",
+  "의미": "[동] 경작하다, 양성하다, 계발하다"
+ },
+ {
+  "번호": 1819,
+  "단어": "ascent",
+  "의미": "[명] 상승, 오름"
+ },
+ {
+  "번호": 1820,
+  "단어": "advocate",
+  "의미": "[명] 옹호자, 지지자\n[동] 지지하다"
+ },
+ {
+  "번호": 1821,
+  "단어": "spur",
+  "의미": "[명] 자극, 고무\n[동] ~을 자극하다, (말에) 박차를 가하다"
+ },
+ {
+  "번호": 1822,
+  "단어": "discern",
+  "의미": "[동] 식별하다, 분별하다, ~을 인식하다"
+ },
+ {
+  "번호": 1823,
+  "단어": "scheme",
+  "의미": "[명] 계획, 체계\n[동] 계획하다"
+ },
+ {
+  "번호": 1824,
+  "단어": "weigh",
+  "의미": "[동]  무게를 달다"
+ },
+ {
+  "번호": 1825,
+  "단어": "publicity",
+  "의미": "[명] 널리 알려짐, 명성, 광고, 선전"
+ },
+ {
+  "번호": 1826,
+  "단어": "declare",
+  "의미": "[동] 선언하다, (세관에) 신고하다"
+ },
+ {
+  "번호": 1827,
+  "단어": "brisk",
+  "의미": "[형] 활발한, 번창하는, 상쾌한"
+ },
+ {
+  "번호": 1828,
+  "단어": "exile",
+  "의미": "[명] 망명, 망명자\n[동] 망명시키다"
+ },
+ {
+  "번호": 1829,
+  "단어": "whisper",
+  "의미": "[동] 속삭이다\n[명] 속삭임"
+ },
+ {
+  "번호": 1830,
+  "단어": "fling",
+  "의미": "[동] 내던지다, 돌진하다"
+ },
+ {
+  "번호": 1831,
+  "단어": "deviation",
+  "의미": "[명] 변경, 일탈"
+ },
+ {
+  "번호": 1832,
+  "단어": "dissolve",
+  "의미": "[동] 용해하다, 해산하다, 해소하다"
+ },
+ {
+  "번호": 1833,
+  "단어": "constraint",
+  "의미": "[명] 강제, 압박, 제약"
+ },
+ {
+  "번호": 1834,
+  "단어": "itch",
+  "의미": "[동] 가려움, 가렵다, (~하고 싶어) 못 견디다"
+ },
+ {
+  "번호": 1835,
+  "단어": "unanimous",
+  "의미": "[형] 만장일치의, 합의의"
+ },
+ {
+  "번호": 1836,
+  "단어": "delude",
+  "의미": "[동] 속이다, 착각하게 하다"
+ },
+ {
+  "번호": 1837,
+  "단어": "dehydrate",
+  "의미": "[동] 탈수하다, 건조시키다"
+ },
+ {
+  "번호": 1838,
+  "단어": "underneath",
+  "의미": "[전] ~의 아래에, 밑에"
+ },
+ {
+  "번호": 1839,
+  "단어": "metabolism",
+  "의미": "[명] 물질대사, 신진대사"
+ },
+ {
+  "번호": 1840,
+  "단어": "appoint",
+  "의미": "[동] 임명[지명]하다, (시간, 장소를) 정하다"
+ },
+ {
+  "번호": 1841,
+  "단어": "pinch",
+  "의미": "[동] 꼬집다, 집다, 죄다"
+ },
+ {
+  "번호": 1842,
+  "단어": "punctual",
+  "의미": "[형] 시간을 지키는"
+ },
+ {
+  "번호": 1843,
+  "단어": "arbitrary",
+  "의미": "[형] 임의적인, 독단적인"
+ },
+ {
+  "번호": 1844,
+  "단어": "catastrophe",
+  "의미": "[명] 대참사, 재앙"
+ },
+ {
+  "번호": 1845,
+  "단어": "exert",
+  "의미": "[동] (힘, 영향력을) 가하다, 발휘하다"
+ },
+ {
+  "번호": 1846,
+  "단어": "aviate",
+  "의미": "[동] 조종하다, 비행하다"
+ },
+ {
+  "번호": 1847,
+  "단어": "headquarters",
+  "의미": "[명] 본사, 본부"
+ },
+ {
+  "번호": 1848,
+  "단어": "rectangular",
+  "의미": "[형] 직사각형의, 직각의"
+ },
+ {
+  "번호": 1849,
+  "단어": "deledate",
+  "의미": "[동] 파견하다\n[명] 사절, 대표"
+ },
+ {
+  "번호": 1850,
+  "단어": "elect",
+  "의미": "[동] 선출하다"
+ },
+ {
+  "번호": 1851,
+  "단어": "thorn",
+  "의미": "[명] 가시"
+ },
+ {
+  "번호": 1852,
+  "단어": "empathize",
+  "의미": "[동] 공감하다"
+ },
+ {
+  "번호": 1853,
+  "단어": "expertise",
+  "의미": "[명] 전문 지식"
+ },
+ {
+  "번호": 1854,
+  "단어": "renovate",
+  "의미": "[동] ~을 새것으로 만들다, 수리하다"
+ },
+ {
+  "번호": 1855,
+  "단어": "wrench",
+  "의미": "[동] 비틀다, 삐다 \n[명] 렌치, 쓰라림"
+ },
+ {
+  "번호": 1856,
+  "단어": "interval",
+  "의미": "[명] 간격, 사이"
+ },
+ {
+  "번호": 1857,
+  "단어": "degrade",
+  "의미": "[동] 저하시키다, 비하하다, 분해하다"
+ },
+ {
+  "번호": 1858,
+  "단어": "report",
+  "의미": "[명] 보고서, 말대꾸\n[동] 보고하다, 발표하다"
+ },
+ {
+  "번호": 1859,
+  "단어": "asthma",
+  "의미": "[명] 천식"
+ },
+ {
+  "번호": 1860,
+  "단어": "realm",
+  "의미": "[명] 영역, 왕국"
+ },
+ {
+  "번호": 1861,
+  "단어": "segment",
+  "의미": "[명] 부분, 조각"
+ },
+ {
+  "번호": 1862,
+  "단어": "coexist",
+  "의미": "[동] 공존하다"
+ },
+ {
+  "번호": 1863,
+  "단어": "hospitality",
+  "의미": "[명] 환대, 후한 대접"
+ },
+ {
+  "번호": 1864,
+  "단어": "estate",
+  "의미": "[명] 재산, 토지"
+ },
+ {
+  "번호": 1865,
+  "단어": "displace",
+  "의미": "[동] 옮겨 놓다, 대체하다"
+ },
+ {
+  "번호": 1866,
+  "단어": "cripple",
+  "의미": "[명] 불구자, 지체 부자유자\n[동] ~을 불구로 만들다, 손상시키다"
+ },
+ {
+  "번호": 1867,
+  "단어": "drawback",
+  "의미": "[명] 문제점, 결점, 장애"
+ },
+ {
+  "번호": 1868,
+  "단어": "tactics",
+  "의미": "[명] 방안, 전술"
+ },
+ {
+  "번호": 1869,
+  "단어": "dread",
+  "의미": "[동] 두려워하다, 무서워하다\n[명] 두려움, 공포"
+ },
+ {
+  "번호": 1870,
+  "단어": "dispute",
+  "의미": "[동] 논쟁하다, 토의하다\n[명] 논쟁, 분쟁"
+ },
+ {
+  "번호": 1871,
+  "단어": "console",
+  "의미": "[동] 위로하다"
+ },
+ {
+  "번호": 1872,
+  "단어": "stack",
+  "의미": "[명] 더미, 산더미\n[동] 쌓아 올리다"
+ },
+ {
+  "번호": 1873,
+  "단어": "cynical",
+  "의미": "[형] 냉소적인, 비관적인"
+ },
+ {
+  "번호": 1874,
+  "단어": "reprove",
+  "의미": "[동] 꾸짖다, 책망하다"
+ },
+ {
+  "번호": 1875,
+  "단어": "verify",
+  "의미": "[동] 입증하다"
+ },
+ {
+  "번호": 1876,
+  "단어": "engross",
+  "의미": "[동] 열중하게 하다"
+ },
+ {
+  "번호": 1877,
+  "단어": "bulk",
+  "의미": "[명] 크기, 부피, 대부분\n[동] 부피가 커지다, 덩어리가 되다"
+ },
+ {
+  "번호": 1878,
+  "단어": "despise",
+  "의미": "[동] 경멸하다"
+ },
+ {
+  "번호": 1879,
+  "단어": "manuscript",
+  "의미": "[명] 원고, 필사본"
+ },
+ {
+  "번호": 1880,
+  "단어": "flee",
+  "의미": "[동] 달아나다"
+ },
+ {
+  "번호": 1881,
+  "단어": "prehistoric",
+  "의미": "[형] 선사시대의"
+ },
+ {
+  "번호": 1882,
+  "단어": "barrel",
+  "의미": "[명] 통, 배럴"
+ },
+ {
+  "번호": 1883,
+  "단어": "predecessor",
+  "의미": "[명] 이전 형태, 전임자"
+ },
+ {
+  "번호": 1884,
+  "단어": "alienate",
+  "의미": "[동] 소외시키다, 멀리하다"
+ },
+ {
+  "번호": 1885,
+  "단어": "preclaim",
+  "의미": "[동] 선언하다, 선포하다"
+ },
+ {
+  "번호": 1886,
+  "단어": "subordinate",
+  "의미": "[형] 하위의, 부차적인[명] 하급자[동] 하위에 두다"
+ },
+ {
+  "번호": 1887,
+  "단어": "furnish",
+  "의미": "[동] (가구를) 비치하다, 제공하다, 갖추다"
+ },
+ {
+  "번호": 1888,
+  "단어": "fume",
+  "의미": "[동] 씩씩대다, 연기를 내뿜다[명] 연기"
+ },
+ {
+  "번호": 1889,
+  "단어": "staple",
+  "의미": "[형] 주된, 주요한[명] 주성분"
+ },
+ {
+  "번호": 1890,
+  "단어": "dimension",
+  "의미": "[명] 크기, 측면, 치수, 차원"
+ },
+ {
+  "번호": 1891,
+  "단어": "dispersal",
+  "의미": "[명] 분산, 확산"
+ },
+ {
+  "번호": 1892,
+  "단어": "eloquent",
+  "의미": "[형] 웅변의, 달변의, 연설을 잘 하는, 표현이 풍부한"
+ },
+ {
+  "번호": 1893,
+  "단어": "innermost",
+  "의미": "[형] 가장 깊숙한[명] 가장 깊은 부분"
+ },
+ {
+  "번호": 1894,
+  "단어": "hazardous",
+  "의미": "[형] 위험한, 해로운"
+ },
+ {
+  "번호": 1895,
+  "단어": "skull",
+  "의미": "[명] 두개골"
+ },
+ {
+  "번호": 1896,
+  "단어": "detergent",
+  "의미": "[명] 세제"
+ },
+ {
+  "번호": 1897,
+  "단어": "brutal",
+  "의미": "[형] 야만적인, 잔혹한"
+ },
+ {
+  "번호": 1898,
+  "단어": "rash",
+  "의미": "[명] 반점, 발진[형] 경솔한"
+ },
+ {
+  "번호": 1899,
+  "단어": "bypass",
+  "의미": "[명] 우회로[동] 우회하다"
+ },
+ {
+  "번호": 1900,
+  "단어": "accommodate",
+  "의미": "[동] 수용하다, 적응하다"
+ },
+ {
+  "번호": 1901,
+  "단어": "tact",
+  "의미": "[명] 재치, 기지"
+ },
+ {
+  "번호": 1902,
+  "단어": "monotonous",
+  "의미": "[형] 단조로운, 지루한"
+ },
+ {
+  "번호": 1903,
+  "단어": "perpetual",
+  "의미": "[형] 영원한, 끊임없는"
+ },
+ {
+  "번호": 1904,
+  "단어": "eligible",
+  "의미": "[형] ~을 할 수 있는, 유능한, 자격의, 자격이 있는"
+ },
+ {
+  "번호": 1905,
+  "단어": "legacy",
+  "의미": "[명] 유물, 유산"
+ },
+ {
+  "번호": 1906,
+  "단어": "melancholy",
+  "의미": "[형] 우울한[명] 우울함"
+ },
+ {
+  "번호": 1907,
+  "단어": "simplicity",
+  "의미": "[명] 단순함, 간단"
+ },
+ {
+  "번호": 1908,
+  "단어": "hierarchy",
+  "의미": "[명] 계층, 계급, 지배층, 체계"
+ },
+ {
+  "번호": 1909,
+  "단어": "reside",
+  "의미": "[동] 거주하다"
+ },
+ {
+  "번호": 1910,
+  "단어": "enact",
+  "의미": "[동] 제정하다, 상영하다"
+ },
+ {
+  "번호": 1911,
+  "단어": "burnout",
+  "의미": "[명] 극도의 피로, 쇠진"
+ },
+ {
+  "번호": 1912,
+  "단어": "legitimate",
+  "의미": "[형] 타당한, 합법적인, 정당한"
+ },
+ {
+  "번호": 1913,
+  "단어": "shuffle",
+  "의미": "[동] 발을 끌며 걷다, 뒤섞다"
+ },
+ {
+  "번호": 1914,
+  "단어": "summarize",
+  "의미": "[동] 요약하다"
+ },
+ {
+  "번호": 1915,
+  "단어": "eject",
+  "의미": "[동] 쫓아내다, 튀어나오게 하다"
+ },
+ {
+  "번호": 1916,
+  "단어": "intersection",
+  "의미": "[명] 교차로, 교차함"
+ },
+ {
+  "번호": 1917,
+  "단어": "quest",
+  "의미": "[명] 탐색, 탐구, 추구, 찾음"
+ },
+ {
+  "번호": 1918,
+  "단어": "linear",
+  "의미": "[형] 직선의, 길이의"
+ },
+ {
+  "번호": 1919,
+  "단어": "landslide",
+  "의미": "[명] 산사태, (선거에서) 압도적 승리"
+ },
+ {
+  "번호": 1920,
+  "단어": "plausible",
+  "의미": "[형] 그럴듯한, 이치에 맞는"
+ },
+ {
+  "번호": 1921,
+  "단어": "endow",
+  "의미": "[동] 기부하다, ~에게 부여하다"
+ },
+ {
+  "번호": 1922,
+  "단어": "extrinsic",
+  "의미": "[형] 외적인, 외부의"
+ },
+ {
+  "번호": 1923,
+  "단어": "merge",
+  "의미": "[동] 합병하다, 차차 변하다"
+ },
+ {
+  "번호": 1924,
+  "단어": "frantic",
+  "의미": "[형] 광란의, 미친"
+ },
+ {
+  "번호": 1925,
+  "단어": "moan",
+  "의미": "[명] 신음, 투덜거림\n[동] 신음하다, 불평하다"
+ },
+ {
+  "번호": 1926,
+  "단어": "merchandise",
+  "의미": "[명] (집학적) 상품\n[동] 거래하다"
+ },
+ {
+  "번호": 1927,
+  "단어": "respectively",
+  "의미": "[부] 각각, 저마다"
+ },
+ {
+  "번호": 1928,
+  "단어": "yearn",
+  "의미": "[동] 그리워하다, 열망하다"
+ },
+ {
+  "번호": 1929,
+  "단어": "conviction",
+  "의미": "[명] 확신, 유죄 판결"
+ },
+ {
+  "번호": 1930,
+  "단어": "stout",
+  "의미": "[형] 뚱뚱한, (옷 등이) 튼튼한"
+ },
+ {
+  "번호": 1931,
+  "단어": "reckon",
+  "의미": "[동] 세다, 계산하다, 생각하다"
+ },
+ {
+  "번호": 1932,
+  "단어": "enchant",
+  "의미": "[동] 매혹하다, ~에게 마법을 걸다"
+ },
+ {
+  "번호": 1933,
+  "단어": "entail",
+  "의미": "[동] 수반하다, 의미하다, 필요로 하다"
+ },
+ {
+  "번호": 1934,
+  "단어": "demolish",
+  "의미": "[동] 파괴하다, 폐지하다"
+ },
+ {
+  "번호": 1935,
+  "단어": "degenerate",
+  "의미": "[동] 퇴보하다, 타락하다"
+ },
+ {
+  "번호": 1936,
+  "단어": "sentiment",
+  "의미": "[명] 감상, 정서"
+ },
+ {
+  "번호": 1937,
+  "단어": "offspring",
+  "의미": "[명] 자식, 새끼, 성과"
+ },
+ {
+  "번호": 1938,
+  "단어": "detest",
+  "의미": "[동] 혐오하다, 미워하다"
+ },
+ {
+  "번호": 1939,
+  "단어": "tackle",
+  "의미": "[동] (일, 문제를) 다루다, 처리하다\n[명] 도구, (축구의) 태클"
+ },
+ {
+  "번호": 1940,
+  "단어": "defy",
+  "의미": "[동] 물리치다, (공공연히) 무시하다, 반항하다"
+ },
+ {
+  "번호": 1941,
+  "단어": "inference",
+  "의미": "[명] 추론"
+ },
+ {
+  "번호": 1942,
+  "단어": "refraction",
+  "의미": "[명] (빛, 소리 따위의) 굴절"
+ },
+ {
+  "번호": 1943,
+  "단어": "dusk",
+  "의미": "[명] 땅거미, 어스름"
+ },
+ {
+  "번호": 1944,
+  "단어": "detach",
+  "의미": "[동] 떼어내다, 분리하다"
+ },
+ {
+  "번호": 1945,
+  "단어": "antagonist",
+  "의미": "[명] 적대자, 라이벌"
+ },
+ {
+  "번호": 1946,
+  "단어": "thrust",
+  "의미": "[동] 밀다, 밀치다, 찌르다"
+ },
+ {
+  "번호": 1947,
+  "단어": "creed",
+  "의미": "[명] 신념, (종교의) 교의"
+ },
+ {
+  "번호": 1948,
+  "단어": "equate",
+  "의미": "[동] 동일시하다, 일치하다"
+ },
+ {
+  "번호": 1949,
+  "단어": "misplace",
+  "의미": "[동] 잘못두다"
+ },
+ {
+  "번호": 1950,
+  "단어": "auditory",
+  "의미": "[형] 귀의, 청각의, 음향의"
+ },
+ {
+  "번호": 1951,
+  "단어": "missionary",
+  "의미": "[명] 선교사"
+ },
+ {
+  "번호": 1952,
+  "단어": "cosmopolitan",
+  "의미": "[형] 세계적인, 세계주의의\n[명] 세계인, 국제인"
+ },
+ {
+  "번호": 1953,
+  "단어": "secondhand",
+  "의미": "[형] 중고의, 간접적인"
+ },
+ {
+  "번호": 1954,
+  "단어": "multiple",
+  "의미": "[형] 복합적인, 다수의, 다양한\n[명] (수학) 배수"
+ },
+ {
+  "번호": 1955,
+  "단어": "embed",
+  "의미": "[동] 깊숙이 박다, 깊이 간직하다, 내재하다"
+ },
+ {
+  "번호": 1956,
+  "단어": "propel",
+  "의미": "[동] 나아가게 하다, 추진하다"
+ },
+ {
+  "번호": 1957,
+  "단어": "reptile",
+  "의미": "[명] 파충류"
+ },
+ {
+  "번호": 1958,
+  "단어": "erosion",
+  "의미": "[명] 부식, 침식"
+ },
+ {
+  "번호": 1959,
+  "단어": "feat",
+  "의미": "[명] 위업, 공적, 솜씨"
+ },
+ {
+  "번호": 1960,
+  "단어": "utensil",
+  "의미": "[명] 가정용품, 기구, 도구"
+ },
+ {
+  "번호": 1961,
+  "단어": "penetrate",
+  "의미": "[동] 관통하다, 꿰뚫다, 침투하다"
+ },
+ {
+  "번호": 1962,
+  "단어": "intrude",
+  "의미": "[동] 침범하다, 방해하다"
+ },
+ {
+  "번호": 1963,
+  "단어": "notable",
+  "의미": "[형] 주목할 만한, 유명한"
+ },
+ {
+  "번호": 1964,
+  "단어": "grumble",
+  "의미": "[동] 불평하다, 투덜거리다\n[명] 불평"
+ },
+ {
+  "번호": 1965,
+  "단어": "landfill",
+  "의미": "[명] 쓰레기 매립지"
+ },
+ {
+  "번호": 1966,
+  "단어": "scrutiny",
+  "의미": "[명] (정밀) 조사, 철저한 검토"
+ },
+ {
+  "번호": 1967,
+  "단어": "reckless",
+  "의미": "[형] 무모한, 부주의한, 신중하지 못한"
+ },
+ {
+  "번호": 1968,
+  "단어": "synthetic",
+  "의미": "[형] 합성의, 종합적인"
+ },
+ {
+  "번호": 1969,
+  "단어": "productive",
+  "의미": "[형] 생산하는, 생산적인"
+ },
+ {
+  "번호": 1970,
+  "단어": "outset",
+  "의미": "[명] 착수, 발단, 시작, 처음"
+ },
+ {
+  "번호": 1971,
+  "단어": "peril",
+  "의미": "[명] 위험"
+ },
+ {
+  "번호": 1972,
+  "단어": "pitfall",
+  "의미": "[명] 위험, 함정"
+ },
+ {
+  "번호": 1973,
+  "단어": "kidnap",
+  "의미": "[동] 납치하다\n[명] 유괴"
+ },
+ {
+  "번호": 1974,
+  "단어": "liable",
+  "의미": "[형] 책임이 있는, ~하기 쉬운"
+ },
+ {
+  "번호": 1975,
+  "단어": "insane",
+  "의미": "[형] 정신 이상의, 미친, 비상식적인"
+ },
+ {
+  "번호": 1976,
+  "단어": "rage",
+  "의미": "[명] 격노\n[동] 격노하다"
+ },
+ {
+  "번호": 1977,
+  "단어": "radius",
+  "의미": "[명] 반지름"
+ },
+ {
+  "번호": 1978,
+  "단어": "hybrid",
+  "의미": "[명] 잡종, 혼합물"
+ },
+ {
+  "번호": 1979,
+  "단어": "uncover",
+  "의미": "[동] 폭로하다, 덮개를 벗기다"
+ },
+ {
+  "번호": 1980,
+  "단어": "limb",
+  "의미": "[명] 사지, 팔다리, 나뭇가지"
+ },
+ {
+  "번호": 1981,
+  "단어": "setback",
+  "의미": "[명] 좌절, 차질, 방해, 실패"
+ },
+ {
+  "번호": 1982,
+  "단어": "prudent",
+  "의미": "[형] 신중한"
+ },
+ {
+  "번호": 1983,
+  "단어": "solidify",
+  "의미": "[동] 굳어지다, 굳히다, 확고히 하다"
+ },
+ {
+  "번호": 1984,
+  "단어": "grudge",
+  "의미": "[명] 원한, 유감"
+ },
+ {
+  "번호": 1985,
+  "단어": "lessen",
+  "의미": "[동] 줄이다"
+ },
+ {
+  "번호": 1986,
+  "단어": "tangle",
+  "의미": "[동] 얽히게 하다, 혼란시키다"
+ },
+ {
+  "번호": 1987,
+  "단어": "subsidy",
+  "의미": "[명] 보조금, 장려금"
+ },
+ {
+  "번호": 1988,
+  "단어": "ambiguous",
+  "의미": "[형] 애매모호한, 불명확한"
+ },
+ {
+  "번호": 1989,
+  "단어": "enthusiasm",
+  "의미": "[명] 열광, 열정, 열광하는 대상"
+ },
+ {
+  "번호": 1990,
+  "단어": "bankruptcy",
+  "의미": "[명] 파산"
+ },
+ {
+  "번호": 1991,
+  "단어": "pollination",
+  "의미": "[명] 수분"
+ },
+ {
+  "번호": 1992,
+  "단어": "prosper",
+  "의미": "[동] 번영하다, 번창하다"
+ },
+ {
+  "번호": 1993,
+  "단어": "phase",
+  "의미": "[명] 단계"
+ },
+ {
+  "번호": 1994,
+  "단어": "veterinarian",
+  "의미": "[명] 수의사"
+ },
+ {
+  "번호": 1995,
+  "단어": "counterattack",
+  "의미": "[명] 반격, 연습\n[동] 반격하다, 역습하다"
+ },
+ {
+  "번호": 1996,
+  "단어": "cumulative",
+  "의미": "[형] 누적되는"
+ },
+ {
+  "번호": 1997,
+  "단어": "infrastructure",
+  "의미": "[명] (사회) 기반 시설, 하부 조직"
+ },
+ {
+  "번호": 1998,
+  "단어": "wound",
+  "의미": "[동] 상처를 입히다, 부상하게 하다\n[명] 부상, 상처"
+ },
+ {
+  "번호": 1999,
+  "단어": "discrete",
+  "의미": "[형] 별개의"
+ },
+ {
+  "번호": 2000,
+  "단어": "fluctuation",
+  "의미": "[명] 변동, 동요"
+ }
+]
+}

@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class FindIdActivity extends AppCompatActivity implements View.OnClickLis
     TextView idView;
     EditText findNickname, findTel;
     Button buttonFindId, moveLogin;
+    ImageButton imageButtonBack;
 
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
@@ -48,17 +50,24 @@ public class FindIdActivity extends AppCompatActivity implements View.OnClickLis
         idView = findViewById(R.id.textViewIdView);
         buttonFindId = findViewById(R.id.buttonFindId);
         moveLogin = findViewById(R.id.buttonMoveLogin);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         mAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
 
         buttonFindId.setOnClickListener(view -> findId());
         moveLogin.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.buttonMoveLogin) {
+            Intent intent = new Intent(this, SignInActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        if (view.getId() == R.id.imageButtonBack) {
             Intent intent = new Intent(this, SignInActivity.class);
             startActivity(intent);
             finish();
