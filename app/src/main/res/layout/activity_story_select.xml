@@ -8,7 +8,7 @@
     tools:context=".story.StoryActivitySelect">
 
     <Button
-        android:id="@+id/buttonChalEng"
+        android:id="@+id/buttonStoryEng"
         android:layout_width="162dp"
         android:layout_height="77dp"
         android:layout_marginTop="108dp"
@@ -16,10 +16,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonChalKor" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonStoryKor" />
 
     <Button
-        android:id="@+id/buttonChalKor"
+        android:id="@+id/buttonStoryKor"
         android:layout_width="162dp"
         android:layout_height="77dp"
         android:layout_marginTop="248dp"
