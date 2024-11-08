@@ -112,7 +112,7 @@ public class MyPageActivity extends AppCompatActivity implements View
 
     private void setDefaultImage() {
         if (selectedImageUri == null) {
-            imageView.setImageResource(R.drawable.image1);
+            imageView.setImageResource(R.drawable.download);
         }
     }
 
