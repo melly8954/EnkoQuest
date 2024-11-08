@@ -38,11 +38,11 @@ public class CorrectWordActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
 
-        question.findViewById(R.id.question);
-        optionA.findViewById(R.id.optionA);
-        optionB.findViewById(R.id.optionB);
-        optionC.findViewById(R.id.optionC);
-        optionD.findViewById(R.id.optionD);
+        question = findViewById(R.id.question);
+        optionA = findViewById(R.id.optionA);
+        optionB = findViewById(R.id.optionB);
+        optionC = findViewById(R.id.optionC);
+        optionD = findViewById(R.id.optionD);
 
         // 0부터 2000 사이의 무작위 숫자 생성
         int randomKey = new Random().nextInt(2001); // 2001은 상한 값 (0-2000)
