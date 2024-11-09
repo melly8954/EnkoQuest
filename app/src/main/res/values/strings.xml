@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EnkoQuest</string>
+    <string name="word_text">Word</string>
 </resources>
