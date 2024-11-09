@@ -34,7 +34,7 @@ public class ChallengeActivity_KSJ extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_challenge);
+        setContentView(R.layout.activity_challenge_kjs);
 
         // View 요소 초기화
         textView = findViewById(R.id.wordTextView);
@@ -45,13 +45,6 @@ public class ChallengeActivity_KSJ extends AppCompatActivity {
 
         // Firebase에서 데이터 가져오기
         fetchDataFromFirebase();
-
-        // 시스템 인셋 설정 (화면 여백 처리)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
     }
 
     private void fetchDataFromFirebase() {
