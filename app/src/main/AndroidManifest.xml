@@ -32,7 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".challenge.ChallengeActivity_KSJ"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MyPageActivity"
             android:exported="false" />
