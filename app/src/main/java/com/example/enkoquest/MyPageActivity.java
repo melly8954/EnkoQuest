@@ -74,8 +74,11 @@ public class MyPageActivity extends AppCompatActivity implements View
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         text01 = findViewById(R.id.textId);
+        text01.setEnabled(false);
         text02 = findViewById(R.id.textNick);
+        text02.setEnabled(false);
         text03 = findViewById(R.id.textChal);
+        text03.setEnabled(false);
         selfProduce = findViewById(R.id.editTextSelfProduce);
 
         buttonMoveChangePW.setOnClickListener(this);
@@ -109,7 +112,7 @@ public class MyPageActivity extends AppCompatActivity implements View
 
     private void setDefaultImage() {
         if (selectedImageUri == null) {
-            imageView.setImageResource(R.drawable.image1);
+            imageView.setImageResource(R.drawable.download);
         }
     }
 
