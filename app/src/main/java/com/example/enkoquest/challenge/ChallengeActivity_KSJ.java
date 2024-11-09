@@ -26,8 +26,8 @@ import java.util.Random;
 
 public class ChallengeActivity_KSJ extends AppCompatActivity {
 
-    private TextView wordTextView;
-    private Button optionButton1, optionButton2, optionButton3, optionButton4;
+    private TextView textView;
+    private Button btn1, btn2, btn3, btn4;
     private List<Word> wordList = new ArrayList<>();
 
     @Override
@@ -37,11 +37,11 @@ public class ChallengeActivity_KSJ extends AppCompatActivity {
         setContentView(R.layout.activity_challenge);
 
         // View 요소 초기화
-        wordTextView = findViewById(R.id.wordTextView);
-        optionButton1 = findViewById(R.id.optionButton1);
-        optionButton2 = findViewById(R.id.optionButton2);
-        optionButton3 = findViewById(R.id.optionButton3);
-        optionButton4 = findViewById(R.id.optionButton4);
+        textView = findViewById(R.id.wordTextView);
+        btn1 = findViewById(R.id.optionButton1);
+        btn2 = findViewById(R.id.optionButton2);
+        btn3 = findViewById(R.id.optionButton3);
+        btn4 = findViewById(R.id.optionButton4);
 
         // Firebase에서 데이터 가져오기
         fetchDataFromFirebase();
@@ -85,7 +85,7 @@ public class ChallengeActivity_KSJ extends AppCompatActivity {
         // 무작위로 문제 단어 선택
         Random random = new Random();
         Word questionWord = wordList.get(random.nextInt(wordList.size()));
-        wordTextView.setText(questionWord.getWord());
+        textView.setText(questionWord.getWord());
 
         // 보기 옵션 설정 (정답 포함하여 무작위로 의미 선택)
         List<String> options = new ArrayList<>();
@@ -103,10 +103,10 @@ public class ChallengeActivity_KSJ extends AppCompatActivity {
         java.util.Collections.shuffle(options);
 
         // 버튼에 보기 옵션 설정
-        optionButton1.setText(options.get(0));
-        optionButton2.setText(options.get(1));
-        optionButton3.setText(options.get(2));
-        optionButton4.setText(options.get(3));
+        btn1.setText(options.get(0));
+        btn2.setText(options.get(1));
+        btn3.setText(options.get(2));
+        btn4.setText(options.get(3));
 
         // 각 버튼에 클릭 리스너 추가
         setOptionButtonListeners(questionWord.getMeaning());
@@ -124,10 +124,10 @@ public class ChallengeActivity_KSJ extends AppCompatActivity {
             }
         };
 
-        optionButton1.setOnClickListener(listener);
-        optionButton2.setOnClickListener(listener);
-        optionButton3.setOnClickListener(listener);
-        optionButton4.setOnClickListener(listener);
+        btn1.setOnClickListener(listener);
+        btn2.setOnClickListener(listener);
+        btn3.setOnClickListener(listener);
+        btn4.setOnClickListener(listener);
     }
 
     // Word 객체 정의
