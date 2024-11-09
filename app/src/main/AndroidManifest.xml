@@ -31,7 +31,7 @@
             android:name=".user.FindIdActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.ChallengeActivity"
+            android:name=".challenge.ChallengeActivity_KSJ"
             android:exported="false" />
         <activity
             android:name=".MyPageActivity"

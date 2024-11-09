@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class ChallengeActivity extends AppCompatActivity {
+public class ChallengeActivity_KSJ extends AppCompatActivity {
 
     private TextView wordTextView;
     private Button optionButton1, optionButton2, optionButton3, optionButton4;
@@ -117,10 +117,10 @@ public class ChallengeActivity extends AppCompatActivity {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
             if (chosenAnswer.equals(correctAnswer)) {
-                Toast.makeText(ChallengeActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ChallengeActivity_KSJ.this, "Correct!", Toast.LENGTH_SHORT).show();
                 loadNewQuestion();
             } else {
-                Toast.makeText(ChallengeActivity.this, "Incorrect. Try again!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ChallengeActivity_KSJ.this, "Incorrect. Try again!", Toast.LENGTH_SHORT).show();
             }
         };
 
