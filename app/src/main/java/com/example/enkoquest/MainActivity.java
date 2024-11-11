@@ -12,10 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.challenge.ChallengeActivity;
-import com.example.enkoquest.challenge.CorrectWordActivity;
-import com.example.enkoquest.story.StoryActivity;
-import com.example.enkoquest.user.SignInActivity;
+import com.example.enkoquest.challenge.ChallengeActivity_KSJ;
+import com.example.enkoquest.story.StoryActivitySelect;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -85,11 +83,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         if (view.getId() == R.id.buttonChallengeMode) {
-            Intent intent = new Intent(MainActivity.this, CorrectWordActivity.class);
+            Intent intent = new Intent(this, ChallengeActivity_KSJ.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.buttonStoryMode) {
-            Intent intent = new Intent(MainActivity.this, StoryActivity.class);
+            Intent intent = new Intent(MainActivity.this, StoryActivitySelect.class);
             startActivity(intent);
         }
     }
