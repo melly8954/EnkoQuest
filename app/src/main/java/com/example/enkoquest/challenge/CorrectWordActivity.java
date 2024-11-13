@@ -67,7 +67,8 @@ public class CorrectWordActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String word = snapshot.child("단어").getValue(String.class);
                     String meaning = snapshot.child("의미").getValue(String.class);
-                    wordList.add(new Word(word, meaning));
+                    String example = snapshot.child("예제").getValue(String.class);
+                    wordList.add(new Word(word, meaning, example));
                 }
                 Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
                 loadNewQuestion();
@@ -115,10 +116,20 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn4.setText(options.get(3));
 
         // 각 버튼에 클릭 리스너 추가
-        setOptionButtonListeners(questionWord.getMeaning());
+        String[] allWords = new String[wordList.size()];
+        String[] allMeanings = new String[wordList.size()];
+        String[] allExamples = new String[wordList.size()];
+
+        for (int i = 0; i < wordList.size(); i++) {
+            allWords[i] = wordList.get(i).getWord();
+            allMeanings[i] = wordList.get(i).getMeaning();
+            allExamples[i] = wordList.get(i).getExample();
+        }
+
+        setOptionButtonListeners(questionWord.getMeaning(), allWords, allMeanings, allExamples);
     }
 
-    private void setOptionButtonListeners(String correctAnswer) {
+    private void setOptionButtonListeners(String correctAnswer, String[] allWords, String[] allMeanings, String[] allExamples) {
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
@@ -140,11 +151,14 @@ public class CorrectWordActivity extends AppCompatActivity {
                             // 해설 페이지로 이동
                             Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
 
-                            // Bundle 생성하여 데이터 전달
+                            // Bundle 생성하여 모든 지문과 해설 전달
                             Bundle bundle = new Bundle();
-                            bundle.putString("WORD", word);
-                            bundle.putString("MEANING", meaning);
-                            bundle.putString("EXAMPLE", example);
+                            for (int i = 0; i < allWords.length; i++) {
+                                // 각 단어, 의미, 예시를 번들에 추가
+                                bundle.putString("WORD_" + (i + 1), allWords[i]);
+                                bundle.putString("MEANING_" + (i + 1), allMeanings[i]);
+                                bundle.putString("EXAMPLE_" + (i + 1), allExamples[i]);
+                            }
 
                             // Bundle을 Intent에 담기
                             intent.putExtras(bundle);
@@ -213,10 +227,12 @@ public class CorrectWordActivity extends AppCompatActivity {
     private static class Word {
         private String word;
         private String meaning;
+        private String example;
 
-        public Word(String word, String meaning) {
+        public Word(String word, String meaning, String example) {
             this.word = word;
             this.meaning = meaning;
+            this.example = example;
         }
 
         public String getWord() {
@@ -225,6 +241,9 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         public String getMeaning() {
             return meaning;
+        }
+        public String getExample() {
+            return example;
         }
     }
 

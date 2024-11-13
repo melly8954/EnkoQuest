@@ -3,13 +3,129 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="30dp">
 
-    <TextView
-        android:id="@+id/explanationTextView"
+    <!-- 첫 번째 선택지 설명 -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="해설이 여기 표시됩니다."
-        android:textColor="#000"/>
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/explanationWord1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="단어 1: 예시 단어"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationMeaning1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="의미 1: 예시 의미"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationExample1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="예시 1: 예시 예제"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- 두 번째 선택지 설명 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/explanationWord2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="단어 2: 예시 단어"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationMeaning2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="의미 2: 예시 의미"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationExample2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="예시 2: 예시 예제"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- 세 번째 선택지 설명 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/explanationWord3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="단어 3: 예시 단어"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationMeaning3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="의미 3: 예시 의미"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationExample3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="예시 3: 예시 예제"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- 네 번째 선택지 설명 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/explanationWord4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="단어 4: 예시 단어"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationMeaning4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="의미 4: 예시 의미"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/explanationExample4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="예시 4: 예시 예제"
+            android:textColor="#000" />
+    </LinearLayout>
 </LinearLayout>
