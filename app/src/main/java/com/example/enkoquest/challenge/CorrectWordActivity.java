@@ -109,11 +109,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         // 보기 옵션 섞기
         java.util.Collections.shuffle(options);
 
-        // 버튼에 보기 옵션 설정
-        btn1.setText(options.get(0));
-        btn2.setText(options.get(1));
-        btn3.setText(options.get(2));
-        btn4.setText(options.get(3));
+        Bundle bundle = new Bundle();
 
         // 각 버튼에 클릭 리스너 추가
         String[] allWords = new String[wordList.size()];
@@ -124,12 +120,26 @@ public class CorrectWordActivity extends AppCompatActivity {
             allWords[i] = wordList.get(i).getWord();
             allMeanings[i] = wordList.get(i).getMeaning();
             allExamples[i] = wordList.get(i).getExample();
+
+            // 버튼에 보기 옵션 설정
+            btn1.setText(options.get(0));
+            btn2.setText(options.get(1));
+            btn3.setText(options.get(2));
+            btn4.setText(options.get(3));
+
+        }
+        // Bundle에 배열 값들을 추가
+        for (int i = 0; i < wordList.size(); i++) {
+            bundle.putString("WORD_" + (i + 1), allWords[i]);
+            bundle.putString("MEANING_" + (i + 1), allMeanings[i]);
+            bundle.putString("EXAMPLE_" + (i + 1), allExamples[i]);
         }
 
-        setOptionButtonListeners(questionWord.getMeaning(), allWords, allMeanings, allExamples);
+
+        setOptionButtonListeners(questionWord.getMeaning(), allWords, allMeanings, allExamples,bundle);
     }
 
-    private void setOptionButtonListeners(String correctAnswer, String[] allWords, String[] allMeanings, String[] allExamples) {
+    private void setOptionButtonListeners(String correctAnswer, String[] allWords, String[] allMeanings, String[] allExamples,Bundle bundle) {
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
@@ -150,15 +160,6 @@ public class CorrectWordActivity extends AppCompatActivity {
                         public void onExplanationFound(String word, String meaning, String example) {
                             // 해설 페이지로 이동
                             Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
-
-                            // Bundle 생성하여 모든 지문과 해설 전달
-                            Bundle bundle = new Bundle();
-                            for (int i = 0; i < allWords.length; i++) {
-                                // 각 단어, 의미, 예시를 번들에 추가
-                                bundle.putString("WORD_" + (i + 1), allWords[i]);
-                                bundle.putString("MEANING_" + (i + 1), allMeanings[i]);
-                                bundle.putString("EXAMPLE_" + (i + 1), allExamples[i]);
-                            }
 
                             // Bundle을 Intent에 담기
                             intent.putExtras(bundle);
