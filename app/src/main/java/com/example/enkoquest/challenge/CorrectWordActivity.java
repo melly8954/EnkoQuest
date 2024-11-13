@@ -1,36 +1,37 @@
 package com.example.enkoquest.challenge;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.ExplanationActivity;
 import com.example.enkoquest.R;
-import com.example.enkoquest.user.UserAccount;
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.enkoquest.SelectWordActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class CorrectWordActivity extends AppCompatActivity {
-    TextView question;
-    TextView optionA;
-    TextView optionB;
-    TextView optionC;
-    TextView optionD;
 
-    FirebaseAuth mAuth;
-    DatabaseReference databaseReference;
+    private TextView textView, levelTextView;
+    private Button btn1, btn2, btn3, btn4;
+    private List<Word> wordList = new ArrayList<>();
+    private int currentLevel = 1;  // 현재 레벨 변수 추가
+    private ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,51 +39,194 @@ public class CorrectWordActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
 
-        question = findViewById(R.id.question);
-        optionA = findViewById(R.id.optionA);
-        optionB = findViewById(R.id.optionB);
-        optionC = findViewById(R.id.optionC);
-        optionD = findViewById(R.id.optionD);
+        // View 요소 초기화
+        textView = findViewById(R.id.wordTextView);
+        btn1 = findViewById(R.id.optionButton1);
+        btn2 = findViewById(R.id.optionButton2);
+        btn3 = findViewById(R.id.optionButton3);
+        btn4 = findViewById(R.id.optionButton4);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
-        // 0부터 2000 사이의 무작위 숫자 생성
-        int randomKey = new Random().nextInt(2001); // 2001은 상한 값 (0-2000)
+        levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
 
-
-        databaseReference = FirebaseDatabase.getInstance().getReference("word2000/word_2000"+ randomKey);
-
-        // Firebase에서 데이터 읽어오기
-        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot snapshot) {
-                if (snapshot.exists()) {
-                    // 각 필드 데이터 가져오기
-                    String word = snapshot.child("단어").getValue(String.class);
-                    String number = snapshot.child("번호").getValue(String.class);
-                    String meaning = snapshot.child("의미").getValue(String.class);
-
-                    // 데이터 확인 및 UI에 설정
-                    if (word != null && number != null && meaning != null) {
-                        question.setText("다음 단어의 뜻으로 알맞은 것은?\n" + word);
-                        optionA.setText(meaning);  // 정답을 Option A에 표시 (예제)
-                        optionB.setText("다른 의미 1");
-                        optionC.setText("다른 의미 2");
-                        optionD.setText("다른 의미 3");
-                    } else {
-                        Toast.makeText(CorrectWordActivity.this, "데이터를 불러올 수 없습니다.", Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-                    Toast.makeText(CorrectWordActivity.this, "해당 키에 데이터가 없습니다.", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // 데이터베이스 오류 처리
-                Toast.makeText(CorrectWordActivity.this, "데이터 읽기 실패: " + error.getMessage(), Toast.LENGTH_LONG).show();
-                Log.e("CorrectWordActivity", "Database error: " + error.getMessage());
-            }
+        imageButtonBack.setOnClickListener(view -> {
+           Intent intent = new Intent(this, SelectWordActivity.class);
+           startActivity(intent);
         });
 
+        // Firebase에서 데이터 가져오기
+        fetchDataFromFirebase();
     }
+
+    private void fetchDataFromFirebase() {
+        DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
+
+        database.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    String word = snapshot.child("단어").getValue(String.class);
+                    String meaning = snapshot.child("의미").getValue(String.class);
+                    wordList.add(new Word(word, meaning));
+                }
+                Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
+                loadNewQuestion();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.w("ChallengeActivity", "loadWord:onCancelled", databaseError.toException());
+            }
+        });
+    }
+
+
+    private void loadNewQuestion() {
+        if (wordList.isEmpty()) {
+            return;
+        }
+        // 이전에 잘못된 답을 선택한 경우 버튼 초기화
+        resetButtons();
+
+        // 무작위로 문제 단어 선택
+        Random random = new Random();
+        Word questionWord = wordList.get(random.nextInt(wordList.size()));
+        textView.setText(questionWord.getWord());
+
+        // 보기 옵션 설정 (정답 포함하여 무작위로 의미 선택)
+        List<String> options = new ArrayList<>();
+        options.add(questionWord.getMeaning()); // 정답 의미 추가
+
+        // 다른 의미들 추가
+        while (options.size() < 4) {
+            String randomMeaning = wordList.get(random.nextInt(wordList.size())).getMeaning();
+            if (!options.contains(randomMeaning)) { // 중복된 의미가 없도록 확인
+                options.add(randomMeaning);
+            }
+        }
+
+        // 보기 옵션 섞기
+        java.util.Collections.shuffle(options);
+
+        // 버튼에 보기 옵션 설정
+        btn1.setText(options.get(0));
+        btn2.setText(options.get(1));
+        btn3.setText(options.get(2));
+        btn4.setText(options.get(3));
+
+        // 각 버튼에 클릭 리스너 추가
+        setOptionButtonListeners(questionWord.getMeaning());
+    }
+
+    private void setOptionButtonListeners(String correctAnswer) {
+        View.OnClickListener listener = v -> {
+            Button clickedButton = (Button) v;
+            String chosenAnswer = clickedButton.getText().toString();
+            if (chosenAnswer.equals(correctAnswer)) {
+                // 정답을 맞추면 Level 증가
+                currentLevel++;
+                levelTextView.setText("Level: " + currentLevel); // Level TextView 업데이트
+                loadNewQuestion();
+            } else {
+                // 오답일 경우
+                if (!chosenAnswer.startsWith("X")){
+                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));  // 버튼 배경을 빨간색으로 변경
+                    clickedButton.setText("X " + chosenAnswer);  // 버튼 텍스트 앞에 X 표시 추가
+
+                    // 해설을 비동기적으로 가져오기
+                    getExplanationForAnswer(chosenAnswer, new ExplanationCallback() {
+                        @Override
+                        public void onExplanationFound(String word, String meaning, String example) {
+                            // 해설 페이지로 이동
+                            Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
+
+                            // Bundle 생성하여 데이터 전달
+                            Bundle bundle = new Bundle();
+                            bundle.putString("WORD", word);
+                            bundle.putString("MEANING", meaning);
+                            bundle.putString("EXAMPLE", example);
+
+                            // Bundle을 Intent에 담기
+                            intent.putExtras(bundle);
+                            startActivity(intent);  // 해설 페이지로 이동
+                        }
+                    });
+                }
+
+            }
+        };
+
+        btn1.setOnClickListener(listener);
+        btn2.setOnClickListener(listener);
+        btn3.setOnClickListener(listener);
+        btn4.setOnClickListener(listener);
+    }
+
+    private void resetButtons() {
+        // 버튼 초기화: 배경색을 원래대로 되돌리고 텍스트에서 "X"를 제거
+        btn1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        btn1.setText(btn1.getText().toString().replace("X ", ""));
+
+        btn2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        btn2.setText(btn2.getText().toString().replace("X ", ""));
+
+        btn3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        btn3.setText(btn3.getText().toString().replace("X ", ""));
+
+        btn4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        btn4.setText(btn4.getText().toString().replace("X ", ""));
+    }
+
+    private void getExplanationForAnswer(String chosenAnswer, final ExplanationCallback callback) {
+        DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
+
+        database.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    String word = snapshot.child("단어").getValue(String.class);
+                    String meaning = snapshot.child("의미").getValue(String.class);
+                    String example = snapshot.child("예제").getValue(String.class);
+
+                    if (meaning != null && meaning.equals(chosenAnswer)) {
+                        callback.onExplanationFound(word,meaning,example);
+                        return;
+                    }
+                }
+                callback.onExplanationFound("해설을 찾을 수 없습니다.", "", "");
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                callback.onExplanationFound("데이터 로딩 실패", "", "");
+            }
+        });
+    }
+
+    // 콜백 인터페이스 정의
+    public interface ExplanationCallback {
+        void onExplanationFound(String word, String meaning, String example);
+    }
+
+
+    // Word 객체 정의
+    private static class Word {
+        private String word;
+        private String meaning;
+
+        public Word(String word, String meaning) {
+            this.word = word;
+            this.meaning = meaning;
+        }
+
+        public String getWord() {
+            return word;
+        }
+
+        public String getMeaning() {
+            return meaning;
+        }
+    }
+
 
 }
