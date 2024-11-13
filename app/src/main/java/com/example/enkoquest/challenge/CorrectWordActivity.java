@@ -86,88 +86,78 @@ public class CorrectWordActivity extends AppCompatActivity {
         if (wordList.isEmpty()) {
             return;
         }
-        // 이전에 잘못된 답을 선택한 경우 버튼 초기화
+
         resetButtons();
 
-        // 무작위로 문제 단어 선택
         Random random = new Random();
         Word questionWord = wordList.get(random.nextInt(wordList.size()));
         textView.setText(questionWord.getWord());
 
-        // 보기 옵션 설정 (정답 포함하여 무작위로 의미 선택)
         List<String> options = new ArrayList<>();
-        options.add(questionWord.getMeaning()); // 정답 의미 추가
+        List<Word> optionWords = new ArrayList<>(); // 보기 단어 리스트 추가
+        options.add(questionWord.getMeaning());
+        optionWords.add(questionWord);
 
         // 다른 의미들 추가
         while (options.size() < 4) {
-            String randomMeaning = wordList.get(random.nextInt(wordList.size())).getMeaning();
+            Word randomWord = wordList.get(random.nextInt(wordList.size()));
+            String randomMeaning = randomWord.getMeaning();
             if (!options.contains(randomMeaning)) { // 중복된 의미가 없도록 확인
                 options.add(randomMeaning);
+                optionWords.add(randomWord); // 해당 단어를 옵션 단어 리스트에 추가
             }
         }
 
         // 보기 옵션 섞기
         java.util.Collections.shuffle(options);
 
+        // Bundle에 데이터를 정확하게 추가
         Bundle bundle = new Bundle();
+        for (int i = 0; i < options.size(); i++) {
+            // 옵션의 의미에 맞는 단어와 예제를 추가
+            String word = optionWords.get(i).getWord();
+            String meaning = options.get(i);
+            String example = optionWords.get(i).getExample();
 
-        // 각 버튼에 클릭 리스너 추가
-        String[] allWords = new String[wordList.size()];
-        String[] allMeanings = new String[wordList.size()];
-        String[] allExamples = new String[wordList.size()];
-
-        for (int i = 0; i < wordList.size(); i++) {
-            allWords[i] = wordList.get(i).getWord();
-            allMeanings[i] = wordList.get(i).getMeaning();
-            allExamples[i] = wordList.get(i).getExample();
-
-            // 버튼에 보기 옵션 설정
-            btn1.setText(options.get(0));
-            btn2.setText(options.get(1));
-            btn3.setText(options.get(2));
-            btn4.setText(options.get(3));
-
-        }
-        // Bundle에 배열 값들을 추가
-        for (int i = 0; i < wordList.size(); i++) {
-            bundle.putString("WORD_" + (i + 1), allWords[i]);
-            bundle.putString("MEANING_" + (i + 1), allMeanings[i]);
-            bundle.putString("EXAMPLE_" + (i + 1), allExamples[i]);
+            bundle.putString("WORD_" + (i + 1), word);
+            bundle.putString("MEANING_" + (i + 1), meaning);
+            bundle.putString("EXAMPLE_" + (i + 1), example);
         }
 
+        // 보기 버튼 설정
+        btn1.setText(options.get(0));
+        btn2.setText(options.get(1));
+        btn3.setText(options.get(2));
+        btn4.setText(options.get(3));
 
-        setOptionButtonListeners(questionWord.getMeaning(), allWords, allMeanings, allExamples,bundle);
+        // 버튼 클릭 리스너에 Bundle 전달
+        setOptionButtonListeners(questionWord.getMeaning(), bundle);
     }
 
-    private void setOptionButtonListeners(String correctAnswer, String[] allWords, String[] allMeanings, String[] allExamples,Bundle bundle) {
+
+    private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
+
             if (chosenAnswer.equals(correctAnswer)) {
-                // 정답을 맞추면 Level 증가
                 currentLevel++;
-                levelTextView.setText("Level: " + currentLevel); // Level TextView 업데이트
+                levelTextView.setText("Level: " + currentLevel);
                 loadNewQuestion();
             } else {
-                // 오답일 경우
-                if (!chosenAnswer.startsWith("X")){
-                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));  // 버튼 배경을 빨간색으로 변경
-                    clickedButton.setText("X " + chosenAnswer);  // 버튼 텍스트 앞에 X 표시 추가
+                if (!chosenAnswer.startsWith("X")) {
+                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                    clickedButton.setText("X " + chosenAnswer);
 
-                    // 해설을 비동기적으로 가져오기
                     getExplanationForAnswer(chosenAnswer, new ExplanationCallback() {
                         @Override
                         public void onExplanationFound(String word, String meaning, String example) {
-                            // 해설 페이지로 이동
                             Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
-
-                            // Bundle을 Intent에 담기
-                            intent.putExtras(bundle);
-                            startActivity(intent);  // 해설 페이지로 이동
+                            intent.putExtras(bundle);  // Bundle을 Intent에 추가하여 ExplanationActivity로 전달
+                            startActivity(intent);
                         }
                     });
                 }
-
             }
         };
 
