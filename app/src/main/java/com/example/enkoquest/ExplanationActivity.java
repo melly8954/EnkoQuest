@@ -1,16 +1,35 @@
 package com.example.enkoquest;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.enkoquest.challenge.CorrectWordActivity;
+
 public class ExplanationActivity extends AppCompatActivity {
+    Button retryButton, moveMainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explanation);
+
+        retryButton = findViewById(R.id.retryButton);
+        moveMainButton = findViewById(R.id.moveMainButton);
+
+        retryButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(ExplanationActivity.this, CorrectWordActivity.class);
+                    finish();
+                    startActivity(intent);
+                });
+        moveMainButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(ExplanationActivity.this, MainActivity.class);
+                    finish();
+                    startActivity(intent);
+                });
 
         // Bundle을 Intent에서 가져오기
         Bundle bundle = getIntent().getExtras();
