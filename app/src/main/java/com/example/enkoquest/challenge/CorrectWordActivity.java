@@ -7,6 +7,7 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,12 +35,23 @@ public class CorrectWordActivity extends AppCompatActivity {
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private ImageButton imageButtonBack;
+    private ImageView[] hearts;
+    private int life = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
+
+        //하트 이미지뷰 초기화
+        hearts = new ImageView[] {
+                findViewById(R.id.heart1),
+                findViewById(R.id.heart2),
+                findViewById(R.id.heart3),
+                findViewById(R.id.heart4),
+                findViewById(R.id.heart5)
+        };
 
         // View 요소 초기화
         textView = findViewById(R.id.wordTextView);
@@ -67,13 +79,22 @@ public class CorrectWordActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Integer number = snapshot.child("번호").getValue(Integer.class);
                     String word = snapshot.child("단어").getValue(String.class);
                     String meaning = snapshot.child("의미").getValue(String.class);
                     String example = snapshot.child("예제").getValue(String.class);
-                    wordList.add(new Word(word, meaning, example));
+                    if(number != null && word != null && meaning != null && example != null) {
+                        wordList.add(new Word(number, word, meaning, example));
+                    }
                 }
+
                 Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
-                loadNewQuestion();
+                if(!wordList.isEmpty()) {
+                    loadNewQuestion();
+                } else {
+                    Log.e("ChallengeActivity", "No data loaded from firebase");
+                }
+
             }
 
             @Override
@@ -155,17 +176,29 @@ public class CorrectWordActivity extends AppCompatActivity {
                     clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
                     clickedButton.setText("X " + chosenAnswer);
 
+                    if(life > 0) {
+                        life --; //체력 감소
+                        updateHearts(); //하트 상태 업데이트
+                    }
+
                     // 정답 여부 포함하여 설명 화면으로 이동
-                    getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
-                        @Override
-                        public void onExplanationFound(String word, String meaning, String example) {
-                            // 정답 여부와 함께 Bundle을 Intent에 추가
-                            Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
-                            bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
-                            intent.putExtras(bundle);  // Bundle을 Intent에 추가하여 ExplanationActivity로 전달
-                            startActivity(intent);
-                        }
-                    });
+                    if(life >0) {
+                        getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
+                            @Override
+                            public void onExplanationFound(String word, String meaning, String example) {
+                                // 정답 여부와 함께 Bundle을 Intent에 추가
+                                Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
+                                bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
+                                bundle.putInt("LIFE_REMAINING", life); //남은 하트 수 추가
+                                intent.putExtras(bundle);  // Bundle을 Intent에 추가하여 ExplanationActivity로 전달
+                                startActivityForResult(intent, 100);
+                            }
+                        });
+                    } else {
+                        //체력이 모두 소진되면 게임 종료 처리
+                        Toast.makeText(CorrectWordActivity.this, "Game Over! Try again", Toast.LENGTH_LONG).show();
+                        finish();
+                    }
                 }
             }
         };
@@ -224,14 +257,19 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     // Word 객체 정의
     private static class Word {
+        private int number;
         private String word;
         private String meaning;
         private String example;
 
-        public Word(String word, String meaning, String example) {
+        public Word(int number, String word, String meaning, String example) {
+            this.number = number;
             this.word = word;
             this.meaning = meaning;
             this.example = example;
+        }
+        public int getNumber(){
+            return number;
         }
 
         public String getWord() {
@@ -246,5 +284,41 @@ public class CorrectWordActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == 100 && resultCode == RESULT_OK) {
+            if(data != null && data.hasExtra("LIFE_REMAINING")) {
+                life = data.getIntExtra("LIFE_REMAINING", life);
+                updateHearts();
+            }
+            loadNewQuestion();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent();
+        intent.putExtra("LIFE_REMAINING", life);
+        setResult(RESULT_OK, intent);
+        finish();
+    }
+
+    private void updateHearts() {
+        for (int i=0; i<hearts.length; i++) {
+            if(i<life) {
+                hearts[i].setImageResource(R.drawable.full_life);
+            } else {
+                hearts[i].setImageResource(R.drawable.no_life);
+            }
+        }
+
+        if(life==0) {
+            Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
+            finish();
+        }
+    }
 
 }
