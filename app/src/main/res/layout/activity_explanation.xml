@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:paddingBottom="1dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,6 +47,7 @@
             android:id="@+id/explanationExample1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:textSize="18sp"
             android:text="예시 1: 예시 예제"
             android:textColor="#000" />
@@ -57,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:paddingBottom="1dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,6 +95,7 @@
             android:id="@+id/explanationExample2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:textSize="18sp"
             android:text="예시 2: 예시 예제"
             android:textColor="#000" />
@@ -104,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:paddingBottom="1dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -141,6 +143,7 @@
             android:id="@+id/explanationExample3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:textSize="18sp"
             android:text="예시 3: 예시 예제"
             android:textColor="#000" />
@@ -151,7 +154,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:paddingBottom="0dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -188,6 +191,7 @@
             android:id="@+id/explanationExample4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:textSize="18sp"
             android:text="예시 4: 예시 예제"
             android:textColor="#000" />
