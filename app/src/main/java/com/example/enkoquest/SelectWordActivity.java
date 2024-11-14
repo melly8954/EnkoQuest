@@ -1,4 +1,4 @@
-package com.example.enkoquest.story;
+package com.example.enkoquest;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,11 +12,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.LoginIndexActivity;
-import com.example.enkoquest.R;
-import com.example.enkoquest.user.FindIdActivity;
+import com.example.enkoquest.challenge.CorrectWordActivity;
 
-public class StoryActivitySelect extends AppCompatActivity implements View
+public class SelectWordActivity extends AppCompatActivity implements View
 
         .OnClickListener {
 
@@ -27,7 +25,7 @@ public class StoryActivitySelect extends AppCompatActivity implements View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_story_select);
+        setContentView(R.layout.activity_select_word);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -44,18 +42,14 @@ public class StoryActivitySelect extends AppCompatActivity implements View
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.buttonStoryKor) {
-            Intent intent = new Intent(this, StoryActivityKor.class);
-            startActivity(intent);
-        }
         if (view.getId() == R.id.buttonStoryEng) {
-            Intent intent = new Intent(this, StoryActivityEng.class);
+            Intent intent = new Intent(this, CorrectWordActivity.class);
             startActivity(intent);
         }
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(this, LoginIndexActivity.class); // 메인 액티비티로 이동
+        Intent intent = new Intent(this, MainActivity.class); // 메인 액티비티로 이동
         startActivity(intent);
         finish(); // 현재 액티비티 종료
     }

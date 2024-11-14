@@ -13,13 +13,7 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
-            android:name=".story.StoryActivitySelect"
-            android:exported="false" />
-        <activity
-            android:name=".story.StoryActivityEng"
-            android:exported="false" />
-        <activity
-            android:name=".story.StoryActivityKor"
+            android:name=".ExplanationActivity"
             android:exported="false" />
         <activity
             android:name=".user.ChangePwActivity"
@@ -31,7 +25,7 @@
             android:name=".user.FindIdActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.ChallengeActivity"
+            android:name=".challenge.CorrectWordActivity"
             android:exported="false" />
         <activity
             android:name=".MyPageActivity"
@@ -44,7 +38,10 @@
             android:exported="false" />
         <activity
             android:name=".LoginIndexActivity"
-            android:exported="false" />
+            android:exported="false"></activity>
+        <activity
+            android:name=".SelectWordActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

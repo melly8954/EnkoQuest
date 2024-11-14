@@ -1,0 +1,1204 @@
+{
+"word_2000":[
+    {
+        "번호": 1,
+        "단어": "provide",
+        "의미": "[동] 제공하다, 공급하다, 준비하다",
+        "예제": "The school will provide all necessary materials for the class."
+      },
+      {
+        "번호": 2,
+        "단어": "develop",
+        "의미": "[동] 개발하다, 발달하다, 발전시키다",
+        "예제": "She plans to develop a new app that helps people manage their time."
+      },
+      {
+        "번호": 3,
+        "단어": "service",
+        "의미": "[명] 서비스, 근무, 봉사, 공공 업무",
+        "예제": "Customer service is available 24/7 for any assistance you need."
+      },
+      {
+        "번호": 4,
+        "단어": "inform",
+        "의미": "[동] 알리다, 통지하다",
+        "예제": "Please inform the manager of any changes to the schedule."
+      },
+      {
+        "번호": 5,
+        "단어": "relationship",
+        "의미": "[명] 관계",
+        "예제": "A strong relationship is built on trust and respect."
+      },
+ {
+  "번호": 6,
+  "단어": "improve",
+  "의미": "[동] 향상시키다, 나아지다, 향상하다",
+  "예제": "The new strategy helped the company improve its overall performance."
+ },
+ {
+  "번호": 7,
+  "단어": "individual",
+  "의미": "[형] 개인의, 개인적인[명] 개인",
+  "예제": "Each individual in the team has unique responsibilities."
+ },
+ {
+  "번호": 8,
+  "단어": "require",
+  "의미": "[동] 요구하다, 필요로 하다",
+  "예제": "The project requires a significant amount of time and effort."
+ },
+ {
+  "번호": 9,
+  "단어": "advise",
+  "의미": "[동] 충고하다, 조언하다",
+  "예제": "The doctor advised me to take some rest after the treatment."
+ },
+ {
+  "번호": 10,
+  "단어": "social",
+  "의미": "[형] 사회의, 사교적인",
+  "예제": "Social media has a huge impact on the way we communicate."
+ },
+ {
+  "번호": 11,
+  "단어": "amount",
+  "의미": "[명] 총액, 총계, 양[동] 총계가 ~이 되다",
+  "예제": "The total amount of money spent on the trip was higher than expected."
+ },
+ {
+  "번호": 12,
+  "단어": "behave",
+  "의미": "[동] 행동하다",
+  "예제": "Children are taught how to behave politely in public."
+ },
+ {
+  "번호": 13,
+  "단어": "employ",
+  "의미": "[동] 고용하다, 쓰다",
+  "예제": "The company employs over 500 people in its main office."
+ },
+ {
+  "번호": 14,
+  "단어": "attitude",
+  "의미": "[명] 태도, 입장",
+  "예제": "His attitude towards work has always been positive."
+ },
+ {
+  "번호": 15,
+  "단어": "research",
+  "의미": "[명] 연구하다, 조사하다[명] 연구, 조사",
+  "예제": "The scientist conducted extensive research on climate change."
+ },
+ {
+  "번호": 16,
+  "단어": "audience",
+  "의미": "[명] 청중, 관객",
+  "예제": "The audience applauded after the performance."
+ },
+ {
+  "번호": 17,
+  "단어": "volunteer",
+  "의미": "[명] 지원자, 자원봉사, 자원봉사자[동] 지원하다, 자원봉사하다",
+  "예제": "She volunteered to bring snacks for the movie night."
+ },
+ {
+  "번호": 18,
+  "단어": "influence",
+  "의미": "[명] 영향, 영향을 미치는 것[사람][동] 영향을 미치다",
+  "예제": "Her speech had a strong influence on the young crowd."
+ },
+ {
+  "번호": 19,
+  "단어": "terrible",
+  "의미": "[형] 끔직한, 형편없는, 무서운",
+  "예제": "The weather was terrible, so we decided to stay indoors."
+ },
+ {
+  "번호": 20,
+  "단어": "opportunity",
+  "의미": "[명] 기회",
+  "예제": "This is a great opportunity to learn new skills."
+ },
+ {
+  "번호": 21,
+  "단어": "ability",
+  "의미": "[명] 능력, 재능",
+  "예제": "She has the ability to solve complex problems quickly."
+ },
+ {
+  "번호": 22,
+  "단어": "expense",
+  "의미": "[명] 비용, 지출",
+  "예제": "The expense of living in the city is increasing every year."
+ },
+ {
+  "번호": 23,
+  "단어": "local",
+  "의미": "[형] 지역의, 장소의, 지방의",
+  "예제": "We decided to try a local restaurant for dinner tonight."
+ },
+ {
+  "번호": 24,
+  "단어": "involve",
+  "의미": "[동] 관련시키다, 포함하다, 관련되다",
+  "예제": "The project involves multiple departments working together."
+ },
+ {
+  "번호": 25,
+  "단어": "stress",
+  "의미": "[명] 스트레스, 긴장, 강조[동] 강조하다, 압력을 주다",
+  "예제": "She listens to music to relieve stress after a long day."
+ },
+ {
+  "번호": 26,
+  "단어": "therefore",
+  "의미": "[부] 그러므로, 그 결과",
+  "예제": "He was late, therefore he missed the meeting."
+ },
+ {
+  "번호": 27,
+  "단어": "positive",
+  "의미": "[형] 긍정적인, 낙관적인, 확신하는",
+  "예제": "He has a positive outlook on life despite the challenges."
+ },
+ {
+  "번호": 28,
+  "단어": "average",
+  "의미": "[형] 평균의, 보통의[명] 평균, 보통 수준[동] 평균 ~이다",
+  "예제": "The average score of the class was higher than expected."
+ },
+ {
+  "번호": 29,
+  "단어": "ride",
+  "의미": "[동] 타다[명] 타기, 태우기, 타고가기",
+  "예제": "We decided to take a ride along the coast."
+ },
+ {
+  "번호": 30,
+  "단어": "encourage",
+  "의미": "[동] 격려하다, 권장하다, 부추기다, 촉구하다",
+  "예제": "Her friends encouraged her to apply for the job she wanted."
+ },
+ {
+  "번호": 31,
+  "단어": "determine",
+  "의미": "[동] 결정하다, 결심하다",
+  "예제": "It's hard to determine the exact cause of the problem."
+ },
+ {
+  "번호": 32,
+  "단어": "international",
+  "의미": "[형] 국제의, 국제적인",
+  "예제": "She is attending an international conference next month."
+ },
+ {
+  "번호": 33,
+  "단어": "consume",
+  "의미": "[동] 소비하다, 먹다[마시다]",
+  "예제": "They consume a large amount of energy each day."
+ },
+ {
+  "번호": 34,
+  "단어": "impress",
+  "의미": "[동] 감동시키다, 깊은 인상을 주다",
+  "예제": "Her performance at the meeting really impressed her boss."
+ },
+ {
+  "번호": 35,
+  "단어": "object",
+  "의미": "[명] 물건, 물체, 목표[동] 반대하다",
+  "예제": "The artist sculpted a beautiful object from marble."
+ },
+ {
+  "번호": 36,
+  "단어": "available",
+  "의미": "[형] 이용할 수 있는, 쓸모있는, 시간이 있는",
+  "예제": "This book is available at most bookstores."
+ },
+ {
+  "번호": 37,
+  "단어": "contain",
+  "의미": "[동] 들어있다, 포함하다, 함유하다, 억제하다",
+  "예제": "This bottle contains two liters of water."
+ },
+ {
+  "번호": 38,
+  "단어": "recognize",
+  "의미": "[동] 인지하다 , 인정하다, 알아보다",
+  "예제": "I didn't recognize him after so many years."
+ },
+ {
+  "번호": 39,
+  "단어": "material",
+  "의미": "[명] 재료, 소재, 물질[형] 물질의",
+  "예제": "The material used in this dress is very high quality."
+ },
+ {
+  "번호": 40,
+  "단어": "comfort",
+  "의미": "[명] 편안, 평안함, 위안, 위로[동] 편안하게 하다, 위로하다",
+  "예제": "He brought her favorite snacks to comfort her after a tough day."
+ },
+ {
+  "번호": 41,
+  "단어": "emotion",
+  "의미": "[명] 감정",
+  "예제": "She couldn't hide her emotion during the speech."
+ },
+ {
+  "번호": 42,
+  "단어": "amaze",
+  "의미": "[동] 놀라게 하다",
+  "예제": "The fireworks display was amazing!"
+ },
+ {
+  "번호": 43,
+  "단어": "reduce",
+  "의미": "[동] 줄이다, 낮추다",
+  "예제": "We need to reduce our plastic waste to protect the environment."
+ },
+ {
+  "번호": 44,
+  "단어": "discover",
+  "의미": "[동] 발견하다, 알아내다",
+  "예제": "While hiking, they discovered a beautiful hidden waterfall."
+ },
+ {
+  "번호": 45,
+  "단어": "decide",
+  "의미": "[동] 결정하다, 결심하다",
+  "예제": "She decided to study abroad next year."
+ },
+ {
+  "번호": 46,
+  "단어": "benefit",
+  "의미": "[명] 이익, 혜택[동] 도움이 되다",
+  "예제": "Regular exercise has many benefits for your health."
+ },
+ {
+  "번호": 47,
+  "단어": "affect",
+  "의미": "[동] 영향을 미치다",
+  "예제": "The weather can affect your mood."
+ },
+ {
+  "번호": 48,
+  "단어": "level",
+  "의미": "[명] 수준, 정도, 수평[형] 수평의",
+  "예제": "The water level in the river is rising due to the rain."
+ },
+ {
+  "번호": 49,
+  "단어": "chemistry",
+  "의미": "[명] 화학",
+  "예제": "She loves studying chemistry in school."
+ },
+ {
+  "번호": 50,
+  "단어": "immediate",
+  "의미": "[형] 즉각적인, 시급한, 직접적인",
+  "예제": "She felt an immediate sense of relief after hearing the good news."
+ },
+ {
+  "번호": 51,
+  "단어": "thus",
+  "의미": "[부] 그러므로, 따라서",
+  "예제": "The situation is complicated, thus requiring more time."
+ },
+ {
+  "번호": 52,
+  "단어": "proper",
+  "의미": "[형] 적절한, 알맞은",
+  "예제": "Please make sure to wear proper clothing for the hike."
+ },
+ {
+  "번호": 53,
+  "단어": "performance",
+  "의미": "[명] 공연, 성과",
+  "예제": "Her performance in the play was outstanding."
+ },
+ {
+  "번호": 54,
+  "단어": "essence",
+  "의미": "[명] 본질, 정수",
+  "예제": "The essence of the problem lies in the lack of communication."
+ },
+ {
+  "번호": 55,
+  "단어": "economic",
+  "의미": "[형] 경제의, 경제학의",
+  "예제": "The country is facing serious economic challenges."
+ },
+ {
+  "번호": 56,
+  "단어": "cell",
+  "의미": "[명] 세포",
+  "예제": "The human body consists of billions of cells."
+ },
+ {
+  "번호": 57,
+  "단어": "focus",
+  "의미": "[동] 집중하다[명] 초점",
+  "예제": "She needs to focus on her studies to pass the exam."
+ },
+ {
+  "번호": 58,
+  "단어": "issue",
+  "의미": "[명] 논란거리, 쟁점, 문제",
+  "예제": "We need to address the issue before it gets worse."
+ },
+ {
+  "번호": 59,
+  "단어": "participate",
+  "의미": "[동] 참여하다, 참가하다(in)",
+  "예제": "He likes to participate in outdoor activities."
+ },
+ {
+  "번호": 60,
+  "단어": "demand",
+  "의미": "[명] 요구, 수요[동] 요구하다",
+  "예제": "The demand for electric cars is increasing rapidly."
+ },
+ {
+  "번호": 61,
+  "단어": "occur",
+  "의미": "[동] 발생하다, 일어나다, (생각이) 떠오르다",
+  "예제": "The event will occur next Saturday."
+ },
+ {
+  "번호": 62,
+  "단어": "complex",
+  "의미": "[형] 복잡한[명] 복잡체, 복합 건물",
+  "예제": "This is a complex issue that requires careful consideration."
+ },
+ {
+  "번호": 63,
+  "단어": "define",
+  "의미": "[동] 정의하다, 한계 짓다, 한정하다, 규정하다",
+  "예제": "Can you define what success means to you?"
+ },
+ {
+  "번호": 64,
+  "단어": "proud",
+  "의미": "[형] 자랑스러워하는",
+  "예제": "He was proud of his team's achievements."
+ },
+ {
+  "번호": 65,
+  "단어": "aware",
+  "의미": "[형] 인지하는, 인식하고 있는, 알고 있는",
+  "예제": "She was fully aware of the risks involved."
+ },
+ {
+  "번호": 66,
+  "단어": "contact",
+  "의미": "[동] 연락하다[명] 접촉, 연락",
+  "예제": "You can contact me via email if you have any questions."
+ },
+ {
+  "번호": 67,
+  "단어": "profession",
+  "의미": "[명] 직업, 직종, 전문직",
+  "예제": "She chose a profession in the medical field."
+ },
+ {
+  "번호": 68,
+  "단어": "detail",
+  "의미": "[명] 세부, 세부사항[동] 상술하다",
+  "예제": "She explained every detail of the plan."
+ },
+ {
+  "번호": 69,
+  "단어": "approach",
+  "의미": "[동] 접근하다[명] 접근",
+  "예제": "They decided to approach the problem from a different angle."
+ },
+ {
+  "번호": 70,
+  "단어": "career",
+  "의미": "[명] 직업, 경력",
+  "예제": "He is considering a career in law."
+ },
+ {
+  "번호": 71,
+  "단어": "package",
+  "의미": "[명] 꾸러미, 포장, 포장된 짐[동] 포장하다",
+  "예제": "The package arrived earlier than expected."
+ },
+ {
+  "번호": 72,
+  "단어": "disappear",
+  "의미": "[동] 사라지다",
+  "예제": "The cat disappeared into the bushes."
+ },
+ {
+  "번호": 73,
+  "단어": "novel",
+  "의미": "[명] 소설",
+  "예제": "This novel is considered a classic in literature."
+ },
+ {
+  "번호": 74,
+  "단어": "secure",
+  "의미": "[형] 안전한, 안정된[동] 안전하게 하다",
+  "예제": "She feels more secure with her finances now."
+ },
+ {
+  "번호": 75,
+  "단어": "fashion",
+  "의미": "[명] 유행, 패션, 방식[동] 만들어 내다",
+  "예제": "The fashion industry is constantly evolving."
+ },
+ {
+  "번호": 76,
+  "단어": "despite",
+  "의미": "[전] ~에도 불구하고",
+  "예제": "Despite the rain, they continued their hike."
+ },
+ {
+  "번호": 77,
+  "단어": "background",
+  "의미": "[명] (그림, 사람, 사건)배경, 배경 지식",
+  "예제": "Her background in science helped her in her career."
+ },
+ {
+  "번호": 78,
+  "단어": "solution",
+  "의미": "[명] 해결, 해결책",
+  "예제": "They found a solution to the problem just in time."
+ },
+ {
+  "번호": 79,
+  "단어": "generate",
+  "의미": "[동] 일으키다, 발생시키다",
+  "예제": "The power plant generates enough electricity for the entire city."
+ },
+ {
+  "번호": 80,
+  "단어": "eventually",
+  "의미": "[부] 결국",
+  "예제": "After a long search, they eventually found the missing keys."
+ },
+ {
+  "번호": 81,
+  "단어": "decrease",
+  "의미": "[동] 줄다[감소하다], 줄이다[명] 감소",
+  "예제": "They decided to decrease the price to attract more customers."
+ },
+ {
+  "번호": 82,
+  "단어": "recycle",
+  "의미": "[동] 재활용하다",
+  "예제": "Recycling is essential for reducing waste."
+ },
+ {
+  "번호": 83,
+  "단어": "desire",
+  "의미": "[명] 욕구, 욕망[동] 바라다",
+  "예제": "He expressed a strong desire to travel the world."
+ },
+ {
+  "번호": 84,
+  "단어": "balance",
+  "의미": "[명] 균형, 은행 잔고[동] 균형을 이루다",
+  "예제": "It's important to maintain a good balance between work and rest."
+ },
+ {
+  "번호": 85,
+  "단어": "negative",
+  "의미": "[형] 부정적인",
+  "예제": "She has a negative attitude towards change."
+ },
+ {
+  "번호": 86,
+  "단어": "follow",
+  "의미": "[동] 따라가다,  (규칙을) 따르다",
+  "예제": "Please follow the instructions carefully."
+ },
+ {
+  "번호": 87,
+  "단어": "account",
+  "의미": "[명] 은행 계좌, 이야기, 설명[동] 설명하다",
+  "예제": "She opened a new bank account to save for her trip."
+ },
+ {
+  "번호": 88,
+  "단어": "publish",
+  "의미": "[동] 발표하다, 출판하다",
+  "예제": "The company will publish its annual report next week."
+ },
+ {
+  "번호": 89,
+  "단어": "occasion",
+  "의미": "[명] 경우, 특별한 일",
+  "예제": "They celebrated the occasion with a big party."
+ },
+ {
+  "번호": 90,
+  "단어": "replace",
+  "의미": "[동] 대체하다",
+  "예제": "She decided to replace her old phone with a new one."
+ },
+ {
+  "번호": 91,
+  "단어": "constant",
+  "의미": "[형] 일정한, 불변의[명] (수학에서의) 상수",
+  "예제": "The children need constant supervision while playing near the water."
+ },
+ {
+  "번호": 92,
+  "단어": "expert",
+  "의미": "[명] 전문가",
+  "예제": "She is an expert in ancient history."
+ },
+ {
+  "번호": 93,
+  "단어": "term",
+  "의미": "[명] 용어, 기간, 학기",
+  "예제": "The term 'artificial intelligence' is widely used in technology."
+ },
+ {
+  "번호": 94,
+  "단어": "relieve",
+  "의미": "[동] 경감하다, 안도시키다",
+  "예제": "The medicine helped relieve his headache."
+ },
+ {
+  "번호": 95,
+  "단어": "describe",
+  "의미": "[동] 묘사하다, 표현하다",
+  "예제": "Can you describe what the suspect looked like?"
+ },
+ {
+  "번호": 96,
+  "단어": "biology",
+  "의미": "[명] 생물학",
+  "예제": "Biology is the study of living organisms."
+ },
+ {
+  "번호": 97,
+  "단어": "due",
+  "의미": "[형] 만기의, ~하기로 되어 있는",
+  "예제": "The payment is due at the end of the month."
+ },
+ {
+  "번호": 98,
+  "단어": "equipment",
+  "의미": "[명] 장치, 장비",
+  "예제": "The equipment needed for the trip was expensive."
+ },
+ {
+  "번호": 99,
+  "단어": "congratulate",
+  "의미": "[동] 축하하다",
+  "예제": "Let me congratulate you on your promotion!"
+ },
+ {
+  "번호": 100,
+  "단어": "birth",
+  "의미": "[명] 탄생",
+  "예제": "She gave birth to a healthy baby boy."
+ },
+ {
+  "번호": 101,
+  "단어": "compose",
+  "의미": "[동] 구성하다, 작곡하다, 작문하다",
+  "예제": "He will compose a new piece of music for the concert."
+ },
+ {
+  "번호": 102,
+  "단어": "genius",
+  "의미": "[명] 천재, 천재성",
+  "예제": "People often refer to him as a genius."
+ },
+ {
+  "번호": 103,
+  "단어": "reflect",
+  "의미": "[동] 반영하다, 반사하다, 숙고하다",
+  "예제": "Her art reflects her emotions and experiences."
+ },
+ {
+  "번호": 104,
+  "단어": "cause",
+  "의미": "[동] ~의 원인이 되다, 야기하다[명] 원인",
+  "예제": "What was the cause of the accident?"
+ },
+ {
+  "번호": 105,
+  "단어": "frequent",
+  "의미": "[형] 빈번한[동] (장소,모임에) 자주 가다",
+  "예제": "He is a frequent visitor to the library."
+ },
+ {
+  "번호": 106,
+  "단어": "factor",
+  "의미": "[명] 요인, 요소",
+  "예제": "Weather can be a major factor in flight delays."
+ },
+ {
+  "번호": 107,
+  "단어": "extreme",
+  "의미": "[형] 극단의[명] 극단",
+  "예제": "The temperatures here can be extremely high in summer."
+ },
+ {
+  "번호": 108,
+  "단어": "tend",
+  "의미": "[동] ~하는 경향이 있다, 돌보다",
+  "예제": "He tends to procrastinate on his assignments."
+ },
+ {
+  "번호": 109,
+  "단어": "politics",
+  "의미": "[명] 정치, 정치학",
+  "예제": "She has always been interested in politics and current events."
+ },
+ {
+  "번호": 110,
+  "단어": "insist",
+  "의미": "[동] 주장하다",
+  "예제": "She insisted that we finish the project on time."
+ },
+ {
+  "번호": 111,
+  "단어": "extend",
+  "의미": "[동] 연장하다, 넓히다",
+  "예제": "They decided to extend their vacation by a week."
+ },
+ {
+  "번호": 112,
+  "단어": "lonely",
+  "의미": "[형] 외로운",
+  "예제": "He felt lonely after moving to a new city where he knew no one."
+ },
+ {
+  "번호": 113,
+  "단어": "habitat",
+  "의미": "[명] 서식지, 주거지",
+  "예제": "The forest is the natural habitat of many rare animals."
+ },
+ {
+  "번호": 114,
+  "단어": "mental",
+  "의미": "[형] 정신의",
+  "예제": "Mental health is just as important as physical health."
+ },
+ {
+  "번호": 115,
+  "단어": "steady",
+  "의미": "[형] 안정된, 한결같은, 꾸준한",
+  "예제": "The company's growth has been steady over the past year."
+ },
+ {
+  "번호": 116,
+  "단어": "exchange",
+  "의미": "[동] 교환하다",
+  "예제": "They decided to exchange gifts during the holiday season."
+ },
+ {
+  "번호": 117,
+  "단어": "active",
+  "의미": "[형]  활동적인, 적극적인",
+  "예제": "She tries to stay active by going for a run every morning."
+ },
+ {
+  "번호": 118,
+  "단어": "species",
+  "의미": "[명] (생물분류상의) 종",
+  "예제": "There are many different species of birds in this area."
+ },
+ {
+  "번호": 119,
+  "단어": "athletic",
+  "의미": "[형] 운동의, 운동경기의",
+  "예제": "She is very athletic and enjoys playing sports."
+ },
+ {
+  "번호": 120,
+  "단어": "dental",
+  "의미": "[형] 치아의",
+  "예제": "He has a dental appointment to get his teeth cleaned."
+ },
+ {
+  "번호": 121,
+  "단어": "delight",
+  "의미": "[명] 기쁨[동] 기쁘게 하다",
+  "예제": "The children were filled with delight when they saw the balloons."
+ },
+ {
+  "번호": 122,
+  "단어": "confident",
+  "의미": "[형] 자신 있는",
+  "예제": "He feels confident about passing the exam."
+ },
+ {
+  "번호": 123,
+  "단어": "gradually",
+  "의미": "[부] 점차, 서서히",
+  "예제": "The sky gradually turned pink as the sun set."
+ },
+ {
+  "번호": 124,
+  "단어": "shadow",
+  "의미": "[명] 그림자[동] 그늘지게 하다",
+  "예제": "He saw a shadow move in the distance."
+ },
+ {
+  "번호": 125,
+  "단어": "access",
+  "의미": "[명] 접근, 이용[동] 접근하다",
+  "예제": "All students have access to the school's library resources."
+ },
+ {
+  "번호": 126,
+  "단어": "announce",
+  "의미": "[동] 발표하다, 알리다",
+  "예제": "The company will announce its new product line next week."
+ },
+ {
+  "번호": 127,
+  "단어": "allow",
+  "의미": "[동] 허락하다, 인정하다",
+  "예제": "Her parents allow her to stay out late on weekends."
+ },
+ {
+  "번호": 128,
+  "단어": "firm",
+  "의미": "[형] 확고한, 단단한[명] 회사",
+  "예제": "He has a firm belief in the power of education."
+ },
+ {
+  "번호": 129,
+  "단어": "vary",
+  "의미": "[동] 바꾸다, 변하다, 다르다",
+  "예제": "The weather can vary greatly from day to day."
+ },
+ {
+  "번호": 130,
+  "단어": "injure",
+  "의미": "[동] 상처를 입히다, 손상시키다",
+  "예제": "He injured his ankle while playing soccer."
+ },
+ {
+  "번호": 131,
+  "단어": "permit",
+  "의미": "[동] 허용[허락]하다",
+  "예제": "The school permits students to leave early on Fridays."
+ },
+ {
+  "번호": 132,
+  "단어": "response",
+  "의미": "[명] 응답, 반응",
+  "예제": "He hasn't received a response to his email yet."
+ },
+ {
+  "번호": 133,
+  "단어": "threat",
+  "의미": "[동] 위협, 협박",
+  "예제": "The growing threat of climate change concerns many scientists."
+ },
+ {
+  "번호": 134,
+  "단어": "electricity",
+  "의미": "[명] 전기",
+  "예제": "Electricity powers nearly all modern devices."
+ },
+ {
+  "번호": 135,
+  "단어": "disabled",
+  "의미": "[형] 장애를 가진, 무능력하게 된",
+  "예제": "The building has been adapted to accommodate disabled people."
+ },
+ {
+  "번호": 136,
+  "단어": "lack",
+  "의미": "[명] 부족[동] ~이 부족하다",
+  "예제": "The project was delayed due to a lack of resources."
+ },
+ {
+  "번호": 137,
+  "단어": "signify",
+  "의미": "[동] 의미하다, 중요하다",
+  "예제": "A red light signifies that you must stop."
+ },
+ {
+  "번호": 138,
+  "단어": "concentrate",
+  "의미": "[동] 집중하다",
+  "예제": "She likes to concentrate in complete silence while studying."
+ },
+ {
+  "번호": 139,
+  "단어": "emphasize",
+  "의미": "[동] 강조하다",
+  "예제": "He emphasized the importance of teamwork in the project."
+ },
+ {
+  "번호": 140,
+  "단어": "astronomy",
+  "의미": "[명] 천문학",
+  "예제": "Astronomy is the scientific study of celestial objects."
+ },
+ {
+  "번호": 141,
+  "단어": "flood",
+  "의미": "[명] 홍수[동] 범람시키다",
+  "예제": "The flood caused widespread damage across the region."
+ },
+ {
+  "번호": 142,
+  "단어": "fuel",
+  "의미": "[명] 연료[동] 연료를 가하다",
+  "예제": "The car runs on fuel-efficient technology."
+ },
+ {
+  "번호": 143,
+  "단어": "manufacture",
+  "의미": "[동] 제조하다[명] 제조(업), 제품",
+  "예제": "They manufacture high-quality electronic goods."
+ },
+ {
+  "번호": 144,
+  "단어": "movement",
+  "의미": "[명] 움직임, 운동",
+  "예제": "The movement for equal rights has gained global attention."
+ },
+ {
+  "번호": 145,
+  "단어": "capable",
+  "의미": "[형] ~을 할 수 있는, 유능한",
+  "예제": "She is capable of solving difficult problems under pressure."
+ },
+ {
+  "번호": 146,
+  "단어": "combine",
+  "의미": "[동] 결합하다, 겸비하다",
+  "예제": "You can combine these ingredients to make a delicious sauce."
+ },
+ {
+  "번호": 147,
+  "단어": "gene",
+  "의미": "[명] 유전자",
+  "예제": "Each gene carries specific traits inherited from parents."
+ },
+ {
+  "번호": 148,
+  "단어": "increase",
+  "의미": "[동] (수량이) 증가하다[명] 증가, 이자",
+  "예제": "There has been a significant increase in online sales."
+ },
+ {
+  "번호": 149,
+  "단어": "victim",
+  "의미": "[명] 희생, 피해자",
+  "예제": "The flood victims received immediate assistance."
+ },
+ {
+  "번호": 150,
+  "단어": "pressure",
+  "의미": "[명] 압력, 압박[동] 압력을 가하다",
+  "예제": "She felt a lot of pressure to meet the deadline."
+ },
+ {
+  "번호": 151,
+  "단어": "accompany",
+  "의미": "[동] 동반[동행]하다, 수반하다",
+  "예제": "He will accompany her to the doctor tomorrow."
+ },
+ {
+  "번호": 152,
+  "단어": "frustrate",
+  "의미": "[동] 좌절시키다",
+  "예제": "The delay frustrated everyone waiting for the bus."
+ },
+ {
+  "번호": 153,
+  "단어": "construct",
+  "의미": "[동] 건설하다",
+  "예제": "They plan to construct a new building next year."
+ },
+ {
+  "번호": 154,
+  "단어": "dwindle",
+  "의미": "[동] 점점 줄어들다, 저하되다",
+  "예제": "The population of the town is dwindling."
+ },
+ {
+  "번호": 155,
+  "단어": "commerce",
+  "의미": "[명] 상업, 교역",
+  "예제": "The city is known as a center of commerce and trade."
+ },
+ {
+  "번호": 156,
+  "단어": "entertain",
+  "의미": "[동] 즐겁게 하다",
+  "예제": "The actor loves to entertain large audiences."
+ },
+ {
+  "번호": 157,
+  "단어": "predict",
+  "의미": "[동] 예언하다, 예측하다",
+  "예제": "Experts predict that the economy will recover soon."
+ },
+ {
+  "번호": 158,
+  "단어": "apologize",
+  "의미": "[동] 사과하다",
+  "예제": "She apologized for the inconvenience caused by the delay."
+ },
+ {
+  "번호": 159,
+  "단어": "sight",
+  "의미": "[명] 시야, 광경, 시력",
+  "예제": "The sight of the mountains took my breath away."
+ },
+ {
+  "번호": 160,
+  "단어": "quantity",
+  "의미": "[명] 양",
+  "예제": "He bought a large quantity of groceries for the week."
+ },
+ {
+  "번호": 161,
+  "단어": "conclude",
+  "의미": "[동] 결론짓다, 끝내다",
+  "예제": "The data allows us to conclude that the experiment was successful."
+ },
+ {
+  "번호": 162,
+  "단어": "donate",
+  "의미": "[동] 기부하다",
+  "예제": "Many people donate clothes to charity during the winter."
+ },
+ {
+  "번호": 163,
+  "단어": "personality",
+  "의미": "[명] 개성, 성격, 특색",
+  "예제": "Her friendly personality makes her easy to talk to."
+ },
+ {
+  "번호": 164,
+  "단어": "struggle",
+  "의미": "[동] 싸우다, 노력하다[명] 투쟁, 노력",
+  "예제": "The company is struggling to stay profitable."
+ },
+ {
+  "번호": 165,
+  "단어": "advantage",
+  "의미": "[명] 유리한 점, 이점",
+  "예제": "One advantage of living in the city is easy access to public transport."
+ },
+ {
+  "번호": 166,
+  "단어": "variety",
+  "의미": "[명] 다양, 다양성",
+  "예제": "There is a variety of options available for dinner."
+ },
+ {
+  "번호": 167,
+  "단어": "enable",
+  "의미": "[동] 가능하게 하다",
+  "예제": "This new software will enable users to edit videos easily."
+ },
+ {
+  "번호": 168,
+  "단어": "instruction",
+  "의미": "[명] 지시, 제품 사용 설명서, 가르침",
+  "예제": "Please read the instructions carefully before assembling the furniture."
+ },
+ {
+  "번호": 169,
+  "단어": "assume",
+  "의미": "[동] 추정하다, (태도 등을) 취하다",
+  "예제": "People often assume things without knowing the full story."
+ },
+ {
+  "번호": 170,
+  "단어": "attempt",
+  "의미": "[동] 시도하다[명] 시도",
+  "예제": "He made an attempt to climb the mountain last year."
+ },
+ {
+  "번호": 171,
+  "단어": "incredible",
+  "의미": "[형] 믿을 수 없는, (믿기 어려울 만큼) 굉장한",
+  "예제": "The view from the top of the mountain was incredible."
+ },
+ {
+  "번호": 172,
+  "단어": "feature",
+  "의미": "[명] 특징, 특집 기사, 얼굴 생김새[동] ~을 특징으로 하다, 주연하다",
+  "예제": "This smartphone has many new features."
+ },
+ {
+  "번호": 173,
+  "단어": "confuse",
+  "의미": "[동] 혼동하다, 혼란시키다",
+  "예제": "She was confused by the complex instructions."
+ },
+ {
+  "번호": 174,
+  "단어": "electronic",
+  "의미": "[형] 전자의",
+  "예제": "She bought a new electronic device to help with her studies."
+ },
+ {
+  "번호": 175,
+  "단어": "absorb",
+  "의미": "[동] 흡수하다, (사람, 마음을) 열중시키다",
+  "예제": "Dark colors absorb more heat from the sun."
+ },
+ {
+  "번호": 176,
+  "단어": "indicate",
+  "의미": "[동] 가리키다, 나타내다",
+  "예제": "The results indicate that more research is needed."
+ },
+ {
+  "번호": 177,
+  "단어": "analyze",
+  "의미": "[동] 분석하다",
+  "예제": "They will analyze the data to understand the trends."
+ },
+ {
+  "번호": 178,
+  "단어": "stock",
+  "의미": "[명] 재고품, 저장, 가축[동] 저장하다, (물품을) 들여놓다",
+  "예제": "He invested in the stock market to grow his savings."
+ },
+ {
+  "번호": 179,
+  "단어": "resident",
+  "의미": "[명] 거주자",
+  "예제": "The residents of the building were asked to evacuate."
+ },
+ {
+  "번호": 180,
+  "단어": "labor",
+  "의미": "[명] 노동, 산고[동] 노동하다",
+  "예제": "The workers are demanding better labor conditions."
+ },
+ {
+  "번호": 181,
+  "단어": "remark",
+  "의미": "[명] 의견, 주목[동] 의견을 말하다, ~에 주목하다",
+  "예제": "Her remark about the project was insightful."
+ },
+ {
+  "번호": 182,
+  "단어": "moral",
+  "의미": "[형] 도덕적인",
+  "예제": "The moral of the story is to always be honest."
+ },
+ {
+  "번호": 183,
+  "단어": "embarrassed",
+  "의미": "[형] 당황한",
+  "예제": "He felt embarrassed after making a mistake in front of everyone."
+ },
+ {
+  "번호": 184,
+  "단어": "claim",
+  "의미": "[동] 주장하다[명] 요구, 주장",
+  "예제": "The company claims that its product is the best on the market."
+ },
+ {
+  "번호": 185,
+  "단어": "reasonable",
+  "의미": "[형] 논리적인, 분별력 있는",
+  "예제": "It's important to be reasonable in your expectations."
+ },
+ {
+  "번호": 186,
+  "단어": "interrupt",
+  "의미": "[동] 방해하다, 중단하다",
+  "예제": "She tried to interrupt the conversation politely."
+ },
+ {
+  "번호": 187,
+  "단어": "discount",
+  "의미": "[명] 할인[동] 할인하다",
+  "예제": "The store is offering a discount on all items this weekend."
+ },
+ {
+  "번호": 188,
+  "단어": "creature",
+  "의미": "[명] 생물, 피조물",
+  "예제": "Scientists have discovered a new creature in the deep sea."
+ },
+ {
+  "번호": 189,
+  "단어": "heal",
+  "의미": "[동] 치료하다, 낫게 하다",
+  "예제": "Time can help heal emotional wounds."
+ },
+ {
+  "번호": 190,
+  "단어": "establish",
+  "의미": "[동] 설립하다, 확립하다, 제정하다",
+  "예제": "They plan to establish a new branch in another city."
+ },
+ {
+  "번호": 191,
+  "단어": "revolution",
+  "의미": "[명] 혁명, 갑작스러운 변화, 회전",
+  "예제": "The industrial revolution transformed the economy."
+ },
+ {
+  "번호": 192,
+  "단어": "criticize",
+  "의미": "[동] 비난하다",
+  "예제": "The critics were quick to criticize the new movie."
+ },
+ {
+  "번호": 193,
+  "단어": "convince",
+  "의미": "[동] 확신시키다, 납득시키다",
+  "예제": "Her argument convinced everyone in the room."
+ },
+ {
+  "번호": 194,
+  "단어": "efficient",
+  "의미": "[형] 효율적인, 유능한",
+  "예제": "Solar panels are an efficient way to produce energy."
+ },
+ {
+  "번호": 195,
+  "단어": "stranger",
+  "의미": "[명] 낯선 사람, 문외한",
+  "예제": "He felt uneasy around strangers."
+ },
+ {
+  "번호": 196,
+  "단어": "tide",
+  "의미": "[명] 조수, 흐름",
+  "예제": "They planned their fishing trip according to the tide."
+ },
+ {
+  "번호": 197,
+  "단어": "obtain",
+  "의미": "[동] 획득하다, 통용되다, 행해지다",
+  "예제": "She managed to obtain the necessary documents for her application."
+ },
+ {
+  "번호": 198,
+  "단어": "assist",
+  "의미": "[동] 도움을 주다",
+  "예제": "The nurse will assist the doctor during the procedure."
+ },
+ {
+  "번호": 199,
+  "단어": "disaster",
+  "의미": "[명] 재앙, 재난, 재해",
+  "예제": "The earthquake was a natural disaster that affected many lives."
+ },
+ {
+  "번호": 200,
+  "단어": "terrific",
+  "의미": "[형] 굉장한, 훌륭한",
+  "예제": "The weather today is absolutely terrific!"
+ }
+]
+}
