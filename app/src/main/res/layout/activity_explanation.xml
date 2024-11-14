@@ -28,6 +28,15 @@
             android:textSize="22sp"
             android:text="단어 1: 예시 단어"
             android:textColor="#000" />
+        <!-- 정답/오답 표시용 TextView 추가 -->
+        <TextView
+            android:id="@+id/explanationAnswerStatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정답"
+            android:textSize="16sp"
+            android:textColor="#008000"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -76,6 +85,15 @@
             android:textSize="22sp"
             android:text="단어 2: 예시 단어"
             android:textColor="#000" />
+        <!-- 정답/오답 표시용 TextView 추가 -->
+        <TextView
+            android:id="@+id/explanationAnswerStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정답"
+            android:textSize="16sp"
+            android:textColor="#008000"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,6 +142,15 @@
             android:textSize="22sp"
             android:text="단어 3: 예시 단어"
             android:textColor="#000" />
+        <!-- 정답/오답 표시용 TextView 추가 -->
+        <TextView
+            android:id="@+id/explanationAnswerStatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정답"
+            android:textSize="16sp"
+            android:textColor="#008000"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -172,6 +199,15 @@
             android:textSize="22sp"
             android:text="단어 4: 예시 단어"
             android:textColor="#000" />
+        <!-- 정답/오답 표시용 TextView 추가 -->
+        <TextView
+            android:id="@+id/explanationAnswerStatus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정답"
+            android:textSize="16sp"
+            android:textColor="#008000"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <LinearLayout

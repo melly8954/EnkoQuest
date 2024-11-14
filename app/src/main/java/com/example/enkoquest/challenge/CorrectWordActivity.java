@@ -138,7 +138,11 @@ public class CorrectWordActivity extends AppCompatActivity {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
 
-            if (chosenAnswer.equals(correctAnswer)) {
+            // 정답 여부 확인
+            boolean isCorrect = chosenAnswer.equals(correctAnswer);
+
+            // 선택한 버튼에 대한 처리
+            if (isCorrect) {
                 currentLevel++;
                 levelTextView.setText("Level: " + currentLevel);
                 loadNewQuestion();
@@ -147,10 +151,13 @@ public class CorrectWordActivity extends AppCompatActivity {
                     clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
                     clickedButton.setText("X " + chosenAnswer);
 
-                    getExplanationForAnswer(chosenAnswer, new ExplanationCallback() {
+                    // 정답 여부 포함하여 설명 화면으로 이동
+                    getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
                         @Override
                         public void onExplanationFound(String word, String meaning, String example) {
+                            // 정답 여부와 함께 Bundle을 Intent에 추가
                             Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
+                            bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
                             intent.putExtras(bundle);  // Bundle을 Intent에 추가하여 ExplanationActivity로 전달
                             startActivity(intent);
                         }
@@ -158,7 +165,6 @@ public class CorrectWordActivity extends AppCompatActivity {
                 }
             }
         };
-
         btn1.setOnClickListener(listener);
         btn2.setOnClickListener(listener);
         btn3.setOnClickListener(listener);
@@ -180,7 +186,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn4.setText(btn4.getText().toString().replace("X ", ""));
     }
 
-    private void getExplanationForAnswer(String chosenAnswer, final ExplanationCallback callback) {
+    private void getExplanationForAnswer(String chosenAnswer, Boolean isCorrect, final ExplanationCallback callback) {
         DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
 
         database.addListenerForSingleValueEvent(new ValueEventListener() {
