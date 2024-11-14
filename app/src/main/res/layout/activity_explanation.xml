@@ -192,9 +192,29 @@
             android:text="예시 4: 예시 예제"
             android:textColor="#000" />
     </LinearLayout>
-    <!-- 빈 공간 추가 -->
-    <View
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시 도전하기"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/moveMainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로 가기"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
 </LinearLayout>
