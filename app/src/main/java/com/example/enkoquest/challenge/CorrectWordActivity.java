@@ -3,6 +3,7 @@ package com.example.enkoquest.challenge;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -22,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -93,31 +95,26 @@ public class CorrectWordActivity extends AppCompatActivity {
         Word questionWord = wordList.get(random.nextInt(wordList.size()));
         textView.setText(questionWord.getWord());
 
-        List<String> options = new ArrayList<>();
-        List<Word> optionWords = new ArrayList<>(); // 보기 단어 리스트 추가
-        options.add(questionWord.getMeaning());
-        optionWords.add(questionWord);
+        List<Pair<String, Word>> pairedOptions = new ArrayList<>();
+        pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
 
         // 다른 의미들 추가
-        while (options.size() < 4) {
+        while (pairedOptions.size() < 4) {
             Word randomWord = wordList.get(random.nextInt(wordList.size()));
-            String randomMeaning = randomWord.getMeaning();
-            if (!options.contains(randomMeaning)) { // 중복된 의미가 없도록 확인
-                options.add(randomMeaning);
-                optionWords.add(randomWord); // 해당 단어를 옵션 단어 리스트에 추가
+            if (!pairedOptions.contains(new Pair<>(randomWord.getMeaning(), randomWord))) {
+                pairedOptions.add(new Pair<>(randomWord.getMeaning(), randomWord));
             }
         }
 
         // 보기 옵션 섞기
-        java.util.Collections.shuffle(options);
+        Collections.shuffle(pairedOptions);
 
-        // Bundle에 데이터를 정확하게 추가
+        // Bundle에 데이터 추가
         Bundle bundle = new Bundle();
-        for (int i = 0; i < options.size(); i++) {
-            // 옵션의 의미에 맞는 단어와 예제를 추가
-            String word = optionWords.get(i).getWord();
-            String meaning = options.get(i);
-            String example = optionWords.get(i).getExample();
+        for (int i = 0; i < pairedOptions.size(); i++) {
+            String word = pairedOptions.get(i).second.getWord();
+            String meaning = pairedOptions.get(i).first;
+            String example = pairedOptions.get(i).second.getExample();
 
             bundle.putString("WORD_" + (i + 1), word);
             bundle.putString("MEANING_" + (i + 1), meaning);
@@ -125,14 +122,15 @@ public class CorrectWordActivity extends AppCompatActivity {
         }
 
         // 보기 버튼 설정
-        btn1.setText(options.get(0));
-        btn2.setText(options.get(1));
-        btn3.setText(options.get(2));
-        btn4.setText(options.get(3));
+        btn1.setText(pairedOptions.get(0).first);
+        btn2.setText(pairedOptions.get(1).first);
+        btn3.setText(pairedOptions.get(2).first);
+        btn4.setText(pairedOptions.get(3).first);
 
         // 버튼 클릭 리스너에 Bundle 전달
         setOptionButtonListeners(questionWord.getMeaning(), bundle);
     }
+
 
 
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
