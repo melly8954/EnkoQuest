@@ -119,6 +119,10 @@ public class CorrectWordActivity extends AppCompatActivity {
             bundle.putString("WORD_" + (i + 1), word);
             bundle.putString("MEANING_" + (i + 1), meaning);
             bundle.putString("EXAMPLE_" + (i + 1), example);
+
+            // 각 보기의 정답 여부 추가
+            boolean isCorrect = meaning.equals(questionWord.getMeaning());
+            bundle.putBoolean("IS_CORRECT_" + (i + 1), isCorrect); // 정답 여부를 Bundle에 추가
         }
 
         // 보기 버튼 설정

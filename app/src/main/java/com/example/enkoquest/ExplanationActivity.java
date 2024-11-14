@@ -60,45 +60,23 @@ public class ExplanationActivity extends AppCompatActivity {
             boolean isCorrect4 = bundle.getBoolean("IS_CORRECT_4");
 
             // 각 TextView에 값 설정
-            TextView wordTextView1 = findViewById(R.id.explanationWord1);
-            TextView meaningTextView1 = findViewById(R.id.explanationMeaning1);
-            TextView exampleTextView1 = findViewById(R.id.explanationExample1);
-            TextView explanationAnswerStatus1 = findViewById(R.id.explanationAnswerStatus1);  // 추가: 정답 여부 표시
-
-            wordTextView1.setText(word1);
-            meaningTextView1.setText(meaning1);
-            exampleTextView1.setText(example1);
-            explanationAnswerStatus1.setText(isCorrect1 ? "정답입니다!" : "오답입니다.");  // 정답 여부 표시
-
-            TextView wordTextView2 = findViewById(R.id.explanationWord2);
-            TextView meaningTextView2 = findViewById(R.id.explanationMeaning2);
-            TextView exampleTextView2 = findViewById(R.id.explanationExample2);
-            TextView explanationAnswerStatus2 = findViewById(R.id.explanationAnswerStatus2);  // 추가: 정답 여부 표시
-
-            wordTextView2.setText(word2);
-            meaningTextView2.setText(meaning2);
-            exampleTextView2.setText(example2);
-            explanationAnswerStatus2.setText(isCorrect2 ? "정답입니다!" : "오답입니다.");  // 정답 여부 표시
-
-            TextView wordTextView3 = findViewById(R.id.explanationWord3);
-            TextView meaningTextView3 = findViewById(R.id.explanationMeaning3);
-            TextView exampleTextView3 = findViewById(R.id.explanationExample3);
-            TextView explanationAnswerStatus3 = findViewById(R.id.explanationAnswerStatus3);  // 추가: 정답 여부 표시
-
-            wordTextView3.setText(word3);
-            meaningTextView3.setText(meaning3);
-            exampleTextView3.setText(example3);
-            explanationAnswerStatus3.setText(isCorrect3 ? "정답입니다!" : "오답입니다.");  // 정답 여부 표시
-
-            TextView wordTextView4 = findViewById(R.id.explanationWord4);
-            TextView meaningTextView4 = findViewById(R.id.explanationMeaning4);
-            TextView exampleTextView4 = findViewById(R.id.explanationExample4);
-            TextView explanationAnswerStatus4 = findViewById(R.id.explanationAnswerStatus4);  // 추가: 정답 여부 표시
-
-            wordTextView4.setText(word4);
-            meaningTextView4.setText(meaning4);
-            exampleTextView4.setText(example4);
-            explanationAnswerStatus4.setText(isCorrect4 ? "정답입니다!" : "오답입니다.");  // 정답 여부 표시
+            setUpExplanationView(R.id.explanationWord1, R.id.explanationMeaning1, R.id.explanationExample1, R.id.explanationAnswerStatus1, word1, meaning1, example1, isCorrect1);
+            setUpExplanationView(R.id.explanationWord2, R.id.explanationMeaning2, R.id.explanationExample2, R.id.explanationAnswerStatus2, word2, meaning2, example2, isCorrect2);
+            setUpExplanationView(R.id.explanationWord3, R.id.explanationMeaning3, R.id.explanationExample3, R.id.explanationAnswerStatus3, word3, meaning3, example3, isCorrect3);
+            setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4, word4, meaning4, example4, isCorrect4);
         }
+    }
+
+    private void setUpExplanationView(int wordResId, int meaningResId, int exampleResId, int statusResId,
+                                      String word, String meaning, String example, boolean isCorrect) {
+        TextView wordTextView = findViewById(wordResId);
+        TextView meaningTextView = findViewById(meaningResId);
+        TextView exampleTextView = findViewById(exampleResId);
+        TextView answerStatusTextView = findViewById(statusResId);
+
+        wordTextView.setText(word);
+        meaningTextView.setText(meaning);
+        exampleTextView.setText(example);
+        answerStatusTextView.setText(isCorrect ? "정답입니다!" : "오답입니다.");
     }
 }
