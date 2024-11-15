@@ -33,6 +33,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     private Button btn1, btn2, btn3, btn4;
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
+    private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
     private ImageButton imageButtonBack;
 
     @Override
@@ -49,11 +50,12 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn4 = findViewById(R.id.optionButton4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
-        levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
+        levelTextView = findViewById(R.id.levelTextView);
 
+        // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
-           Intent intent = new Intent(this, SelectWordActivity.class);
-           startActivity(intent);
+            Intent intent = new Intent(this, SelectWordActivity.class);
+            startActivity(intent);
         });
 
         // Firebase에서 데이터 가져오기
@@ -67,12 +69,16 @@ public class CorrectWordActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    // Firebase에서 단어, 의미, 예제 정보 가져옴
                     String word = snapshot.child("단어").getValue(String.class);
                     String meaning = snapshot.child("의미").getValue(String.class);
                     String example = snapshot.child("예제").getValue(String.class);
                     wordList.add(new Word(word, meaning, example));
                 }
                 Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
+
+                // 단어 리스트 셔플하여 중복 없이 랜덤 순서로 출제
+                Collections.shuffle(wordList);
                 loadNewQuestion();
             }
 
@@ -85,20 +91,24 @@ public class CorrectWordActivity extends AppCompatActivity {
 
 
     private void loadNewQuestion() {
-        if (wordList.isEmpty()) {
+        if (currentQuestionIndex >= wordList.size()) {
+            // 모든 문제를 출제한 경우 알림 메시지 표시
+            Toast.makeText(this, "모든문제 출제 완료", Toast.LENGTH_SHORT).show(); //모든 물제 출제시 알림 메세지 표시
             return;
         }
 
-        resetButtons();
+        resetButtons(); // 보기버튼 상태 초기화
 
-        Random random = new Random();
-        Word questionWord = wordList.get(random.nextInt(wordList.size()));
-        textView.setText(questionWord.getWord());
+        // 현재 인덱스에 해당하는 문제를 가져옴
+        Word questionWord = wordList.get(currentQuestionIndex);
+        currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
+        textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
 
         List<Pair<String, Word>> pairedOptions = new ArrayList<>();
         pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
 
         // 다른 의미들 추가
+        Random random = new Random();
         while (pairedOptions.size() < 4) {
             Word randomWord = wordList.get(random.nextInt(wordList.size()));
             if (!pairedOptions.contains(new Pair<>(randomWord.getMeaning(), randomWord))) {
@@ -136,7 +146,6 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
 
-
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
@@ -147,10 +156,12 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
+                // 정답일 경우 레벨 증가 및 다음 문제로 이동
                 currentLevel++;
                 levelTextView.setText("Level: " + currentLevel);
                 loadNewQuestion();
             } else {
+                // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
                     clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
                     clickedButton.setText("X " + chosenAnswer);
@@ -202,7 +213,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                     String example = snapshot.child("예제").getValue(String.class);
 
                     if (meaning != null && meaning.equals(chosenAnswer)) {
-                        callback.onExplanationFound(word,meaning,example);
+                        callback.onExplanationFound(word, meaning, example);
                         return;
                     }
                 }
@@ -221,8 +232,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         void onExplanationFound(String word, String meaning, String example);
     }
 
-
-    // Word 객체 정의
+    // Word 객체 클래스 정의
     private static class Word {
         private String word;
         private String meaning;
@@ -241,6 +251,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         public String getMeaning() {
             return meaning;
         }
+
         public String getExample() {
             return example;
         }
