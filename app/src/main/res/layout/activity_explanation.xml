@@ -244,17 +244,22 @@
             android:id="@+id/retryButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="다시 도전하기"
+            android:text="재도전"
             android:layout_marginEnd="20dp"
-            android:padding="10dp"
-            android:textSize="16sp" />
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/moveMainButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="메인으로 가기"
-            android:padding="10dp"
-            android:textSize="16sp" />
+            android:text="메인 메뉴로"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음으로"
+            android:visibility="gone" />
     </LinearLayout>
 </LinearLayout>
