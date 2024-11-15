@@ -2,6 +2,7 @@ package com.example.enkoquest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -19,23 +20,27 @@ public class ExplanationActivity extends AppCompatActivity {
 
         retryButton = findViewById(R.id.retryButton);
         moveMainButton = findViewById(R.id.moveMainButton);
+        Button nextButton = findViewById(R.id.nextButton); //다음으로 버튼 추가
 
-        retryButton.setOnClickListener(v -> {
-            Intent intent = new Intent(ExplanationActivity.this, CorrectWordActivity.class);
-            finish();
-            startActivity(intent);
-        });
-
-        moveMainButton.setOnClickListener(v -> {
-            Intent intent = new Intent(ExplanationActivity.this, MainActivity.class);
-            finish();
-            startActivity(intent);
-        });
+        retryButton.setVisibility(View.GONE);
+        moveMainButton.setVisibility(View.GONE);
+        nextButton.setVisibility(View.GONE);
 
         // Bundle을 Intent에서 가져오기
         Bundle bundle = getIntent().getExtras();
 
         if (bundle != null) {
+            boolean showRetry = bundle.getBoolean("SHOW_RETRY", false);
+
+            if(showRetry) {
+                //하트가 모두 소진되는 경우
+                retryButton.setVisibility(View.VISIBLE);
+                moveMainButton.setVisibility(View.VISIBLE);
+            } else {
+                //하트가 남아있는 경우
+                nextButton.setVisibility(View.VISIBLE);
+            }
+
             // 각 선택지에 대한 단어, 의미, 예시 가져오기
             String word1 = bundle.getString("WORD_1");
             String meaning1 = bundle.getString("MEANING_1");
@@ -65,6 +70,25 @@ public class ExplanationActivity extends AppCompatActivity {
             setUpExplanationView(R.id.explanationWord3, R.id.explanationMeaning3, R.id.explanationExample3, R.id.explanationAnswerStatus3, word3, meaning3, example3, isCorrect3);
             setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4, word4, meaning4, example4, isCorrect4);
         }
+        retryButton.setOnClickListener(v -> {
+            Intent intent = new Intent(ExplanationActivity.this, CorrectWordActivity.class);
+            finish();
+            startActivity(intent);
+        });
+
+        moveMainButton.setOnClickListener(v -> {
+            Intent intent = new Intent(ExplanationActivity.this, MainActivity.class);
+            finish();
+            startActivity(intent);
+        });
+
+        nextButton.setOnClickListener(v -> {
+            //다음 문제로 넘어가기 위해 RESULT_OK와 추가 데이터 설정
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("LIFE_REMAINING", getIntent().getIntExtra("LIFE_REMAINING", 5));
+            setResult(RESULT_OK, resultIntent); //다음 문제로 돌아가기 위한 결과 코드 설정
+            finish(); //현재 화면 종료
+        });
     }
 
     private void setUpExplanationView(int wordResId, int meaningResId, int exampleResId, int statusResId,

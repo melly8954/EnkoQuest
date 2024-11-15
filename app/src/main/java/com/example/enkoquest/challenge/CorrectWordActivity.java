@@ -181,24 +181,20 @@ public class CorrectWordActivity extends AppCompatActivity {
                         updateHearts(); //하트 상태 업데이트
                     }
 
-                    // 정답 여부 포함하여 설명 화면으로 이동
-                    if(life >0) {
-                        getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
-                            @Override
-                            public void onExplanationFound(String word, String meaning, String example) {
-                                // 정답 여부와 함께 Bundle을 Intent에 추가
-                                Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
-                                bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
-                                bundle.putInt("LIFE_REMAINING", life); //남은 하트 수 추가
-                                intent.putExtras(bundle);  // Bundle을 Intent에 추가하여 ExplanationActivity로 전달
-                                startActivityForResult(intent, 100);
-                            }
-                        });
-                    } else {
-                        //체력이 모두 소진되면 게임 종료 처리
-                        Toast.makeText(CorrectWordActivity.this, "Game Over! Try again", Toast.LENGTH_LONG).show();
-                        finish();
-                    }
+                    // ExplanationActivity로 이동
+                    getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
+                        @Override
+                        public void onExplanationFound(String word, String meaning, String example) {
+                            Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
+
+                            bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
+                            bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
+                            bundle.putBoolean("SHOW_RETRY", life == 0); // 재도전 여부 전달
+
+                            intent.putExtras(bundle);  // 데이터를 Intent에 추가
+                            startActivityForResult(intent, 100); // Activity 결과 대기
+                        }
+                    });
                 }
             }
         };
@@ -289,10 +285,16 @@ public class CorrectWordActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == 100 && resultCode == RESULT_OK) {
-            if(data != null && data.hasExtra("LIFE_REMAINING")) {
-                life = data.getIntExtra("LIFE_REMAINING", life);
-                updateHearts();
+            if (data != null) {
+                if (data.hasExtra("LIFE_REMAINING")) {
+                    life = data.getIntExtra("LIFE_REMAINING", life);
+                    updateHearts();
+                }
+                //다음 문제로 넘어가므로 Level 증가
+                currentLevel++;
+                levelTextView.setText("Level" + currentLevel);
             }
+            //새로운 문제 로드
             loadNewQuestion();
         }
     }
