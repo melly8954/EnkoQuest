@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.enkoquest.ExplanationActivity;
 import com.example.enkoquest.R;
 import com.example.enkoquest.SelectWordActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,6 +37,8 @@ public class CorrectWordActivity extends AppCompatActivity {
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
     private ImageButton imageButtonBack;
+    private FirebaseAuth auth; // Firebase 인증 인스턴스
+    private int highestLevel = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -156,10 +160,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
-                // 정답일 경우 레벨 증가 및 다음 문제로 이동
-                currentLevel++;
-                levelTextView.setText("Level: " + currentLevel);
-                loadNewQuestion();
+                updateLevel();
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
@@ -257,5 +258,31 @@ public class CorrectWordActivity extends AppCompatActivity {
         }
     }
 
+    private void saveChallengeLevel(int challengLevel) {
+        FirebaseUser firebaseUser = auth.getCurrentUser();
+        // Firebase 데이터베이스 참조 - 사용자 ID를 기준으로 저장
+        DatabaseReference database = FirebaseDatabase.getInstance()
+                .getReference("UseAccount")
+                .child(firebaseUser.getUid())
+                .child("challengeLevel");
 
+        database.setValue(challengLevel)
+                .addOnSuccessListener(aVoid -> {
+                    Toast.makeText(CorrectWordActivity.this, "저장 완료", Toast.LENGTH_SHORT).show();
+                    Log.d("ChallengeActivity", "저장 완료" + challengLevel); // 저장 완료시 표시 (나중에 삭제 하면 됨)
+                })
+                .addOnFailureListener(e -> Log.e("ChallengeActivity", "저장 실패", e));
+    }
+
+    private void updateLevel() {
+        currentLevel++;
+        levelTextView.setText("Level: " + currentLevel);
+
+        if (currentLevel > highestLevel){
+            highestLevel = currentLevel;
+            saveChallengeLevel(highestLevel);
+        }
+
+        loadNewQuestion();
+    }
 }
