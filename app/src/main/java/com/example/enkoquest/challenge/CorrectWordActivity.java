@@ -299,19 +299,11 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // Firebase 데이터베이스 참조 - 사용자 ID를 기준으로 저장
         DatabaseReference database = FirebaseDatabase.getInstance()
-                .getReference("UserAccount")
-                .child(firebaseUser.getUid())
-                .child("challengeLevel");
+            .getReference("UserAccount")
+            .child(firebaseUser.getUid())
+            .child("challengeLevel");
 
         database.setValue(challengLevel)
-                .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(CorrectWordActivity.this, "저장 완료", Toast.LENGTH_SHORT).show();
-                    Log.d("ChallengeActivity", "저장 완료" + challengLevel); // 저장 완료시 표시 (나중에 삭제 하면 됨)
-                })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(CorrectWordActivity.this, "저장 실패", Toast.LENGTH_SHORT).show();
-                    Log.e("ChallengeActivity", "저장 실패", e);
-                });
     }
 
     private void updateLevel() {
