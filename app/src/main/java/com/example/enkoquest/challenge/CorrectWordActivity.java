@@ -56,6 +56,9 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         levelTextView = findViewById(R.id.levelTextView);
 
+        // Firebase 초기화
+        auth = FirebaseAuth.getInstance();
+
         // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
             Intent intent = new Intent(this, SelectWordActivity.class);
@@ -151,6 +154,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
 
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
+        try{
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
@@ -160,7 +164,8 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
-                updateLevel();
+                Log.d("Debug", "isCorrect is true. Calling updateLevel()");
+                CorrectWordActivity.this.updateLevel();
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
@@ -185,6 +190,9 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn2.setOnClickListener(listener);
         btn3.setOnClickListener(listener);
         btn4.setOnClickListener(listener);
+        }catch (Exception e){
+            Log.e("Error", "Exception in setOptionButtonListeners", e);
+        }
     }
 
     private void resetButtons() {
@@ -260,9 +268,10 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     private void saveChallengeLevel(int challengLevel) {
         FirebaseUser firebaseUser = auth.getCurrentUser();
+
         // Firebase 데이터베이스 참조 - 사용자 ID를 기준으로 저장
         DatabaseReference database = FirebaseDatabase.getInstance()
-                .getReference("UseAccount")
+                .getReference("UserAccount")
                 .child(firebaseUser.getUid())
                 .child("challengeLevel");
 
@@ -271,7 +280,10 @@ public class CorrectWordActivity extends AppCompatActivity {
                     Toast.makeText(CorrectWordActivity.this, "저장 완료", Toast.LENGTH_SHORT).show();
                     Log.d("ChallengeActivity", "저장 완료" + challengLevel); // 저장 완료시 표시 (나중에 삭제 하면 됨)
                 })
-                .addOnFailureListener(e -> Log.e("ChallengeActivity", "저장 실패", e));
+                .addOnFailureListener(e ->{
+                    Toast.makeText(CorrectWordActivity.this, "저장 실패", Toast.LENGTH_SHORT).show();
+                    Log.e("ChallengeActivity", "저장 실패", e);
+                });
     }
 
     private void updateLevel() {
