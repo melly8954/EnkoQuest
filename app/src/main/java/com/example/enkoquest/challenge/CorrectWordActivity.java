@@ -303,7 +303,7 @@ public class CorrectWordActivity extends AppCompatActivity {
             .child(firebaseUser.getUid())
             .child("challengeLevel");
 
-        database.setValue(challengLevel)
+        database.setValue(challengLevel);
     }
 
     private void updateLevel() {
