@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.enkoquest.ExplanationActivity;
 import com.example.enkoquest.R;
 import com.example.enkoquest.SelectWordActivity;
+import com.example.enkoquest.user.UserAccount;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -79,6 +80,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // Firebase에서 데이터 가져오기
         fetchDataFromFirebase();
+        loadUserChallengeLevel();
     }
 
     private void fetchDataFromFirebase() {
@@ -115,6 +117,36 @@ public class CorrectWordActivity extends AppCompatActivity {
         });
     }
 
+    private void loadUserChallengeLevel() {
+        FirebaseUser firebaseUser = auth.getCurrentUser();
+
+        if (firebaseUser != null) {
+            DatabaseReference userDatabase = FirebaseDatabase.getInstance()
+                    .getReference("UserAccount")
+                    .child(firebaseUser.getUid())
+                    .child("challengeLevel");
+
+            userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        highestLevel = dataSnapshot.getValue(Integer.class);
+                        if (highestLevel == 0) {
+                            highestLevel = 1; // challengeLevel이 없으면 기본값 1로 설정
+                        }
+                    } else {
+                        highestLevel = 1;
+                    }
+                    loadNewQuestion();
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.w("CorrectWordActivity", "loadUserChallengeLevel:onCancelled", databaseError.toException());
+                }
+            });
+        }
+    }
 
     private void loadNewQuestion() {
         if (currentQuestionIndex >= wordList.size()) {
@@ -297,13 +329,15 @@ public class CorrectWordActivity extends AppCompatActivity {
     private void saveChallengeLevel(int challengLevel) {
         FirebaseUser firebaseUser = auth.getCurrentUser();
 
-        // Firebase 데이터베이스 참조 - 사용자 ID를 기준으로 저장
-        DatabaseReference database = FirebaseDatabase.getInstance()
-            .getReference("UserAccount")
-            .child(firebaseUser.getUid())
-            .child("challengeLevel");
+        if (firebaseUser != null) {
+            // Firebase 데이터베이스 참조 - 사용자 ID를 기준으로 저장
+            DatabaseReference database = FirebaseDatabase.getInstance()
+                    .getReference("UserAccount")
+                    .child(firebaseUser.getUid())
+                    .child("challengeLevel");
 
-        database.setValue(challengLevel);
+            database.setValue(challengLevel);
+        }
     }
 
     private void updateLevel() {
