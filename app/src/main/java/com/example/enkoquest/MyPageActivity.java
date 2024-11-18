@@ -125,7 +125,7 @@ public class MyPageActivity extends AppCompatActivity implements View
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
                         text02.setText("닉네임 : " + userAccount.getNickname());
-                        text03.setText("챌린지 정보");
+                        text03.setText("챌린지 : " + userAccount.getChallengeLevel() + "단계");
                         selfProduce.setText(userAccount.getSelfProduce());
                     } else {
                         Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();

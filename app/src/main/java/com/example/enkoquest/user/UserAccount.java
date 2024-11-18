@@ -6,16 +6,16 @@ public class UserAccount {
     private String email;   // 사용자 이메일
     private String tel;
     private String selfProduce;
-    private String challengeLevel;
+    private int challengeLevel;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
     public UserAccount() {
     }
 
     // 매개변수를 받는 생성자
-    public UserAccount(String idToken, String nickName
+    public UserAccount(String idToken, String nickname
             , String email, String tel
-            , String selfProduce, String challengeLevel) {
+            , String selfProduce, int challengeLevel) {
         this.idToken = idToken;
         this.nickname = nickname;
         this.email = email;
@@ -37,8 +37,8 @@ public class UserAccount {
         return nickname;
     }
 
-    public void setNickname(String nickName) {
-        this.nickname = nickName;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getEmail() {
@@ -65,7 +65,11 @@ public class UserAccount {
         this.selfProduce = selfProduce;
     }
 
-    public void setChallengeLevel(String challengeLevel) {
+    public int getChallengeLevel() {
+        return challengeLevel;
+    }
+
+    public void setChallengeLevel(int challengeLevel) {
         this.challengeLevel = challengeLevel;
     }
 }
