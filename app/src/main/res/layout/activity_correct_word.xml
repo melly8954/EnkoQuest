@@ -64,7 +64,41 @@
             android:layout_height="wrap_content"
             android:text="Level: 1"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:layout_marginEnd="16dp" />
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life" />
     </LinearLayout>
 
     <LinearLayout

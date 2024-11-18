@@ -7,6 +7,7 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +38,8 @@ public class CorrectWordActivity extends AppCompatActivity {
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
     private ImageButton imageButtonBack;
+    private ImageView[] hearts;
+    private int life = 5;
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private int highestLevel = 0;
 
@@ -46,6 +49,15 @@ public class CorrectWordActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
 
+        //하트 이미지뷰 초기화
+        hearts = new ImageView[] {
+                findViewById(R.id.heart1),
+                findViewById(R.id.heart2),
+                findViewById(R.id.heart3),
+                findViewById(R.id.heart4),
+                findViewById(R.id.heart5)
+        };
+
         // View 요소 초기화
         textView = findViewById(R.id.wordTextView);
         btn1 = findViewById(R.id.optionButton1);
@@ -54,7 +66,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn4 = findViewById(R.id.optionButton4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
-        levelTextView = findViewById(R.id.levelTextView);
+        levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
 
         // Firebase 초기화
         auth = FirebaseAuth.getInstance();
@@ -76,17 +88,24 @@ public class CorrectWordActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    // Firebase에서 단어, 의미, 예제 정보 가져옴
+                    // Firebase에서 번호, 단어, 의미, 예제 정보 가져옴
+                    Integer number = snapshot.child("번호").getValue(Integer.class);
                     String word = snapshot.child("단어").getValue(String.class);
                     String meaning = snapshot.child("의미").getValue(String.class);
                     String example = snapshot.child("예제").getValue(String.class);
-                    wordList.add(new Word(word, meaning, example));
+                    if(number != null && word != null && meaning != null && example != null) {
+                        wordList.add(new Word(number, word, meaning, example));
+                    }
                 }
-                Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
 
-                // 단어 리스트 셔플하여 중복 없이 랜덤 순서로 출제
-                Collections.shuffle(wordList);
-                loadNewQuestion();
+                Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
+                if(!wordList.isEmpty()) {
+                    loadNewQuestion();
+                    // 단어 리스트 셔플하여 중복 없이 랜덤 순서로 출제
+                    Collections.shuffle(wordList);
+                } else {
+                    Log.e("ChallengeActivity", "No data loaded from firebase");
+                }
             }
 
             @Override
@@ -154,7 +173,6 @@ public class CorrectWordActivity extends AppCompatActivity {
 
 
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
-        try{
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
@@ -164,7 +182,6 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
-                Log.d("Debug", "isCorrect is true. Calling updateLevel()");
                 CorrectWordActivity.this.updateLevel();
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
@@ -172,15 +189,24 @@ public class CorrectWordActivity extends AppCompatActivity {
                     clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
                     clickedButton.setText("X " + chosenAnswer);
 
-                    // 정답 여부 포함하여 설명 화면으로 이동
+                    if(life > 0) {
+                        life --; //체력 감소
+                        updateHearts(); //하트 상태 업데이트
+                    }
+
+                    // ExplanationActivity로 이동
                     getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
                         @Override
                         public void onExplanationFound(String word, String meaning, String example) {
                             // 정답 여부와 함께 Bundle을 Intent에 추가
                             Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
+
                             bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
-                            intent.putExtras(bundle);  // Bundle을 Intent에 추가하여 ExplanationActivity로 전달
-                            startActivity(intent);
+                            bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
+                            bundle.putBoolean("SHOW_RETRY", life == 0); // 재도전 여부 전달
+
+                            intent.putExtras(bundle);  // 데이터를 Intent에 추가
+                            startActivityForResult(intent, 100); // Activity 결과 대기
                         }
                     });
                 }
@@ -190,9 +216,6 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn2.setOnClickListener(listener);
         btn3.setOnClickListener(listener);
         btn4.setOnClickListener(listener);
-        }catch (Exception e){
-            Log.e("Error", "Exception in setOptionButtonListeners", e);
-        }
     }
 
     private void resetButtons() {
@@ -243,14 +266,19 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     // Word 객체 클래스 정의
     private static class Word {
+        private int number;
         private String word;
         private String meaning;
         private String example;
 
-        public Word(String word, String meaning, String example) {
+        public Word(int number, String word, String meaning, String example) {
+            this.number = number;
             this.word = word;
             this.meaning = meaning;
             this.example = example;
+        }
+        public int getNumber(){
+            return number;
         }
 
         public String getWord() {
@@ -289,6 +317,48 @@ public class CorrectWordActivity extends AppCompatActivity {
     private void updateLevel() {
         currentLevel++;
         levelTextView.setText("Level: " + currentLevel);
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == 100 && resultCode == RESULT_OK) {
+            if (data != null) {
+                if (data.hasExtra("LIFE_REMAINING")) {
+                    life = data.getIntExtra("LIFE_REMAINING", life);
+                    updateHearts();
+                }
+                //다음 문제로 넘어가므로 Level 증가
+                currentLevel++;
+                levelTextView.setText("Level" + currentLevel);
+            }
+            //새로운 문제 로드
+            loadNewQuestion();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent();
+        intent.putExtra("LIFE_REMAINING", life);
+        setResult(RESULT_OK, intent);
+        finish();
+    }
+
+    private void updateHearts() {
+        for (int i=0; i<hearts.length; i++) {
+            if(i<life) {
+                hearts[i].setImageResource(R.drawable.full_life);
+            } else {
+                hearts[i].setImageResource(R.drawable.no_life);
+            }
+        }
+
+        if(life==0) {
+            Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
+            finish();
+        }
+    }
 
         if (currentLevel > highestLevel){
             highestLevel = currentLevel;
