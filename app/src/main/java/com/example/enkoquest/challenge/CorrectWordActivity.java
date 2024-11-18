@@ -50,7 +50,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_correct_word);
 
         //하트 이미지뷰 초기화
-        hearts = new ImageView[] {
+        hearts = new ImageView[]{
                 findViewById(R.id.heart1),
                 findViewById(R.id.heart2),
                 findViewById(R.id.heart3),
@@ -93,16 +93,16 @@ public class CorrectWordActivity extends AppCompatActivity {
                     String word = snapshot.child("단어").getValue(String.class);
                     String meaning = snapshot.child("의미").getValue(String.class);
                     String example = snapshot.child("예제").getValue(String.class);
-                    if(number != null && word != null && meaning != null && example != null) {
+                    if (number != null && word != null && meaning != null && example != null) {
                         wordList.add(new Word(number, word, meaning, example));
                     }
                 }
 
                 Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
-                if(!wordList.isEmpty()) {
-                    loadNewQuestion();
+                if (!wordList.isEmpty()) {
                     // 단어 리스트 셔플하여 중복 없이 랜덤 순서로 출제
                     Collections.shuffle(wordList);
+                    loadNewQuestion();
                 } else {
                     Log.e("ChallengeActivity", "No data loaded from firebase");
                 }
@@ -171,7 +171,6 @@ public class CorrectWordActivity extends AppCompatActivity {
         setOptionButtonListeners(questionWord.getMeaning(), bundle);
     }
 
-
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
@@ -182,15 +181,15 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
-                CorrectWordActivity.this.updateLevel();
+                updateLevel();
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
                     clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
                     clickedButton.setText("X " + chosenAnswer);
 
-                    if(life > 0) {
-                        life --; //체력 감소
+                    if (life > 0) {
+                        life--; //체력 감소
                         updateHearts(); //하트 상태 업데이트
                     }
 
@@ -277,7 +276,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             this.meaning = meaning;
             this.example = example;
         }
-        public int getNumber(){
+
+        public int getNumber() {
             return number;
         }
 
@@ -308,28 +308,33 @@ public class CorrectWordActivity extends AppCompatActivity {
                     Toast.makeText(CorrectWordActivity.this, "저장 완료", Toast.LENGTH_SHORT).show();
                     Log.d("ChallengeActivity", "저장 완료" + challengLevel); // 저장 완료시 표시 (나중에 삭제 하면 됨)
                 })
-                .addOnFailureListener(e ->{
+                .addOnFailureListener(e -> {
                     Toast.makeText(CorrectWordActivity.this, "저장 실패", Toast.LENGTH_SHORT).show();
                     Log.e("ChallengeActivity", "저장 실패", e);
                 });
     }
 
     private void updateLevel() {
+        //다음 문제로 넘어가므로 Level 증가
         currentLevel++;
-        levelTextView.setText("Level: " + currentLevel);
+        levelTextView.setText("Level" + currentLevel);
+        if (currentLevel > highestLevel) {
+            highestLevel = currentLevel;
+            saveChallengeLevel(highestLevel - 1);
+        }
+        loadNewQuestion();
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == 100 && resultCode == RESULT_OK) {
+        if (requestCode == 100 && resultCode == RESULT_OK) {
             if (data != null) {
                 if (data.hasExtra("LIFE_REMAINING")) {
                     life = data.getIntExtra("LIFE_REMAINING", life);
                     updateHearts();
                 }
-                //다음 문제로 넘어가므로 Level 증가
-                currentLevel++;
-                levelTextView.setText("Level" + currentLevel);
             }
             //새로운 문제 로드
             loadNewQuestion();
@@ -346,25 +351,17 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void updateHearts() {
-        for (int i=0; i<hearts.length; i++) {
-            if(i<life) {
+        for (int i = 0; i < hearts.length; i++) {
+            if (i < life) {
                 hearts[i].setImageResource(R.drawable.full_life);
             } else {
                 hearts[i].setImageResource(R.drawable.no_life);
             }
         }
 
-        if(life==0) {
+        if (life == 0) {
             Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
             finish();
         }
-    }
-
-        if (currentLevel > highestLevel){
-            highestLevel = currentLevel;
-            saveChallengeLevel(highestLevel);
-        }
-
-        loadNewQuestion();
     }
 }
