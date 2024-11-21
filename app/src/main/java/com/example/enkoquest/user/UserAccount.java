@@ -1,5 +1,7 @@
 package com.example.enkoquest.user;
 
+import java.util.Map;
+
 public class UserAccount {
     private String idToken; // Firebase UID
     private String nickname;
@@ -7,6 +9,7 @@ public class UserAccount {
     private String tel;
     private String selfProduce;
     private int challengeLevel;
+    private Map<String, String> wrongNotes;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
     public UserAccount() {
@@ -15,13 +18,15 @@ public class UserAccount {
     // 매개변수를 받는 생성자
     public UserAccount(String idToken, String nickname
             , String email, String tel
-            , String selfProduce, int challengeLevel) {
+            , String selfProduce, int challengeLevel
+            , Map<String, String> wrongNotes) {
         this.idToken = idToken;
         this.nickname = nickname;
         this.email = email;
         this.tel = tel;
         this.selfProduce = selfProduce;
         this.challengeLevel = challengeLevel;
+        this.wrongNotes = wrongNotes;
     }
 
     // Getter와 Setter
@@ -71,5 +76,9 @@ public class UserAccount {
 
     public void setChallengeLevel(int challengeLevel) {
         this.challengeLevel = challengeLevel;
+    }
+
+    public void setWrongNotes(Map<String, String> wrongNotes){
+        this.wrongNotes = wrongNotes;
     }
 }

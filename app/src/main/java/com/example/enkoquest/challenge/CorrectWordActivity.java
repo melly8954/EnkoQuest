@@ -43,6 +43,8 @@ public class CorrectWordActivity extends AppCompatActivity {
     private int life = 5;
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private int highestLevel = 0;
+    private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
+    private String saveKey;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,8 +133,8 @@ public class CorrectWordActivity extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     if (dataSnapshot.exists()) {
                         highestLevel = dataSnapshot.getValue(Integer.class);
-                        if (highestLevel == 0) {
-                            highestLevel = 1; // challengeLevel이 없으면 기본값 1로 설정
+                        if (highestLevel == 0 ) {
+                            highestLevel = 1;
                         }
                     } else {
                         highestLevel = 1;
@@ -161,6 +163,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         Word questionWord = wordList.get(currentQuestionIndex);
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
         textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
+        saveKey = textView.getText().toString();
 
         List<Pair<String, Word>> pairedOptions = new ArrayList<>();
         pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
@@ -204,6 +207,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
+        FirebaseUser firebaseUser = auth.getCurrentUser();
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
@@ -225,6 +229,13 @@ public class CorrectWordActivity extends AppCompatActivity {
                         updateHearts(); //하트 상태 업데이트
                     }
 
+                    Word questionWord = wordList.get(currentQuestionIndex);
+                    String userId = firebaseUser.getUid();
+                    String word = saveKey;
+                    String answer = correctAnswer;
+
+                    wrongWord(userId, word, answer);
+
                     // ExplanationActivity로 이동
                     getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
                         @Override
@@ -243,6 +254,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                 }
             }
         };
+
         btn1.setOnClickListener(listener);
         btn2.setOnClickListener(listener);
         btn3.setOnClickListener(listener);
@@ -388,6 +400,24 @@ public class CorrectWordActivity extends AppCompatActivity {
         if (life == 0) {
             Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
             finish();
+        }
+    }
+
+    private void wrongWord(String userId, String word, String answer) {
+        DatabaseReference userRef = databaseReference.child(userId).child("mistakeNotes");
+
+        String key = databaseReference.push().getKey();
+
+        if (key != null) {
+            userRef.child(word).setValue(answer)
+                    .addOnSuccessListener(aVoid -> {
+                        // 성공 시 처리
+                        Log.d("Firebase", "단어 저장 성공: " + word);
+                    })
+                    .addOnFailureListener(e -> {
+                        // 실패 시 처리
+                        Log.e("Firebase", "단어 저장 실패", e);
+                    });
         }
     }
 }
