@@ -44,6 +44,9 @@ public class CorrectWordActivity extends AppCompatActivity {
     private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
     private String saveKey;
 
+    // pairedOptions를 전역변수로 선언
+    private List<Pair<String, Word>> pairedOptions = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -163,7 +166,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
         saveKey = textView.getText().toString();
 
-        List<Pair<String, Word>> pairedOptions = new ArrayList<>();
+        pairedOptions.clear(); // 이전 질문에 대한 옵션 리스트 초기화
         pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
 
         // 다른 의미들 추가
@@ -212,6 +215,35 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 정답 여부 확인
             boolean isCorrect = chosenAnswer.equals(correctAnswer);
+
+            // 선택한 버튼 번호 가져오기
+            String chosenOptionNumber;
+            String correctOptionNumber;
+            if (v == btn1) {
+                chosenOptionNumber = "1";
+            } else if (v == btn2) {
+                chosenOptionNumber = "2";
+            } else if (v == btn3) {
+                chosenOptionNumber = "3";
+            } else {
+                chosenOptionNumber = "4";
+            }
+
+            // 정답 번호 설정
+            if (correctAnswer.equals(pairedOptions.get(0).first)) {
+                correctOptionNumber = "1";
+            } else if (correctAnswer.equals(pairedOptions.get(1).first)) {
+                correctOptionNumber = "2";
+            } else if (correctAnswer.equals(pairedOptions.get(2).first)) {
+                correctOptionNumber = "3";
+            } else {
+                correctOptionNumber = "4";
+            }
+
+            // `myAnswer`로 사용자의 선택 추가
+            bundle.putString("MY_ANSWER", chosenOptionNumber);
+
+            bundle.putString("CORRECT_ANSWER", correctOptionNumber);
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {

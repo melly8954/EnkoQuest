@@ -232,7 +232,29 @@
             android:text="예시 4: 예시 예제"
             android:textColor="#000" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
+        <TextView
+            android:id="@+id/myAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="내가 고른 번호 : "
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/correctAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:text="옳은 번호 : "
+            android:textColor="#000" />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

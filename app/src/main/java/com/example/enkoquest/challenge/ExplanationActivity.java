@@ -13,6 +13,7 @@ import com.example.enkoquest.R;
 
 public class ExplanationActivity extends AppCompatActivity {
     Button retryButton, moveMainButton;
+    TextView myAnswer,correctAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class ExplanationActivity extends AppCompatActivity {
         retryButton = findViewById(R.id.retryButton);
         moveMainButton = findViewById(R.id.moveMainButton);
         Button nextButton = findViewById(R.id.nextButton); //다음으로 버튼 추가
+        myAnswer = findViewById(R.id.myAnswer);
+        correctAnswer = findViewById(R.id.correctAnswer);
 
         retryButton.setVisibility(View.GONE);
         moveMainButton.setVisibility(View.GONE);
@@ -71,6 +74,14 @@ public class ExplanationActivity extends AppCompatActivity {
             setUpExplanationView(R.id.explanationWord3, R.id.explanationMeaning3, R.id.explanationExample3, R.id.explanationAnswerStatus3, word3, meaning3, example3, isCorrect3);
             setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4, word4, meaning4, example4, isCorrect4);
         }
+        // 선택한 답변과 정답 가져오기
+        String chosen = bundle.getString("MY_ANSWER"); // 사용자가 선택한 답변
+        String correct = bundle.getString("CORRECT_ANSWER"); // 정답
+
+        // 선택한 답변과 정답을 표시
+        myAnswer.setText("선택한 답변: " + chosen);
+        correctAnswer.setText("정답: " + correct);
+
         retryButton.setOnClickListener(v -> {
             Intent intent = new Intent(ExplanationActivity.this, CorrectWordActivity.class);
             finish();
