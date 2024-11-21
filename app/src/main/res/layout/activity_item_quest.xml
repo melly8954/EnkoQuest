@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="8dp">
 
-    <LinearLayout
-        android:layout_width="0dp"
+    <!-- 퀘스트 제목 -->
+    <TextView
+        android:id="@+id/questTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:text="퀘스트 제목"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true" />
 
-        <TextView
-            android:id="@+id/questTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="퀘스트 제목"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <!-- 퀘스트 설명 -->
+    <TextView
+        android:id="@+id/questDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questTitle"
+        android:layout_marginTop="4dp"
+        android:text="퀘스트 설명"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
 
-        <TextView
-            android:id="@+id/questDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="퀘스트 설명"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp" />
-    </LinearLayout>
-
+    <!-- 보상 버튼 -->
     <Button
         android:id="@+id/rewardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="보상받기"
-        android:enabled="false" />
-</LinearLayout>
+        android:layout_alignParentEnd="true"
+        android:text="보상 받기"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:enabled="false" /> <!-- 기본 비활성화 상태 -->
+</RelativeLayout>

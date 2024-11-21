@@ -5,21 +5,40 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- RecyclerView for Quest List -->
+    <!-- 상단 타이틀 -->
+    <TextView
+        android:id="@+id/dailyQuestTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="일일 퀘스트"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 퀘스트 리스트 -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/questRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_below="@+id/dailyQuestTitle"
+        android:layout_above="@+id/collectAllButton"
+        android:layout_margin="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"/>
 
-    <!-- Button for "Collect All Rewards" -->
+    <!-- 일괄 수령 버튼 -->
     <Button
         android:id="@+id/collectAllButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
         android:text="일괄 수령"
         android:backgroundTint="@color/purple_500"
         android:textColor="@android:color/white"
+        android:textSize="16sp"
         android:enabled="false" />
 </LinearLayout>
