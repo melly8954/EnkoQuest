@@ -6,11 +6,13 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.R;
@@ -30,7 +32,7 @@ import java.util.Random;
 public class BlankActivity extends AppCompatActivity {
 
     private TextView wordTextView, levelTextView;
-    private Button optionButton1, optionButton2, optionButton3, optionButton4;
+    private Button optionButton1, optionButton2, optionButton3, optionButton4,blankRetryButton,blankHomeButton;
     private ImageButton imageButtonBack;
 
     private FirebaseAuth auth;
@@ -39,6 +41,9 @@ public class BlankActivity extends AppCompatActivity {
     private int currentLevel = 1;
     private int highestLevel = 0;
 
+    // 챌린지 하트
+    private ImageView[] hearts;
+    private int life = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +59,21 @@ public class BlankActivity extends AppCompatActivity {
         optionButton3 = findViewById(R.id.optionButton3);
         optionButton4 = findViewById(R.id.optionButton4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
+        blankRetryButton = findViewById(R.id.blankRetryButton);
+        blankHomeButton = findViewById(R.id.blankHomeButton);
+
 
         // Firebase 초기화
         auth = FirebaseAuth.getInstance();
+
+        //하트 이미지뷰 초기화
+        hearts = new ImageView[]{
+                findViewById(R.id.heart1),
+                findViewById(R.id.heart2),
+                findViewById(R.id.heart3),
+                findViewById(R.id.heart4),
+                findViewById(R.id.heart5)
+        };
 
         // Firebase에서 문제와 선택지 가져오기
         fetchExampleFromFirebase();
@@ -67,6 +84,18 @@ public class BlankActivity extends AppCompatActivity {
         optionButton3.setOnClickListener(view -> checkAnswer(optionButton3));
         optionButton4.setOnClickListener(view -> checkAnswer(optionButton4));
         imageButtonBack.setOnClickListener(view -> {
+            Intent intent = new Intent(this, EngGmActivity.class);
+            startActivity(intent);
+        });
+
+        blankRetryButton.setVisibility(View.GONE);
+        blankHomeButton.setVisibility(View.GONE);
+
+        blankRetryButton.setOnClickListener(view -> {
+            Intent intent = new Intent(this, BlankActivity.class);
+            startActivity(intent);
+        });
+        blankHomeButton.setOnClickListener(view -> {
             Intent intent = new Intent(this, EngGmActivity.class);
             startActivity(intent);
         });
@@ -155,15 +184,24 @@ public class BlankActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(selectedAnswer)) {
             Toast.makeText(this, "답을 선택하세요.", Toast.LENGTH_SHORT).show();
         } else if (selectedAnswer.equalsIgnoreCase(correctWord)) {
-            Toast.makeText(this, "정답입니다!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "정답입니다! 다음 문제로 넘어갑니다.", Toast.LENGTH_SHORT).show();
             updateLevel();
         } else {
             // 틀린 답일 때 버튼 배경 색 변경 및 "X " 추가 (이미 "X "가 추가되지 않도록 체크)
             if (!selectedAnswer.startsWith("X ")) {
                 selectedOption.setText("X " + selectedAnswer);  // "X " 추가
             }
-            selectedOption.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));  // 빨간색 배경
-            Toast.makeText(this, "틀렸습니다. 다시 시도하세요.", Toast.LENGTH_SHORT).show();
+            if(life > 0){
+                if(life >1){
+                    fetchExampleFromFirebase();
+                }
+                life--; //체력 감소
+
+                selectedOption.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));  // 빨간색 배경
+                Toast.makeText(this, "틀렸습니다. 다음 문제로 넘어갑니다.", Toast.LENGTH_SHORT).show();
+
+                updateHearts(); //하트 상태 업데이트
+            }
         }
     }
 
@@ -191,6 +229,7 @@ public class BlankActivity extends AppCompatActivity {
             saveChallengeLevel(highestLevel - 1);
         }
         fetchExampleFromFirebase();
+
     }
 
     // 버튼 상태 초기화
@@ -198,11 +237,38 @@ public class BlankActivity extends AppCompatActivity {
         // 각 버튼의 배경색을 원래대로 돌려놓고, 텍스트에서 "X"를 제거
         Button[] optionButtons = {optionButton1, optionButton2, optionButton3, optionButton4};
         for (Button button : optionButtons) {
-            button.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 원래 배경 색으로 설정
+            button.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 배경 색 설정
             String text = button.getText().toString();
             if (text.startsWith("X ")) {
                 button.setText(text.substring(2)); // "X " 제거
             }
+        }
+    }
+
+    private void updateHearts() {
+        for (int i = 0; i < hearts.length; i++) {
+            if (i < life) {
+                hearts[i].setImageResource(R.drawable.full_life);
+            } else {
+                hearts[i].setImageResource(R.drawable.no_life);
+            }
+        }
+        if (life == 0) {
+            Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
+            //하트가 모두 소진되는 경우
+            blankRetryButton.setVisibility(View.VISIBLE);
+            blankHomeButton.setVisibility(View.VISIBLE);
+
+            // 선택지 버튼 비활성화
+            disableOptionButtons();
+        }
+    }
+
+    private void disableOptionButtons() {
+        Button[] optionButtons = {optionButton1, optionButton2, optionButton3, optionButton4};
+        for (Button button : optionButtons) {
+            button.setEnabled(false);
+            button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.darker_gray));
         }
     }
 }
