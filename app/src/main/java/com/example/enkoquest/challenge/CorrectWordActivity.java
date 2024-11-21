@@ -396,10 +396,8 @@ public class CorrectWordActivity extends AppCompatActivity {
                 hearts[i].setImageResource(R.drawable.no_life);
             }
         }
-
         if (life == 0) {
             Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
-            finish();
         }
     }
 
