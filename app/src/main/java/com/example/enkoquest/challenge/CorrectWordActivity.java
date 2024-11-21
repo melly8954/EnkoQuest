@@ -16,8 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.enkoquest.ExplanationActivity;
 import com.example.enkoquest.R;
-import com.example.enkoquest.SelectWordActivity;
-import com.example.enkoquest.user.UserAccount;
+import com.example.enkoquest.selectWordActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -76,7 +75,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, SelectWordActivity.class);
+            Intent intent = new Intent(this, selectWordActivity.class);
             startActivity(intent);
         });
 

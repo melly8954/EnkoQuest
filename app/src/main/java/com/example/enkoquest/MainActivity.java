@@ -12,7 +12,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.challenge.CorrectWordActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -82,11 +81,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         if (view.getId() == R.id.buttonChallengeMode) {
-            Intent intent = new Intent(this, SelectWordActivity.class);
+            Intent intent = new Intent(this, selectWordActivity.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.buttonStoryMode) {
-            Intent intent = new Intent(MainActivity.this, SelectWordActivity.class);
+            Intent intent = new Intent(MainActivity.this, selectWordActivity.class);
             startActivity(intent);
         }
     }

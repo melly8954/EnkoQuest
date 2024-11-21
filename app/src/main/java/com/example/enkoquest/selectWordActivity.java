@@ -12,9 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.challenge.CorrectWordActivity;
-
-public class SelectWordActivity extends AppCompatActivity implements View
+public class selectWordActivity extends AppCompatActivity implements View
 
         .OnClickListener {
 
@@ -31,8 +29,8 @@ public class SelectWordActivity extends AppCompatActivity implements View
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btn1 = findViewById(R.id.buttonStoryKor);
-        btn2 = findViewById(R.id.buttonStoryEng);
+        btn1 = findViewById(R.id.buttonKor);
+        btn2 = findViewById(R.id.buttonEng);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         btn1.setOnClickListener(this);
@@ -42,8 +40,8 @@ public class SelectWordActivity extends AppCompatActivity implements View
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.buttonStoryEng) {
-            Intent intent = new Intent(this, CorrectWordActivity.class);
+        if (view.getId() == R.id.buttonEng) {
+            Intent intent = new Intent(this, EngGmActivity.class);
             startActivity(intent);
         }
     }
