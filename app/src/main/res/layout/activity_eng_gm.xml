@@ -18,6 +18,7 @@
         android:textSize="32sp"
         android:textColor="#FFFFFF"
         android:gravity="center"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp" />
 
     <!-- 두 번째 박스: "영어 게임모드" -->

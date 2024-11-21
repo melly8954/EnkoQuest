@@ -16,7 +16,7 @@
             android:name=".EngGmActivity"
             android:exported="false" />
         <activity
-            android:name=".ExplanationActivity"
+            android:name=".challenge.ExplanationActivity"
             android:exported="false" />
         <activity
             android:name=".user.ChangePwActivity"

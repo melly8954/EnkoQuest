@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.enkoquest.ExplanationActivity;
+import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.R;
 import com.example.enkoquest.selectWordActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -75,7 +75,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, selectWordActivity.class);
+            Intent intent = new Intent(this, EngGmActivity.class);
             startActivity(intent);
         });
 

@@ -1,4 +1,4 @@
-package com.example.enkoquest;
+package com.example.enkoquest.challenge;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.enkoquest.challenge.CorrectWordActivity;
+import com.example.enkoquest.MainActivity;
+import com.example.enkoquest.R;
 
 public class ExplanationActivity extends AppCompatActivity {
     Button retryButton, moveMainButton;
