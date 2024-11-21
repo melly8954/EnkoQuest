@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal">
+
         <ImageButton
             android:id="@+id/imageButtonBack"
             android:layout_width="53dp"
@@ -22,6 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"

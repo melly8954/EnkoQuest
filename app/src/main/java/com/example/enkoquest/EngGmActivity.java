@@ -2,13 +2,11 @@ package com.example.enkoquest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.enkoquest.challenge.BlankActivity;
 import com.example.enkoquest.challenge.CorrectWordActivity;
@@ -17,6 +15,7 @@ public class EngGmActivity extends AppCompatActivity {
 
     TextView wordMatching;
     TextView fillInTheBlank;
+    ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +32,12 @@ public class EngGmActivity extends AppCompatActivity {
         fillInTheBlank = findViewById(R.id.fillInTheBlank);
         fillInTheBlank.setOnClickListener(v -> {
             Intent intent = new Intent(this, BlankActivity.class);
+            startActivity(intent);
+        });
+
+        imageButtonBack = findViewById(R.id.imageButtonBack);
+        imageButtonBack.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SelectWordActivity.class);
             startActivity(intent);
         });
 

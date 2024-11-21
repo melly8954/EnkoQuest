@@ -81,11 +81,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         if (view.getId() == R.id.buttonChallengeMode) {
-            Intent intent = new Intent(this, selectWordActivity.class);
+            Intent intent = new Intent(this, SelectWordActivity.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.buttonStoryMode) {
-            Intent intent = new Intent(MainActivity.this, selectWordActivity.class);
+            Intent intent = new Intent(MainActivity.this, SelectWordActivity.class);
             startActivity(intent);
         }
     }
