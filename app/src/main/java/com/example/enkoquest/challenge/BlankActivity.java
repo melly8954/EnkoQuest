@@ -155,14 +155,14 @@ public class BlankActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(selectedAnswer)) {
             Toast.makeText(this, "답을 선택하세요.", Toast.LENGTH_SHORT).show();
         } else if (selectedAnswer.equalsIgnoreCase(correctWord)) {
-            selectedOption.setText("O " + selectedAnswer); // "X " 추가
             Toast.makeText(this, "정답입니다!", Toast.LENGTH_SHORT).show();
             updateLevel();
         } else {
-            // 틀린 답일 때 버튼 배경 색 변경 및 "X " 추가
-            selectedOption.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
-            selectedOption.setText("X " + selectedAnswer); // "X " 추가
-
+            // 틀린 답일 때 버튼 배경 색 변경 및 "X " 추가 (이미 "X "가 추가되지 않도록 체크)
+            if (!selectedAnswer.startsWith("X ")) {
+                selectedOption.setText("X " + selectedAnswer);  // "X " 추가
+            }
+            selectedOption.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));  // 빨간색 배경
             Toast.makeText(this, "틀렸습니다. 다시 시도하세요.", Toast.LENGTH_SHORT).show();
         }
     }
