@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#EDECE8"
-    tools:context=".challenge.CorrectWordActivity">
+    tools:context=".challenge.BlankActivity">
 
     <!-- 상단 안내 문구 영역 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal">
-
         <ImageButton
             android:id="@+id/imageButtonBack"
             android:layout_width="53dp"
@@ -23,18 +22,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="다음 단어의 뜻으로 알맞은 것은?"
+            android:text="빈칸에 들어갈 단어를 고르세요."
             android:textSize="25sp"
             android:paddingStart="10dp"/>
     </LinearLayout>
 
-    <!-- 문제 텍스트를 표시하는 영역 -->
+    <!-- 문제 텍스트를 표시하는 영역 (빈칸을 만들기 위한 TextView) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,7 +47,7 @@
             android:autoSizeStepGranularity="3sp"
             android:autoSizeTextType="uniform"
             android:gravity="center"
-            android:text="@string/word_text"
+            android:text="examples of _____ finally."
             android:textColor="#000" />
     </LinearLayout>
 
@@ -68,41 +66,9 @@
             android:textSize="18sp"
             android:textColor="#000"
             android:layout_marginEnd="16dp" />
-        <ImageView
-            android:id="@+id/heart1"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
-
-        <ImageView
-            android:id="@+id/heart2"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
-
-        <ImageView
-            android:id="@+id/heart3"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
-
-        <ImageView
-            android:id="@+id/heart4"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
-
-        <ImageView
-            android:id="@+id/heart5"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/full_life" />
     </LinearLayout>
 
+    <!-- 선택지 영역 (버튼으로 옳은 단어 선택) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -130,7 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp"
+                android:text="option1" />
         </LinearLayout>
 
         <!-- 두 번째 선택지 -->
@@ -154,7 +121,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp"
+                android:text="option2" />
         </LinearLayout>
 
         <!-- 세 번째 선택지 -->
@@ -178,7 +146,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp"
+                android:text="option3" />
         </LinearLayout>
 
         <!-- 네 번째 선택지 -->
@@ -202,7 +171,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp"
+                android:text="option4" />
         </LinearLayout>
     </LinearLayout>
 

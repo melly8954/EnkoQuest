@@ -14,10 +14,8 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.enkoquest.ExplanationActivity;
+import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.R;
-import com.example.enkoquest.SelectWordActivity;
-import com.example.enkoquest.user.UserAccount;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -43,6 +41,11 @@ public class CorrectWordActivity extends AppCompatActivity {
     private int life = 5;
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private int highestLevel = 0;
+    private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
+    private String saveKey;
+
+    // pairedOptions를 전역변수로 선언
+    private List<Pair<String, Word>> pairedOptions = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +77,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, SelectWordActivity.class);
+            Intent intent = new Intent(this, EngGmActivity.class);
             startActivity(intent);
         });
 
@@ -131,8 +134,8 @@ public class CorrectWordActivity extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     if (dataSnapshot.exists()) {
                         highestLevel = dataSnapshot.getValue(Integer.class);
-                        if (highestLevel == 0) {
-                            highestLevel = 1; // challengeLevel이 없으면 기본값 1로 설정
+                        if (highestLevel == 0 ) {
+                            highestLevel = 1;
                         }
                     } else {
                         highestLevel = 1;
@@ -161,8 +164,9 @@ public class CorrectWordActivity extends AppCompatActivity {
         Word questionWord = wordList.get(currentQuestionIndex);
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
         textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
+        saveKey = textView.getText().toString();
 
-        List<Pair<String, Word>> pairedOptions = new ArrayList<>();
+        pairedOptions.clear(); // 이전 질문에 대한 옵션 리스트 초기화
         pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
 
         // 다른 의미들 추가
@@ -204,12 +208,42 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
+        FirebaseUser firebaseUser = auth.getCurrentUser();
         View.OnClickListener listener = v -> {
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
 
             // 정답 여부 확인
             boolean isCorrect = chosenAnswer.equals(correctAnswer);
+
+            // 선택한 버튼 번호 가져오기
+            String chosenOptionNumber;
+            String correctOptionNumber;
+            if (v == btn1) {
+                chosenOptionNumber = "1";
+            } else if (v == btn2) {
+                chosenOptionNumber = "2";
+            } else if (v == btn3) {
+                chosenOptionNumber = "3";
+            } else {
+                chosenOptionNumber = "4";
+            }
+
+            // 정답 번호 설정
+            if (correctAnswer.equals(pairedOptions.get(0).first)) {
+                correctOptionNumber = "1";
+            } else if (correctAnswer.equals(pairedOptions.get(1).first)) {
+                correctOptionNumber = "2";
+            } else if (correctAnswer.equals(pairedOptions.get(2).first)) {
+                correctOptionNumber = "3";
+            } else {
+                correctOptionNumber = "4";
+            }
+
+            // `myAnswer`로 사용자의 선택 추가
+            bundle.putString("MY_ANSWER", chosenOptionNumber);
+
+            bundle.putString("CORRECT_ANSWER", correctOptionNumber);
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
@@ -225,6 +259,13 @@ public class CorrectWordActivity extends AppCompatActivity {
                         life--; //체력 감소
                         updateHearts(); //하트 상태 업데이트
                     }
+
+                    Word questionWord = wordList.get(currentQuestionIndex);
+                    String userId = firebaseUser.getUid();
+                    String word = saveKey;
+                    String answer = correctAnswer;
+
+                    wrongWord(userId, word, answer);
 
                     // ExplanationActivity로 이동
                     getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
@@ -244,6 +285,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                 }
             }
         };
+
         btn1.setOnClickListener(listener);
         btn2.setOnClickListener(listener);
         btn3.setOnClickListener(listener);
@@ -385,10 +427,26 @@ public class CorrectWordActivity extends AppCompatActivity {
                 hearts[i].setImageResource(R.drawable.no_life);
             }
         }
-
         if (life == 0) {
             Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
-            finish();
+        }
+    }
+
+    private void wrongWord(String userId, String word, String answer) {
+        DatabaseReference userRef = databaseReference.child(userId).child("mistakeNotes");
+
+        String key = databaseReference.push().getKey();
+
+        if (key != null) {
+            userRef.child(word).setValue(answer)
+                    .addOnSuccessListener(aVoid -> {
+                        // 성공 시 처리
+                        Log.d("Firebase", "단어 저장 성공: " + word);
+                    })
+                    .addOnFailureListener(e -> {
+                        // 실패 시 처리
+                        Log.e("Firebase", "단어 저장 실패", e);
+                    });
         }
     }
 }
