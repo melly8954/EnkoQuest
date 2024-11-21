@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.MainActivity;
 import com.example.enkoquest.R;
 
@@ -89,7 +90,7 @@ public class ExplanationActivity extends AppCompatActivity {
         });
 
         moveMainButton.setOnClickListener(v -> {
-            Intent intent = new Intent(ExplanationActivity.this, MainActivity.class);
+            Intent intent = new Intent(ExplanationActivity.this, EngGmActivity.class);
             finish();
             startActivity(intent);
         });

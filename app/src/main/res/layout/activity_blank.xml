@@ -66,6 +66,39 @@
             android:textSize="18sp"
             android:textColor="#000"
             android:layout_marginEnd="16dp" />
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/full_life" />
     </LinearLayout>
 
     <!-- 선택지 영역 (버튼으로 옳은 단어 선택) -->
@@ -173,6 +206,32 @@
                 android:gravity="center_vertical"
                 android:paddingStart="20dp"
                 android:text="option4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <Button
+                android:id="@+id/blankRetryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="재도전"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/blankHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="메인으로 가기"
+                android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
 
