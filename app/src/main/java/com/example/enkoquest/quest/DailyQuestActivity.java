@@ -48,7 +48,7 @@ public class DailyQuestActivity extends AppCompatActivity {
         questRecyclerView.setAdapter(questAdapter);
 
         //Firebase에서 "DailyQuests" 노드 참조
-        databaseReference = FirebaseDatabase.getInstance().getReference("DailyQuests");
+        databaseReference = FirebaseDatabase.getInstance().getReference("DailyQuests/quests");
 
         //Firebase에서 퀘스트 데이터 로드
         loadQuestsFromFirebase();
@@ -87,14 +87,14 @@ public class DailyQuestActivity extends AppCompatActivity {
         //리스트에서 해당 퀘스트 가져오기
         Quest quest = questList.get(position);
         //퀘스트 상태가 완료인 상태에만 보상 수령 가능
-        if(quest.getStatus().equals("completed")) {
+        if("completed".equals(quest.getStatus())) {
             //퀘스트 상태를 rewarded로 변경
             quest.setStatus("rewarded");
             //Firebase 업데이트
             databaseReference.child(quest.getId()).child("status").setValue("rewarded");
             questAdapter.notifyItemChanged(position);
             updateCollectAllButtonState();
-            Toast.makeText(DailyQuestActivity.this, quest.getTitle() + "보상을 받았습니다!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, quest.getTitle() + "보상을 받았습니다!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -102,7 +102,7 @@ public class DailyQuestActivity extends AppCompatActivity {
     private void collectAllRewards() {
         boolean collectedAny = false; //보상 수령 여부 추적
         for(Quest quest : questList) {
-            if(quest.getStatus().equals("completed")) { //상태가 "completed" 이면
+            if("completed".equals(quest.getStatus())) { //상태가 "completed" 이면
                 quest.setStatus("rewarded"); //상태를 "rewarded"로 변경
                 databaseReference.child(quest.getId()).child("status").setValue("rewarded"); //Firebase 업데이트
                 collectedAny = true; //보상을 수령한 것으로 변경
@@ -111,7 +111,7 @@ public class DailyQuestActivity extends AppCompatActivity {
         if(collectedAny) { //보상이 하나 이상 수령된 경우
             questAdapter.notifyDataSetChanged(); //전쳬 UI 업데이트
             updateCollectAllButtonState(); //버튼 상태 업데이트
-            Toast.makeText(DailyQuestActivity.this, "모든 보상을 수령했습니다!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "모든 보상을 수령했습니다!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -119,44 +119,11 @@ public class DailyQuestActivity extends AppCompatActivity {
     private void updateCollectAllButtonState() {
         boolean hasCollectible = false; //수령 가능한 보상 있는지 추적
         for (Quest quest : questList) {
-            if(quest.getStatus().equals("completed")) { //완료된 퀘스트가 있을 경우
+            if("completed".equals(quest.getStatus())) { //완료된 퀘스트가 있을 경우
                 hasCollectible = true;
                 break;
             }
         }
         collectAllButton.setEnabled(hasCollectible); //"일괄 수령" 버튼 활성화/비활성화
-    }
-
-    private void fetchQuestsFromFirebase() {
-        databaseReference = FirebaseDatabase.getInstance().getReference("DailyQuests/quests");
-
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                questList.clear();
-
-                for(DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    //Firebase에서 데이터를 Quest 객체로 매핑
-                    Quest quest = snapshot.getValue(Quest.class);
-
-                    //유효한 데이터만 추가
-                    if(quest != null) {
-                        questList.add(quest);
-                    }
-                }
-
-                //어댑터에 데이터 변경 알림
-                questAdapter.notifyDataSetChanged();
-
-                //버튼 활성화 상태 업데이트
-                updateCollectAllButtonState();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                //오류 처리
-                Toast.makeText(DailyQuestActivity.this, "퀘스트 데이터를 불러올 수 없습니다.", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }
