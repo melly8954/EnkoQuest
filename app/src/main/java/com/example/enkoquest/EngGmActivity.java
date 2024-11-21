@@ -10,11 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.challenge.BlankActivity;
 import com.example.enkoquest.challenge.CorrectWordActivity;
 
 public class EngGmActivity extends AppCompatActivity {
 
     TextView wordMatching;
+    TextView fillInTheBlank;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +29,14 @@ public class EngGmActivity extends AppCompatActivity {
             Intent intent = new Intent(this, CorrectWordActivity.class);
             startActivity(intent);
         });
+
+        fillInTheBlank = findViewById(R.id.fillInTheBlank);
+        fillInTheBlank.setOnClickListener(v -> {
+            Intent intent = new Intent(this, BlankActivity.class);
+            startActivity(intent);
+        });
+
+
+
     }
 }
