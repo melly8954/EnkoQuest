@@ -213,6 +213,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
+                //정답일 경우 레벨을 증가시키고 다음 문제로 이동
                 updateLevel();
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView for Quest List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/questRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Button for "Collect All Rewards" -->
+    <Button
+        android:id="@+id/collectAllButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="일괄 수령"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:enabled="false" />
+</LinearLayout>
