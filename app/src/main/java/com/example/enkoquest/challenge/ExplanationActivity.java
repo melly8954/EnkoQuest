@@ -79,7 +79,7 @@ public class ExplanationActivity extends AppCompatActivity {
         String correct = bundle.getString("CORRECT_ANSWER"); // 정답
 
         // 선택한 답변과 정답을 표시
-        myAnswer.setText("선택한 답변: " + chosen);
+        myAnswer.setText("내가 선택한 답변: " + chosen);
         correctAnswer.setText("정답: " + correct);
 
         retryButton.setOnClickListener(v -> {
