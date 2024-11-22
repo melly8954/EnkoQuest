@@ -58,7 +58,22 @@
         android:layout_marginEnd="16dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="41dp" />
+        tools:layout_editor_absoluteY="41dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/questButton"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        android:src="@drawable/quest"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/purple_500" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

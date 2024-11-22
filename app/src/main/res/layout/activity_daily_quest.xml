@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 상단 타이틀 -->
+    <TextView
+        android:id="@+id/dailyQuestTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="일일 퀘스트"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 퀘스트 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/questRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- 일괄 수령 버튼 -->
+    <Button
+        android:id="@+id/collectAllButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="일괄 수령"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:enabled="false" />
+</LinearLayout>
