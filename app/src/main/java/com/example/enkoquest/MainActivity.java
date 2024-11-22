@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -19,7 +18,6 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn01, btn02, btn03, buttonMoveLogin;
-    ImageButton buttonQuest;
     FirebaseAuth mAuth;
     FirebaseUser user;
 
@@ -38,16 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn02 = findViewById(R.id.buttonChallengeMode);
         btn03 = findViewById(R.id.buttonStoryMode);
         buttonMoveLogin = findViewById(R.id.buttonMoveLogin);
-        buttonQuest = findViewById(R.id.questButton);
 
         btn01.setOnClickListener(this);
         btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
-
-        buttonQuest.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, DailyQuestActivity.class);
-            startActivity(intent);
-        });
 
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();  // 로그인 상태를 확인

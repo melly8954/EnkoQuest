@@ -60,21 +60,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="41dp" />
 
-    <ImageButton
-        android:id="@+id/questButton"
-        android:layout_width="70dp"
-        android:layout_height="52dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="40dp"
-        android:adjustViewBounds="true"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="퀘스트"
-        android:scaleType="centerInside"
-        android:src="@drawable/quest"
-        app:tint="@color/purple_500"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="5dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
