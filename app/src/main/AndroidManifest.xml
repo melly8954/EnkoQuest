@@ -13,13 +13,16 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".challenge.BlankExplanation"
+            android:exported="false" />
+        <activity
             android:name=".challenge.BlankActivity"
             android:exported="false" />
         <activity
             android:name=".EngGmActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.ExplanationActivity"
+            android:name=".challenge.CorrectExplanation"
             android:exported="false" />
         <activity
             android:name=".quest.DailyQuestActivity"

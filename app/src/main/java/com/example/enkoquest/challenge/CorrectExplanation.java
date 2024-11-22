@@ -9,17 +9,16 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.enkoquest.EngGmActivity;
-import com.example.enkoquest.MainActivity;
 import com.example.enkoquest.R;
 
-public class ExplanationActivity extends AppCompatActivity {
+public class CorrectExplanation extends AppCompatActivity {
     Button retryButton, moveMainButton;
     TextView myAnswer,correctAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_explanation);
+        setContentView(R.layout.activity_correct_explanation);
 
         retryButton = findViewById(R.id.retryButton);
         moveMainButton = findViewById(R.id.moveMainButton);
@@ -84,13 +83,13 @@ public class ExplanationActivity extends AppCompatActivity {
         correctAnswer.setText("정답: " + correct);
 
         retryButton.setOnClickListener(v -> {
-            Intent intent = new Intent(ExplanationActivity.this, CorrectWordActivity.class);
+            Intent intent = new Intent(CorrectExplanation.this, CorrectWordActivity.class);
             finish();
             startActivity(intent);
         });
 
         moveMainButton.setOnClickListener(v -> {
-            Intent intent = new Intent(ExplanationActivity.this, EngGmActivity.class);
+            Intent intent = new Intent(CorrectExplanation.this, EngGmActivity.class);
             finish();
             startActivity(intent);
         });

@@ -272,7 +272,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                         @Override
                         public void onExplanationFound(String word, String meaning, String example) {
                             // 정답 여부와 함께 Bundle을 Intent에 추가
-                            Intent intent = new Intent(CorrectWordActivity.this, ExplanationActivity.class);
+                            Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
 
                             bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
                             bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
