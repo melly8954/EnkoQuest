@@ -155,6 +155,12 @@ public class MyPageActivity extends AppCompatActivity implements View
             Intent intent = new Intent(this, ChangePwActivity.class);
             startActivity(intent);
         }
+
+        if (view.getId() == R.id.buttonNote){
+            Intent intent = new Intent(this, MistakeNotes.class);
+            startActivity(intent);
+        }
+
         if (view.getId() == R.id.imageButtonBack) {
             Intent intent = new Intent(this, MainActivity.class);
             finish();
