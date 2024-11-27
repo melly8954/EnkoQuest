@@ -2,6 +2,7 @@ package com.example.enkoquest.challenge;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
@@ -31,7 +32,7 @@ import java.util.Random;
 
 public class CorrectWordActivity extends AppCompatActivity {
 
-    private TextView textView, levelTextView;
+    private TextView textView, levelTextView, timerTextView;
     private Button btn1, btn2, btn3, btn4;
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
@@ -42,6 +43,9 @@ public class CorrectWordActivity extends AppCompatActivity {
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     private int highestLevel = 0;
     private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
+    private CountDownTimer countDownTimer;
+    private static final long TIMER_DURATION = 60000; //타이머 총 시간 (60초)
+    private static final long TIMER_INTERVAL = 1000; // 타이머 간격 (1초)
     private String saveKey;
 
     // pairedOptions를 전역변수로 선언
@@ -52,6 +56,8 @@ public class CorrectWordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
+
+        timerTextView = findViewById(R.id.timerTextView); //UI 초기화
 
         //하트 이미지뷰 초기화
         hearts = new ImageView[]{
@@ -118,6 +124,24 @@ public class CorrectWordActivity extends AppCompatActivity {
                 Log.w("ChallengeActivity", "loadWord:onCancelled", databaseError.toException());
             }
         });
+    }
+
+    private void startTimer() {
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
+        countDownTimer = new CountDownTimer() {
+            @Override
+            public void onTick(long millisUntilFinished) {
+
+            }
+
+            @Override
+            public void onFinish() {
+
+            }
+        }
     }
 
     private void loadUserChallengeLevel() {

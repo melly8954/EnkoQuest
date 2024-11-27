@@ -101,6 +101,36 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/full_life" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="70dp">
+
+            <!-- 타이머 아이콘 -->
+            <ImageView
+                android:id="@+id/timer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/timer"
+                android:contentDescription="타이머 아이콘"
+                android:layout_gravity="center" />
+
+            <!-- 남은 시간 -->
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"
+                android:text="60"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:gravity="center" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
