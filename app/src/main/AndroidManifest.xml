@@ -24,9 +24,9 @@
         <activity
             android:name=".challenge.CorrectExplanation"
             android:exported="false" />
-        <activity
-            android:name=".quest.DailyQuestActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".quest.DailyQuestActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".user.ChangePwActivity"
             android:exported="false" />
