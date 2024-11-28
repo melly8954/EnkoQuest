@@ -126,7 +126,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             DatabaseReference userDatabase = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("correctLevel");
 
             userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -374,7 +375,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             DatabaseReference database = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("correctLevel");
 
             database.setValue(challengLevel);
         }

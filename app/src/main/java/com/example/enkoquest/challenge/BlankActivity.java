@@ -138,7 +138,8 @@ public class BlankActivity extends AppCompatActivity {
             DatabaseReference userDatabase = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("blankLevel");
 
             userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -312,7 +313,8 @@ public class BlankActivity extends AppCompatActivity {
             DatabaseReference database = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("blankLevel");
 
             database.setValue(challengLevel);
         }
@@ -371,10 +373,6 @@ public class BlankActivity extends AppCompatActivity {
             this.meaning = meaning;
             this.example = example;
             this.translation = translation;
-        }
-
-        public int getNumber() {
-            return number;
         }
 
         public String getWord() {
