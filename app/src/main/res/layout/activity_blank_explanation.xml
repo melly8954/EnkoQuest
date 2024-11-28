@@ -46,10 +46,10 @@
             android:id="@+id/correctAnswerWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:text="정답: example"
-            android:textSize="20sp"
             android:textColor="#000"
-            android:layout_marginBottom="8dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/userAnswerWord"
