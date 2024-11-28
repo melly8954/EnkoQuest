@@ -8,7 +8,7 @@ public class UserAccount {
     private String email;   // 사용자 이메일
     private String tel;
     private String selfProduce;
-    private int challengeLevel;
+    private ChallengeLevel challengeLevel;
     private Map<String, String> wrongNotes;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
@@ -18,7 +18,7 @@ public class UserAccount {
     // 매개변수를 받는 생성자
     public UserAccount(String idToken, String nickname
             , String email, String tel
-            , String selfProduce, int challengeLevel
+            , String selfProduce, ChallengeLevel challengeLevel
             , Map<String, String> wrongNotes) {
         this.idToken = idToken;
         this.nickname = nickname;
@@ -66,19 +66,21 @@ public class UserAccount {
         return selfProduce;
     }
 
-    public void setSelfProduce(String selfProduce) {
-        this.selfProduce = selfProduce;
-    }
-
-    public int getChallengeLevel() {
+    public ChallengeLevel getChallengeLevel() {
         return challengeLevel;
     }
 
-    public void setChallengeLevel(int challengeLevel) {
+    public void setChallengeLevel(ChallengeLevel challengeLevel) {
         this.challengeLevel = challengeLevel;
+    }
+
+    public void setSelfProduce(String selfProduce) {
+        this.selfProduce = selfProduce;
     }
 
     public void setWrongNotes(Map<String, String> wrongNotes){
         this.wrongNotes = wrongNotes;
     }
+
+
 }

@@ -53,6 +53,18 @@ public class CorrectWordActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
 
+        // View 요소 초기화
+        textView = findViewById(R.id.exampleView);
+        btn1 = findViewById(R.id.optionButton1);
+        btn2 = findViewById(R.id.optionButton2);
+        btn3 = findViewById(R.id.optionButton3);
+        btn4 = findViewById(R.id.optionButton4);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
+        levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
+
+        // Firebase 초기화
+        auth = FirebaseAuth.getInstance();
+
         //하트 이미지뷰 초기화
         hearts = new ImageView[]{
                 findViewById(R.id.heart1),
@@ -62,18 +74,9 @@ public class CorrectWordActivity extends AppCompatActivity {
                 findViewById(R.id.heart5)
         };
 
-        // View 요소 초기화
-        textView = findViewById(R.id.wordTextView);
-        btn1 = findViewById(R.id.optionButton1);
-        btn2 = findViewById(R.id.optionButton2);
-        btn3 = findViewById(R.id.optionButton3);
-        btn4 = findViewById(R.id.optionButton4);
-        imageButtonBack = findViewById(R.id.imageButtonBack);
-
-        levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
-
-        // Firebase 초기화
-        auth = FirebaseAuth.getInstance();
+        // Firebase에서 데이터 가져오기
+        fetchDataFromFirebase();
+        loadUserChallengeLevel();
 
         // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
@@ -81,9 +84,7 @@ public class CorrectWordActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Firebase에서 데이터 가져오기
-        fetchDataFromFirebase();
-        loadUserChallengeLevel();
+
     }
 
     private void fetchDataFromFirebase() {
@@ -102,7 +103,6 @@ public class CorrectWordActivity extends AppCompatActivity {
                         wordList.add(new Word(number, word, meaning, example));
                     }
                 }
-
                 Log.d("ChallengeActivity", "Loaded words: " + wordList.size());
                 if (!wordList.isEmpty()) {
                     // 단어 리스트 셔플하여 중복 없이 랜덤 순서로 출제
@@ -112,7 +112,6 @@ public class CorrectWordActivity extends AppCompatActivity {
                     Log.e("ChallengeActivity", "No data loaded from firebase");
                 }
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w("ChallengeActivity", "loadWord:onCancelled", databaseError.toException());
@@ -127,7 +126,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             DatabaseReference userDatabase = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("correctLevel");
 
             userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -306,7 +306,6 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     private void getExplanationForAnswer(String chosenAnswer, Boolean isCorrect, final ExplanationCallback callback) {
         DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
-
         database.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -374,7 +373,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             DatabaseReference database = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("correctLevel");
 
             database.setValue(challengLevel);
         }
