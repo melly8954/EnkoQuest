@@ -69,7 +69,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         };
 
         // View 요소 초기화
-        textView = findViewById(R.id.wordTextView);
+        textView = findViewById(R.id.exampleView);
         btn1 = findViewById(R.id.optionButton1);
         btn2 = findViewById(R.id.optionButton2);
         btn3 = findViewById(R.id.optionButton3);
@@ -131,16 +131,40 @@ public class CorrectWordActivity extends AppCompatActivity {
             countDownTimer.cancel();
         }
 
-        countDownTimer = new CountDownTimer() {
+        countDownTimer = new CountDownTimer(TIMER_DURATION, TIMER_INTERVAL) {
             @Override
             public void onTick(long millisUntilFinished) {
-
+                timerTextView.setText(String.valueOf(millisUntilFinished / 1000));
             }
 
             @Override
             public void onFinish() {
-
+                life--;
+                updateHearts();
+                if (life <= 0) {
+                    Toast.makeText(CorrectWordActivity.this, "시간 초과! 게임 종료", Toast.LENGTH_LONG).show();
+                    finishGame();
+                } else {
+                    Toast.makeText(CorrectWordActivity.this, "시간 초과! 다음 문제로 이동합니다.", Toast.LENGTH_SHORT).show();
+                    loadNewQuestion();
+                }
             }
+        };
+        countDownTimer.start();
+    }
+
+    private void resetTimer() {
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //Activity 종료 시 타이머 정지
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
         }
     }
 
@@ -178,6 +202,8 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     private void loadNewQuestion() {
         if (currentQuestionIndex >= wordList.size()) {
+            Toast.makeText(this, "모든 문제를 완료했습니다!", Toast.LENGTH_SHORT).show();
+            finish();
             return;
         }
 
@@ -188,6 +214,8 @@ public class CorrectWordActivity extends AppCompatActivity {
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
         textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
         saveKey = textView.getText().toString();
+
+        startTimer();
 
         pairedOptions.clear(); // 이전 질문에 대한 옵션 리스트 초기화
         pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
@@ -454,6 +482,17 @@ public class CorrectWordActivity extends AppCompatActivity {
         if (life == 0) {
             Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
         }
+    }
+
+    private void finishGame() {
+        //게임 종료 처리
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+        Intent intent = new Intent(this, CorrectExplanation.class);
+        intent.putExtra("Score", currentLevel);
+        startActivity(intent);
+        finish();
     }
 
     private void wrongWord(String userId, String word, String answer) {
