@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,11 +17,13 @@ import androidx.activity.EdgeToEdge;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.user.ChallengeLevel;
 import com.example.enkoquest.user.ChangePwActivity;
 import com.example.enkoquest.user.UserAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -43,8 +46,11 @@ public class MyPageActivity extends AppCompatActivity implements View
     EditText selfProduce;
     ImageView imageView;
     private Uri selectedImageUri;
-    private FirebaseAuth mAuth;
-    private DatabaseReference databaseReference;
+
+    private FirebaseAuth mAuth = FirebaseAuth.getInstance();;
+    private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
+    FirebaseUser currentUser = mAuth.getCurrentUser();
+    String userId = currentUser.getUid();
 
     private final ActivityResultLauncher<Intent> imagePickerLauncher =
             registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
@@ -77,8 +83,10 @@ public class MyPageActivity extends AppCompatActivity implements View
         text01.setEnabled(false);
         text02 = findViewById(R.id.textNick);
         text02.setEnabled(false);
+        
         text03 = findViewById(R.id.textChal);
-        text03.setEnabled(false);
+        text03.setOnClickListener(this);
+        
         selfProduce = findViewById(R.id.editTextSelfProduce);
 
         buttonMoveChangePW.setOnClickListener(this);
@@ -91,17 +99,12 @@ public class MyPageActivity extends AppCompatActivity implements View
         imageView.setOnClickListener(view -> openImagePicker());
         setDefaultImage();
 
-        mAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
 
-        FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            String userId = currentUser.getUid();
             loadUserData(userId);
         } else {
             Toast.makeText(this, "로그인 필요", Toast.LENGTH_SHORT).show();
         }
-
     }
 
     private void openImagePicker() {
@@ -125,7 +128,7 @@ public class MyPageActivity extends AppCompatActivity implements View
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
                         text02.setText("닉네임 : " + userAccount.getNickname());
-                        text03.setText("챌린지 : " + userAccount.getChallengeLevel() + "단계");
+                        text03.setText("챌린지 점수 보러가기");
                         selfProduce.setText(userAccount.getSelfProduce());
                     } else {
                         Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();
@@ -166,6 +169,11 @@ public class MyPageActivity extends AppCompatActivity implements View
             finish();
             startActivity(intent);
         }
+
+        // 챌린지 점수 모달창
+        if (view.getId() == R.id.textChal){
+            showChallengeInfoDialog();
+        }
     }
 
     private void saveIntroduction() {
@@ -198,4 +206,60 @@ public class MyPageActivity extends AppCompatActivity implements View
                     });
         }
     }
+
+    private void showChallengeInfoDialog() {
+        // AlertDialog에 사용할 커스텀 레이아웃을 설정
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_challenge_info, null);
+
+        // AlertDialog Builder 생성
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(dialogView);
+
+        // 다이얼로그 생성 및 표시
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        // 커스텀 레이아웃의 뷰 요소에 접근
+        TextView textChallengeInfo = dialogView.findViewById(R.id.textChallengeInfo);
+        Button buttonClose = dialogView.findViewById(R.id.buttonClose);
+
+        // 챌린지 정보 설정
+        databaseReference.child(userId).child("challengeLevel").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    ChallengeLevel challengeLevel = snapshot.getValue(ChallengeLevel.class);
+                    if (challengeLevel != null) {
+                        // correctLevel이 0이라면 1로 설정
+                        Integer correctLevel = (challengeLevel.getCorrectLevel() == null) ? 1: challengeLevel.getCorrectLevel();
+                        // blankLevel이 0이라면 1로 설정
+                        Integer blankLevel = (challengeLevel.getBlankLevel() == null) ? 1 : challengeLevel.getBlankLevel();
+
+                        textChallengeInfo.setText("현재 챌린지 단계 " + "\n\n"
+                                + "영단어 : " + correctLevel + "단계 \n"
+                                + "빈칸 : " + blankLevel + "단계 \n");
+                    } else {
+                        Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    textChallengeInfo.setText("아직 도전하지 않은 상태입니다.");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e("FireBase", "데이터를 불러오는중 오류 발생", error.toException());
+                Toast.makeText(MyPageActivity.this, "데이터를 불러오는 도중 오류 발생", Toast.LENGTH_SHORT).show();
+            }
+        });
+            // 닫기 버튼 클릭 리스너
+        buttonClose.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss(); // 다이얼로그 닫기
+                }
+            });
+        }
+
 }

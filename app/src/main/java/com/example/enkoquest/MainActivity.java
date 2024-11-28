@@ -93,8 +93,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         if (view.getId() == R.id.buttonChallengeMode) {
-            Intent intent = new Intent(this, SelectWordActivity.class);
-            startActivity(intent);
+            if (user == null) {
+                // 로그인 안 되어 있으면 로그인 화면으로 이동
+                Intent intent = new Intent(MainActivity.this, LoginIndexActivity.class);
+                startActivity(intent);
+            } else {
+                // 로그인 되어 있으면 챌린지 모드로 이동
+                Intent intent = new Intent(this, SelectWordActivity.class);
+                startActivity(intent);
+            }
         }
         if (view.getId() == R.id.buttonStoryMode) {
             Intent intent = new Intent(MainActivity.this, SelectWordActivity.class);

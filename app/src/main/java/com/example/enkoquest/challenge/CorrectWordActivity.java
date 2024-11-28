@@ -151,7 +151,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             DatabaseReference userDatabase = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("correctLevel");
 
             userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -177,8 +178,6 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     private void loadNewQuestion() {
         if (currentQuestionIndex >= wordList.size()) {
-            // 모든 문제를 출제한 경우 알림 메시지 표시
-            Toast.makeText(this, "모든문제 출제 완료", Toast.LENGTH_SHORT).show(); //모든 물제 출제시 알림 메세지 표시
             return;
         }
 
@@ -401,7 +400,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             DatabaseReference database = FirebaseDatabase.getInstance()
                     .getReference("UserAccount")
                     .child(firebaseUser.getUid())
-                    .child("challengeLevel");
+                    .child("challengeLevel")
+                    .child("correctLevel");
 
             database.setValue(challengLevel);
         }
