@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn01, btn02, btn03, buttonMoveLogin;
     FirebaseAuth mAuth;
     FirebaseUser user;
+    private boolean playing = true;
+    private ImageButton musicBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +39,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn02 = findViewById(R.id.buttonChallengeMode);
         btn03 = findViewById(R.id.buttonStoryMode);
         buttonMoveLogin = findViewById(R.id.buttonMoveLogin);
+        musicBtn = findViewById(R.id.musicBtn);
+        musicBtn.setImageResource(R.drawable.pause);
 
         btn01.setOnClickListener(this);
         btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
-
+        musicBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (playing) {
+                    stopMusicService();
+                    musicBtn.setImageResource(R.drawable.play);
+                } else {
+                    startMusicService();
+                    musicBtn.setImageResource(R.drawable.pause);
+                }
+                playing = !playing;
+            }
+        });
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();  // 로그인 상태를 확인
 
         updateLoginButton();  // 로그인 상태에 따른 버튼 상태 업데이트
+
+        // 액티비티 시작 시 음악 자동 재생
+        startMusicService();  // 음악 서비스 시작
     }
 
     private void updateLoginButton() {
@@ -96,4 +116,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
+
+    private void startMusicService() {
+        Intent intent = new Intent(this, BGMService.class);
+        startService(intent); // 서비스 시작
+    }
+
+    // 서비스 중지
+    private void stopMusicService() {
+        Intent intent = new Intent(this, BGMService.class);
+        stopService(intent); // 서비스 중지
+    }
+
+
 }
