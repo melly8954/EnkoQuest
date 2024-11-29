@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 단어 의미 -->
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다음 힌트와 해석을 보고 예제의 빈칸을 완성해 보세요."
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="의미: [동] 개발하다, 발달하다, 발전시키다"
+        android:textSize="20sp"
+        android:paddingBottom="8dp" />
+
+    <!-- 예제 문장 -->
+    <TextView
+        android:id="@+id/tvExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="She plans to ______ a new app that helps people manage their time."
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- 예제 해석 -->
+    <TextView
+        android:id="@+id/tvInterpretation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="해석: 그녀는 사람들이 시간을 관리할 수 있도록 돕는 새로운 앱을 개발할 계획입니다."
+        android:textSize="16sp"
+        android:paddingBottom="8dp"
+        android:textColor="#555555" />
+
+    <!-- 단어 힌트 -->
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="힌트: d___"
+        android:textSize="32sp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp" />
+
+    <!-- 정답 입력란 (수평 배치로 "정답:"과 EditText 나누기) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <!-- 정답 텍스트 -->
+        <TextView
+            android:id="@+id/tvAnswerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정답:"
+            android:textSize="16sp"
+            android:paddingEnd="8dp" />
+
+        <!-- 정답 입력 EditText -->
+        <EditText
+            android:id="@+id/etAnswer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="단어를 입력하세요"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 제출 버튼 -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="제출"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+</LinearLayout>
