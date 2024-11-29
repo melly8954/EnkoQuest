@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton questBtn;
     FirebaseAuth mAuth;
     FirebaseUser user;
+    private boolean playing = true;
+    private ImageButton musicBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,15 +51,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn02 = findViewById(R.id.buttonChallengeMode);
         btn03 = findViewById(R.id.buttonStoryMode);
         buttonMoveLogin = findViewById(R.id.buttonMoveLogin);
+        musicBtn = findViewById(R.id.musicBtn);
+        musicBtn.setImageResource(R.drawable.pause);
 
         btn01.setOnClickListener(this);
         btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
-
+        musicBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (playing) {
+                    stopMusicService();
+                    musicBtn.setImageResource(R.drawable.play);
+                } else {
+                    startMusicService();
+                    musicBtn.setImageResource(R.drawable.pause);
+                }
+                playing = !playing;
+            }
+        });
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();  // 로그인 상태를 확인
 
         updateLoginButton();  // 로그인 상태에 따른 버튼 상태 업데이트
+
+        // 액티비티 시작 시 음악 자동 재생
+        startMusicService();  // 음악 서비스 시작
     }
 
     private void updateLoginButton() {
@@ -100,13 +119,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             } else {
                 // 로그인 되어 있으면 챌린지 모드로 이동
-                Intent intent = new Intent(this, SelectWordActivity.class);
+                Intent intent = new Intent(this, EngGmActivity.class);
                 startActivity(intent);
             }
         }
-        if (view.getId() == R.id.buttonStoryMode) {
-            Intent intent = new Intent(MainActivity.this, SelectWordActivity.class);
-            startActivity(intent);
-        }
     }
+
+    private void startMusicService() {
+        Intent intent = new Intent(this, BGMService.class);
+        startService(intent); // 서비스 시작
+    }
+
+    // 서비스 중지
+    private void stopMusicService() {
+        Intent intent = new Intent(this, BGMService.class);
+        stopService(intent); // 서비스 중지
+    }
+
+
 }

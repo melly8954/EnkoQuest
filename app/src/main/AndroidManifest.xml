@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".challenge.BWriteActivity"
+            android:exported="false" />
+        <activity
             android:name=".challenge.BlankExplanation"
             android:exported="false" />
         <activity
@@ -52,9 +55,6 @@
             android:name=".LoginIndexActivity"
             android:exported="false" />
         <activity
-            android:name=".SelectWordActivity"
-            android:exported="false" />
-        <activity
             android:name=".MistakeNotes"
             android:exported="false" />
         <activity
@@ -66,6 +66,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".BGMService" />
     </application>
 
 </manifest>

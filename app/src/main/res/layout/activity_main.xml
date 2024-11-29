@@ -76,4 +76,17 @@
         app:tint="@color/purple_500" />
 
 
+    <ImageButton
+        android:id="@+id/musicBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/play" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
