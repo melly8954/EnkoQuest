@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".challenge.BWriteActivity"
+            android:exported="false" />
+        <activity
             android:name=".challenge.BlankExplanation"
             android:exported="false" />
         <activity
