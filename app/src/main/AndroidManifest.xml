@@ -49,9 +49,6 @@
             android:name=".LoginIndexActivity"
             android:exported="false" />
         <activity
-            android:name=".SelectWordActivity"
-            android:exported="false" />
-        <activity
             android:name=".MistakeNotes"
             android:exported="false" />
         <activity

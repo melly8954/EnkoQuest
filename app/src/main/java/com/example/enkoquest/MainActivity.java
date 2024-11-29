@@ -87,13 +87,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             } else {
                 // 로그인 되어 있으면 챌린지 모드로 이동
-                Intent intent = new Intent(this, SelectWordActivity.class);
+                Intent intent = new Intent(this, EngGmActivity.class);
                 startActivity(intent);
             }
-        }
-        if (view.getId() == R.id.buttonStoryMode) {
-            Intent intent = new Intent(MainActivity.this, SelectWordActivity.class);
-            startActivity(intent);
         }
     }
 }
