@@ -14,13 +14,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 //import com.example.enkoquest.quest.DailyQuestActivity;
+import com.example.enkoquest.quest.DailyQuestActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn01, btn02, btn03, buttonMoveLogin;
-//    ImageButton questBtn;
+    ImageButton questBtn;
     FirebaseAuth mAuth;
     FirebaseUser user;
 
@@ -30,13 +31,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-//        questBtn = findViewById(R.id.questButton);
-//
-//        questBtn.setOnClickListener(v -> {
-//            //Intent로 DailyQuestActivity로 이동
-//            Intent intent = new Intent(MainActivity.this, DailyQuestActivity.class);
-//            startActivity(intent);
-//        });
+        questBtn = findViewById(R.id.questButton);
+
+        questBtn.setOnClickListener(v -> {
+            //Intent로 DailyQuestActivity로 이동
+            Intent intent = new Intent(MainActivity.this, DailyQuestActivity.class);
+            startActivity(intent);
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

@@ -32,7 +32,7 @@ import java.util.Random;
 
 public class CorrectWordActivity extends AppCompatActivity {
 
-    private TextView textView, levelTextView, timerTextView;
+    private TextView textView, levelTextView, timer;
     private Button btn1, btn2, btn3, btn4;
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
@@ -44,7 +44,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     private int highestLevel = 0;
     private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
     private CountDownTimer countDownTimer;
-    private static final long TIMER_DURATION = 60000; //타이머 총 시간 (60초)
+    private static final long TIMER_DURATION = 30000; //타이머 총 시간 (30초)
     private static final long TIMER_INTERVAL = 1000; // 타이머 간격 (1초)
     private String saveKey;
 
@@ -57,7 +57,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_correct_word);
 
-        timerTextView = findViewById(R.id.timerTextView); //UI 초기화
+        timer = findViewById(R.id.timer); //UI 초기화
 
         //하트 이미지뷰 초기화
         hearts = new ImageView[]{
@@ -98,14 +98,17 @@ public class CorrectWordActivity extends AppCompatActivity {
         database.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    // Firebase에서 번호, 단어, 의미, 예제 정보 가져옴
-                    Integer number = snapshot.child("번호").getValue(Integer.class);
-                    String word = snapshot.child("단어").getValue(String.class);
-                    String meaning = snapshot.child("의미").getValue(String.class);
-                    String example = snapshot.child("예제").getValue(String.class);
-                    if (number != null && word != null && meaning != null && example != null) {
-                        wordList.add(new Word(number, word, meaning, example));
+                wordList.clear(); //기존 리스트 초기화
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        // Firebase에서 번호, 단어, 의미, 예제 정보 가져옴
+                        Integer number = snapshot.child("번호").getValue(Integer.class);
+                        String word = snapshot.child("단어").getValue(String.class);
+                        String meaning = snapshot.child("의미").getValue(String.class);
+                        String example = snapshot.child("예제").getValue(String.class);
+                        if (number != null && word != null && meaning != null && example != null) {
+                            wordList.add(new Word(number, word, meaning, example));
+                        }
                     }
                 }
 
@@ -113,15 +116,20 @@ public class CorrectWordActivity extends AppCompatActivity {
                 if (!wordList.isEmpty()) {
                     // 단어 리스트 셔플하여 중복 없이 랜덤 순서로 출제
                     Collections.shuffle(wordList);
-                    loadNewQuestion();
+                    currentQuestionIndex = 0; //시작 문제 인덱스 초기화
+                    loadNewQuestion(); //데이터 로드 후 문제 시작
                 } else {
                     Log.e("ChallengeActivity", "No data loaded from firebase");
+                    Toast.makeText(CorrectWordActivity.this, "문제를 불러올 수 없습니다.", Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
+                Toast.makeText(CorrectWordActivity.this, "문제를 불러오지 못했습니다. 인터넷 연결을 확인하세요.", Toast.LENGTH_LONG).show();
                 Log.w("ChallengeActivity", "loadWord:onCancelled", databaseError.toException());
+                finish(); // Activity 종료
             }
         });
     }
@@ -130,23 +138,28 @@ public class CorrectWordActivity extends AppCompatActivity {
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
-
         countDownTimer = new CountDownTimer(TIMER_DURATION, TIMER_INTERVAL) {
+
             @Override
             public void onTick(long millisUntilFinished) {
-                timerTextView.setText(String.valueOf(millisUntilFinished / 1000));
+                timer.setText(String.valueOf(millisUntilFinished / 1000));
             }
 
             @Override
             public void onFinish() {
-                life--;
-                updateHearts();
                 if (life <= 0) {
                     Toast.makeText(CorrectWordActivity.this, "시간 초과! 게임 종료", Toast.LENGTH_LONG).show();
                     finishGame();
                 } else {
-                    Toast.makeText(CorrectWordActivity.this, "시간 초과! 다음 문제로 이동합니다.", Toast.LENGTH_SHORT).show();
-                    loadNewQuestion();
+                    life--;
+                    updateHearts();
+                    if(life > 0) {
+                        Toast.makeText(CorrectWordActivity.this, "시간 초과! 다음 문제로 이동합니다.", Toast.LENGTH_SHORT).show();
+                        loadNewQuestion();
+                    } else {
+                        Toast.makeText(CorrectWordActivity.this, "모든 체력을 소진했습니다!", Toast.LENGTH_SHORT).show();
+                        finishGame();
+                    }
                 }
             }
         };
@@ -156,6 +169,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     private void resetTimer() {
         if (countDownTimer != null) {
             countDownTimer.cancel();
+            countDownTimer = null; //타이머 초기화
         }
     }
 
@@ -201,21 +215,29 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void loadNewQuestion() {
-        if (currentQuestionIndex >= wordList.size()) {
-            Toast.makeText(this, "모든 문제를 완료했습니다!", Toast.LENGTH_SHORT).show();
+        if (wordList.isEmpty()) {
+            Toast.makeText(this, "문제가 없습니다. 나중에 다시 시도해주세요!", Toast.LENGTH_SHORT).show();
             finish();
             return;
         }
 
+        if (currentQuestionIndex >= wordList.size()) {
+            Toast.makeText(this, "모든 문제를 완료했습니다!", Toast.LENGTH_SHORT).show();
+            finishGame();
+            return;
+        }
+
         resetButtons(); // 보기버튼 상태 초기화
+        resetTimer(); //기존 타이머 초기화
 
         // 현재 인덱스에 해당하는 문제를 가져옴
         Word questionWord = wordList.get(currentQuestionIndex);
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
+
         textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
         saveKey = textView.getText().toString();
 
-        startTimer();
+        startTimer(); //새 타이머 시작
 
         pairedOptions.clear(); // 이전 질문에 대한 옵션 리스트 초기화
         pairedOptions.add(new Pair<>(questionWord.getMeaning(), questionWord));
@@ -359,6 +381,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void getExplanationForAnswer(String chosenAnswer, Boolean isCorrect, final ExplanationCallback callback) {
+        resetTimer();
         DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
 
         database.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -488,7 +511,10 @@ public class CorrectWordActivity extends AppCompatActivity {
         //게임 종료 처리
         if (countDownTimer != null) {
             countDownTimer.cancel();
+
         }
+        countDownTimer = null; //타이머 초기화
+
         Intent intent = new Intent(this, CorrectExplanation.class);
         intent.putExtra("Score", currentLevel);
         startActivity(intent);
