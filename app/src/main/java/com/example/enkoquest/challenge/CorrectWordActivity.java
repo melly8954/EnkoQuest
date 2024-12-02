@@ -31,16 +31,16 @@ import java.util.Random;
 
 public class CorrectWordActivity extends AppCompatActivity {
 
+    private ImageButton imageButtonBack;
     private TextView textView, levelTextView;
     private Button btn1, btn2, btn3, btn4;
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
-    private ImageButton imageButtonBack;
     private ImageView[] hearts;
     private int life = 5;
-    private FirebaseAuth auth; // Firebase 인증 인스턴스
     private int highestLevel = 0;
+    private FirebaseAuth auth; // Firebase 인증 인스턴스
     private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
     private String saveKey;
 

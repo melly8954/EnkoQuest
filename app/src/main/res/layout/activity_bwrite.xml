@@ -17,19 +17,79 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다음 힌트와 해석을 보고 예제의 빈칸을 완성해 보세요."
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        android:textSize="20sp"
-        android:paddingBottom="8dp" />
+        android:orientation="vertical"
+        android:padding="10dp">
 
+        <!-- 문제 설명 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음 힌트와 해석을 보고 예제의 빈칸을 완성해 보세요."
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+
+        <!-- 레벨과 하트 영역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <!-- 레벨 텍스트 -->
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level: 1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_marginEnd="16dp" />
+
+            <!-- 하트 아이콘들 -->
+            <ImageView
+                android:id="@+id/heart1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/full_life"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:id="@+id/heart2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/full_life"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:id="@+id/heart3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/full_life"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:id="@+id/heart4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/full_life"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:id="@+id/heart5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/full_life" />
+        </LinearLayout>
+    </LinearLayout>
     <TextView
-        android:id="@+id/tvMeaning"
+        android:id="@+id/showMeaning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:text="의미: [동] 개발하다, 발달하다, 발전시키다"
         android:textSize="20sp"
@@ -37,7 +97,7 @@
 
     <!-- 예제 문장 -->
     <TextView
-        android:id="@+id/tvExample"
+        android:id="@+id/showExample"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="She plans to ______ a new app that helps people manage their time."
@@ -47,7 +107,7 @@
 
     <!-- 예제 해석 -->
     <TextView
-        android:id="@+id/tvInterpretation"
+        android:id="@+id/showTranslation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="해석: 그녀는 사람들이 시간을 관리할 수 있도록 돕는 새로운 앱을 개발할 계획입니다."
@@ -57,7 +117,7 @@
 
     <!-- 단어 힌트 -->
     <TextView
-        android:id="@+id/tvHint"
+        android:id="@+id/showHint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="힌트: d___"
@@ -74,7 +134,6 @@
 
         <!-- 정답 텍스트 -->
         <TextView
-            android:id="@+id/tvAnswerLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="정답:"
@@ -83,7 +142,7 @@
 
         <!-- 정답 입력 EditText -->
         <EditText
-            android:id="@+id/etAnswer"
+            android:id="@+id/inputAnswer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
