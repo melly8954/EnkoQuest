@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".user.ChangePwActivity">
 
     <TextView
@@ -47,8 +48,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="60dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="Pw 입력"
+        android:inputType="textPassword"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -58,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="Pw 확인"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/editTextNewPw"
         app:layout_constraintStart_toStartOf="@+id/editTextNewPw"
         app:layout_constraintTop_toBottomOf="@+id/editTextNewPw" />
@@ -73,6 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCheckNewPw" />
+
     <ImageButton
         android:id="@+id/imageButtonBack"
         android:layout_width="53dp"

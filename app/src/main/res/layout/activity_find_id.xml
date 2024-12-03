@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".user.FindIdActivity">
 
     <TextView
@@ -96,6 +97,7 @@
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/editTextTel"
         app:layout_constraintTop_toBottomOf="@+id/editTextTel" />
+
     <ImageButton
         android:id="@+id/imageButtonBack"
         android:layout_width="53dp"
