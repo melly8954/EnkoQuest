@@ -5,62 +5,99 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#F9FAFB"
     tools:context=".MainActivity">
 
+    <!-- 상단 로고 -->
     <ImageView
         android:id="@+id/image_icon"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/enkoquest_icon"
-        android:text="엔코퀘스트 아이콘"
-        android:textSize="30dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="앱 아이콘"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/enkoquest_icon" />
 
-    <Button
-        android:id="@+id/buttonMyPage"
-        android:layout_width="233dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="52dp"
-        android:text="마이페이지"
+    <!-- 앱 제목 -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="EnKoQuest"
+        android:textColor="#333333"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_icon" />
+        app:layout_constraintTop_toBottomOf="@id/image_icon" />
 
+    <!-- 버튼: 스토리모드 -->
+
+    <!-- 버튼: 챌린지모드 -->
+
+    <!-- 하단 이미지 버튼: 마이페이지 -->
     <Button
         android:id="@+id/buttonStoryMode"
-        android:layout_width="233dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#03A9F4"
         android:text="스토리모드"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMyPage" />
+        app:layout_constraintTop_toBottomOf="@id/app_title" />
 
     <Button
         android:id="@+id/buttonChallengeMode"
-        android:layout_width="233dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#03A9F4"
         android:text="챌린지모드"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStoryMode" />
+        app:layout_constraintTop_toBottomOf="@id/buttonStoryMode" />
 
+    <ImageButton
+        android:id="@+id/buttonMyPage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="마이페이지 이미지 버튼"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/musicBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mypage" />
+
+    <!-- 하단 로그인 버튼 -->
     <Button
         android:id="@+id/buttonMoveLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="Button"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
+        android:text="로그인"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="41dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonChallengeMode" />
 
+    <!-- 음악 버튼 -->
     <ImageButton
         android:id="@+id/musicBtn"
         android:layout_width="50dp"
@@ -68,10 +105,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@null"
+        android:contentDescription="음악 버튼"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/play" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
