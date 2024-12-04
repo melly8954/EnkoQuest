@@ -33,7 +33,6 @@ import java.util.Random;
 public class CorrectWordActivity extends AppCompatActivity {
 
     private ImageButton imageButtonBack;
-    private TextView textView, levelTextView;
     private TextView textView, levelTextView, timer;
     private Button btn1, btn2, btn3, btn4;
     private List<Word> wordList = new ArrayList<>();
@@ -148,7 +147,7 @@ public class CorrectWordActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (!isExplanationShown) {
-                    isExplanationShown = true;
+//                    isExplanationShown = true;
                     life --; // 체력 감소
                     updateHearts(); // 하트 상태 업데이트
 
@@ -367,7 +366,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // 선택한 버튼 번호 가져오기
             String chosenOptionNumber;
-            String correctOptionNumber;
+//            String correctOptionNumber;
             if (v == btn1) {
                 chosenOptionNumber = "1";
             } else if (v == btn2) {
@@ -379,19 +378,19 @@ public class CorrectWordActivity extends AppCompatActivity {
             }
 
             // 정답 번호 설정
-            if (correctAnswer.equals(pairedOptions.get(0).first)) {
-                correctOptionNumber = "1";
-            } else if (correctAnswer.equals(pairedOptions.get(1).first)) {
-                correctOptionNumber = "2";
-            } else if (correctAnswer.equals(pairedOptions.get(2).first)) {
-                correctOptionNumber = "3";
-            } else {
-                correctOptionNumber = "4";
-            }
+//            if (correctAnswer.equals(pairedOptions.get(0).first)) {
+//                correctOptionNumber = "1";
+//            } else if (correctAnswer.equals(pairedOptions.get(1).first)) {
+//                correctOptionNumber = "2";
+//            } else if (correctAnswer.equals(pairedOptions.get(2).first)) {
+//                correctOptionNumber = "3";
+//            } else {
+//                correctOptionNumber = "4";
+//            }
 
             // `myAnswer`로 사용자의 선택 추가
             bundle.putString("MY_ANSWER", chosenOptionNumber);
-            bundle.putString("CORRECT_ANSWER", correctOptionNumber);
+            bundle.putString("CORRECT_ANSWER", correctAnswer);
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
@@ -400,51 +399,51 @@ public class CorrectWordActivity extends AppCompatActivity {
             } else {
                 life--; //체력 감소
                 updateHearts(); //하트 상태 업데이트
+                clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                clickedButton.setText("X " + chosenAnswer);
 
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
-                if (!chosenAnswer.startsWith("X")) {
-                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
-                    clickedButton.setText("X " + chosenAnswer);
+//                if (!chosenAnswer.startsWith("X")) {
+//                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+//                    clickedButton.setText("X " + chosenAnswer);
 
-                    if (life > 0) {
+                if (life > 0) {
+                    showExplanationScreen(bundle, false, life == 0);
                         //해설 화면 호출
-                        getExplanationForAnswer(chosenAnswer, false, new ExplanationCallback() {
-                            @Override
-                            public void onExplanationFound(String word, String meaning, String example) {
-                                Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
-                                bundle.putInt("LIFE_REMAINING", life);
-                                bundle.putBoolean("SHOW_RETRY", false);
-                                intent.putExtras(bundle);
-                                startActivityForResult(intent, 100);
-                            }
-                        });
-                    } else {
-                        handleGameOverExplanation();
-                    }
+//                        getExplanationForAnswer(chosenAnswer, false, new ExplanationCallback() {
+//                            @Override
+//                            public void onExplanationFound(String word, String meaning, String example) {
+//                                Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+//                                bundle.putInt("LIFE_REMAINING", life);
+//                                bundle.putBoolean("SHOW_RETRY", false);
+//                                intent.putExtras(bundle);
+//                                startActivityForResult(intent, 100);
+//                            }
+//                        });
+                } else {
+                    handleGameOverExplanation();
+                }
 
-                    Word questionWord = wordList.get(currentQuestionIndex);
-                    String userId = firebaseUser.getUid();
-                    String word = saveKey;
-                    String answer = correctAnswer;
+//                Word questionWord = wordList.get(currentQuestionIndex);
+                String userId = firebaseUser != null ? firebaseUser.getUid() : null;
+//                String word = saveKey;
+//                String answer = correctAnswer;
 
-                    wrongWord(userId, word, answer);
+                wrongWord(userId, saveKey, correctAnswer);
 
                     // ExplanationActivity로 이동
-                    getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
-                        @Override
-                        public void onExplanationFound(String word, String meaning, String example) {
-                            // 정답 여부와 함께 Bundle을 Intent에 추가
-                            Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
-
-                            bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
-                            bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
-                            bundle.putBoolean("SHOW_RETRY", life == 0); // 재도전 여부 전달
-
-                            intent.putExtras(bundle);  // 데이터를 Intent에 추가
-                            startActivityForResult(intent, 100); // Activity 결과 대기
-                        }
-                    });
-                }
+//                getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
+//                    @Override
+//                    public void onExplanationFound(String word, String meaning, String example) {
+//                        // 정답 여부와 함께 Bundle을 Intent에 추가
+//                        Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+//
+//                        bundle.putBoolean("IS_CORRECT", isCorrect);  // 정답 여부 추가
+//                        bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
+//                        bundle.putBoolean("SHOW_RETRY", life == 0); // 재도전 여부 전달
+//
+//                        intent.putExtras(bundle);  // 데이터를 Intent에 추가
+//                        startActivityForResult(intent, 100); // Activity 결과 대기
             }
         };
 
@@ -452,6 +451,15 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn2.setOnClickListener(listener);
         btn3.setOnClickListener(listener);
         btn4.setOnClickListener(listener);
+    }
+
+    private void showExplanationScreen(Bundle bundle, boolean isCorrect, boolean showRetry) {
+        Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+        bundle.putBoolean("IS_CORRECT", isCorrect);
+        bundle.putBoolean("SHOW_RETRY", showRetry);
+        bundle.putInt("LIFE_REMAINING", life);
+        intent.putExtras(bundle);
+        startActivityForResult(intent, 100);
     }
 
     private void resetButtons() {
