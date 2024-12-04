@@ -24,7 +24,7 @@ public class BWriteActivity extends AppCompatActivity {
 
     private ImageButton imageButtonBack;
 
-    private List<CorrectWordActivity.Word> wordList = new ArrayList<>();
+//    private List<CorrectWordActivity.Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
     private int highestLevel = 0;
