@@ -46,6 +46,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     private CountDownTimer countDownTimer;
     private static final long TIMER_DURATION = 30000; //타이머 총 시간 (30초)
     private static final long TIMER_INTERVAL = 1000; // 타이머 간격 (1초)
+    private boolean isExplanationShown = false;
     private String saveKey;
 
     // pairedOptions를 전역변수로 선언
@@ -75,7 +76,6 @@ public class CorrectWordActivity extends AppCompatActivity {
         btn3 = findViewById(R.id.optionButton3);
         btn4 = findViewById(R.id.optionButton4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
-
         levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
 
         // Firebase 초기화
@@ -135,9 +135,8 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void startTimer() {
-        if (countDownTimer != null) {
-            countDownTimer.cancel();
-        }
+        resetTimer(); //이전 타이머 초기화
+
         countDownTimer = new CountDownTimer(TIMER_DURATION, TIMER_INTERVAL) {
 
             @Override
@@ -147,18 +146,17 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                if (life <= 0) {
-                    Toast.makeText(CorrectWordActivity.this, "시간 초과! 게임 종료", Toast.LENGTH_LONG).show();
-                    finishGame();
-                } else {
-                    life--;
-                    updateHearts();
-                    if(life > 0) {
-                        Toast.makeText(CorrectWordActivity.this, "시간 초과! 다음 문제로 이동합니다.", Toast.LENGTH_SHORT).show();
-                        loadNewQuestion();
+                if (!isExplanationShown) {
+                    isExplanationShown = true;
+                    life --; // 체력 감소
+                    updateHearts(); // 하트 상태 업데이트
+
+                    if (life > 0) {
+                        // 해설 페이지 호출 (시간 초과로 인한 오답 처리)
+                        handleTimeOutExplanation();
                     } else {
-                        Toast.makeText(CorrectWordActivity.this, "모든 체력을 소진했습니다!", Toast.LENGTH_SHORT).show();
-                        finishGame();
+                        // 체력이 0일 때 게임 종료
+                        handleGameOverExplanation();
                     }
                 }
             }
@@ -166,10 +164,84 @@ public class CorrectWordActivity extends AppCompatActivity {
         countDownTimer.start();
     }
 
+    private void handleTimeOutExplanation() {
+        if (isExplanationShown)
+            return;
+        isExplanationShown = true;
+
+        resetTimer();
+
+        // 시간 초과로 인한 해설 화면 호출
+//        getExplanationForAnswer("", false, new ExplanationCallback() {
+//            @Override
+//            public void onExplanationFound(String word, String meaning, String example) {
+        Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+
+        // 추가 데이터를 Bundle로 전달
+        Bundle bundle = new Bundle();
+        bundle.putString("MY_ANSWER", "시간 초과"); // 사용자가 선택하지 않은 상태
+        bundle.putBoolean("IS_CORRECT", false); // 시간 초과는 정답이 아님
+        bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
+        bundle.putBoolean("SHOW_RETRY", life == 0); // 재시작 버튼 표시 여부
+
+        intent.putExtras(bundle);
+        startActivityForResult(intent, 100); // 해설 화면 호출
+    }
+
+    private void handleGameOverExplanation() {
+        if(isExplanationShown)
+            return;
+        isExplanationShown = true;
+
+        resetTimer();
+        //체력이 0이 되어 게임 종료 시 해설 화면 호출
+//        getExplanationForAnswer("", false, new ExplanationCallback() {
+//            @Override
+//            public void onExplanationFound(String word, String meaning, String example) {
+        Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+
+        //추가 데이터를 Bundle로 전달
+        Bundle bundle = new Bundle();
+        bundle.putString("MY_ANSWER", "시간 초과"); //사용자가 선택하지 않은 상태
+        bundle.putBoolean("IS_CORRECT", false); //시간 초과는 정답 처리 x
+        bundle.putInt("LIFE_REMAINING", life); //남은 하트 수 전달
+        bundle.putBoolean("SHOW_RETRY", true); //재시작 버튼 표시 여부
+
+        intent.putExtras(bundle);
+        startActivityForResult(intent, 100); //해설 화면 호출
+    }
+
     private void resetTimer() {
         if (countDownTimer != null) {
             countDownTimer.cancel();
             countDownTimer = null; //타이머 초기화
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        isExplanationShown = false; //해설 화면 완료 후 플래그 초기화
+
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            if (data != null && data.hasExtra("LIFE_REMAINING")) {
+                life = data.getIntExtra("LIFE_REMAINING", life);
+                updateHearts();
+            }
+            if (life > 0) {
+                //새로운 문제 로드
+                loadNewQuestion();
+            } else {
+                Toast.makeText(this, "Game Over! 모든 체력을 소진했습니다.", Toast.LENGTH_LONG).show();
+                finish();
+            }
+        }
+    }
+
+    private void updateHearts() {
+        for (int i = 0; i < hearts.length; i++) {
+            hearts[i].setImageResource(i < life ? R.drawable.full_life : R.drawable.no_life);
         }
     }
 
@@ -223,7 +295,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         if (currentQuestionIndex >= wordList.size()) {
             Toast.makeText(this, "모든 문제를 완료했습니다!", Toast.LENGTH_SHORT).show();
-            finishGame();
+            finish();
             return;
         }
 
@@ -234,8 +306,10 @@ public class CorrectWordActivity extends AppCompatActivity {
         Word questionWord = wordList.get(currentQuestionIndex);
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
 
-        textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
-        saveKey = textView.getText().toString();
+//        textView.setText(questionWord.getWord());  // 문제 단어를 텍스트뷰에 표시
+//        saveKey = textView.getText().toString();
+        saveKey = questionWord.getWord(); // saveKey 초기화
+        textView.setText(saveKey);
 
         startTimer(); //새 타이머 시작
 
@@ -283,6 +357,7 @@ public class CorrectWordActivity extends AppCompatActivity {
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         FirebaseUser firebaseUser = auth.getCurrentUser();
         View.OnClickListener listener = v -> {
+            resetTimer(); //타이머 중단
             Button clickedButton = (Button) v;
             String chosenAnswer = clickedButton.getText().toString();
 
@@ -315,7 +390,6 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             // `myAnswer`로 사용자의 선택 추가
             bundle.putString("MY_ANSWER", chosenOptionNumber);
-
             bundle.putString("CORRECT_ANSWER", correctOptionNumber);
 
             // 선택한 버튼에 대한 처리
@@ -323,14 +397,28 @@ public class CorrectWordActivity extends AppCompatActivity {
                 //정답일 경우 레벨을 증가시키고 다음 문제로 이동
                 updateLevel();
             } else {
+                life--; //체력 감소
+                updateHearts(); //하트 상태 업데이트
+
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
                     clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
                     clickedButton.setText("X " + chosenAnswer);
 
                     if (life > 0) {
-                        life--; //체력 감소
-                        updateHearts(); //하트 상태 업데이트
+                        //해설 화면 호출
+                        getExplanationForAnswer(chosenAnswer, false, new ExplanationCallback() {
+                            @Override
+                            public void onExplanationFound(String word, String meaning, String example) {
+                                Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+                                bundle.putInt("LIFE_REMAINING", life);
+                                bundle.putBoolean("SHOW_RETRY", false);
+                                intent.putExtras(bundle);
+                                startActivityForResult(intent, 100);
+                            }
+                        });
+                    } else {
+                        handleGameOverExplanation();
                     }
 
                     Word questionWord = wordList.get(currentQuestionIndex);
@@ -470,41 +558,12 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == 100 && resultCode == RESULT_OK) {
-            if (data != null) {
-                if (data.hasExtra("LIFE_REMAINING")) {
-                    life = data.getIntExtra("LIFE_REMAINING", life);
-                    updateHearts();
-                }
-            }
-            //새로운 문제 로드
-            loadNewQuestion();
-        }
-    }
-
-    @Override
     public void onBackPressed() {
         super.onBackPressed();
         Intent intent = new Intent();
         intent.putExtra("LIFE_REMAINING", life);
         setResult(RESULT_OK, intent);
         finish();
-    }
-
-    private void updateHearts() {
-        for (int i = 0; i < hearts.length; i++) {
-            if (i < life) {
-                hearts[i].setImageResource(R.drawable.full_life);
-            } else {
-                hearts[i].setImageResource(R.drawable.no_life);
-            }
-        }
-        if (life == 0) {
-            Toast.makeText(this, "Game Over! You have no lives left.", Toast.LENGTH_LONG).show();
-        }
     }
 
     private void finishGame() {
@@ -522,20 +581,22 @@ public class CorrectWordActivity extends AppCompatActivity {
     }
 
     private void wrongWord(String userId, String word, String answer) {
-        DatabaseReference userRef = databaseReference.child(userId).child("mistakeNotes");
+        if(userId == null || word == null || answer == null) {
+            Log.e("Firebase", "Invalid data for wrongWord: userId=" + userId + ", word=" + word + ", answer=" + answer);
+            return; // 잘못된 값이 있으면 실행 중단
+        }
 
+        DatabaseReference userRef = databaseReference.child(userId).child("mistakeNotes");
         String key = databaseReference.push().getKey();
 
         if (key != null) {
             userRef.child(word).setValue(answer)
-                    .addOnSuccessListener(aVoid -> {
+                    .addOnSuccessListener(aVoid ->
                         // 성공 시 처리
-                        Log.d("Firebase", "단어 저장 성공: " + word);
-                    })
-                    .addOnFailureListener(e -> {
+                        Log.d("Firebase", "단어 저장 성공: " + word))
+                    .addOnFailureListener(e ->
                         // 실패 시 처리
-                        Log.e("Firebase", "단어 저장 실패", e);
-                    });
+                        Log.e("Firebase", "단어 저장 실패", e));
         }
     }
 }

@@ -15,6 +15,8 @@ public class CorrectExplanation extends AppCompatActivity {
     Button retryButton, moveMainButton;
     TextView myAnswer,correctAnswer;
 
+    private boolean isFinishing = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +34,6 @@ public class CorrectExplanation extends AppCompatActivity {
 
         // Bundle을 Intent에서 가져오기
         Bundle bundle = getIntent().getExtras();
-
         if (bundle != null) {
             boolean showRetry = bundle.getBoolean("SHOW_RETRY", false);
 
@@ -73,34 +74,40 @@ public class CorrectExplanation extends AppCompatActivity {
             setUpExplanationView(R.id.explanationWord2, R.id.explanationMeaning2, R.id.explanationExample2, R.id.explanationAnswerStatus2, word2, meaning2, example2, isCorrect2);
             setUpExplanationView(R.id.explanationWord3, R.id.explanationMeaning3, R.id.explanationExample3, R.id.explanationAnswerStatus3, word3, meaning3, example3, isCorrect3);
             setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4, word4, meaning4, example4, isCorrect4);
+
+            // 선택한 답변과 정답 가져오기
+            String chosen = bundle.getString("MY_ANSWER", "시간 초과"); // 사용자가 선택한 답변
+            String correct = bundle.getString("CORRECT_ANSWER", "N/A"); // 정답
+
+            // 선택한 답변과 정답을 표시
+            myAnswer.setText("내가 선택한 답변: " + (chosen.isEmpty() ? "시간 초과" : chosen));
+            correctAnswer.setText("정답: " + correct);
         }
-        // 선택한 답변과 정답 가져오기
-        String chosen = bundle.getString("MY_ANSWER"); // 사용자가 선택한 답변
-        String correct = bundle.getString("CORRECT_ANSWER"); // 정답
 
-        // 선택한 답변과 정답을 표시
-        myAnswer.setText("내가 선택한 답변: " + chosen);
-        correctAnswer.setText("정답: " + correct);
-
-        retryButton.setOnClickListener(v -> {
+        retryButton.setOnClickListener(v -> handleButtonClick(() -> {
             Intent intent = new Intent(CorrectExplanation.this, CorrectWordActivity.class);
             finish();
             startActivity(intent);
-        });
+        }));
 
-        moveMainButton.setOnClickListener(v -> {
+        moveMainButton.setOnClickListener(v -> handleButtonClick(() -> {
             Intent intent = new Intent(CorrectExplanation.this, EngGmActivity.class);
             finish();
             startActivity(intent);
-        });
+        }));
 
-        nextButton.setOnClickListener(v -> {
+        nextButton.setOnClickListener(v -> handleButtonClick(() -> {
             //다음 문제로 넘어가기 위해 RESULT_OK와 추가 데이터 설정
             Intent resultIntent = new Intent();
             resultIntent.putExtra("LIFE_REMAINING", getIntent().getIntExtra("LIFE_REMAINING", 5));
             setResult(RESULT_OK, resultIntent); //다음 문제로 돌아가기 위한 결과 코드 설정
             finish(); //현재 화면 종료
-        });
+        }));
+    }
+    private void handleButtonClick(Runnable action) {
+        if(isFinishing) return;
+        isFinishing = true;
+        action.run();
     }
 
     private void setUpExplanationView(int wordResId, int meaningResId, int exampleResId, int statusResId,

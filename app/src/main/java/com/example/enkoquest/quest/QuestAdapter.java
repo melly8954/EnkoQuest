@@ -41,7 +41,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.QuestViewHol
         // 데이터를 ViewHolder에 바인딩
         holder.titleTextView.setText(quest.getTitle());
         holder.descriptionTextView.setText(quest.getDescription());
-        holder.rewardTextView.setText("보상: " + quest.getReward() + "포인트");
+        holder.rewardTextView.setText("보상: " + quest.getReward() + "골드");
 
         // 상태에 따라 버튼 활성화/비활성화 및 텍스트 변경
         if (quest.getStatus().equals("completed")) {
