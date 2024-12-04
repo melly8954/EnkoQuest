@@ -15,7 +15,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"/>
+        app:srcCompat="@drawable/back" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,16 +27,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="다음 힌트와 해석을 보고 예제의 빈칸을 완성해 보세요."
-            android:textSize="20sp"
-            android:paddingBottom="8dp" />
+            android:textSize="20sp" />
 
         <!-- 레벨과 하트 영역 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:padding="8dp">
 
             <!-- 레벨 텍스트 -->
@@ -44,39 +44,39 @@
                 android:id="@+id/level"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 android:text="Level: 1"
-                android:textSize="18sp"
                 android:textColor="#000"
-                android:layout_marginEnd="16dp" />
+                android:textSize="18sp" />
 
             <!-- 하트 아이콘들 -->
             <ImageView
                 android:id="@+id/heart1"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/full_life"
-                android:layout_marginEnd="4dp" />
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/full_life" />
 
             <ImageView
                 android:id="@+id/heart2"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/full_life"
-                android:layout_marginEnd="4dp" />
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/full_life" />
 
             <ImageView
                 android:id="@+id/heart3"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/full_life"
-                android:layout_marginEnd="4dp" />
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/full_life" />
 
             <ImageView
                 android:id="@+id/heart4"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/full_life"
-                android:layout_marginEnd="4dp" />
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/full_life" />
 
             <ImageView
                 android:id="@+id/heart5"
@@ -85,61 +85,62 @@
                 android:src="@drawable/full_life" />
         </LinearLayout>
     </LinearLayout>
+
     <TextView
         android:id="@+id/showMeaning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
+        android:paddingBottom="8dp"
         android:text="의미: [동] 개발하다, 발달하다, 발전시키다"
-        android:textSize="20sp"
-        android:paddingBottom="8dp" />
+        android:textSize="20sp" />
 
     <!-- 예제 문장 -->
     <TextView
         android:id="@+id/showExample"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="She plans to ______ a new app that helps people manage their time."
         android:layout_marginBottom="10dp"
-        android:textSize="18sp"
-        android:paddingBottom="8dp" />
+        android:paddingBottom="8dp"
+        android:text="She plans to ______ a new app that helps people manage their time."
+        android:textSize="18sp" />
 
     <!-- 예제 해석 -->
     <TextView
         android:id="@+id/showTranslation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="해석: 그녀는 사람들이 시간을 관리할 수 있도록 돕는 새로운 앱을 개발할 계획입니다."
-        android:textSize="16sp"
         android:paddingBottom="8dp"
-        android:textColor="#555555" />
+        android:text="해석: 그녀는 사람들이 시간을 관리할 수 있도록 돕는 새로운 앱을 개발할 계획입니다."
+        android:textColor="#555555"
+        android:textSize="16sp" />
 
     <!-- 단어 힌트 -->
     <TextView
         android:id="@+id/showHint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="힌트: d___"
-        android:textSize="32sp"
         android:layout_marginTop="10dp"
-        android:paddingBottom="8dp" />
+        android:paddingBottom="8dp"
+        android:text="힌트: d___"
+        android:textSize="32sp" />
 
     <!-- 정답 입력란 (수평 배치로 "정답:"과 EditText 나누기) -->
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
 
         <!-- 정답 텍스트 -->
         <TextView
             android:id="@+id/tvAnswerLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
             android:text="정답:"
-            android:textSize="16sp"
-            android:paddingEnd="8dp" />
+            android:textSize="16sp" />
 
         <!-- 정답 입력 EditText -->
         <EditText
@@ -159,8 +160,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:padding="12dp"
         android:text="제출"
-        android:textSize="16sp"
-        android:padding="12dp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
