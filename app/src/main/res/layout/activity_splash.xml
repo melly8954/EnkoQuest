@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/splah_window"
+    android:id="@+id/splash_window"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -67,7 +67,7 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- 오프라인 지원 -->
+        <!-- 오답노트 무료 제공 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,18 +88,16 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- 잘못된 단어 금지 -->
+        <!-- 광고 없음 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:orientation="horizontal">
 
-
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="3dp"
                 app:srcCompat="@drawable/no_ad" />
 
             <TextView
@@ -110,28 +108,37 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
         </LinearLayout>
-
-        <!-- 단어 알림 -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" />
     </LinearLayout>
 
-    <!-- 하단 고양이 이미지 -->
+    <!-- 화면을 터치해주세요! -->
 
-    <!-- 하단 텍스트 -->
+    <!-- 하단 아이콘 -->
+
+    <TextView
+        android:id="@+id/touch_to_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:text="화면을 터치해주세요!"
+        android:textColor="#CAC6C2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/features_layout" />
+
     <ImageView
         android:id="@+id/bottom_logo"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/features_layout"
+        app:layout_constraintTop_toBottomOf="@id/touch_to_continue"
         app:srcCompat="@drawable/enkoquest_icon" />
 
+    <!-- 하단 텍스트 -->
     <TextView
         android:id="@+id/footer_text"
         android:layout_width="wrap_content"
