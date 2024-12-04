@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".user.SignInActivity">
 
     <EditText
@@ -82,6 +83,7 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonMoveFindView"
         app:layout_constraintStart_toStartOf="@+id/buttonMoveFindView"
         app:layout_constraintTop_toBottomOf="@+id/buttonMoveFindView" />
+
     <ImageButton
         android:id="@+id/imageButtonBack"
         android:layout_width="53dp"

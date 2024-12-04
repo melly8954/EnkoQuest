@@ -20,7 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn01, btn02, btn03, buttonMoveLogin;
+    Button btn02, btn03, buttonMoveLogin;
+    ImageButton btn01;
     ImageButton questBtn;
     FirebaseAuth mAuth;
     FirebaseUser user;

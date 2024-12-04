@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDECE8"
     android:orientation="vertical"
     android:padding="30dp">
 
@@ -15,28 +16,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
             android:text="1."
-            android:textSize="20sp"
             android:textColor="#000"
-            android:paddingEnd="8dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/explanationWord1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="22sp"
             android:text="단어 1: 예시 단어"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="22sp" />
         <!-- 정답/오답 표시용 TextView 추가 -->
         <TextView
             android:id="@+id/explanationAnswerStatus1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="정답"
-            android:textSize="16sp"
             android:textColor="#008000"
-            android:layout_marginStart="8dp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,18 +49,18 @@
             android:id="@+id/explanationMeaning1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:text="의미 1: 예시 의미"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/explanationExample1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:textSize="18sp"
             android:text="예시 1: 예시 예제"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <!-- 두 번째 설명 영역 -->
@@ -72,28 +73,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
             android:text="2."
-            android:textSize="20sp"
             android:textColor="#000"
-            android:paddingEnd="8dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/explanationWord2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="22sp"
             android:text="단어 2: 예시 단어"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="22sp" />
         <!-- 정답/오답 표시용 TextView 추가 -->
         <TextView
             android:id="@+id/explanationAnswerStatus2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="정답"
-            android:textSize="16sp"
             android:textColor="#008000"
-            android:layout_marginStart="8dp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -105,18 +106,18 @@
             android:id="@+id/explanationMeaning2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:text="의미 2: 예시 의미"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/explanationExample2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:textSize="18sp"
             android:text="예시 2: 예시 예제"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <!-- 세 번째 설명 영역 -->
@@ -129,28 +130,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
             android:text="3."
-            android:textSize="20sp"
             android:textColor="#000"
-            android:paddingEnd="8dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/explanationWord3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="22sp"
             android:text="단어 3: 예시 단어"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="22sp" />
         <!-- 정답/오답 표시용 TextView 추가 -->
         <TextView
             android:id="@+id/explanationAnswerStatus3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="정답"
-            android:textSize="16sp"
             android:textColor="#008000"
-            android:layout_marginStart="8dp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -162,18 +163,18 @@
             android:id="@+id/explanationMeaning3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:text="의미 3: 예시 의미"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/explanationExample3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:textSize="18sp"
             android:text="예시 3: 예시 예제"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <!-- 네 번째 설명 영역 -->
@@ -186,28 +187,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
             android:text="4."
-            android:textSize="20sp"
             android:textColor="#000"
-            android:paddingEnd="8dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/explanationWord4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="22sp"
             android:text="단어 4: 예시 단어"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="22sp" />
         <!-- 정답/오답 표시용 TextView 추가 -->
         <TextView
             android:id="@+id/explanationAnswerStatus4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="정답"
-            android:textSize="16sp"
             android:textColor="#008000"
-            android:layout_marginStart="8dp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -219,55 +220,57 @@
             android:id="@+id/explanationMeaning4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:text="의미 4: 예시 의미"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/explanationExample4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:textSize="18sp"
             android:text="예시 4: 예시 예제"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/myAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:text="내가 고른 번호 : "
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/correctAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:textSize="18sp"
             android:text="옳은 번호 : "
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="18sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/retryButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="재도전"
             android:layout_marginEnd="20dp"
+            android:text="재도전"
             android:visibility="gone" />
 
         <Button

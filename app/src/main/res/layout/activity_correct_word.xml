@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
-    android:background="#EDECE8"
     tools:context=".challenge.CorrectWordActivity">
 
     <!-- 상단 안내 문구 영역 -->
@@ -29,9 +29,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
+            android:paddingStart="10dp"
             android:text="다음 단어의 뜻으로 알맞은 것은?"
-            android:textSize="25sp"
-            android:paddingStart="10dp"/>
+            android:textSize="25sp" />
     </LinearLayout>
 
     <!-- 문제 텍스트를 표시하는 영역 -->
@@ -64,37 +64,38 @@
             android:id="@+id/levelTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:text="Level: 1"
-            android:textSize="18sp"
             android:textColor="#000"
-            android:layout_marginEnd="16dp" />
+            android:textSize="18sp" />
+
         <ImageView
             android:id="@+id/heart1"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/full_life" />
 
         <ImageView
             android:id="@+id/heart2"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/full_life" />
 
         <ImageView
             android:id="@+id/heart3"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/full_life" />
 
         <ImageView
             android:id="@+id/heart4"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/full_life"
-            android:layout_marginEnd="4dp" />
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/full_life" />
 
         <ImageView
             android:id="@+id/heart5"
@@ -142,16 +143,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="10dp">
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1."
-                android:textSize="20sp"
+                android:gravity="center_vertical"
                 android:paddingEnd="8dp"
-                android:gravity="center_vertical" />
+                android:text="1."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/optionButton1"
@@ -159,23 +160,23 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
         </LinearLayout>
 
         <!-- 두 번째 선택지 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="10dp">
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2."
-                android:textSize="20sp"
+                android:gravity="center_vertical"
                 android:paddingEnd="8dp"
-                android:gravity="center_vertical" />
+                android:text="2."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/optionButton2"
@@ -183,23 +184,23 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
         </LinearLayout>
 
         <!-- 세 번째 선택지 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="10dp">
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3."
-                android:textSize="20sp"
+                android:gravity="center_vertical"
                 android:paddingEnd="8dp"
-                android:gravity="center_vertical" />
+                android:text="3."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/optionButton3"
@@ -207,23 +208,23 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
         </LinearLayout>
 
         <!-- 네 번째 선택지 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="10dp">
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4."
-                android:textSize="20sp"
+                android:gravity="center_vertical"
                 android:paddingEnd="8dp"
-                android:gravity="center_vertical" />
+                android:text="4."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/optionButton4"
@@ -231,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -239,5 +240,5 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 </LinearLayout>
