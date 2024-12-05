@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/textPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="프로필 이미지를 선택하세요"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- GridLayout 설정: 한 줄에 3개의 이미지 -->
+    <GridLayout
+        android:id="@+id/gridImagePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp"/>
+
+</LinearLayout>
