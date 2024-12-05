@@ -62,10 +62,13 @@ public class BWriteExplanation extends AppCompatActivity {
             String translationExample = bundle.getString("translationExample");
             String meaning = bundle.getString("meaning");
 
-            // 예제 문장의 빈칸에 빨간색으로 정답 표시
             if (questionExample != null && correct != null) {
-                SpannableString spannableString = new SpannableString(questionExample.replace("______", correct));
-                int startIndex = questionExample.indexOf("______");
+                // 빈칸을 정답으로 대체한 텍스트 생성
+                String replacedText = questionExample.replace("______", correct);
+                SpannableString spannableString = new SpannableString(replacedText);
+
+                // 정답 위치 계산
+                int startIndex = replacedText.indexOf(correct);
                 if (startIndex >= 0) {
                     spannableString.setSpan(
                             new ForegroundColorSpan(Color.RED),
@@ -74,8 +77,11 @@ public class BWriteExplanation extends AppCompatActivity {
                             Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
                     );
                 }
+
+                // TextView에 설정
                 showExample.setText(spannableString);
             }
+
 
             // 데이터 설정
             transExample.setText(translationExample);

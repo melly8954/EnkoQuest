@@ -177,6 +177,9 @@ public class BWriteActivity extends AppCompatActivity{
         showExample.setText(exampleWithBlank);  // 문제 예제 텍스트뷰에 빈칸 표시
         showTranslation.setText(question.getTranslation());
 
+        // EditText 초기화
+        inputAnswer.setText("");
+
         String word = question.getWord(); // 단어 가져오기
         if (word != null && !word.isEmpty()) {
             char firstChar = word.charAt(0); // 첫 글자 가져오기
@@ -320,6 +323,9 @@ public class BWriteActivity extends AppCompatActivity{
                     updateHearts();
                 }
             }
+
+            // EditText 초기화
+            inputAnswer.setText("");
             //새로운 문제 로드
             loadNewQuestion();
         }
