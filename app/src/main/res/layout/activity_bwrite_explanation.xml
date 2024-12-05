@@ -1,0 +1,122 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="해설 페이지"
+        android:textSize="32sp"
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <!-- 예제 문장 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예제"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:paddingEnd="8dp" />
+    <TextView
+        android:id="@+id/showExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- 단어 의미 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예제 단어"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:paddingEnd="8dp" />
+    <TextView
+        android:id="@+id/showMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"
+        android:paddingBottom="8dp" />
+
+    <!-- 예제 해석 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예제 해석"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:paddingEnd="8dp" />
+    <TextView
+        android:id="@+id/transExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- 정답 -->
+        <TextView
+            android:id="@+id/correctAnswerWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정답: "
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 사용자가 선택한 답 -->
+        <TextView
+            android:id="@+id/userAnswerWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내가 선택한 답변: "
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+    <!-- 버튼 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/retryBlank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시 시도"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/nextBlank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음 문제"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/moveMainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로" />
+    </LinearLayout>
+</LinearLayout>

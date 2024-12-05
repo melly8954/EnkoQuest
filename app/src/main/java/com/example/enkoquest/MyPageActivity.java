@@ -235,10 +235,13 @@ public class MyPageActivity extends AppCompatActivity implements View
                         Integer correctLevel = (challengeLevel.getCorrectLevel() == null) ? 1: challengeLevel.getCorrectLevel();
                         // blankLevel이 0이라면 1로 설정
                         Integer blankLevel = (challengeLevel.getBlankLevel() == null) ? 1 : challengeLevel.getBlankLevel();
+                        // bwriteLevel이 0이라면 1로 설정
+                        Integer bwriteLevel = (challengeLevel.getBwriteLevel() == null) ? 1 : challengeLevel.getBwriteLevel();
 
                         textChallengeInfo.setText("현재 챌린지 단계 " + "\n\n"
-                                + "영단어 : " + correctLevel + "단계 \n"
-                                + "빈칸 : " + blankLevel + "단계 \n");
+                                + "초급 : " + correctLevel + "단계 \n"
+                                + "중급 : " + blankLevel + "단계 \n"
+                                + "고급 : " + bwriteLevel + "단계 \n");
                     } else {
                         Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();
                     }
