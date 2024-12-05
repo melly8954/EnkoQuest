@@ -13,6 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.user.SignInActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // 로그인 안 되어 있으면 '로그인' 버튼
             buttonMoveLogin.setText("로그인");
             buttonMoveLogin.setOnClickListener(v -> {
-                Intent intent = new Intent(MainActivity.this, LoginIndexActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);  // 로그인 화면으로 이동
             });
         }
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == R.id.buttonMyPage) {
             if (user == null) {
                 // 로그인 안 되어 있으면 로그인 화면으로 이동
-                Intent intent = new Intent(MainActivity.this, LoginIndexActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);
             } else {
                 // 로그인 되어 있으면 마이페이지로 이동
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == R.id.buttonChallengeMode) {
             if (user == null) {
                 // 로그인 안 되어 있으면 로그인 화면으로 이동
-                Intent intent = new Intent(MainActivity.this, LoginIndexActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);
             } else {
                 // 로그인 되어 있으면 챌린지 모드로 이동
