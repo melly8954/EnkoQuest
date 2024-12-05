@@ -112,6 +112,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         }
+
+        if (view.getId() == R.id.buttonStoryMode) {
+            Intent intent = new Intent(MainActivity.this, WordBook.class);
+            startActivity(intent);
+        }
     }
 
     private void startMusicService() {
