@@ -80,7 +80,10 @@ public class CorrectExplanation extends AppCompatActivity {
 
         // 선택한 답변과 정답을 표시
         myAnswer.setText("내가 선택한 답변: " + chosen);
+        myAnswer.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+
         correctAnswer.setText("정답: " + correct);
+        correctAnswer.setTextColor(getResources().getColor(R.color.correct));
 
         retryButton.setOnClickListener(v -> {
             Intent intent = new Intent(CorrectExplanation.this, CorrectWordActivity.class);
@@ -113,6 +116,12 @@ public class CorrectExplanation extends AppCompatActivity {
         wordTextView.setText(word);
         meaningTextView.setText(meaning);
         exampleTextView.setText(example);
-        answerStatusTextView.setText(isCorrect ? "정답입니다!" : "오답입니다.");
+        if(isCorrect == true){
+            answerStatusTextView.setText("정답입니다!");
+            answerStatusTextView.setTextColor(getResources().getColor(R.color.correct));
+        }else{
+            answerStatusTextView.setText("오답입니다.");
+            answerStatusTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+        }
     }
 }

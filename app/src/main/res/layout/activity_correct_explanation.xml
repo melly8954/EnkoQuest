@@ -37,6 +37,7 @@
             android:layout_marginStart="8dp"
             android:text="정답"
             android:textColor="#008000"
+            android:textStyle="bold"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -94,6 +95,7 @@
             android:layout_marginStart="8dp"
             android:text="정답"
             android:textColor="#008000"
+            android:textStyle="bold"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -150,6 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="정답"
+            android:textStyle="bold"
             android:textColor="#008000"
             android:textSize="16sp" />
     </LinearLayout>
@@ -208,6 +211,7 @@
             android:layout_marginStart="8dp"
             android:text="정답"
             android:textColor="#008000"
+            android:textStyle="bold"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -246,7 +250,8 @@
             android:layout_height="wrap_content"
             android:text="내가 고른 번호 : "
             android:textColor="#000"
-            android:textSize="18sp" />
+            android:textStyle="bold"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/correctAnswer"
@@ -254,8 +259,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:text="옳은 번호 : "
+            android:textStyle="bold"
             android:textColor="#000"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout

@@ -75,21 +75,31 @@
 
         <!-- 정답 -->
         <TextView
+            android:id="@+id/answerChecking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정오처리"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="15dp" />
+        <TextView
             android:id="@+id/correctAnswerWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="정답: "
-            android:textSize="20sp"
-            android:layout_marginBottom="8dp" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
 
         <!-- 사용자가 선택한 답 -->
         <TextView
             android:id="@+id/userAnswerWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="내가 선택한 답변: "
+            android:text="내가 작성한 답변: "
             android:textSize="18sp"
             android:textColor="#FF0000"
+            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
     </LinearLayout>
 

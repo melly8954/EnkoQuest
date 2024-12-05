@@ -180,6 +180,7 @@ public class BlankActivity extends AppCompatActivity {
         // 문제의 보기 예제와 해석을 번들에 추가
         bundle.putString("questionExample", question.getExample());
         bundle.putString("translationExample", question.getTranslation());
+        bundle.putString("word",question.getWord());
         
         // blankExample에 값을 저장하고 saveKey에 할당
         blankExample = exampleWithBlank;

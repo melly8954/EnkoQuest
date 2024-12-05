@@ -19,7 +19,7 @@ import com.example.enkoquest.R;
 
 public class BWriteExplanation extends AppCompatActivity {
 
-    TextView correctAnswer, userAnswer, showExample, transExample,showMeaning;
+    TextView correctAnswer, userAnswer, showExample, transExample,showMeaning,answerChecking;
     Button retryBlank, moveMainButton, nextButton;
 
     @Override
@@ -33,6 +33,7 @@ public class BWriteExplanation extends AppCompatActivity {
         showExample = findViewById(R.id.showExample);
         showMeaning = findViewById(R.id.showMeaning);
         transExample = findViewById(R.id.transExample);
+        answerChecking = findViewById(R.id.answerChecking);
 
         retryBlank = findViewById(R.id.retryBlank);
         nextButton = findViewById(R.id.nextBlank);
@@ -61,6 +62,7 @@ public class BWriteExplanation extends AppCompatActivity {
             String userChoice = bundle.getString("MY_ANSWER");
             String translationExample = bundle.getString("translationExample");
             String meaning = bundle.getString("meaning");
+            Boolean isCorrect = bundle.getBoolean("IS_CORRECT");
 
             if (questionExample != null && correct != null) {
                 // 빈칸을 정답으로 대체한 텍스트 생성
@@ -84,8 +86,13 @@ public class BWriteExplanation extends AppCompatActivity {
 
 
             // 데이터 설정
+            answerChecking.setText("오답입니다.");
+            answerChecking.setTextColor(Color.RED);
+
             transExample.setText(translationExample);
+
             correctAnswer.setText("정답: " + correct);
+            correctAnswer.setTextColor(getResources().getColor(R.color.correct));
             userAnswer.setText("내가 선택한 답변: " + userChoice);
             showMeaning.setText(meaning);
         }

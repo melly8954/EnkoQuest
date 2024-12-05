@@ -49,7 +49,8 @@
             android:layout_marginBottom="8dp"
             android:text="정답: example"
             android:textColor="#000"
-            android:textSize="20sp" />
+            android:textStyle="bold"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/userAnswerWord"
@@ -58,6 +59,7 @@
             android:text="내 선택: option2"
             android:textSize="18sp"
             android:textColor="#FF0000"
+            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
     </LinearLayout>
 

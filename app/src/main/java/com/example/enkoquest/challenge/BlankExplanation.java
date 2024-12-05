@@ -1,7 +1,11 @@
 package com.example.enkoquest.challenge;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -96,10 +100,30 @@ public class BlankExplanation extends AppCompatActivity {
         String questionExample = bundle.getString("questionExample");
         String translationExample = bundle.getString("translationExample");
 
+        // 예제 문장에서 빈칸에 들어갈 단어
+        String blankWord = bundle.getString("word");
+
+        // 정답 위치 계산
+        int startIndex = questionExample.indexOf(blankWord);
+        SpannableString spannableString = new SpannableString(questionExample);
+        if (startIndex >= 0) {
+            spannableString.setSpan(
+                    new ForegroundColorSpan(Color.RED),
+                    startIndex,
+                    startIndex + blankWord.length(),
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+            );
+            // TextView에 설정
+            showExample.setText(spannableString);
+        }
+
+
         // 선택한 답변과 정답을 표시
         userAnswer.setText("내가 선택한 답변: " + chosen);
+
         correctAnswer.setText("정답: " + correct);
-        showExample.setText(questionExample);
+        correctAnswer.setTextColor(getResources().getColor(R.color.correct));
+
         transExample.setText(translationExample);
 
         retryBlank.setOnClickListener(v -> {
