@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn01 = findViewById(R.id.buttonMyPage);
         btn02 = findViewById(R.id.buttonChallengeMode);
-        btn03 = findViewById(R.id.buttonStoryMode);
+        btn03 = findViewById(R.id.buttonWordBook);
         buttonMoveLogin = findViewById(R.id.buttonMoveLogin);
         musicBtn = findViewById(R.id.musicBtn);
         musicBtn.setImageResource(R.drawable.pause);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
-        if (view.getId() == R.id.buttonStoryMode) {
+        if (view.getId() == R.id.buttonWordBook) {
             Intent intent = new Intent(MainActivity.this, WordBook.class);
             startActivity(intent);
         }

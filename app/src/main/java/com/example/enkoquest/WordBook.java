@@ -1,9 +1,11 @@
 package com.example.enkoquest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +37,7 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
 
     private TextView showNumber, showWord, showMeaning, showExample, showTranslation;
     private Button leftButton, rightButton;
+    private ImageButton imageButtonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +56,11 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
 
         leftButton.setOnClickListener(this);
         rightButton.setOnClickListener(this);
+        imageButtonBack = findViewById(R.id.imageButtonBack);
 
         fetchDataFromFirebase();
+
+        imageButtonBack.setOnClickListener(this);
     }
 
     private void fetchDataFromFirebase() {
@@ -119,6 +125,10 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
                 currentQuestionIndex = 1;
                 fetchDataFromFirebase();
             }
+        }
+        if (view.getId() == R.id.imageButtonBack) {
+            Intent intent = new Intent(WordBook.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 
