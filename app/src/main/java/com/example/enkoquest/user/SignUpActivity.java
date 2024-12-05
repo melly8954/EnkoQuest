@@ -13,7 +13,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.enkoquest.LoginIndexActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -97,7 +96,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(this, LoginIndexActivity.class); // 메인 액티비티로 이동
+        Intent intent = new Intent(this, SignInActivity.class);
         startActivity(intent);
         finish(); // 현재 액티비티 종료
     }

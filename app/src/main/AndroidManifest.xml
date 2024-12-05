@@ -13,10 +13,20 @@
         android:theme="@style/Theme.EnkoQuest"
         tools:targetApi="31">
         <activity
+            android:name=".WordBook"
+            android:exported="false" />
+        <activity
+            android:name=".user.Ranking"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.BWriteExplanation"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -58,9 +68,6 @@
             android:exported="false" />
         <activity
             android:name=".user.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginIndexActivity"
             android:exported="false" />
         <activity
             android:name=".MistakeNotes"

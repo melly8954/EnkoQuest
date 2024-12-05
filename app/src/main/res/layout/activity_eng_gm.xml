@@ -46,7 +46,8 @@
             android:layout_marginBottom="30dp"
             android:background="#E2EFDA"
             android:padding="8dp"
-            android:text="영어 단어 맞추기"
+            android:text="초급"
+            android:textAlignment="center"
             android:textSize="32sp" />
 
         <!-- 빈칸 채우기 -->
@@ -57,17 +58,19 @@
             android:layout_marginBottom="30dp"
             android:background="#E2EFDA"
             android:padding="8dp"
-            android:text="빈칸 채우기"
+            android:text="중급"
+            android:textAlignment="center"
             android:textSize="32sp" />
 
         <!-- 동의어 찾기 -->
         <TextView
-            android:id="@+id/synonymFinder"
+            android:id="@+id/bwrite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E2EFDA"
             android:padding="8dp"
-            android:text="동의어 찾기"
+            android:text="고급"
+            android:textAlignment="center"
             android:textSize="32sp" />
     </LinearLayout>
 </LinearLayout>

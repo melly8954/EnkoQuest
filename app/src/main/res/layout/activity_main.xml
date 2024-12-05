@@ -40,12 +40,12 @@
 
     <!-- 하단 이미지 버튼: 마이페이지 -->
     <Button
-        android:id="@+id/buttonStoryMode"
+        android:id="@+id/buttonWordBook"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_marginTop="60dp"
         android:backgroundTint="#03A9F4"
-        android:text="스토리모드"
+        android:text="단어장"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonStoryMode" />
+        app:layout_constraintTop_toBottomOf="@id/buttonWordBook" />
 
     <ImageButton
         android:id="@+id/buttonMyPage"
