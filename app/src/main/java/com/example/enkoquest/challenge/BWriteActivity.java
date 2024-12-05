@@ -13,9 +13,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.R;
@@ -30,9 +27,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
-public class BWriteActivity extends AppCompatActivity{
+public class BWriteActivity extends AppCompatActivity {
 
     private ImageButton imageButtonBack;
 
@@ -110,7 +106,7 @@ public class BWriteActivity extends AppCompatActivity{
                     String example = snapshot.child("예제").getValue(String.class);
                     String translation = snapshot.child(("해석")).getValue(String.class);
                     if (number != null && word != null && meaning != null && example != null && translation != null) {
-                        wordList.add(new Word(number, word, meaning, example,translation));
+                        wordList.add(new Word(number, word, meaning, example, translation));
                     }
                 }
                 Log.d("BWriteActivity", "Loaded words: " + wordList.size());
@@ -122,6 +118,7 @@ public class BWriteActivity extends AppCompatActivity{
                     Log.e("BWriteActivity", "No data loaded from firebase");
                 }
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Toast.makeText(BWriteActivity.this, "데이터 로딩 실패", Toast.LENGTH_SHORT).show();
@@ -144,7 +141,7 @@ public class BWriteActivity extends AppCompatActivity{
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     if (dataSnapshot.exists()) {
                         highestLevel = dataSnapshot.getValue(Integer.class);
-                        if (highestLevel == 0 ) {
+                        if (highestLevel == 0) {
                             highestLevel = 1;
                         }
                     } else {
@@ -188,12 +185,10 @@ public class BWriteActivity extends AppCompatActivity{
         }
 
 
-
         // 문제의 보기 예제와 해석을 번들에 추가
         bundle.putString("questionExample", question.getExample());
         bundle.putString("translationExample", question.getTranslation());
         bundle.putString("meaning", question.getMeaning());
-
 
 
         String myAnswer = inputAnswer.getText().toString();
@@ -206,7 +201,7 @@ public class BWriteActivity extends AppCompatActivity{
         setButtonListeners(question.getWord(), bundle);
     }
 
-    private void setButtonListeners(String correctAnswer, Bundle bundle){
+    private void setButtonListeners(String correctAnswer, Bundle bundle) {
         View.OnClickListener listener = v -> {
             String userAnswer = inputAnswer.getText().toString().trim();
             Word currentWord = wordList.get(currentQuestionIndex - 1); // 현재 문제
@@ -237,7 +232,9 @@ public class BWriteActivity extends AppCompatActivity{
             }
         };
         btnSubmit.setOnClickListener(listener);
-    };
+    }
+
+    ;
 
 
     // Word 객체 클래스 정의
@@ -248,7 +245,7 @@ public class BWriteActivity extends AppCompatActivity{
         private String example;
         private String translation;
 
-        public Word(int number, String word, String meaning, String example,String translation) {
+        public Word(int number, String word, String meaning, String example, String translation) {
             this.number = number;
             this.word = word;
             this.meaning = meaning;
@@ -268,7 +265,9 @@ public class BWriteActivity extends AppCompatActivity{
             return example;
         }
 
-        public String getTranslation(){return translation;}
+        public String getTranslation() {
+            return translation;
+        }
     }
 
     private void saveChallengeLevel(int challengLevel) {
