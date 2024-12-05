@@ -81,7 +81,7 @@ public class BWriteActivity extends AppCompatActivity {
 
         // Firebase에서 데이터 가져오기
         fetchDataFromFirebase();
-
+        loadUserChallengeLevel();
         // 뒤로 가기 버튼 클릭 시 SelectWordActivity로 이동
         imageButtonBack.setOnClickListener(view -> {
             Intent intent = new Intent(this, EngGmActivity.class);
