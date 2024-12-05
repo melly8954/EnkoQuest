@@ -61,9 +61,6 @@
             android:name=".user.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginIndexActivity"
-            android:exported="false" />
-        <activity
             android:name=".MistakeNotes"
             android:exported="false" />
         <activity
