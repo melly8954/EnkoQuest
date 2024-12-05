@@ -7,9 +7,6 @@ import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.R;
@@ -17,14 +14,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BWriteActivity extends AppCompatActivity {
 
     private ImageButton imageButtonBack;
 
-//    private List<CorrectWordActivity.Word> wordList = new ArrayList<>();
+    //    private List<CorrectWordActivity.Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
     private int highestLevel = 0;
