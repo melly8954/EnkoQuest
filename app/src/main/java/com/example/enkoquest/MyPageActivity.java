@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -108,21 +109,64 @@ public class MyPageActivity extends AppCompatActivity implements View
         loadProfileImage();
     }
 
+    // 이미지 선택 기능을 여기에 구현합니다.
     private void openImagePickerFromDrawable() {
         final int[] imageResources = {
-                R.drawable.woman1, R.drawable.woman2, R.drawable.woman3
-                , R.drawable.man1, R.drawable.man2, R.drawable.man3
+                R.drawable.woman1, R.drawable.woman2, R.drawable.woman3,
+                R.drawable.man1, R.drawable.man2, R.drawable.man3
         };
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("프로필 사진 선택");
         String[] imageNames = {"woman1", "woman2", "woman3", "man1", "man2", "man3"};
-        builder.setItems(imageNames, (dialog, which) -> {
-            imageView.setImageResource(imageResources[which]);
-            saveProfileImageToDatabase(imageNames[which]);
-        });
-        builder.show();
+
+        // 다이얼로그 생성
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_profile_image_picker, null);
+        builder.setView(dialogView);
+
+        builder.setCancelable(true);
+
+        // GridLayout 설정
+        GridLayout gridLayout = dialogView.findViewById(R.id.gridImagePicker);
+        gridLayout.setColumnCount(3);  // 3개의 열로 설정
+
+        // GridLayout에 이미지 버튼 추가
+        for (int i = 0; i < imageResources.length; i++) {
+            final int imageResId = imageResources[i];
+            final String imageName = imageNames[i];
+
+            // 동적으로 ImageView 생성
+            ImageView imageView = new ImageView(this);
+            imageView.setImageResource(imageResId);
+            imageView.setPadding(16, 16, 16, 16);
+
+            // 이미지 크기 조정
+            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
+            params.width = 0;  // 가로 크기를 0dp로 설정하여 비율을 맞춤
+            params.height = 200;  // 이미지의 높이를 고정값으로 설정 (여기서는 200dp)
+            params.rowSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f); // 세로 비율 설정
+            params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f); // 가로 비율 설정
+            imageView.setLayoutParams(params);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP); // 이미지 크기 조정
+
+            // 클릭 이벤트: 이미지 선택
+            imageView.setOnClickListener(v -> {
+                this.imageView.setImageResource(imageResId); // 프로필 이미지 설정
+                saveProfileImageToDatabase(imageName); // 선택한 이미지 저장
+                Toast.makeText(this, "선택한 사진: " + imageName, Toast.LENGTH_SHORT).show();
+            });
+
+            // GridLayout에 추가
+            gridLayout.addView(imageView);
+        }
+
+        // 다이얼로그 표시
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
+
+
+    // 선택된 이미지 저장
     private void saveProfileImageToDatabase(String selectedImage) {
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
@@ -136,32 +180,32 @@ public class MyPageActivity extends AppCompatActivity implements View
                 });
     }
 
+    // 프로필 이미지 불러오기
     private void loadProfileImage() {
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
         databaseReference.child(userId).child("profileImage").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
                     String profileImage = snapshot.getValue(String.class);
-
-                    // Firebase에 저장된 이미지 파일명을 바탕으로 이미지 설정
                     if (profileImage != null) {
                         int imageResId = getResources().getIdentifier(profileImage, "drawable", getPackageName());
-                        imageView.setImageResource(imageResId);
+                        imageView.setImageResource(imageResId); // 저장된 이미지 적용
                     }
                 } else {
-                    // 프로필 이미지가 없을 경우 기본 이미지 설정
-                    imageView.setImageResource(R.drawable.download);
+                    imageView.setImageResource(R.drawable.man1); // 기본 이미지 설정
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Log.e("Firebase", "데이터를 불러오는 도중 오류 발생", error.toException());
-                Toast.makeText(MyPageActivity.this, "데이터를 불러오는 도중 오류 발생", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyPageActivity.this, "데이터 불러오기 오류", Toast.LENGTH_SHORT).show();
             }
         });
     }
+
+
 
     private void loadUserData(String userId) {
         databaseReference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
