@@ -28,7 +28,7 @@ import java.util.List;
 public class WordBook extends AppCompatActivity implements View.OnClickListener {
 
     private List<Word> wordList = new ArrayList<>();
-    private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
+    private int currentQuestionIndex = 1; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
 
     private FirebaseAuth auth; // Firebase 인증 인스턴스
     DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
@@ -76,14 +76,14 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
                 Log.d("BWriteActivity", "Loaded words: " + wordList.size());
                 if (!wordList.isEmpty()) {
                     // 현재 인덱스에 해당하는 문제를 가져옴
-                    Word question = wordList.get(currentQuestionIndex);
+                    Word question = wordList.get(currentQuestionIndex -1);
                     Integer number = question.getNumber();
                     String word = question.getWord();
                     String meaning = question.getMeaning();
                     String example = question.getExample();
                     String translation = question.getTranslation();
 
-                    showNumber.setText(number + "Page");
+                    showNumber.setText("Page_" + number);
                     showWord.setText(word);
                     showMeaning.setText(meaning);
                     showExample.setText(example);
@@ -103,22 +103,20 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.left_button){
-            if (currentQuestionIndex > 0) {
-                if(currentQuestionIndex < 0 ){
-                    currentQuestionIndex = 199 ;
-                    fetchDataFromFirebase();
-                }
+            if (currentQuestionIndex > 1) {
                 currentQuestionIndex --;
+                fetchDataFromFirebase();
+            }else if(currentQuestionIndex == 1){
+                currentQuestionIndex = 200;
                 fetchDataFromFirebase();
             }
         }
         if(view.getId() == R.id.right_button){
-            if (currentQuestionIndex < wordList.size() - 1) {
-                if(currentQuestionIndex > 199){
-                    currentQuestionIndex = 0;
-                    fetchDataFromFirebase();
-                }
+            if (currentQuestionIndex < wordList.size()){
                 currentQuestionIndex ++;
+                fetchDataFromFirebase();
+            }else if(currentQuestionIndex == wordList.size()){
+                currentQuestionIndex = 1;
                 fetchDataFromFirebase();
             }
         }
