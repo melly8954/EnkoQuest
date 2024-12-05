@@ -147,7 +147,7 @@ public class CorrectWordActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (!isExplanationShown) {
-//                    isExplanationShown = true;
+                    isExplanationShown = true;
                     life --; // 체력 감소
                     updateHearts(); // 하트 상태 업데이트
 
@@ -156,7 +156,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                         handleTimeOutExplanation();
                     } else {
                         // 체력이 0일 때 게임 종료
-                        handleGameOverExplanation();
+                        handleTimerDieExplanation();
                     }
                 }
             }
@@ -209,6 +209,73 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         intent.putExtras(bundle);
         startActivityForResult(intent, 100); //해설 화면 호출
+    }
+
+    private void handleWrongDieExplanation(String chosenAnswer) {
+        if (isExplanationShown) return;
+        isExplanationShown = true;
+
+        resetTimer();
+
+        Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("MY_ANSWER", chosenAnswer);
+        bundle.putBoolean("IS_CORRECT", false);
+        bundle.putInt("LIFE_REMAINING", life);
+        bundle.putBoolean("SHOW_RETRY", true);
+
+        for (int i = 0; i < pairedOptions.size(); i++) {
+            String word = pairedOptions.get(i).second.getWord();
+            String meaning = pairedOptions.get(i).first;
+            String example = pairedOptions.get(i).second.getExample();
+
+            bundle.putString("WORD_" + (i + 1), word);
+            bundle.putString("MEANING_" + (i + 1), meaning);
+            bundle.putString("EXAMPLE_" + (i + 1), example);
+
+            // 각 선택지의 정답 여부 추가
+            boolean isCorrectOption = meaning.equals(saveKey);
+            bundle.putBoolean("IS_CORRECT_" + (i + 1), isCorrectOption);
+        }
+
+        intent.putExtras(bundle);
+        startActivityForResult(intent, 100);
+    }
+
+    private void handleTimerDieExplanation() {
+        if (isExplanationShown) return;
+        isExplanationShown = true;
+
+        resetTimer();
+
+        // 타이머로 인해 체력이 0이 된 경우 해설 화면 호출
+        Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+
+        // 추가 데이터를 Bundle로 전달
+        Bundle bundle = new Bundle();
+        bundle.putString("MY_ANSWER", "시간 초과"); // 사용자가 선택하지 않은 상태
+        bundle.putBoolean("IS_CORRECT", false); // 정답 여부: 시간 초과는 오답
+        bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달 (0)
+        bundle.putBoolean("SHOW_RETRY", true); // 재시작 버튼 표시 여부
+
+        // 각 선택지에 대한 단어, 의미, 예시 추가
+        for (int i = 0; i < pairedOptions.size(); i++) {
+            String word = pairedOptions.get(i).second.getWord();
+            String meaning = pairedOptions.get(i).first;
+            String example = pairedOptions.get(i).second.getExample();
+
+            bundle.putString("WORD_" + (i + 1), word);
+            bundle.putString("MEANING_" + (i + 1), meaning);
+            bundle.putString("EXAMPLE_" + (i + 1), example);
+
+            // 각 선택지의 정답 여부 추가
+            boolean isCorrectOption = meaning.equals(saveKey);
+            bundle.putBoolean("IS_CORRECT_" + (i + 1), isCorrectOption);
+        }
+
+        intent.putExtras(bundle);
+        startActivityForResult(intent, 100); // 해설 화면 호출
     }
 
     private void resetTimer() {
@@ -408,20 +475,20 @@ public class CorrectWordActivity extends AppCompatActivity {
 //                    clickedButton.setText("X " + chosenAnswer);
 
                 if (life > 0) {
-                    showExplanationScreen(bundle, false, life == 0);
+//                    showExplanationScreen(bundle, false, life == 0);
                         //해설 화면 호출
-//                        getExplanationForAnswer(chosenAnswer, false, new ExplanationCallback() {
-//                            @Override
-//                            public void onExplanationFound(String word, String meaning, String example) {
-//                                Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
-//                                bundle.putInt("LIFE_REMAINING", life);
-//                                bundle.putBoolean("SHOW_RETRY", false);
-//                                intent.putExtras(bundle);
-//                                startActivityForResult(intent, 100);
-//                            }
-//                        });
+                        getExplanationForAnswer(chosenAnswer, false, new ExplanationCallback() {
+                            @Override
+                            public void onExplanationFound(String word, String meaning, String example) {
+                                Intent intent = new Intent(CorrectWordActivity.this, CorrectExplanation.class);
+                                bundle.putInt("LIFE_REMAINING", life);
+                                bundle.putBoolean("SHOW_RETRY", false);
+                                intent.putExtras(bundle);
+                                startActivityForResult(intent, 100);
+                            }
+                        });
                 } else {
-                    handleGameOverExplanation();
+                    handleWrongDieExplanation(chosenAnswer);
                 }
 
 //                Word questionWord = wordList.get(currentQuestionIndex);
