@@ -14,6 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.LoginIndexActivity;
 import com.example.enkoquest.MainActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,7 +27,7 @@ public class SignInActivity extends AppCompatActivity implements View
 
     private FirebaseAuth auth;
     private EditText email, password;
-    private Button loginButton, buttonMoveFindView, buttonMoveResetPw, buttonSignup;
+    private Button loginButton, buttonMoveFindView, buttonMoveResetPw;
     private ImageButton imageButtonBack;
 
     @Override
@@ -47,13 +48,11 @@ public class SignInActivity extends AppCompatActivity implements View
         loginButton = findViewById(R.id.buttonLogin);
         buttonMoveFindView = findViewById(R.id.buttonMoveFindView);
         buttonMoveResetPw = findViewById(R.id.buttonMoveResetPw);
-        buttonSignup = findViewById(R.id.buttonSignup);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         loginButton.setOnClickListener(view -> loginUser());
         buttonMoveFindView.setOnClickListener(this);
         buttonMoveResetPw.setOnClickListener(this);
-        buttonSignup.setOnClickListener(this);
         imageButtonBack.setOnClickListener(this);
     }
 
@@ -92,12 +91,9 @@ public class SignInActivity extends AppCompatActivity implements View
             startActivity(intent);
         }
         if (view.getId() == R.id.imageButtonBack) {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, LoginIndexActivity.class);
             startActivity(intent);
         }
-        if (view.getId() == R.id.buttonSignup) {
-            Intent intent = new Intent(this, SignUpActivity.class);
-            startActivity(intent);
-        }
+
     }
 }
