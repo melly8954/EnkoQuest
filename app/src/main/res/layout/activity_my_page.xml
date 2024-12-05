@@ -53,21 +53,11 @@
 
     <ImageView
         android:id="@+id/imageViewProfilImg"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="175dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewMyPageIcon"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageViewMyPageIcon"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
