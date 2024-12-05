@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# 안드로이드 스튜디오 특정 설정 파일 무시
+.idea/
+*.iml
