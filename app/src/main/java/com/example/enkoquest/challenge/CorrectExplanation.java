@@ -37,7 +37,7 @@ public class CorrectExplanation extends AppCompatActivity {
         if (bundle != null) {
             boolean showRetry = bundle.getBoolean("SHOW_RETRY", false);
 
-            if(showRetry) {
+            if (showRetry) {
                 //하트가 모두 소진되는 경우
                 retryButton.setVisibility(View.VISIBLE);
                 moveMainButton.setVisibility(View.VISIBLE);
@@ -76,18 +76,32 @@ public class CorrectExplanation extends AppCompatActivity {
             setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4, word4, meaning4, example4, isCorrect4);
 
             // 선택한 답변과 정답 가져오기
-            String chosen = bundle.getString("MY_ANSWER", "시간 초과"); // 사용자가 선택한 답변
-            String correct = bundle.getString("CORRECT_ANSWER", "N/A"); // 정답
+            String chosenAnswer = bundle.getString("MY_ANSWER", "N/A"); // 사용자가 선택한 답변
+            String correctAnswerText = bundle.getString("CORRECT_ANSWER", "N/A"); // 정답
 
-        // 선택한 답변과 정답을 표시
-        myAnswer.setText("내가 선택한 답변: " + chosen);
-        myAnswer.setTextColor(getResources().getColor(android.R.color.holo_red_light));
-
-        correctAnswer.setText("정답: " + correct);
-        correctAnswer.setTextColor(getResources().getColor(R.color.correct));
             // 선택한 답변과 정답을 표시
-            myAnswer.setText("내가 선택한 답변: " + (chosen.isEmpty() ? "시간 초과" : chosen));
-            correctAnswer.setText("정답: " + correct);
+            myAnswer.setText("내가 선택한 답변: " + chosenAnswer);
+            myAnswer.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+
+            correctAnswer.setText("정답: " + correctAnswerText);
+            correctAnswer.setTextColor(getResources().getColor(R.color.correct));
+
+            // 선택지가 비어있는 경우 대비
+            setUpExplanationView(R.id.explanationWord1, R.id.explanationMeaning1, R.id.explanationExample1, R.id.explanationAnswerStatus1,
+                    bundle.getString("WORD_1", ""), bundle.getString("MEANING_1", ""), bundle.getString("EXAMPLE_1", ""),
+                    bundle.getBoolean("IS_CORRECT_1", false));
+            setUpExplanationView(R.id.explanationWord2, R.id.explanationMeaning2, R.id.explanationExample2, R.id.explanationAnswerStatus2,
+                    bundle.getString("WORD_2", ""), bundle.getString("MEANING_2", ""), bundle.getString("EXAMPLE_2", ""),
+                    bundle.getBoolean("IS_CORRECT_2", false)
+            );
+            setUpExplanationView(R.id.explanationWord3, R.id.explanationMeaning3, R.id.explanationExample3, R.id.explanationAnswerStatus3,
+                    bundle.getString("WORD_3", ""), bundle.getString("MEANING_3", ""), bundle.getString("EXAMPLE_3", ""),
+                    bundle.getBoolean("IS_CORRECT_3", false)
+            );
+            setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4,
+                    bundle.getString("WORD_4", ""), bundle.getString("MEANING_4", ""), bundle.getString("EXAMPLE_4", ""),
+                    bundle.getBoolean("IS_CORRECT_4", false)
+            );
         }
 
         retryButton.setOnClickListener(v -> handleButtonClick(() -> {
@@ -123,15 +137,16 @@ public class CorrectExplanation extends AppCompatActivity {
         TextView exampleTextView = findViewById(exampleResId);
         TextView answerStatusTextView = findViewById(statusResId);
 
-        wordTextView.setText(word);
-        meaningTextView.setText(meaning);
-        exampleTextView.setText(example);
-        if(isCorrect == true){
+        wordTextView.setText(word != null ? word : "N/A");
+        meaningTextView.setText(meaning != null ? meaning : "N/A");
+        exampleTextView.setText(example != null ? example : "N/A");
+
+        if (isCorrect) {
             answerStatusTextView.setText("정답입니다!");
-            answerStatusTextView.setTextColor(getResources().getColor(R.color.correct));
-        }else{
+            answerStatusTextView.setTextColor(getResources().getColor(R.color.correct)); // 정답 색상
+        } else {
             answerStatusTextView.setText("오답입니다.");
-            answerStatusTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+            answerStatusTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light)); // 오답 색상
         }
     }
 }
