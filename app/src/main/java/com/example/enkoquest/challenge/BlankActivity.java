@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.regex.Pattern;
 
 public class BlankActivity extends AppCompatActivity {
 
@@ -174,7 +175,9 @@ public class BlankActivity extends AppCompatActivity {
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
 
         // 문제 예제에서 단어를 빈칸으로 처리
-        String exampleWithBlank = question.getExample().replace(question.getWord(), "_____");
+        // 대소문자 관계없이 단어를 빈칸으로 처리(정규표현식)
+        String regex = "(?i)" + Pattern.quote(question.getWord()); // (?i)는 대소문자 무시 옵션
+        String exampleWithBlank = question.getExample().replaceAll(regex, "_____");
         exampleView.setText(exampleWithBlank);  // 문제 예제 텍스트뷰에 빈칸 표시
 
         // 문제의 보기 예제와 해석을 번들에 추가
