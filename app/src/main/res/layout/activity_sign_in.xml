@@ -5,118 +5,114 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#F5F5F5"
     tools:context=".user.SignInActivity">
+
+    <TextView
+        android:id="@+id/textViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="EnKoQuest"
+        android:textColor="#212121"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/EmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
-        android:ems="10"
-        android:hint="Email 입력"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
         android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.8" />
 
     <EditText
         android:id="@+id/Password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:ems="10"
-        android:hint="Password 입력"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
         android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:text="로그인"
+        android:backgroundTint="#212121"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
-
-    <TextView
-        android:id="@+id/textView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="Email"
-        app:layout_constraintBottom_toBottomOf="@+id/EmailAddress"
-        app:layout_constraintEnd_toStartOf="@+id/EmailAddress"
-        app:layout_constraintTop_toTopOf="@+id/EmailAddress" />
-
-    <TextView
-        android:id="@+id/textView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="Password"
-        app:layout_constraintBottom_toBottomOf="@+id/Password"
-        app:layout_constraintEnd_toStartOf="@+id/Password"
-        app:layout_constraintTop_toTopOf="@+id/Password" />
-
-    <Button
-        android:id="@+id/buttonMoveFindView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="아이디 찾기"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.244"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignup" />
-
-    <Button
-        android:id="@+id/buttonMoveResetPw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="비밀번호 초기화"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toEndOf="@+id/buttonMoveFindView"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
-
-    <ImageButton
-        android:id="@+id/imageButtonBack"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/buttonSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:text="회원가입"
-        app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="248dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="84dp"
-        android:text="EnKoQuest"
-        android:textSize="50sp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#212121"
+        android:strokeColor="#212121"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <LinearLayout
+        android:id="@+id/optionButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignup">
+
+        <Button
+            android:id="@+id/buttonMoveFindView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="아이디 찾기"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#212121"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonMoveResetPw"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="비밀번호 초기화"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#212121"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
