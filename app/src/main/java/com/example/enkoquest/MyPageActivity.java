@@ -41,9 +41,9 @@ public class MyPageActivity extends AppCompatActivity implements View
 
         .OnClickListener {
 
-    private Button buttonMoveChangePW, btn02, btn03, btn04, buttonSave;
+    private Button buttonMoveChangePW, btn03, buttonSave, btnLevel;
     private ImageButton imageButtonBack;
-    private TextView text01, text02, text03;
+    private TextView text01, text02;
     private EditText selfProduce;
     private ImageView imageView;
     private Uri selectedImageUri;
@@ -74,10 +74,9 @@ public class MyPageActivity extends AppCompatActivity implements View
         });
 
         buttonMoveChangePW = findViewById(R.id.buttonMoveChangePW);
-        btn02 = findViewById(R.id.buttonMy);
         btn03 = findViewById(R.id.buttonNote);
-        btn04 = findViewById(R.id.buttonComunitty);
         buttonSave = findViewById(R.id.buttonSave);
+        btnLevel = findViewById(R.id.btnLevel);
         imageView = findViewById(R.id.imageViewProfilImg);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
@@ -86,16 +85,13 @@ public class MyPageActivity extends AppCompatActivity implements View
         text02 = findViewById(R.id.textNick);
         text02.setEnabled(false);
 
-        text03 = findViewById(R.id.textChal);
-        text03.setOnClickListener(this);
 
         selfProduce = findViewById(R.id.editTextSelfProduce);
 
         buttonMoveChangePW.setOnClickListener(this);
-        btn02.setOnClickListener(this);
         btn03.setOnClickListener(this);
-        btn04.setOnClickListener(this);
         buttonSave.setOnClickListener(this);
+        btnLevel.setOnClickListener(this);
         imageButtonBack.setOnClickListener(this);
 
         imageView.setOnClickListener(view -> openImagePickerFromDrawable());
@@ -216,7 +212,6 @@ public class MyPageActivity extends AppCompatActivity implements View
                     if (userAccount != null) {
                         text01.setText("ID : " + userAccount.getIdToken());
                         text02.setText("닉네임 : " + userAccount.getNickname());
-                        text03.setText("챌린지 점수 보러가기");
                         selfProduce.setText(userAccount.getSelfProduce());
                     } else {
                         Toast.makeText(MyPageActivity.this, "사용자 데이터가 존재하지 않습니다", Toast.LENGTH_SHORT).show();
@@ -259,7 +254,7 @@ public class MyPageActivity extends AppCompatActivity implements View
         }
 
         // 챌린지 점수 모달창
-        if (view.getId() == R.id.textChal) {
+        if (view.getId() == R.id.btnLevel) {
             showChallengeInfoDialog();
         }
     }
