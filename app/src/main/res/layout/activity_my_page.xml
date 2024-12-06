@@ -9,15 +9,25 @@
     tools:context=".MyPageActivity">
 
     <Button
-        android:id="@+id/buttonComunitty"
+        android:id="@+id/btnLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="커뮤니티"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="챌린지 레벨"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNick" />
+    <Button
+        android:id="@+id/buttonNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="오답노트"
+        app:layout_constraintEnd_toStartOf="@+id/btnLevel"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691" />
+        app:layout_constraintTop_toTopOf="@+id/btnLevel" />
+
 
     <Button
         android:id="@+id/buttonMoveChangePW"
@@ -27,35 +37,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce" />
-
-    <Button
-        android:id="@+id/buttonMy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="내정보"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
-
-    <Button
-        android:id="@+id/buttonNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="오답노트"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce"
+        app:layout_constraintVertical_bias="0.586" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageViewProfilImg"
         android:layout_width="175dp"
         android:layout_height="175dp"
         android:layout_marginTop="88dp"
+        android:scaleType="centerCrop"
         app:civ_border_color="@color/black"
         app:civ_border_overlay="true"
         app:civ_border_width="2dp"
@@ -70,21 +60,10 @@
         android:layout_height="22dp"
         android:layout_marginTop="30dp"
         android:text="ID"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageViewProfilImg"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/imageViewProfilImg"
         app:layout_constraintTop_toBottomOf="@+id/imageViewProfilImg" />
-
-    <TextView
-        android:id="@+id/textChal"
-        android:layout_width="136dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Challenge Score"
-        app:layout_constraintEnd_toEndOf="@+id/textNick"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/textNick"
-        app:layout_constraintTop_toBottomOf="@+id/textNick" />
 
     <TextView
         android:id="@+id/textNick"
@@ -92,31 +71,40 @@
         android:layout_height="20dp"
         android:layout_marginTop="20dp"
         android:text="Nickname"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textId"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/textId"
         app:layout_constraintTop_toBottomOf="@+id/textId" />
+
 
     <EditText
         android:id="@+id/editTextSelfProduce"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
         android:hint="한줄 소개"
         android:text=""
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toStartOf="@+id/textChal"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="한줄 소개"
+        app:layout_constraintStart_toStartOf="@+id/editTextSelfProduce"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNote" />
 
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
         android:text="저장"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSelfProduce"
         app:layout_constraintTop_toBottomOf="@+id/editTextSelfProduce" />
 
     <ImageButton
@@ -130,13 +118,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="한줄 소개"
-        app:layout_constraintStart_toStartOf="@+id/textChal"
-        app:layout_constraintTop_toBottomOf="@+id/textChal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
