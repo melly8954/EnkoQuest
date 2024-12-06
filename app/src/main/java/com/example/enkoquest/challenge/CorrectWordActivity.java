@@ -178,13 +178,14 @@ public class CorrectWordActivity extends AppCompatActivity {
         bundle.putString("MY_ANSWER", "시간 초과"); // 사용자가 선택하지 않은 상태
         bundle.putBoolean("IS_CORRECT", false); // 시간 초과는 정답이 아님
         bundle.putInt("LIFE_REMAINING", life); // 남은 하트 수 전달
-        bundle.putBoolean("SHOW_RETRY", life == 0); // 재시작 버튼 표시 여부
+        bundle.putBoolean("SHOW_RETRY", life <= 0); // 재시작 버튼 표시 여부
 
         // 선택지 데이터 추가
         String correctMeaning = "";
         for (int i = 0; i < pairedOptions.size(); i++) {
             String word = pairedOptions.get(i).second.getWord();
             String meaning = pairedOptions.get(i).first;
+            String example = pairedOptions.get(i).second.getExample();
 
             if (meaning.equals(saveKey)) {
                 correctMeaning = meaning;
@@ -192,12 +193,16 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             bundle.putString("WORD_" + (i + 1), word);
             bundle.putString("MEANING_" + (i + 1), meaning);
+            bundle.putString("EXAMPLE_" + (i + 1), example);
             bundle.putBoolean("IS_CORRECT_" + (i + 1), meaning.equals(saveKey));
         }
         bundle.putString("CORRECT_ANSWER", correctMeaning);
 
         intent.putExtras(bundle);
         startActivityForResult(intent, 100); // 해설 화면 호출
+
+        isExplanationShown = false;
+        isOptionClicked = false;
     }
 
     private void handleGameOverExplanation() {
@@ -253,6 +258,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         for (int i = 0; i < pairedOptions.size(); i++) {
             String word = pairedOptions.get(i).second.getWord();
             String meaning = pairedOptions.get(i).first;
+            String example = pairedOptions.get(i).second.getExample(); // 예제 추가
 
             if (meaning.equals(saveKey)) {
                 correctMeaning = meaning; // 정답 의미 설정
@@ -260,6 +266,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
             bundle.putString("WORD_" + (i + 1), word);
             bundle.putString("MEANING_" + (i + 1), meaning);
+            bundle.putString("EXAMPLE_" + (i + 1), example); // 예제 추가
             bundle.putBoolean("IS_CORRECT_" + (i + 1), meaning.equals(saveKey));
         }
         bundle.putString("CORRECT_ANSWER", correctMeaning); // 정답 의미를 저장
@@ -290,12 +297,15 @@ public class CorrectWordActivity extends AppCompatActivity {
         for (int i = 0; i < pairedOptions.size(); i++) {
             String word = pairedOptions.get(i).second.getWord();
             String meaning = pairedOptions.get(i).first;
+            String example = pairedOptions.get(i).second.getExample();
+
             if (meaning.equals(saveKey)) {
                 correctMeaning = meaning;
             }
 
             bundle.putString("WORD_" + (i + 1), word);
             bundle.putString("MEANING_" + (i + 1), meaning);
+            bundle.putString("EXAMPLE_" + (i + 1), example);
             bundle.putBoolean("IS_CORRECT_" + (i + 1), meaning.equals(saveKey));// 각 선택지의 정답 여부 추가
         }
         bundle.putString("CORRECT_ANSWER", correctMeaning);

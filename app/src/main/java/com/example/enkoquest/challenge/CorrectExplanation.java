@@ -12,6 +12,7 @@ import com.example.enkoquest.EngGmActivity;
 import com.example.enkoquest.R;
 
 public class CorrectExplanation extends AppCompatActivity {
+
     Button retryButton, moveMainButton;
     TextView myAnswer,correctAnswer;
 
@@ -47,27 +48,27 @@ public class CorrectExplanation extends AppCompatActivity {
             }
 
             // 각 선택지에 대한 단어, 의미, 예시 가져오기
-            String word1 = bundle.getString("WORD_1");
-            String meaning1 = bundle.getString("MEANING_1");
-            String example1 = bundle.getString("EXAMPLE_1");
+            String word1 = bundle.getString("WORD_1", "N/A");
+            String meaning1 = bundle.getString("MEANING_1", "N/A");
+            String example1 = bundle.getString("EXAMPLE_1", "N/A");
 
-            String word2 = bundle.getString("WORD_2");
-            String meaning2 = bundle.getString("MEANING_2");
-            String example2 = bundle.getString("EXAMPLE_2");
+            String word2 = bundle.getString("WORD_2", "N/A");
+            String meaning2 = bundle.getString("MEANING_2", "N/A");
+            String example2 = bundle.getString("EXAMPLE_2", "N/A");
 
-            String word3 = bundle.getString("WORD_3");
-            String meaning3 = bundle.getString("MEANING_3");
-            String example3 = bundle.getString("EXAMPLE_3");
+            String word3 = bundle.getString("WORD_3", "N/A");
+            String meaning3 = bundle.getString("MEANING_3", "N/A");
+            String example3 = bundle.getString("EXAMPLE_3", "N/A");
 
-            String word4 = bundle.getString("WORD_4");
-            String meaning4 = bundle.getString("MEANING_4");
-            String example4 = bundle.getString("EXAMPLE_4");
+            String word4 = bundle.getString("WORD_4", "N/A");
+            String meaning4 = bundle.getString("MEANING_4", "N/A");
+            String example4 = bundle.getString("EXAMPLE_4", "N/A");
 
             // 각 선택지에 대한 정답 여부 가져오기
-            boolean isCorrect1 = bundle.getBoolean("IS_CORRECT_1");
-            boolean isCorrect2 = bundle.getBoolean("IS_CORRECT_2");
-            boolean isCorrect3 = bundle.getBoolean("IS_CORRECT_3");
-            boolean isCorrect4 = bundle.getBoolean("IS_CORRECT_4");
+            boolean isCorrect1 = bundle.getBoolean("IS_CORRECT_1", false);
+            boolean isCorrect2 = bundle.getBoolean("IS_CORRECT_2", false);
+            boolean isCorrect3 = bundle.getBoolean("IS_CORRECT_3", false);
+            boolean isCorrect4 = bundle.getBoolean("IS_CORRECT_4", false);
 
             // 각 TextView에 값 설정
             setUpExplanationView(R.id.explanationWord1, R.id.explanationMeaning1, R.id.explanationExample1, R.id.explanationAnswerStatus1, word1, meaning1, example1, isCorrect1);
@@ -76,32 +77,27 @@ public class CorrectExplanation extends AppCompatActivity {
             setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4, word4, meaning4, example4, isCorrect4);
 
             // 선택한 답변과 정답 가져오기
-            String chosenAnswer = bundle.getString("MY_ANSWER", "N/A"); // 사용자가 선택한 답변
-            String correctAnswerText = bundle.getString("CORRECT_ANSWER", "N/A"); // 정답
+            String chosen = bundle.getString("MY_ANSWER", "N/A"); // 사용자가 선택한 답변
+            String correct = bundle.getString("CORRECT_ANSWER", "N/A"); // 정답
+
+            // 선택한 답변이 번호로 표시되도록 수정
+            int chosenIndex = -1;
+            if (chosen.equals(meaning1)) chosenIndex = 1;
+            else if (chosen.equals(meaning2)) chosenIndex = 2;
+            else if (chosen.equals(meaning3)) chosenIndex = 3;
+            else if (chosen.equals(meaning4)) chosenIndex = 4;
 
             // 선택한 답변과 정답을 표시
-            myAnswer.setText("내가 선택한 답변: " + chosenAnswer);
+            myAnswer.setText("내가 선택한 답변: " + (chosenIndex != -1 ? chosenIndex : "시간 초과"));
             myAnswer.setTextColor(getResources().getColor(android.R.color.holo_red_light));
 
-            correctAnswer.setText("정답: " + correctAnswerText);
+            correctAnswer.setText("정답: " + correct);
             correctAnswer.setTextColor(getResources().getColor(R.color.correct));
 
-            // 선택지가 비어있는 경우 대비
-            setUpExplanationView(R.id.explanationWord1, R.id.explanationMeaning1, R.id.explanationExample1, R.id.explanationAnswerStatus1,
-                    bundle.getString("WORD_1", ""), bundle.getString("MEANING_1", ""), bundle.getString("EXAMPLE_1", ""),
-                    bundle.getBoolean("IS_CORRECT_1", false));
-            setUpExplanationView(R.id.explanationWord2, R.id.explanationMeaning2, R.id.explanationExample2, R.id.explanationAnswerStatus2,
-                    bundle.getString("WORD_2", ""), bundle.getString("MEANING_2", ""), bundle.getString("EXAMPLE_2", ""),
-                    bundle.getBoolean("IS_CORRECT_2", false)
-            );
-            setUpExplanationView(R.id.explanationWord3, R.id.explanationMeaning3, R.id.explanationExample3, R.id.explanationAnswerStatus3,
-                    bundle.getString("WORD_3", ""), bundle.getString("MEANING_3", ""), bundle.getString("EXAMPLE_3", ""),
-                    bundle.getBoolean("IS_CORRECT_3", false)
-            );
-            setUpExplanationView(R.id.explanationWord4, R.id.explanationMeaning4, R.id.explanationExample4, R.id.explanationAnswerStatus4,
-                    bundle.getString("WORD_4", ""), bundle.getString("MEANING_4", ""), bundle.getString("EXAMPLE_4", ""),
-                    bundle.getBoolean("IS_CORRECT_4", false)
-            );
+//            // 선택지가 비어있는 경우 대비
+//            setUpExplanationView(R.id.explanationWord1, R.id.explanationMeaning1, R.id.explanationExample1, R.id.explanationAnswerStatus1,
+//                    bundle.getString("WORD_1", ""), bundle.getString("MEANING_1", ""), bundle.getString("EXAMPLE_1", ""),
+//                    bundle.getBoolean("IS_CORRECT_1", false));
         }
 
         retryButton.setOnClickListener(v -> handleButtonClick(() -> {
@@ -130,23 +126,23 @@ public class CorrectExplanation extends AppCompatActivity {
         action.run();
     }
 
-    private void setUpExplanationView(int wordResId, int meaningResId, int exampleResId, int statusResId,
+    private void setUpExplanationView(int wordResId, int meaningResId, int statusResId, int exampleResId,
                                       String word, String meaning, String example, boolean isCorrect) {
         TextView wordTextView = findViewById(wordResId);
         TextView meaningTextView = findViewById(meaningResId);
         TextView exampleTextView = findViewById(exampleResId);
         TextView answerStatusTextView = findViewById(statusResId);
 
-        wordTextView.setText(word != null ? word : "N/A");
-        meaningTextView.setText(meaning != null ? meaning : "N/A");
-        exampleTextView.setText(example != null ? example : "N/A");
+        wordTextView.setText(word);
+        meaningTextView.setText(meaning);
+        exampleTextView.setText(example);
 
         if (isCorrect) {
             answerStatusTextView.setText("정답입니다!");
-            answerStatusTextView.setTextColor(getResources().getColor(R.color.correct)); // 정답 색상
+            answerStatusTextView.setTextColor(getResources().getColor(R.color.correct));
         } else {
             answerStatusTextView.setText("오답입니다.");
-            answerStatusTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light)); // 오답 색상
+            answerStatusTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light));
         }
     }
 }
