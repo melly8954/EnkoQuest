@@ -8,6 +8,16 @@
     android:background="#F5F5F5"
     tools:context=".user.SignInActivity">
 
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/textViewLogo"
         android:layout_width="wrap_content"
