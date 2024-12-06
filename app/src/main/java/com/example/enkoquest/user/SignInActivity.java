@@ -29,6 +29,7 @@ public class SignInActivity extends AppCompatActivity implements View
     private Button loginButton, buttonMoveFindView, buttonMoveResetPw, buttonSignup;
     private ImageButton imageButtonBack;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +55,10 @@ public class SignInActivity extends AppCompatActivity implements View
         buttonMoveFindView.setOnClickListener(this);
         buttonMoveResetPw.setOnClickListener(this);
         buttonSignup.setOnClickListener(this);
-        imageButtonBack.setOnClickListener(this);
+        imageButtonBack.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void loginUser() { // XML에서 ID를 가져온다
@@ -89,10 +93,6 @@ public class SignInActivity extends AppCompatActivity implements View
         }
         if (view.getId() == R.id.buttonMoveResetPw) {
             Intent intent = new Intent(this, ResetPwActivity.class);
-            startActivity(intent);
-        }
-        if (view.getId() == R.id.imageButtonBack) {
-            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.buttonSignup) {
