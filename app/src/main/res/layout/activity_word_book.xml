@@ -10,18 +10,18 @@
     android:gravity="center"
     tools:context=".WordBook">
 
+
+    <!-- 타이틀 : 단어장 -->
     <ImageButton
         android:id="@+id/imageButtonBack"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_weight="0.1"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
-
-    <!-- 타이틀 : 단어장 -->
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
