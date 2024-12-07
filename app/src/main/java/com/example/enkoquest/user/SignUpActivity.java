@@ -13,6 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.enkoquest.MainActivity;
 import com.example.enkoquest.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -51,7 +52,10 @@ public class SignUpActivity extends AppCompatActivity {
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         registerButton.setOnClickListener(view -> registerUser());
-        imageButtonBack.setOnClickListener(view -> navigateToMainActivity());
+        imageButtonBack.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SignInActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void registerUser() {
@@ -96,8 +100,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(this, SignInActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-        finish(); // 현재 액티비티 종료
     }
 }
