@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/enkoquest_icon" />
+        app:srcCompat="@drawable/enkoicon" />
 
     <!-- 앱 제목 -->
     <TextView
