@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -20,7 +21,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn02, btn03, buttonMoveLogin;
+    Button buttonMoveLogin;
+    TextView textView01, textView02;
     ImageButton btn01;
     FirebaseAuth mAuth;
     FirebaseUser user;
@@ -40,16 +42,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         btn01 = findViewById(R.id.buttonMyPage);
-        btn02 = findViewById(R.id.buttonChallengeMode);
-        btn03 = findViewById(R.id.buttonWordBook);
+        textView02 = findViewById(R.id.buttonChallengeMode);
+        textView01 = findViewById(R.id.buttonWordBook);
         buttonMoveLogin = findViewById(R.id.buttonMoveLogin);
         imageView = findViewById(R.id.imageView);
         musicBtn = findViewById(R.id.musicBtn);
         musicBtn.setImageResource(R.drawable.pause);
 
         btn01.setOnClickListener(this);
-        btn02.setOnClickListener(this);
-        btn03.setOnClickListener(this);
+        textView02.setOnClickListener(this);
+        textView01.setOnClickListener(this);
         musicBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

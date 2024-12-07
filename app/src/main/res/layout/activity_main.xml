@@ -35,28 +35,32 @@
         app:layout_constraintTop_toBottomOf="@id/image_icon" />
 
     <!-- 하단 이미지 버튼: 마이페이지 -->
-    <Button
+    <TextView
         android:id="@+id/buttonWordBook"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_marginTop="60dp"
-        android:backgroundTint="#48484B"
+        android:background="@drawable/rounded_button"
         android:text="단어장"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_title" />
 
-    <Button
+    <TextView
         android:id="@+id/buttonChallengeMode"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_marginTop="64dp"
-        android:backgroundTint="#48484B"
+        android:background="@drawable/rounded_button"
         android:text="챌린지모드"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
