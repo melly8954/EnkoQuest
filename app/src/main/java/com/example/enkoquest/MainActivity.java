@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     FirebaseUser user;
     private boolean playing = true;
     private ImageButton musicBtn;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn02 = findViewById(R.id.buttonChallengeMode);
         btn03 = findViewById(R.id.buttonWordBook);
         buttonMoveLogin = findViewById(R.id.buttonMoveLogin);
+        imageView = findViewById(R.id.imageView);
         musicBtn = findViewById(R.id.musicBtn);
         musicBtn.setImageResource(R.drawable.pause);
 
@@ -73,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (user != null) {
             // 로그인 되어 있으면 '로그아웃' 버튼
             buttonMoveLogin.setText("로그아웃");
+            imageView.setImageResource(R.drawable.logout);
             buttonMoveLogin.setOnClickListener(v -> {
                 mAuth.signOut();  // 로그아웃 처리
                 user = null;  // user 상태 업데이트
@@ -82,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             // 로그인 안 되어 있으면 '로그인' 버튼
             buttonMoveLogin.setText("로그인");
+            imageView.setImageResource(R.drawable.login);
             buttonMoveLogin.setOnClickListener(v -> {
                 Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);  // 로그인 화면으로 이동
