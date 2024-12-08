@@ -109,14 +109,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/optionButton1"
+                android:id="@+id/optionTextView1"
                 android:layout_width="220dp"
-                android:layout_height="76dp"
-                android:autoSizeTextType="none"
-                android:gravity="center"
+                android:layout_height="73dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/optiontext_background"
+                android:gravity="center"
                 android:padding="16dp"
                 android:text="Option 1"
                 android:textAlignment="center"
@@ -125,14 +124,13 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/optionButton2"
+                android:id="@+id/optionTextView2"
                 android:layout_width="220dp"
                 android:layout_height="76dp"
-                android:autoSizeTextType="none"
-                android:gravity="center"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/optiontext_background"
+                android:gravity="center"
                 android:padding="16dp"
                 android:text="Option 2"
                 android:textAlignment="center"
@@ -148,14 +146,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/optionButton3"
+                android:id="@+id/optionTextView3"
                 android:layout_width="220dp"
                 android:layout_height="76dp"
-                android:autoSizeTextType="none"
-                android:gravity="center"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/optiontext_background"
+                android:gravity="center"
                 android:padding="16dp"
                 android:text="Option 3"
                 android:textAlignment="center"
@@ -164,14 +161,13 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/optionButton4"
+                android:id="@+id/optionTextView4"
                 android:layout_width="220dp"
                 android:layout_height="76dp"
-                android:autoSizeTextType="none"
-                android:gravity="center"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/optiontext_background"
+                android:gravity="center"
                 android:padding="16dp"
                 android:text="Option 4"
                 android:textAlignment="center"

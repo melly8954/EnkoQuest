@@ -6,7 +6,6 @@ import android.util.Log;
 import android.util.Pair;
 import android.util.TypedValue;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -56,10 +55,10 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // View 요소 초기화
         textView = findViewById(R.id.exampleView);
-        option1 = findViewById(R.id.optionButton1);
-        option2 = findViewById(R.id.optionButton2);
-        option3 = findViewById(R.id.optionButton3);
-        option4 = findViewById(R.id.optionButton4);
+        option1 = findViewById(R.id.optionTextView1);
+        option2 = findViewById(R.id.optionTextView2);
+        option3 = findViewById(R.id.optionTextView3);
+        option4 = findViewById(R.id.optionTextView4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
         levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
 
@@ -158,8 +157,6 @@ public class CorrectWordActivity extends AppCompatActivity {
             return;
         }
 
-        resetButtons(); // 보기버튼 상태 초기화
-
         // 현재 인덱스에 해당하는 문제를 가져옴
         Word questionWord = wordList.get(currentQuestionIndex);
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
@@ -219,8 +216,8 @@ public class CorrectWordActivity extends AppCompatActivity {
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         FirebaseUser firebaseUser = auth.getCurrentUser();
         View.OnClickListener listener = v -> {
-            Button clickedButton = (Button) v;
-            String chosenAnswer = clickedButton.getText().toString();
+            TextView clickedTextView = (TextView) v;
+            String chosenAnswer = clickedTextView.getText().toString();
 
             // 정답 여부 확인
             boolean isCorrect = chosenAnswer.equals(correctAnswer);
@@ -260,8 +257,9 @@ public class CorrectWordActivity extends AppCompatActivity {
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
-                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
-                    clickedButton.setText("X " + chosenAnswer);
+                    clickedTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+                    clickedTextView.setBackgroundResource(R.drawable.option_background_wrong);
+                    clickedTextView.setText("X");
 
                     if (life > 0) {
                         life--; //체력 감소
@@ -298,21 +296,6 @@ public class CorrectWordActivity extends AppCompatActivity {
         option2.setOnClickListener(listener);
         option3.setOnClickListener(listener);
         option4.setOnClickListener(listener);
-    }
-
-    private void resetButtons() {
-        // 버튼 초기화: 배경색을 원래대로 되돌리고 텍스트에서 "X"를 제거
-        option1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option1.setText(option1.getText().toString().replace("X ", ""));
-
-        option2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option2.setText(option2.getText().toString().replace("X ", ""));
-
-        option3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option3.setText(option3.getText().toString().replace("X ", ""));
-
-        option4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option4.setText(option4.getText().toString().replace("X ", ""));
     }
 
     private void getExplanationForAnswer(String chosenAnswer, Boolean isCorrect, final ExplanationCallback callback) {
