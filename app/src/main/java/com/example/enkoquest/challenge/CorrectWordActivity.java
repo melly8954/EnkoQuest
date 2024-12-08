@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -33,7 +34,7 @@ public class CorrectWordActivity extends AppCompatActivity {
 
     private ImageButton imageButtonBack;
     private TextView textView, levelTextView;
-    private Button btn1, btn2, btn3, btn4;
+    private TextView option1, option2, option3, option4;
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
     private int currentQuestionIndex = 0; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
@@ -55,10 +56,10 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // View 요소 초기화
         textView = findViewById(R.id.exampleView);
-        btn1 = findViewById(R.id.optionButton1);
-        btn2 = findViewById(R.id.optionButton2);
-        btn3 = findViewById(R.id.optionButton3);
-        btn4 = findViewById(R.id.optionButton4);
+        option1 = findViewById(R.id.optionButton1);
+        option2 = findViewById(R.id.optionButton2);
+        option3 = findViewById(R.id.optionButton3);
+        option4 = findViewById(R.id.optionButton4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
         levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
 
@@ -112,6 +113,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                     Log.e("ChallengeActivity", "No data loaded from firebase");
                 }
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w("ChallengeActivity", "loadWord:onCancelled", databaseError.toException());
@@ -134,7 +136,7 @@ public class CorrectWordActivity extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     if (dataSnapshot.exists()) {
                         highestLevel = dataSnapshot.getValue(Integer.class);
-                        if (highestLevel == 0 ) {
+                        if (highestLevel == 0) {
                             highestLevel = 1;
                         }
                     } else {
@@ -196,13 +198,22 @@ public class CorrectWordActivity extends AppCompatActivity {
         }
 
         // 보기 버튼 설정
-        btn1.setText(pairedOptions.get(0).first);
-        btn2.setText(pairedOptions.get(1).first);
-        btn3.setText(pairedOptions.get(2).first);
-        btn4.setText(pairedOptions.get(3).first);
+        option1.setText(pairedOptions.get(0).first);
+        setTextViewBackGround(option1);
+        option2.setText(pairedOptions.get(1).first);
+        setTextViewBackGround(option2);
+        option3.setText(pairedOptions.get(2).first);
+        setTextViewBackGround(option3);
+        option4.setText(pairedOptions.get(3).first);
+        setTextViewBackGround(option4);
 
         // 버튼 클릭 리스너에 Bundle 전달
         setOptionButtonListeners(questionWord.getMeaning(), bundle);
+    }
+
+    private void setTextViewBackGround(TextView textView){
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+        textView.setBackgroundResource(R.drawable.optiontext_background);
     }
 
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
@@ -217,11 +228,11 @@ public class CorrectWordActivity extends AppCompatActivity {
             // 선택한 버튼 번호 가져오기
             String chosenOptionNumber;
             String correctOptionNumber;
-            if (v == btn1) {
+            if (v == option1) {
                 chosenOptionNumber = "1";
-            } else if (v == btn2) {
+            } else if (v == option2) {
                 chosenOptionNumber = "2";
-            } else if (v == btn3) {
+            } else if (v == option3) {
                 chosenOptionNumber = "3";
             } else {
                 chosenOptionNumber = "4";
@@ -283,25 +294,25 @@ public class CorrectWordActivity extends AppCompatActivity {
             }
         };
 
-        btn1.setOnClickListener(listener);
-        btn2.setOnClickListener(listener);
-        btn3.setOnClickListener(listener);
-        btn4.setOnClickListener(listener);
+        option1.setOnClickListener(listener);
+        option2.setOnClickListener(listener);
+        option3.setOnClickListener(listener);
+        option4.setOnClickListener(listener);
     }
 
     private void resetButtons() {
         // 버튼 초기화: 배경색을 원래대로 되돌리고 텍스트에서 "X"를 제거
-        btn1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        btn1.setText(btn1.getText().toString().replace("X ", ""));
+        option1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        option1.setText(option1.getText().toString().replace("X ", ""));
 
-        btn2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        btn2.setText(btn2.getText().toString().replace("X ", ""));
+        option2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        option2.setText(option2.getText().toString().replace("X ", ""));
 
-        btn3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        btn3.setText(btn3.getText().toString().replace("X ", ""));
+        option3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        option3.setText(option3.getText().toString().replace("X ", ""));
 
-        btn4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        btn4.setText(btn4.getText().toString().replace("X ", ""));
+        option4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        option4.setText(option4.getText().toString().replace("X ", ""));
     }
 
     private void getExplanationForAnswer(String chosenAnswer, Boolean isCorrect, final ExplanationCallback callback) {
