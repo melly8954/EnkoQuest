@@ -67,7 +67,7 @@
             android:name=".user.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".MistakeNotes"
+            android:name=".FavoriteWord"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
