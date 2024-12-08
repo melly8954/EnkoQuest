@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -33,7 +34,7 @@ import java.util.regex.Pattern;
 public class BlankActivity extends AppCompatActivity {
 
     private TextView exampleView, levelTextView;
-    private Button optionButton1, optionButton2, optionButton3, optionButton4;
+    private TextView optionTextView1, optionTextView2, optionTextView3, optionTextView4;
     private ImageButton imageButtonBack;
     private FirebaseAuth auth;
     private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
@@ -67,10 +68,10 @@ public class BlankActivity extends AppCompatActivity {
         // 뷰 초기화
         exampleView = findViewById(R.id.exampleView);
         levelTextView = findViewById(R.id.levelTextView);
-        optionButton1 = findViewById(R.id.optionTextView1);
-        optionButton2 = findViewById(R.id.optionTextView2);
-        optionButton3 = findViewById(R.id.optionTextView3);
-        optionButton4 = findViewById(R.id.optionTextView4);
+        optionTextView1 = findViewById(R.id.optionTextView1);
+        optionTextView2 = findViewById(R.id.optionTextView2);
+        optionTextView3 = findViewById(R.id.optionTextView3);
+        optionTextView4 = findViewById(R.id.optionTextView4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         // Firebase 초기화
@@ -222,20 +223,29 @@ public class BlankActivity extends AppCompatActivity {
         }
 
         // 보기 버튼 설정
-        optionButton1.setText(pairedOptions.get(0).first);
-        optionButton2.setText(pairedOptions.get(1).first);
-        optionButton3.setText(pairedOptions.get(2).first);
-        optionButton4.setText(pairedOptions.get(3).first);
+        optionTextView1.setText(pairedOptions.get(0).first);
+        setTextViewBackGround(optionTextView1);
+        optionTextView2.setText(pairedOptions.get(1).first);
+        setTextViewBackGround(optionTextView2);
+        optionTextView3.setText(pairedOptions.get(2).first);
+        setTextViewBackGround(optionTextView3);
+        optionTextView4.setText(pairedOptions.get(3).first);
+        setTextViewBackGround(optionTextView4);
 
         // 버튼 클릭 리스너에 Bundle 전달
         setOptionButtonListeners(question.getWord(), bundle);
     }
 
+    private void setTextViewBackGround(TextView textView){
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+        textView.setBackgroundResource(R.drawable.optiontext_background);
+    }
+
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         FirebaseUser firebaseUser = auth.getCurrentUser();
         View.OnClickListener listener = v -> {
-            Button clickedButton = (Button) v;
-            String chosenAnswer = clickedButton.getText().toString();
+            TextView clickedTextView = (TextView) v;
+            String chosenAnswer = clickedTextView.getText().toString();
 
             // 정답 여부 확인
             boolean isCorrect = chosenAnswer.equals(correctAnswer);
@@ -243,11 +253,11 @@ public class BlankActivity extends AppCompatActivity {
             // 선택한 버튼 번호 가져오기
             String chosenOptionNumber;
             String correctOptionNumber;
-            if (v == optionButton1) {
+            if (v == optionTextView1) {
                 chosenOptionNumber = "1";
-            } else if (v == optionButton2) {
+            } else if (v == optionTextView2) {
                 chosenOptionNumber = "2";
-            } else if (v == optionButton3) {
+            } else if (v == optionTextView3) {
                 chosenOptionNumber = "3";
             } else {
                 chosenOptionNumber = "4";
@@ -275,8 +285,8 @@ public class BlankActivity extends AppCompatActivity {
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
-                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
-                    clickedButton.setText("X " + chosenAnswer);
+                    clickedTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                    clickedTextView.setText("X");
 
                     if (life > 0) {
                         life--; //체력 감소
@@ -301,10 +311,10 @@ public class BlankActivity extends AppCompatActivity {
             }
         };
 
-        optionButton1.setOnClickListener(listener);
-        optionButton2.setOnClickListener(listener);
-        optionButton3.setOnClickListener(listener);
-        optionButton4.setOnClickListener(listener);
+        optionTextView1.setOnClickListener(listener);
+        optionTextView2.setOnClickListener(listener);
+        optionTextView3.setOnClickListener(listener);
+        optionTextView4.setOnClickListener(listener);
     }
 
     private void saveChallengeLevel(int challengLevel) {
@@ -395,19 +405,18 @@ public class BlankActivity extends AppCompatActivity {
 
     private void resetButtons() {
         // 버튼 초기화: 배경색을 원래대로 되돌리고 텍스트에서 "X"를 제거
-        optionButton1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        optionButton1.setText(optionButton1.getText().toString().replace("X ", ""));
+        optionTextView1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        optionTextView1.setText(optionTextView1.getText().toString().replace("X ", ""));
 
-        optionButton2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        optionButton2.setText(optionButton2.getText().toString().replace("X ", ""));
+        optionTextView2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        optionTextView2.setText(optionTextView2.getText().toString().replace("X ", ""));
 
-        optionButton3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        optionButton3.setText(optionButton3.getText().toString().replace("X ", ""));
+        optionTextView3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        optionTextView3.setText(optionTextView3.getText().toString().replace("X ", ""));
 
-        optionButton4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        optionButton4.setText(optionButton4.getText().toString().replace("X ", ""));
+        optionTextView4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
+        optionTextView4.setText(optionTextView4.getText().toString().replace("X ", ""));
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
