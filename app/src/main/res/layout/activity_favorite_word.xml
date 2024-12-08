@@ -118,5 +118,13 @@
             android:text="▶"
             android:textSize="20sp" />
     </LinearLayout>
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="암기 완료"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
 
 </LinearLayout>

@@ -31,7 +31,7 @@ public class FavoriteWord extends AppCompatActivity implements View.OnClickListe
     private int currentIndex = 0;
 
     private TextView showNumber, showWord, showMeaning, showExample, showTranslation;
-    private Button leftButton, rightButton;
+    private Button leftButton, rightButton, deleteButton;;
     private ImageButton backBtn;
 
     @Override
@@ -63,11 +63,13 @@ public class FavoriteWord extends AppCompatActivity implements View.OnClickListe
         leftButton = findViewById(R.id.left_button);
         rightButton = findViewById(R.id.right_button);
         backBtn = findViewById(R.id.imageButtonBack);
+        deleteButton = findViewById(R.id.delete_button);
 
         // 클릭 리스너 설정
         leftButton.setOnClickListener(this);
         rightButton.setOnClickListener(this);
         backBtn.setOnClickListener(this);
+        deleteButton.setOnClickListener(this);
 
         // 데이터 로드
         fetchSavedWords();
@@ -124,6 +126,8 @@ public class FavoriteWord extends AppCompatActivity implements View.OnClickListe
                 currentIndex = (currentIndex + 1) % savedWordList.size();
                 updateUI(currentIndex);
             }
+        } else if (view.getId() == R.id.delete_button) {
+            deleteWord(currentIndex);
         } else if (view.getId() == R.id.imageButtonBack) {
             finish();
         }
@@ -168,4 +172,39 @@ public class FavoriteWord extends AppCompatActivity implements View.OnClickListe
             return translation;
         }
     }
+
+    private void deleteWord(int index) {
+        if (savedWordList.isEmpty()) {
+            Toast.makeText(this, "삭제할 단어가 없습니다.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        Word wordToDelete = savedWordList.get(index);
+
+        userRef.child(String.valueOf(wordToDelete.getNumber()))
+                .removeValue()
+                .addOnSuccessListener(aVoid -> {
+                    Toast.makeText(this, "단어가 삭제되었습니다.", Toast.LENGTH_SHORT).show();
+                    savedWordList.remove(index);
+
+                    // 인덱스 조정
+                    if (savedWordList.isEmpty()) {
+                        // 리스트가 비었을 때 처리
+                        showNumber.setText("");
+                        showWord.setText("단어 없음");
+                        showMeaning.setText("");
+                        showExample.setText("");
+                        showTranslation.setText("");
+                    } else {
+                        // 현재 인덱스가 마지막을 넘어가지 않도록 조정
+                        currentIndex = currentIndex % savedWordList.size();
+                        updateUI(currentIndex);
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(this, "단어 삭제 실패", Toast.LENGTH_SHORT).show();
+                    Log.e("Firebase", "단어 삭제 실패", e);
+                });
+    }
+
 }
