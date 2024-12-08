@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -23,7 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class ChangePwActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText editTextNewPw, editTextCheckNewPw;
-    private Button buttonChangePw;
+    private TextView textViewChangePw;
     private FirebaseAuth mAuth;
     private ImageButton imageButtonBack;
 
@@ -44,17 +45,17 @@ public class ChangePwActivity extends AppCompatActivity implements View.OnClickL
         // UI 요소 초기화
         editTextNewPw = findViewById(R.id.editTextNewPw);
         editTextCheckNewPw = findViewById(R.id.editTextCheckNewPw);
-        buttonChangePw = findViewById(R.id.buttonChangePw);
+        textViewChangePw = findViewById(R.id.textViewChangePw);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         // 버튼 클릭 리스너 설정
-        buttonChangePw.setOnClickListener(this);
+        textViewChangePw.setOnClickListener(this);
         imageButtonBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.buttonChangePw) {
+        if (view.getId() == R.id.textViewChangePw) {
             changePassword();
         }
         if (view.getId() == R.id.imageButtonBack) {
@@ -88,7 +89,7 @@ public class ChangePwActivity extends AppCompatActivity implements View.OnClickL
                             Toast.makeText(ChangePwActivity.this, "비밀번호가 성공적으로 변경되었습니다.", Toast.LENGTH_SHORT).show();
                             finish(); // Activity 종료 후 이전 화면으로 돌아가기
                         } else {
-                            Toast.makeText(ChangePwActivity.this, "비밀번호 변경 실패: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ChangePwActivity.this, "비밀번호 변경 실패", Toast.LENGTH_SHORT).show();
                         }
                     });
         } else {
