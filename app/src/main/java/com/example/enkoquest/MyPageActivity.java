@@ -49,7 +49,7 @@ public class MyPageActivity extends AppCompatActivity implements View
     private Uri selectedImageUri;
 
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    ;
+
     private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("UserAccount");
     FirebaseUser currentUser = mAuth.getCurrentUser();
     String userId = currentUser.getUid();
@@ -243,7 +243,7 @@ public class MyPageActivity extends AppCompatActivity implements View
         }
 
         if (view.getId() == R.id.buttonNote) {
-            Intent intent = new Intent(this, MistakeNotes.class);
+            Intent intent = new Intent(this, FavoriteWord.class);
             startActivity(intent);
         }
 
