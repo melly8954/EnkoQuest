@@ -9,7 +9,7 @@ public class UserAccount {
     private String tel;
     private String selfProduce;
     private ChallengeLevel challengeLevel;
-    private Map<String, String> wrongNotes;
+    private Map<String, String> savedWord;
     private String profileImage;
 
     // 기본 생성자 (Firebase에서 데이터를 읽어올 때 필요)
@@ -20,7 +20,7 @@ public class UserAccount {
     public UserAccount(String idToken, String nickname
             , String email, String tel
             , String selfProduce, ChallengeLevel challengeLevel
-            , Map<String, String> wrongNotes
+            , Map<String, String> savedWord
             , String profileImage) {
         this.idToken = idToken;
         this.nickname = nickname;
@@ -28,7 +28,7 @@ public class UserAccount {
         this.tel = tel;
         this.selfProduce = selfProduce;
         this.challengeLevel = challengeLevel;
-        this.wrongNotes = wrongNotes;
+        this.savedWord = savedWord;
         this.profileImage = profileImage;
     }
 
@@ -81,8 +81,8 @@ public class UserAccount {
         this.selfProduce = selfProduce;
     }
 
-    public void setWrongNotes(Map<String, String> wrongNotes) {
-        this.wrongNotes = wrongNotes;
+    public void setSavedWord(Map<String, String> savedWord) {
+        this.savedWord = savedWord;
     }
 
     public String getProfileImage(){

@@ -271,8 +271,6 @@ public class CorrectWordActivity extends AppCompatActivity {
                     String word = saveKey;
                     String answer = correctAnswer;
 
-                    wrongWord(userId, word, answer);
-
                     // ExplanationActivity로 이동
                     getExplanationForAnswer(chosenAnswer, isCorrect, new ExplanationCallback() {
                         @Override
@@ -423,21 +421,4 @@ public class CorrectWordActivity extends AppCompatActivity {
         }
     }
 
-    private void wrongWord(String userId, String word, String answer) {
-        DatabaseReference userRef = databaseReference.child(userId).child("mistakeNotes");
-
-        String key = databaseReference.push().getKey();
-
-        if (key != null) {
-            userRef.child(word).setValue(answer)
-                    .addOnSuccessListener(aVoid -> {
-                        // 성공 시 처리
-                        Log.d("Firebase", "단어 저장 성공: " + word);
-                    })
-                    .addOnFailureListener(e -> {
-                        // 실패 시 처리
-                        Log.e("Firebase", "단어 저장 실패", e);
-                    });
-        }
-    }
 }

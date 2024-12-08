@@ -9,93 +9,83 @@
     tools:context=".user.FindIdActivity">
 
     <TextView
-        android:id="@+id/textView01"
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         android:text="회원 ID 찾기"
-        android:textSize="30sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="회원 정보에 등록된 닉네임"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView01"
-        app:layout_constraintStart_toStartOf="@+id/textView01"
-        app:layout_constraintTop_toBottomOf="@+id/textView01" />
-
     <EditText
         android:id="@+id/editTextNickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:ems="10"
+        android:background="@drawable/edittext_background"
         android:hint="닉네임 입력"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/textView02"
-        app:layout_constraintStart_toStartOf="@+id/textView02"
-        app:layout_constraintTop_toBottomOf="@+id/textView02" />
-
-    <TextView
-        android:id="@+id/textView03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="회원 정보에 등록된 전화번호"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNickname"
-        app:layout_constraintStart_toStartOf="@+id/editTextNickname"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNickname" />
+        android:padding="10dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
     <EditText
         android:id="@+id/editTextTel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
         android:hint="전화번호 입력"
         android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNickname"
-        app:layout_constraintStart_toStartOf="@+id/editTextNickname"
-        app:layout_constraintTop_toBottomOf="@+id/textView03" />
+        android:padding="10dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNickname" />
 
     <TextView
         android:id="@+id/textViewIdView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="id 화면 출력"
+        android:layout_marginTop="60dp"
+        android:text=""
+        android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonFindId"
-        app:layout_constraintStart_toStartOf="@+id/buttonFindId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonFindId"
         app:layout_constraintVertical_bias="0.374" />
 
     <Button
         android:id="@+id/buttonMoveLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#000000"
         android:text="로그인 이동"
-        app:layout_constraintEnd_toEndOf="@+id/textViewIdView"
-        app:layout_constraintStart_toStartOf="@+id/textViewIdView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewIdView" />
 
     <Button
         android:id="@+id/buttonFindId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
         android:text="아이디 찾기"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/editTextTel"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTel" />
 
     <ImageButton

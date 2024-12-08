@@ -16,6 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.enkoquest.challenge.BWriteActivity;
+import com.example.enkoquest.user.SignInActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,11 +33,12 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
     private List<Word> wordList = new ArrayList<>();
     private int currentQuestionIndex = 1; // 셔플된 리스트에서 순차적으로 문제를 출제하기 위한 인덱스
 
-    private FirebaseAuth auth; // Firebase 인증 인스턴스
+    private FirebaseAuth auth = FirebaseAuth.getInstance();; // Firebase 인증 인스턴스
     DatabaseReference database = FirebaseDatabase.getInstance().getReference("word2000/word_2000");
+    private DatabaseReference databaseUserReference = FirebaseDatabase.getInstance().getReference("UserAccount");
 
     private TextView showNumber, showWord, showMeaning, showExample, showTranslation;
-    private Button leftButton, rightButton;
+    private Button leftButton, rightButton, btnWordSave, btnMoveSavedWord;
     private ImageButton imageButtonBack;
 
     @Override
@@ -53,9 +55,14 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
 
         leftButton = findViewById(R.id.left_button);
         rightButton = findViewById(R.id.right_button);
+        btnWordSave = findViewById(R.id.btnWordSave);
+        btnMoveSavedWord = findViewById(R.id.btnMoveSavedWord);
 
         leftButton.setOnClickListener(this);
         rightButton.setOnClickListener(this);
+        btnWordSave.setOnClickListener(this);
+        btnMoveSavedWord.setOnClickListener(this);
+
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         fetchDataFromFirebase();
@@ -130,6 +137,27 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
             Intent intent = new Intent(WordBook.this, MainActivity.class);
             startActivity(intent);
         }
+        if (view.getId() == R.id.btnWordSave) {
+            if (auth.getCurrentUser() != null) {
+                String userId = auth.getCurrentUser().getUid();
+                Integer number = Integer.parseInt(showNumber.getText().toString().replace("Page_", "").trim());
+                String word = showWord.getText().toString();
+                String meaning = showMeaning.getText().toString();
+                String example = showExample.getText().toString();
+                String translation = showTranslation.getText().toString();
+
+                wordSave(userId, number, word, meaning, example, translation);
+            } else {
+                Toast.makeText(this, "로그인이 필요합니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, SignInActivity.class);
+                startActivity(intent);
+            }
+        }
+        if (view.getId() == R.id.btnMoveSavedWord) {
+            Intent intent = new Intent(WordBook.this, FavoriteWord.class);
+            startActivity(intent);
+        }
+
     }
 
     // Word 객체 클래스 정의
@@ -166,4 +194,21 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
             return translation;
         }
     }
+
+
+    private void wordSave(String userId, Integer number, String word, String meaning, String example, String translation) {
+        DatabaseReference userRef = databaseUserReference.child(userId).child("savedWords");
+
+        // 번호를 키로 사용하여 저장
+        userRef.child(String.valueOf(number))
+                .setValue(new Word(number, word, meaning, example, translation))
+                .addOnSuccessListener(aVoid -> {
+                    Toast.makeText(WordBook.this, "단어 저장 성공", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(WordBook.this, "단어 저장 실패", Toast.LENGTH_SHORT).show();
+                    Log.e("Firebase", "단어 저장 실패", e);
+                });
+    }
+
 }
