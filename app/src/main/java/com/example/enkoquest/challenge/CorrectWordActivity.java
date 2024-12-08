@@ -157,8 +157,6 @@ public class CorrectWordActivity extends AppCompatActivity {
             return;
         }
 
-        resetButtons(); // 보기버튼 상태 초기화
-
         // 현재 인덱스에 해당하는 문제를 가져옴
         Word questionWord = wordList.get(currentQuestionIndex);
         currentQuestionIndex++; // 다음 문제를 위한 인덱스 증가
@@ -298,21 +296,6 @@ public class CorrectWordActivity extends AppCompatActivity {
         option2.setOnClickListener(listener);
         option3.setOnClickListener(listener);
         option4.setOnClickListener(listener);
-    }
-
-    private void resetButtons() {
-        // 버튼 초기화: 배경색을 원래대로 되돌리고 텍스트에서 "X"를 제거
-        option1.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option1.setText(option1.getText().toString().replace("X ", ""));
-
-        option2.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option2.setText(option2.getText().toString().replace("X ", ""));
-
-        option3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option3.setText(option3.getText().toString().replace("X ", ""));
-
-        option4.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light)); // 기본 색상으로 설정
-        option4.setText(option4.getText().toString().replace("X ", ""));
     }
 
     private void getExplanationForAnswer(String chosenAnswer, Boolean isCorrect, final ExplanationCallback callback) {
