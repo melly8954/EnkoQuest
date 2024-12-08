@@ -88,7 +88,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:paddingBottom="8dp"
-        android:text="의미: [동] 개발하다, 발달하다, 발전시키다"
+        android:text="Question"
         android:textSize="24sp" />
 
     <!-- 예제 문장 -->
@@ -140,13 +140,17 @@
     </LinearLayout>
 
     <!-- 제출 버튼 -->
-    <Button
-        android:id="@+id/btnSubmit"
+    <TextView
+        android:id="@+id/textViewSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
         android:padding="12dp"
         android:text="제출"
-        android:textSize="16sp" />
+        android:gravity="center"
+        android:textColor="#FEFEFE"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

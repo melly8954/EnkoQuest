@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -34,7 +33,7 @@ public class BWriteActivity extends AppCompatActivity {
 
     private TextView showMeaning, showExample, showTranslation, showHint, level;
     private EditText inputAnswer;
-    private Button btnSubmit;
+    private TextView textViewSubmit;
 
     private List<Word> wordList = new ArrayList<>();
     private int currentLevel = 1;  // 현재 레벨 변수 추가
@@ -60,12 +59,12 @@ public class BWriteActivity extends AppCompatActivity {
 
         showMeaning = findViewById(R.id.showMeaning);
         showExample = findViewById(R.id.showExample);
-        showTranslation = findViewById(R.id.showTranslation);
+//        showTranslation = findViewById(R.id.showTranslation);
         showHint = findViewById(R.id.showHint);
         level = findViewById(R.id.level); // Level TextView 초기화
 
         inputAnswer = findViewById(R.id.inputAnswer);
-        btnSubmit = findViewById(R.id.btnSubmit);
+        textViewSubmit = findViewById(R.id.textViewSubmit);
 
         // Firebase 초기화
         auth = FirebaseAuth.getInstance();
@@ -170,8 +169,8 @@ public class BWriteActivity extends AppCompatActivity {
         // 문제 예제에서 단어를 빈칸으로 처리
         String exampleWithBlank = question.getExample().replace(question.getWord(), "_____");
         showMeaning.setText(question.getMeaning());
-        showExample.setOnClickListener(v ->{
-            showExample.setText( "예제 : " + exampleWithBlank + "\n" + "해설 : " + question.getTranslation());  // 문제 예제 텍스트뷰에 빈칸 표시
+        showExample.setOnClickListener(v -> {
+            showExample.setText(exampleWithBlank + "\n" + question.getTranslation());  // 문제 예제 텍스트뷰에 빈칸 표시
         });
 //        showTranslation.setText(question.getTranslation());
 
@@ -183,7 +182,7 @@ public class BWriteActivity extends AppCompatActivity {
         String word = question.getWord(); // 단어 가져오기
         if (word != null && !word.isEmpty()) {
             char firstChar = word.charAt(0); // 첫 글자 가져오기
-            showHint.setOnClickListener(v ->{
+            showHint.setOnClickListener(v -> {
                 showHint.setText("힌트: " + firstChar + "____"); // 힌트 텍스트뷰에 설정
             });
         } else {
@@ -200,7 +199,7 @@ public class BWriteActivity extends AppCompatActivity {
         boolean isCorrect = myAnswer.equals(question.getMeaning());
         bundle.putBoolean("IS_CORRECT", isCorrect); // 정답 여부를 Bundle에 추가
 
-        showHint.setText("힌트2");
+        showHint.setText("힌트 2");
         // 버튼 클릭 리스너에 Bundle 전달
         setButtonListeners(question.getWord(), bundle);
     }
@@ -235,7 +234,7 @@ public class BWriteActivity extends AppCompatActivity {
                 startActivityForResult(intent, 100); // Activity 결과 대기
             }
         };
-        btnSubmit.setOnClickListener(listener);
+        textViewSubmit.setOnClickListener(listener);
     }
 
     ;

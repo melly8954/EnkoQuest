@@ -27,7 +27,7 @@
         android:layout_weight="2"
         android:gravity="center"
         android:orientation="vertical">
-
+ㄴ
         <TextView
             android:id="@+id/exampleView"
             android:layout_width="310dp"
