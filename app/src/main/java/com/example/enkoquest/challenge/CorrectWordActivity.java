@@ -6,7 +6,6 @@ import android.util.Log;
 import android.util.Pair;
 import android.util.TypedValue;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -56,10 +55,10 @@ public class CorrectWordActivity extends AppCompatActivity {
 
         // View 요소 초기화
         textView = findViewById(R.id.exampleView);
-        option1 = findViewById(R.id.optionButton1);
-        option2 = findViewById(R.id.optionButton2);
-        option3 = findViewById(R.id.optionButton3);
-        option4 = findViewById(R.id.optionButton4);
+        option1 = findViewById(R.id.optionTextView1);
+        option2 = findViewById(R.id.optionTextView2);
+        option3 = findViewById(R.id.optionTextView3);
+        option4 = findViewById(R.id.optionTextView4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
         levelTextView = findViewById(R.id.levelTextView); // Level TextView 초기화
 
@@ -219,8 +218,8 @@ public class CorrectWordActivity extends AppCompatActivity {
     private void setOptionButtonListeners(String correctAnswer, Bundle bundle) {
         FirebaseUser firebaseUser = auth.getCurrentUser();
         View.OnClickListener listener = v -> {
-            Button clickedButton = (Button) v;
-            String chosenAnswer = clickedButton.getText().toString();
+            TextView clickedTextView = (TextView) v;
+            String chosenAnswer = clickedTextView.getText().toString();
 
             // 정답 여부 확인
             boolean isCorrect = chosenAnswer.equals(correctAnswer);
@@ -260,8 +259,8 @@ public class CorrectWordActivity extends AppCompatActivity {
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
-                    clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
-                    clickedButton.setText("X " + chosenAnswer);
+                    clickedTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                    clickedTextView.setText("X " + chosenAnswer);
 
                     if (life > 0) {
                         life--; //체력 감소

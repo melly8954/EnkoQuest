@@ -67,10 +67,10 @@ public class BlankActivity extends AppCompatActivity {
         // 뷰 초기화
         exampleView = findViewById(R.id.exampleView);
         levelTextView = findViewById(R.id.levelTextView);
-        optionButton1 = findViewById(R.id.optionButton1);
-        optionButton2 = findViewById(R.id.optionButton2);
-        optionButton3 = findViewById(R.id.optionButton3);
-        optionButton4 = findViewById(R.id.optionButton4);
+        optionButton1 = findViewById(R.id.optionTextView1);
+        optionButton2 = findViewById(R.id.optionTextView2);
+        optionButton3 = findViewById(R.id.optionTextView3);
+        optionButton4 = findViewById(R.id.optionTextView4);
         imageButtonBack = findViewById(R.id.imageButtonBack);
 
         // Firebase 초기화

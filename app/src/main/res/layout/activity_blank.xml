@@ -129,7 +129,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/optionButton1"
+                android:id="@+id/optionTextView1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -154,7 +154,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/optionButton2"
+                android:id="@+id/optionTextView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -179,7 +179,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/optionButton3"
+                android:id="@+id/optionTextView3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -204,7 +204,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/optionButton4"
+                android:id="@+id/optionTextView4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
