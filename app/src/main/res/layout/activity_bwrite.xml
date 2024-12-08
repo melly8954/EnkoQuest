@@ -26,14 +26,6 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        <!-- 문제 설명 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="다음 힌트와 해석을 보고 예제의 빈칸을 완성해 보세요."
-            android:textSize="20sp" />
-
         <!-- 레벨과 하트 영역 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,7 +89,7 @@
         android:layout_marginBottom="24dp"
         android:paddingBottom="8dp"
         android:text="의미: [동] 개발하다, 발달하다, 발전시키다"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <!-- 예제 문장 -->
     <TextView
@@ -106,18 +98,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:paddingBottom="8dp"
-        android:text="She plans to ______ a new app that helps people manage their time."
-        android:textSize="18sp" />
-
-    <!-- 예제 해석 -->
-    <TextView
-        android:id="@+id/showTranslation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
-        android:text="해석: 그녀는 사람들이 시간을 관리할 수 있도록 돕는 새로운 앱을 개발할 계획입니다."
-        android:textColor="#555555"
-        android:textSize="16sp" />
+        android:text="힌트1"
+        android:textSize="24sp" />
 
     <!-- 단어 힌트 -->
     <TextView
@@ -126,8 +108,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:paddingBottom="8dp"
-        android:text="힌트: d___"
-        android:textSize="32sp" />
+        android:text="힌트2"
+        android:textSize="24sp" />
 
     <!-- 정답 입력란 (수평 배치로 "정답:"과 EditText 나누기) -->
     <LinearLayout
@@ -143,7 +125,7 @@
             android:layout_height="wrap_content"
             android:paddingEnd="8dp"
             android:text="정답:"
-            android:textSize="16sp" />
+            android:textSize="24sp" />
 
         <!-- 정답 입력 EditText -->
         <EditText
@@ -154,7 +136,7 @@
             android:hint="단어를 입력하세요"
             android:inputType="text"
             android:padding="8dp"
-            android:textSize="16sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <!-- 제출 버튼 -->

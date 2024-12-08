@@ -170,33 +170,37 @@ public class BWriteActivity extends AppCompatActivity {
         // 문제 예제에서 단어를 빈칸으로 처리
         String exampleWithBlank = question.getExample().replace(question.getWord(), "_____");
         showMeaning.setText(question.getMeaning());
-        showExample.setText(exampleWithBlank);  // 문제 예제 텍스트뷰에 빈칸 표시
-        showTranslation.setText(question.getTranslation());
+        showExample.setOnClickListener(v ->{
+            showExample.setText( "예제 : " + exampleWithBlank + "\n" + "해설 : " + question.getTranslation());  // 문제 예제 텍스트뷰에 빈칸 표시
+        });
+//        showTranslation.setText(question.getTranslation());
 
+        // showExample 초기화
+        showExample.setText("힌트 1");
         // EditText 초기화
         inputAnswer.setText("");
 
         String word = question.getWord(); // 단어 가져오기
         if (word != null && !word.isEmpty()) {
             char firstChar = word.charAt(0); // 첫 글자 가져오기
-            showHint.setText("힌트: " + firstChar + "____"); // 힌트 텍스트뷰에 설정
+            showHint.setOnClickListener(v ->{
+                showHint.setText("힌트: " + firstChar + "____"); // 힌트 텍스트뷰에 설정
+            });
         } else {
             showHint.setText("힌트를 제공할 수 없습니다."); // 단어가 없을 경우 처리
         }
-
 
         // 문제의 보기 예제와 해석을 번들에 추가
         bundle.putString("questionExample", question.getExample());
         bundle.putString("translationExample", question.getTranslation());
         bundle.putString("meaning", question.getMeaning());
 
-
         String myAnswer = inputAnswer.getText().toString();
         // 각 보기의 정답 여부 추가
         boolean isCorrect = myAnswer.equals(question.getMeaning());
         bundle.putBoolean("IS_CORRECT", isCorrect); // 정답 여부를 Bundle에 추가
 
-
+        showHint.setText("힌트2");
         // 버튼 클릭 리스너에 Bundle 전달
         setButtonListeners(question.getWord(), bundle);
     }
