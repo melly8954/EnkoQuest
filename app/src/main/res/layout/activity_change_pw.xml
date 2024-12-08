@@ -9,68 +9,58 @@
     tools:context=".user.ChangePwActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="비밀번호 변경 페이지"
-        android:textSize="36sp"
+        android:layout_marginTop="100dp"
+        android:text="비밀번호 변경"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="변경 할 비밀번호"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNewPw"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextNewPw" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="비밀번호 재확인"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextCheckNewPw"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/editTextCheckNewPw" />
-
     <EditText
         android:id="@+id/editTextNewPw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="Pw 입력"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:hint="새 비밀번호"
         android:inputType="textPassword"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:padding="10dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextCheckNewPw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="Pw 확인"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:hint="새 비밀번호 확인"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNewPw"
-        app:layout_constraintStart_toStartOf="@+id/editTextNewPw"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNewPw" />
+        android:padding="10dp"
+        android:textColor="#212121"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewPw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonChangePw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#000000"
+        android:padding="10dp"
         android:text="비밀번호 변경"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCheckNewPw" />
