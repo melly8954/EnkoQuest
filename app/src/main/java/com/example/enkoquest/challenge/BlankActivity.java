@@ -285,7 +285,8 @@ public class BlankActivity extends AppCompatActivity {
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
-                    clickedTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                    clickedTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+                    clickedTextView.setBackgroundResource(R.drawable.option_background_wrong);
                     clickedTextView.setText("X");
 
                     if (life > 0) {
