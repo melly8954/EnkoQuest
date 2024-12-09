@@ -208,7 +208,7 @@ public class CorrectWordActivity extends AppCompatActivity {
         setOptionButtonListeners(questionWord.getMeaning(), bundle);
     }
 
-    private void setTextViewBackGround(TextView textView){
+    private void setTextViewBackGround(TextView textView) {
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         textView.setBackgroundResource(R.drawable.optiontext_background);
     }
