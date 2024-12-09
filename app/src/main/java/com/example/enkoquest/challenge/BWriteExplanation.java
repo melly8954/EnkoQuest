@@ -20,7 +20,7 @@ import com.example.enkoquest.R;
 public class BWriteExplanation extends AppCompatActivity {
 
     TextView correctAnswer, userAnswer, showExample, transExample,showMeaning,answerChecking;
-    Button retryBlank, moveMainButton, nextButton;
+    TextView retryBlank, moveMainButton, nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
