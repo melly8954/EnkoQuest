@@ -92,7 +92,7 @@ public class BWriteExplanation extends AppCompatActivity {
             transExample.setText(translationExample);
 
             correctAnswer.setText("정답: " + correct);
-            correctAnswer.setTextColor(getResources().getColor(R.color.correct));
+            correctAnswer.setTextColor(getResources().getColor(R.color.black));
             userAnswer.setText("내가 선택한 답변: " + userChoice);
             showMeaning.setText(meaning);
         }
