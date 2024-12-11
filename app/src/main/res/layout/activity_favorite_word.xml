@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:background="#FFFFFF"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <!-- 뒤로가기 버튼 -->
     <ImageButton
@@ -20,20 +20,20 @@
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="나만의 단어장"
         android:textColor="#000000"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp" />
+        android:textStyle="bold" />
 
     <!-- 단어 영역 -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_marginTop="24dp">
+        android:orientation="vertical">
 
         <!-- 영단어 -->
         <TextView
@@ -96,7 +96,9 @@
             android:id="@+id/left_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
             android:text="◀"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <!-- 현재 페이지 표시 -->
@@ -115,16 +117,21 @@
             android:id="@+id/right_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
             android:text="▶"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>
+
     <Button
         android:id="@+id/delete_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="암기 완료"
-        android:textSize="18sp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:layout_gravity="center" />
+        android:backgroundTint="#000000"
+        android:text="암기 완료"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
 </LinearLayout>
