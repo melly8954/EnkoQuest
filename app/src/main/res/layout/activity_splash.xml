@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="오답노트 무료 제공"
+            android:text="나만의 단어장 제공"
             android:textColor="#000000"
             android:textSize="16sp" />
     </LinearLayout>
