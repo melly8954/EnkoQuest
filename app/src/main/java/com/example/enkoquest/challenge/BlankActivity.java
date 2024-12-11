@@ -275,9 +275,9 @@ public class BlankActivity extends AppCompatActivity {
             }
 
             // `myAnswer`로 사용자의 선택 추가
-            bundle.putString("MY_ANSWER", chosenOptionNumber);
+            bundle.putString("MY_ANSWER", chosenAnswer);
 
-            bundle.putString("CORRECT_ANSWER", correctOptionNumber);
+            bundle.putString("CORRECT_ANSWER", correctAnswer);
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
