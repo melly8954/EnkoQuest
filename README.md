@@ -20,17 +20,3 @@
 - 다양한 문제 제공 : 단어장 뿐만이 아닌 빈칸 맞추기, 한국어 보고 영어 맞추기
 - 나만의 단어장 제공 : 무한한 영단어 공부 단어장 제공 및 저장
 
----
-<div>
- 
-![image](https://github.com/user-attachments/assets/e0f184d4-9c21-41b9-9d08-2cf94b9d3d52)
- 
-</div>
-
-<div>
-
-![image](https://github.com/user-attachments/assets/a09cedfa-6cf7-4d69-8e4e-ce5f55ead0be)
-
-![image](https://github.com/user-attachments/assets/61718291-b3af-47ef-a84b-981ca5c87a10)
-
-</div>
