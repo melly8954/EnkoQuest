@@ -137,6 +137,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, BGMService.class);
         stopService(intent); // 서비스 중지
     }
-
-
 }

@@ -157,7 +157,6 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
             Intent intent = new Intent(WordBook.this, FavoriteWord.class);
             startActivity(intent);
         }
-
     }
 
     // Word 객체 클래스 정의
@@ -210,5 +209,4 @@ public class WordBook extends AppCompatActivity implements View.OnClickListener 
                     Log.e("Firebase", "단어 저장 실패", e);
                 });
     }
-
 }
