@@ -275,9 +275,9 @@ public class BlankActivity extends AppCompatActivity {
             }
 
             // `myAnswer`로 사용자의 선택 추가
-            bundle.putString("MY_ANSWER", chosenOptionNumber);
+            bundle.putString("MY_ANSWER", chosenAnswer);
 
-            bundle.putString("CORRECT_ANSWER", correctOptionNumber);
+            bundle.putString("CORRECT_ANSWER", correctAnswer);
 
             // 선택한 버튼에 대한 처리
             if (isCorrect) {
@@ -285,7 +285,8 @@ public class BlankActivity extends AppCompatActivity {
             } else {
                 // 오답일 경우 버튼 배경색 변경 및 'X' 표시
                 if (!chosenAnswer.startsWith("X")) {
-                    clickedTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                    clickedTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+                    clickedTextView.setBackgroundResource(R.drawable.option_background_wrong);
                     clickedTextView.setText("X");
 
                     if (life > 0) {

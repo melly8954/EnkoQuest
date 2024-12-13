@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="correct">#2EFE2E</color>
+    <color name="right">#4CAF50</color>
+    <color name="wrong">#F44336</color>
 </resources>

@@ -122,7 +122,7 @@ public class BlankExplanation extends AppCompatActivity {
         userAnswer.setText("내가 선택한 답변: " + chosen);
 
         correctAnswer.setText("정답: " + correct);
-        correctAnswer.setTextColor(getResources().getColor(R.color.correct));
+        correctAnswer.setTextColor(getResources().getColor(R.color.black));
 
         transExample.setText(translationExample);
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:background="#FFFFFF"
     android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".WordBook">
 
 
@@ -55,7 +55,7 @@
             android:text="apple"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <!-- 의미 -->
         <TextView
@@ -67,7 +67,7 @@
             android:text="A round fruit with red or green skin and a whitish interior."
             android:textColor="#555555"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <!-- 예제 -->
         <TextView
@@ -79,7 +79,7 @@
             android:text="She ate an apple for breakfast."
             android:textColor="#555555"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <!-- 예제 해석-->
         <TextView
@@ -91,7 +91,7 @@
             android:text="사과"
             android:textColor="#555555"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -109,7 +109,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
+            android:backgroundTint="#000000"
             android:text="◀"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <!-- 인덱스 -->
@@ -129,7 +131,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:backgroundTint="#000000"
             android:text="▶"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -137,18 +141,20 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_marginBottom="60sp"
-        android:orientation="horizontal"
-        android:layout_alignParentEnd="true">
+        android:orientation="horizontal">
 
         <!-- 단어 저장 버튼 -->
         <Button
             android:id="@+id/btnWordSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:padding="8dp"
             android:text="저장"
-            android:textSize="16sp"
-            android:padding="8dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <!-- 저장된 단어 페이지 이동 버튼 -->
         <Button
@@ -156,9 +162,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:backgroundTint="#000000"
+            android:padding="8dp"
             android:text="저장된 단어"
-            android:textSize="16sp"
-            android:padding="8dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </LinearLayout>
