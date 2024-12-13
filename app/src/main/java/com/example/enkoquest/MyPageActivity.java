@@ -159,9 +159,6 @@ public class MyPageActivity extends AppCompatActivity implements View
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
-
-
     // 선택된 이미지 저장
     private void saveProfileImageToDatabase(String selectedImage) {
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -175,7 +172,6 @@ public class MyPageActivity extends AppCompatActivity implements View
                     }
                 });
     }
-
     // 프로필 이미지 불러오기
     private void loadProfileImage() {
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
