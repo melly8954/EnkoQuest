@@ -28,7 +28,7 @@ public class UserAccount {
         this.tel = tel;
         this.selfProduce = selfProduce;
         this.challengeLevel = challengeLevel;
-        this.savedWord = savedWord;
+        this.savedWord = savedWord;sss
         this.profileImage = profileImage;
     }
 
